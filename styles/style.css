@@ -161,6 +161,9 @@ a:active {
 .margin--left-180 {
   margin-left: 11.25rem;
 }
+.margin--left-100 {
+  margin-left: 6.25rem;
+}
 .margin--left-90 {
   margin-left: 5.625rem;
 }
@@ -175,6 +178,9 @@ a:active {
 }
 .margin--right-180 {
   margin-right: 11.25rem;
+}
+.margin--right-100 {
+  margin-right: 6.25rem;
 }
 .margin--right-90 {
   margin-right: 5.625rem;
@@ -280,6 +286,25 @@ a:active {
   background-color: #FFFFFF;
 }
 .header {
-  height: 75px;
+  height: 4.6875rem;
   background-color: #1C1C1E;
+}
+.footer {
+  height: 26.875rem;
+  width: 100%;
+}
+.footer-top {
+  height: 12.5rem;
+}
+.footer-bottom {
+  height: 14.375rem;
+  width: 100%;
+}
+.footer-bottom--left {
+  width: 50%;
+  height: 100%;
+}
+.footer-bottom--right {
+  width: 50%;
+  height: 100%;
 }

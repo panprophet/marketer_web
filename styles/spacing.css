@@ -19,6 +19,9 @@
 .margin--left-180 {
   margin-left: 11.25rem;
 }
+.margin--left-100 {
+  margin-left: 6.25rem;
+}
 .margin--left-90 {
   margin-left: 5.625rem;
 }
@@ -33,6 +36,9 @@
 }
 .margin--right-180 {
   margin-right: 11.25rem;
+}
+.margin--right-100 {
+  margin-right: 6.25rem;
 }
 .margin--right-90 {
   margin-right: 5.625rem;
