@@ -1,0 +1,9 @@
+.projekti {
+  height: auto;
+  position: relative;
+}
+.projekti--naslov {
+  height: 400px;
+  padding-top: 100px;
+  padding-right: 90px;
+}

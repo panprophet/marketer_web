@@ -140,6 +140,24 @@ a:active {
 .text-right {
   text-align: right;
 }
+.margin--left-big {
+  margin-left: 11.25rem;
+}
+.margin--left-medium {
+  margin-left: 5rem;
+}
+.margin--left-small {
+  margin-left: 1.5rem;
+}
+.margin--right-big {
+  margin-left: 11.25rem;
+}
+.margin--right-medium {
+  margin-left: 5rem;
+}
+.margin--right-small {
+  margin-left: 1.5rem;
+}
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,10 +246,22 @@ a:active {
 .background-black-lighter {
   background-color: #262626;
 }
+.background-blue {
+  background-color: #00AEEF;
+}
 .background-white {
   background-color: #FFFFFF;
 }
 .header {
   height: 80px;
   background-color: #1C1C1E;
+}
+.projekti {
+  height: auto;
+  position: relative;
+}
+.projekti--naslov {
+  height: 400px;
+  padding-top: 100px;
+  padding-right: 90px;
 }
