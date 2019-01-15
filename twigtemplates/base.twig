@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="{{_BASE}}">
+  <title>Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% block description %}{% endblock %}"/>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="icon" href="images/favicon.png">
+
+</head>
+<body>
+  <nav class="header flex w-100 align-items-center">
+    <div class="flex align-items-center">
+      <img src="images/logo.svg"/>
+      <span class="font-14">Marketer</span>
+    </div>
+    <div class="header-meni flex align-items-center">
+      <div class="font-14">O NAMA</div>
+      <div class="font-14">USLUGE</div>
+      <div class="font-14">PORTFOLIO</div>
+      <div class="font-14">BLOG</div>
+      <div class="font-14">MARKETER TV</div>
+      <div class="font-14">DIGITALNI REČNIK</div>
+    </div>
+    <div class="header-kontakt flex align-items-center">
+        <span class="font-14">KONTAKT</span>
+        <span>
+          <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.3335 0H2.3335C1.2335 0 0.343496 0.9 0.343496 2L0.333496 14C0.333496 15.1 1.2335 16 2.3335 16H18.3335C19.4335 16 20.3335 15.1 20.3335 14V2C20.3335 0.9 19.4335 0 18.3335 0ZM17.3335 14H3.3335C2.7835 14 2.3335 13.55 2.3335 13V4L9.2735 8.34C9.9235 8.75 10.7435 8.75 11.3935 8.34L18.3335 4V13C18.3335 13.55 17.8835 14 17.3335 14ZM10.3335 7L2.3335 2H18.3335L10.3335 7Z" fill="#00AEEF"/>
+          </svg>
+      </span>
+    </div>
+  </nav>
+
+  {% block content %}{% endblock %}
+
+  <footer>
+
+  </footer>
+
+</body>
+</html>

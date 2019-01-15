@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;" >
+<head>
+	<title>Summernote standalone</title>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+  <!-- include libraries(jQuery, bootstrap) -->
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+
+  <!-- include summernote css/js -->
+  <link href="summernote/summernote.css" rel="stylesheet">
+  <script src="summernote/summernote.js"></script>
+  <script src="js/summernote-ext-addclass.js"></script>
+<!--
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+-->
+  <script type="text/javascript" src="css.min.js"></script>
+
+</head>
+
+<body style="height: 100%;">
+  <div id="summernote" style="width:100%; height:100%"></div>
+  <script>
+
+    function initSummernote(){
+      var HelloButton = function (context) {
+        var ui = $.summernote.ui;
+        // create button
+        var button = ui.button({
+            contents: '<i class="note-icon-picture"/>',
+            tooltip: 'Image',
+            click: function () {
+            // invoke insertText method with 'hello' on editor module.
+              $('#summernote').summernote('editor.saveRange');
+              console.log('child win', window)
+//              top.document.summernoteframe1.set('showFileBrowse',true);
+              PARENT.set('showFileBrowse',true);
+
+              //context.invoke('editor.insertText', 'Image odje');
+            }
+        });
+        return button.render();   // return button as jquery object
+      }
+
+      SUMMERNOTE = $('#summernote').summernote({
+        //popatmouse: false,
+        addclass: {
+            debug: false,
+            classTags: SummerNoteSharedStyle//[{title:"Button",value:"btn btn-success"},"jumbotron", "lead","img-rounded","img-circle", "img-responsive","btn", "btn btn-success","btn btn-danger","text-muted", "text-primary", "text-warning", "text-danger", "text-success", "table-bordered", "table-responsive", "alert", "alert alert-success", "alert alert-info", "alert alert-warning", "alert alert-danger", "visible-sm", "hidden-xs", "hidden-md", "hidden-lg", "hidden-print"]
+        },
+        disableDragAndDrop: true,
+        styleWithSpan:false,
+        onCreateLink:function(linkUrl){return linkUrl},
+        toolbar: [
+          ['style', ['style', 'addclass', 'bold', 'italic', 'underline', 'clear']],
+          ['font', ['strikethrough', 'superscript', 'subscript']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],                            
+          ['imagez', ['link','img', 'video']],
+          ['tables', ['table', 'blockquote', 'pre']],
+          ['codeview', ['codeview', 'redo', 'undo']]
+        ],
+        buttons: {
+            img: HelloButton
+        },
+        height: 300,               
+        minHeight: null,             
+        maxHeight: '100%',
+        //dialogsInBody: true,
+        callbacks: {
+            onInit: function(e) {
+              console.log('onInit summer')
+              $("#summernote").summernote("fullscreen.toggle");
+            },
+
+            onBlurCodeview: function(contents, $editable) {
+              //console.log('onBlurCodeview', contents, $editable)
+              //$(this).html(contents);
+            },                  
+            // Clear all formatting of the pasted text
+            onPaste: function (e) {
+                var bufferText = ((e.originalEvent || e).clipboardData || window.clipboardData).getData('Text');
+                e.preventDefault();
+                setTimeout( function(){
+                    $('#summernote').summernote( 'insertText', bufferText );
+                }, 10 );
+            },                    
+            onFocus: function(e) {  $('.note-dialog').parents().removeClass('animated');  },  //modal fix                  
+            onChange: function (contents, $editable) {
+              //console.log('onchange SUMMERNOTE', contents)
+              //console.log('code: ', $(self.nodes.summernote).summernote('code'))
+              //setTimeout(function(){ console.log('codetimeout: ', $(self.nodes.summernote).summernote('code')) }, 2000)
+              //console.log('editable: ', $editable)
+
+              PARENT.set('fromParent',false);
+              PARENT.set('code',contents);
+              PARENT.set('fromParent',true);
+            }
+        }
+      }); 
+    }
+
+
+    $(document).ready(function() {
+      HOSTNAME = '../';
+
+      var CSSparser = new cssjs();
+      SummerNoteSharedStyle = [];
+
+      fetch('../sharedstyle.css')
+      .then(response => response.text())
+      .then((cssString) => {
+        var parsed = CSSparser.parseCSS(cssString);
+        parsed.forEach(function(r){
+          SummerNoteSharedStyle.push(r.selector.substring(1)) // TODO: need to traverse subStyles recursively
+          // save to key/val, trim . , trim after :...
+        })
+        initSummernote()
+      })
+      .catch(function(e){
+        initSummernote()
+      })
+    });
+  </script>
+
+<link rel="stylesheet" type="text/css" href="../sharedstyle.css">
+
+
+</body>    
+</html>
+

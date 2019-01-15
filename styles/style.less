@@ -1,0 +1,87 @@
+@import 'variables';
+@font-face {
+  font-family: Faldore;
+  font-weight: 300;
+  src: url('./fonts/Faldore-Medium.otf');
+}
+*{
+    font-family: 'Faldore', 'sans-serif';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+// HTML {
+//     line-height: 1.2;
+// }
+body {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+hr {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+b,
+strong {
+    font-weight: 500;
+}
+img {
+    border-style: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+    background-color: @white;
+}
+button:active,
+button:focus,
+a:active,
+a:focus,
+input:active,
+input:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: none;
+    background-color: @black;
+}
+button:hover {
+    opacity: 0.5;
+}
+p {
+    -webkit-margin-before: 0px;
+            margin-block-start: 0px;
+    -webkit-margin-after: 0px;
+            margin-block-end: 0px;
+    -webkit-margin-start: 0px;
+       -moz-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+       -moz-margin-end: 0px;
+            margin-inline-end: 0px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+a:focus, a:active{
+    background-color: transparent;
+}
+
+@import 'fonts';
+@import 'spacing';
+@import 'flex_classes';
+@import 'buttons';
+@import 'background_colors';
+@import 'header';
