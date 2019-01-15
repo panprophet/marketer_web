@@ -119,10 +119,10 @@ a:active {
 .font-bold {
   font-weight: 500;
 }
-.font-gray {
+.font-grey {
   color: #4D4D4D;
 }
-.font-gray--mid {
+.font-grey--mid {
   color: #A6A6A6;
 }
 .font-blue {
@@ -140,23 +140,53 @@ a:active {
 .text-right {
   text-align: right;
 }
-.margin--left-big {
+.margin--top-100 {
+  margin-top: 6.25rem;
+}
+.margin--top-48 {
+  margin-top: 3rem;
+}
+.margin--top-24 {
+  margin-top: 1.5rem;
+}
+.margin--bottom-100 {
+  margin-bottom: 6.25rem;
+}
+.margin--bottom-48 {
+  margin-bottom: 3rem;
+}
+.margin--bottom-24 {
+  margin-bottom: 1.5rem;
+}
+.margin--left-180 {
   margin-left: 11.25rem;
 }
-.margin--left-medium {
-  margin-left: 5rem;
+.margin--left-90 {
+  margin-left: 5.625rem;
 }
-.margin--left-small {
+.margin--left-60 {
+  margin-left: 3.75rem;
+}
+.margin--left-24 {
   margin-left: 1.5rem;
 }
-.margin--right-big {
-  margin-left: 11.25rem;
+.margin--left-10 {
+  margin-left: 0.625rem;
 }
-.margin--right-medium {
-  margin-left: 5rem;
+.margin--right-180 {
+  margin-right: 11.25rem;
 }
-.margin--right-small {
-  margin-left: 1.5rem;
+.margin--right-90 {
+  margin-right: 5.625rem;
+}
+.margin--right-60 {
+  margin-right: 3.75rem;
+}
+.margin--right-24 {
+  margin-right: 1.5rem;
+}
+.margin--right-10 {
+  margin-right: 0.625rem;
 }
 .flex {
   display: -webkit-box;
@@ -253,7 +283,7 @@ a:active {
   background-color: #FFFFFF;
 }
 .header {
-  height: 80px;
+  height: 75px;
   background-color: #1C1C1E;
 }
 .projekti {
