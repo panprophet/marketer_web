@@ -14,15 +14,15 @@
   <nav class="header flex w-100 align-items-center justify-content-between">
     <div class="flex align-items-center margin--left-24">
       <img src="images/logo.svg"/>
-      <span class="font-18 font-white margin--left-10">Marketer</span>
+      <span class="font-24 font-white margin--left-10">Marketer</span>
     </div>
-    <div class="header-meni flex align-items-center">
-      <div class="font-14 font-grey--mid">O NAMA</div>
-      <div class="font-14 font-grey--mid margin--left-90">USLUGE</div>
-      <div class="font-14 font-grey--mid margin--left-90">PORTFOLIO</div>
-      <div class="font-14 font-grey--mid margin--left-90">BLOG</div>
-      <div class="font-14 font-grey--mid margin--left-90">MARKETER TV</div>
-      <div class="font-14 font-grey--mid margin--left-90">DIGITALNI REČNIK</div>
+    <div class="header-meni flex flex-1 align-items-center justify-content-center">
+      <div class="font-14 font-grey">O NAMA</div>
+      <div class="font-14 font-grey margin--left-90">USLUGE</div>
+      <div class="font-14 font-grey margin--left-90">PORTFOLIO</div>
+      <div class="font-14 font-grey margin--left-90">BLOG</div>
+      <div class="font-14 font-grey margin--left-90">MARKETER TV</div>
+      <div class="font-14 font-grey margin--left-90">DIGITALNI REČNIK</div>
     </div>
     <div class="header-kontakt flex align-items-center margin--right-24">
         <span class="font-14 font-white">KONTAKT</span>
@@ -36,8 +36,50 @@
 
   {% block content %}{% endblock %}
 
-  <footer>
-
+  <footer class="footer background-black-light">
+    <div class="footer-top flex align-items-center margin--left-180 margin--right-180">
+      <span><img src="images/logo.svg"/></span>
+      <span class="font-24 font-white">Marketer</span>
+    </div>
+    <div class="footer-bottom flex">
+      <div class="footer-bottom--left flex flex-direction margin--left-180">
+        <div class="flex flex-column">
+          <div class="font-14 font-grey--mid margin--bottom-48">
+            <p>Damjan Tasic</p>
+            <p><a href="mailto:hello@marketer-digitalagency.com">hello@marketer-digitalagency.com</a></p>
+          </div>
+          <div class="font-14 font-grey--mid">
+            <p>Socijalne mreže</p>
+            <p>Google + Facebook</p>
+          </div>
+        </div>
+        <div class="flex flex-column margin--left-100">
+          <div class="font-14 font-grey--mid margin--bottom-48">
+            <p>DALLAS OFFICE</p>
+            <p>2001 Bryan St #3900</p>
+          </div>
+          <div class="font-14 font-grey--mid">
+            <p>Dallas TX. 75201</p>
+            <p>(469) 310-5870</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom--right flex flex-direction margin--left-180 margin--right-180">
+        <div class="flex flex-column">
+          <div class="font-14 font-grey--mid margin--bottom-24">O NAMA</div>
+          <div class="font-14 font-grey--mid margin--bottom-24">PORTFOLIO</div>
+          <div class="font-14 font-grey--mid margin--bottom-24">BLOG</div>
+          <div class="font-14 font-grey--mid margin--bottom-24">MARKETER TV</div>
+          <div class="font-14 font-grey--mid margin--bottom-24">DIGITALNI REČNIK</div>
+        </div>
+        <div class="flex flex-column margin--left-180">
+          <div class="font-14 font-white margin--bottom-24">USLUGE</div>
+          <div class="font-14 font-grey--mid margin--bottom-24">GOOLGE OGLAŠAVANJE</div>
+          <div class="font-14 font-grey--mid margin--bottom-24">FACEBOOK OGLAŠAVANJE</div>
+          <div class="font-14 font-grey--mid margin--bottom-24">WEB OGLAŠAVANJE</div>
+        </div>
+      </div>
+    </div>
   </footer>
 
 </body>
