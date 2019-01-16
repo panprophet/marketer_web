@@ -3,7 +3,7 @@
   width: 100%;
 }
 .footer-top {
-  height: 12.5rem;
+  height: 9.375rem;
 }
 .footer-bottom {
   height: 14.375rem;
@@ -12,7 +12,13 @@
   width: 50%;
   height: 100%;
 }
+.footer-bottom--left-col {
+  width: 50%;
+}
 .footer-bottom--right {
   width: 50%;
   height: 100%;
+}
+.footer-bottom--right-col {
+  width: 50%;
 }
