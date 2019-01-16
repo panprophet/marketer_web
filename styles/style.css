@@ -131,6 +131,12 @@ a:active {
 .font-white {
   color: #FFFFFF;
 }
+.letter-spacing-0_3 {
+  letter-spacing: 0.019rem;
+}
+.letter-spacing--0_3 {
+  letter-spacing: -0.019rem;
+}
 .text-center {
   text-align: center;
 }
@@ -228,6 +234,9 @@ a:active {
 .background-black-lighter {
   background-color: #262626;
 }
+.background-blue {
+  background-color: #00AEEF;
+}
 .background-white {
   background-color: #FFFFFF;
 }
@@ -307,4 +316,59 @@ a:active {
 }
 .margin--right-10 {
   margin-right: 0.625rem;
+}
+.padding--top-100 {
+  padding-top: 6.25rem;
+}
+.padding--top-48 {
+  padding-top: 3rem;
+}
+.padding--top-24 {
+  padding-top: 1.5rem;
+}
+.padding--bottom-100 {
+  padding-bottom: 6.25rem;
+}
+.padding--bottom-48 {
+  padding-bottom: 3rem;
+}
+.padding--bottom-24 {
+  padding-bottom: 1.5rem;
+}
+.padding--left-180 {
+  padding-left: 11.25rem;
+}
+.padding--left-90 {
+  padding-left: 5.625rem;
+}
+.padding--left-60 {
+  padding-left: 3.75rem;
+}
+.padding--left-24 {
+  padding-left: 1.5rem;
+}
+.padding--left-10 {
+  padding-left: 0.625rem;
+}
+.padding--right-180 {
+  padding-right: 11.25rem;
+}
+.padding--right-90 {
+  padding-right: 5.625rem;
+}
+.padding--right-60 {
+  padding-right: 3.75rem;
+}
+.padding--right-24 {
+  padding-right: 1.5rem;
+}
+.padding--right-10 {
+  padding-right: 0.625rem;
+}
+.projekti {
+  height: auto;
+}
+.projekti--naslov {
+  height: 25rem;
+  width: 50%;
 }
