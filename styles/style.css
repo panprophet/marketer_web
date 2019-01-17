@@ -528,6 +528,9 @@ a:active {
     align-items: center;
     grid-column: 1 / 3;
   }
+  .projekti-grid-1-txt {
+    text-align: center;
+  }
   .projekti-grid-projekat {
     grid-column: 1;
     grid-row: 2;
@@ -584,12 +587,19 @@ a:active {
   .projekti-grid-projekat-opis {
     height: 33vw;
   }
+  .projekti-grid-projekat-opis-txt {
+    text-align: center;
+  }
   .projekti-grid-projekat-picture {
     position: relative;
     height: 66vw;
   }
+  .projekti-grid-projekat-picture-hover {
+    display: none;
+  }
   .projekti-button {
-    height: 33vw;
+    height: 22vw;
+    align-items: center;
   }
 }
 .kontakt {
