@@ -12,9 +12,12 @@
   margin: 0px;
   padding: 0px;
 }
+* button:focus {
+  outline: 0;
+}
 body {
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  min-height: 100vh;
   border: 0px;
 }
 hr {
@@ -83,7 +86,11 @@ a:active {
 }
 .font-14 {
   font-size: 0.875rem;
-  line-height: 1.05rem;
+  line-height: 1.5rem;
+}
+.font-16 {
+  font-size: 1rem;
+  line-height: 1.3125rem;
 }
 .font-16 {
   font-size: 1rem;
@@ -254,6 +261,9 @@ a:active {
 .background-blue {
   background-color: #00AEEF;
 }
+.background-grey-lighter {
+  background-color: #f8f8f8;
+}
 .background-white {
   background-color: #FFFFFF;
 }
@@ -267,7 +277,7 @@ a:active {
   width: 100%;
 }
 .footer-top {
-  height: 12.5rem;
+  height: 9.375rem;
 }
 .footer-bottom {
   height: 14.375rem;
@@ -276,9 +286,15 @@ a:active {
   width: 50%;
   height: 100%;
 }
+.footer-bottom--left-col {
+  width: 50%;
+}
 .footer-bottom--right {
   width: 50%;
   height: 100%;
+}
+.footer-bottom--right-col {
+  width: 50%;
 }
 .margin--top-100 {
   margin-top: 6.25rem;
@@ -301,6 +317,12 @@ a:active {
 .margin--bottom-24 {
   margin-bottom: 1.5rem;
 }
+.margin--bottom-10 {
+  margin-bottom: 0.625rem;
+}
+.margin--bottom-8 {
+  margin-bottom: 0.5rem;
+}
 .margin--bottom-10-per {
   margin-bottom: 10%;
 }
@@ -317,7 +339,7 @@ a:active {
   margin-left: 5%;
 }
 .margin--left-90 {
-  margin-left: 4.92%;
+  margin-left: 4.687%;
 }
 .margin--left-60 {
   margin-left: 3.125%;
@@ -335,7 +357,7 @@ a:active {
   margin-right: 5%;
 }
 .margin--right-90 {
-  margin-right: 4.92%;
+  margin-right: 4.687%;
 }
 .margin--right-60 {
   margin-right: 3.125%;
@@ -396,6 +418,17 @@ a:active {
 }
 .padding--right-10 {
   padding-right: 0.625rem;
+}
+.input-form {
+  background-color: #f8f8f8;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #c0c0c0;
+  padding-top: 10px;
+}
+.input-form:active {
+  background-color: #f8f8f8;
 }
 .projekti--naslov {
   height: 11vw;
@@ -557,5 +590,43 @@ a:active {
   }
   .projekti-button {
     height: 33vw;
+  }
+}
+.kontakt {
+  width: 100%;
+}
+.kontakt-oglasavanje {
+  width: auto;
+  height: 100px;
+}
+.kontakt-shared {
+  width: 100%;
+}
+.kontakt-shared--form-row--column {
+  width: 25%;
+}
+@media only screen and (max-width: 1024px) {
+  .kontakt-shared--title p {
+    text-align: center;
+  }
+  .kontakt-shared--form-row {
+    flex-direction: column;
+  }
+  .kontakt-shared--form-row--column {
+    width: 40%;
+  }
+  .kontakt-shared--form-row--column label {
+    text-align: center;
+  }
+  .kontakt-shared--form-row div label {
+    text-align: center;
+  }
+  .kontakt-shared--form-row div input {
+    height: 60px;
+  }
+  .kontakt-shared--form-row--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

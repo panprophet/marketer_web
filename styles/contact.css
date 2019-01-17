@@ -1,0 +1,38 @@
+.kontakt {
+  width: 100%;
+}
+.kontakt-oglasavanje {
+  width: auto;
+  height: 100px;
+}
+.kontakt-shared {
+  width: 100%;
+}
+.kontakt-shared--form-row--column {
+  width: 25%;
+}
+@media only screen and (max-width: 1024px) {
+  .kontakt-shared--title p {
+    text-align: center;
+  }
+  .kontakt-shared--form-row {
+    flex-direction: column;
+  }
+  .kontakt-shared--form-row--column {
+    width: 40%;
+  }
+  .kontakt-shared--form-row--column label {
+    text-align: center;
+  }
+  .kontakt-shared--form-row div label {
+    text-align: center;
+  }
+  .kontakt-shared--form-row div input {
+    height: 60px;
+  }
+  .kontakt-shared--form-row--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

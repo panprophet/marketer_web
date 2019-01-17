@@ -1,0 +1,51 @@
+{% extends "base.twig" %}
+{% block content %}
+
+<div class="kontakt">
+  <div class="kontakt-oglasavanje flex justify-content-between background-white">
+    <div class="flex flex-column justify-content-center kontakt-oglasavanje--left margin--left-180">
+      <p class="font-16 font-grey--mid margin--bottom-10">Naše usluge</p>
+      <p class="flex align-items-center justify-content-between font-16 font-grey">
+        <a href="#">
+          <span>+</span><span>Google oglašavanje</span>
+        </a>
+      </p>
+    </div>
+    <div class="flex flex-column justify-content-center kontakt-oglasavanje--right margin--right-180">
+      <p class="font-16 font-grey--mid margin--bottom-10">Naše usluge</p>
+      <p class="flex align-items-center justify-content-between font-16 font-grey">
+        <a href="#"><span>Facebook oglašavanje</span><span>+</span>
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class="kontakt-shared background-grey-lighter">
+    <div class="kontakt-shared--title margin--left-180 margin--right-180">
+      <p class="font-32 font-grey margin--bottom-24 padding--top-100">Kontakt</p>
+      <p class="font-18 font-grey">Vaša email adresa neće biti objavljena. Obavezna polja su označena *</p>
+    </div>
+    <form class="kontakt-shared--form margin--top-48">
+      <div class="kontakt-shared--form-row flex align-items-center justify-content-between margin--left-180 margin--right-180">
+        <div class="kontakt-shared--form-row--column flex flex-column font-16 font-grey margin--bottom-48"><label>Ime i prezime *</label><input class="input-form font-16 font-grey" type="text" id="imeprezime"></div>
+        <div class="kontakt-shared--form-row--column flex flex-column font-16 font-grey margin--bottom-48"><label>Email *</label><input class="input-form font-16 font-grey" type="email" id="email"></div>
+        <div class="kontakt-shared--form-row--column flex flex-column font-16 font-grey margin--bottom-48"><label>Web</label><input class="input-form font-16 font-grey" type="text" id="weburl"></div>
+      </div>
+      <div class="kontakt-shared--form-row margin--left-180 margin--right-180 margin--top-48">
+        <div class="flex flex-column font-16 font-grey">
+          <label>Poruka*</label>
+          <input class="input-form input-form font-16 font-grey" type="text" id="poruka">
+        </div>
+        <div class="kontakt-shared--form-row--button padding--bottom-100">
+          <button class="flex align-items-center justify-content-center button-small background-blue margin--top-48">
+            <span class="flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="#FFFFFF"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg></span>
+            <span class="font-12 font-white">Pošalji</span></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
