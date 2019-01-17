@@ -1,7 +1,162 @@
-.projekti {
-  height: auto;
-}
 .projekti--naslov {
-  height: 25rem;
+  height: 11vw;
   width: 50%;
+}
+.projekti--naslov-linija {
+  height: 0.313rem;
+  width: 22%;
+  bottom: -15%;
+}
+.projekti-grid {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 11vw 11vw 11vw 11vw 11vw 11vw 11vw 11vw 11vw;
+}
+.projekti-grid-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.projekti-grid-projekat {
+  grid-column: 1;
+  grid-row: 2;
+}
+.projekti-grid-projekat:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2 / 6;
+}
+.projekti-grid-projekat:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1 / 5;
+}
+.projekti-grid-projekat:nth-child(4) {
+  grid-column: 1;
+  grid-row: 6 / 10;
+}
+.projekti-grid-projekat:nth-child(5) {
+  grid-column: 2;
+  grid-row: 5 / 9;
+}
+.projekti-grid-projekat img {
+  width: 100%;
+  height: 100%;
+}
+.projekti-grid-projekat-opis {
+  height: 11vw;
+}
+.projekti-grid-projekat-picture {
+  position: relative;
+  height: 33vw;
+}
+.projekti-grid-projekat-picture:hover {
+  opacity: 1;
+}
+.projekti-grid-projekat-picture-hover {
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(0, 174, 239, 0.8);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.projekti-grid-projekat-picture-hover:hover {
+  opacity: 1;
+}
+.projekti-grid-projekat-picture-hover-logo {
+  max-width: 21.875rem;
+  max-height: 6.25rem;
+}
+.projekti-grid-projekat-picture-hover-icon {
+  max-width: 5rem;
+  max-height: 5rem;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.projekti-button {
+  height: 7vw;
+}
+@media screen and (max-width: 1024px) {
+  .projekti--naslov {
+    justify-content: center;
+    width: 100%;
+  }
+  .projekti-grid {
+    grid-template-rows: 11vw 11vw 11vw 11vw 14vw 11vw 11vw 11vw 14vw;
+  }
+  .projekti-grid-1 {
+    align-items: center;
+    grid-column: 1 / 3;
+  }
+  .projekti-grid-projekat {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .projekti-grid-projekat:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2 / 6;
+  }
+  .projekti-grid-projekat:nth-child(5) {
+    grid-column: 2;
+    grid-row: 6 / 10;
+  }
+  .projekti-grid-projekat-picture-hover-logo {
+    max-width: 13.75rem;
+  }
+  .projekti-grid-projekat-opis {
+    height: 14vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projekti--naslov {
+    height: 33vw;
+  }
+  .projekti-grid {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw;
+  }
+  .projekti-grid-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .projekti-grid-projekat {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .projekti-grid-projekat:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2 / 5;
+  }
+  .projekti-grid-projekat:nth-child(3) {
+    grid-column: 1;
+    grid-row: 5 / 8;
+  }
+  .projekti-grid-projekat:nth-child(4) {
+    grid-column: 1;
+    grid-row: 8 / 11;
+  }
+  .projekti-grid-projekat:nth-child(5) {
+    grid-column: 1;
+    grid-row: 11 / 14;
+  }
+  .projekti-grid-projekat-opis {
+    height: 33vw;
+  }
+  .projekti-grid-projekat-picture {
+    position: relative;
+    height: 66vw;
+  }
+  .projekti-button {
+    height: 33vw;
+  }
 }
