@@ -4,40 +4,51 @@
 {% set Projekti = fetch("Projekti") %}
 
     <div class="projekti flex flex-wrap">
-        <div class="projekti--naslov padding--top-100 padding--left-90 flex flex-column">
-            <div class="font-grey font-46 letter-spacing--0_3 margin--bottom-24">Projekti</div>
-            <div class="font-grey--mid font-24 letter-spacing--0_3 margin--bottom-24">Lorem Ipsum is simply dummy text.</div>
-            {# <div class="home-blok3-naslov-linija"></div> #}
+        <div class="projekti--naslov flex align-items-end">
+            <div class="font-grey font-46 letter-spacing--0_3 margin--bottom-2_5-per margin--left-180 margin--right-180">Projekti</div>
         </div>
-        {# <div class="home-blok3-prazan w-50"></div> #}
-        <div class="grid">
+        <div style="height: 11vw;"></div>
+        <div class="projekti-grid">
+            <div class="projekti-grid-1 flex flex-column">
+                <div class="font-grey--mid text-center font-24 letter-spacing--0_3 margin--bottom-2_5-per margin--left-180 margin--right-180">Lorem Ipsum is simply dummy text.</div>
+                <div class="projekti--naslov-linija background-blue margin--left-180 margin--right-180"></div>
+            </div>
         {% for item in Projekti %}
             {% if loop.index < 5 %}
-            <div class="grid-projekat">
-                <div class="grid-projekat-picture">
+            <div class="projekti-grid-projekat">
+                <div class="projekti-grid-projekat-picture">
                     <img src="img/{{item.Slika}}">
-                    <div class="grid-projekat-picture-hover">
-                        <img class="grid-projekat-picture-hover-logo" src="img/{{item.Logo}}">
-                        <div class="grid-projekat-picture-hover-opis">{{item.Text}}</div>
-                        <button class="button-white">VIŠE</button> #}
-                        <div class="d-flex justify-content-center align-items-center"> 
-                            <img class="grid-projekat-picture-hover-icon" src="images/google-icon.svg"> 
-                            <img style="padding-bottom: 4px;" class="grid-projekat-picture-hover-icon" src="images/facebook-icon.svg"> 
-                            <img class="grid-projekat-picture-hover-icon" src="images/instagram-icon.svg"> 
+                    <div class="projekti-grid-projekat-picture-hover flex flex-column justify-content-end align-items-center">
+                        <img class="projekti-grid-projekat-picture-hover-logo" src="img/{{item.Logo}}">
+                        <div class="font-16 font-white margin--bottom-6-per">{{item.Text}}</div>
+                        <button class="button-small background-white font-blue font-14 margin--bottom-10-per">VIŠE</button>
+                        <div class="flex justify-content-center align-items-center margin--bottom-6-per"> 
+                            {% if item.Google == true %}
+                                <img class="projekti-grid-projekat-picture-hover-icon" src="images/google-icon.svg"> 
+                            {% endif %}
+                            {% if item.Facebook == true %}
+                                <img style="padding-bottom: 0.25rem;" class="projekti-grid-projekat-picture-hover-icon" src="images/facebook-icon.svg"> 
+                            {% endif %}
+                            {% if item.Instagram == true %}
+                                <img class="projekti-grid-projekat-picture-hover-icon" src="images/instagram-icon.svg"> 
+                            {% endif %}
+                            {% if item.Linkedin == true %}
+                                <img class="projekti-grid-projekat-picture-hover-icon" src=""> 
+                            {% endif %}
                         </div>
                     </div>
                 </div>
-                <div class="grid-projekat-opis">
-                    <div class="grid-projekat-opis-title">{{item.Naslov}} </div>
-                    <div class="grid-projekat-opis-text">{{item.Text}}</div>
+                <div class="projekti-grid-projekat-opis flex flex-column justify-content-center">
+                    <div class="font-grey font-32 margin--left-180 margin--bottom-2_5-per">{{item.Naslov}} </div>
+                    <div class="font-grey--mid font-16 margin--left-180 margin--right-180">{{item.Text}}</div>
                 </div>
             </div>
             {% endif %}
         {% endfor %}
         </div>
     </div>
-     {# <div class="d-flex justify-content-center home-blok4">
-        <button style="margin: 0;" class="button-blue2">VIŠE</button>
-    </div>  #}
+     <div class="projekti-button flex justify-content-center">
+        <button style="margin: 0;" class="button-midd background-blue font-white font-14">VIŠE</button>
+    </div> 
 
 {% endblock %}

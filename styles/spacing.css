@@ -7,6 +7,9 @@
 .margin--top-24 {
   margin-top: 1.5rem;
 }
+.margin--top-2_5-per {
+  margin-top: 2.5%;
+}
 .margin--bottom-100 {
   margin-bottom: 6.25rem;
 }
@@ -15,6 +18,15 @@
 }
 .margin--bottom-24 {
   margin-bottom: 1.5rem;
+}
+.margin--bottom-10-per {
+  margin-bottom: 10%;
+}
+.margin--bottom-6-per {
+  margin-bottom: 6%;
+}
+.margin--bottom-2_5-per {
+  margin-bottom: 2.5%;
 }
 .margin--left-180 {
   margin-left: 9.375%;
@@ -60,6 +72,9 @@
 }
 .padding--top-24 {
   padding-top: 1.5rem;
+}
+.padding--top-10-per {
+  padding-top: 10%;
 }
 .padding--bottom-100 {
   padding-bottom: 6.25rem;

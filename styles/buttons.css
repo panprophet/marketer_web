@@ -2,7 +2,11 @@
   height: 2.813rem;
   width: 12.063rem;
 }
-.button-small {
+.button-midd {
   height: 2.813rem;
   width: 8.875rem;
+}
+.button-small {
+  height: 1.875rem;
+  width: 6rem;
 }
