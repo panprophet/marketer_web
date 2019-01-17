@@ -69,3 +69,27 @@
   -ms-flex-align: end;
   align-items: flex-end;
 }
+@media only screen and (max-width: 1024px) {
+  .flex-direction--1024 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .flex-direction--960 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .flex-direction--600 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}

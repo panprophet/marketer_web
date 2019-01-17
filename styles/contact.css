@@ -36,3 +36,24 @@
     justify-content: center;
   }
 }
+@media only screen and (max-width: 600px) {
+  .kontakt-oglasavanje--left {
+    align-items: flex-start;
+    margin-left: 3rem;
+  }
+  .kontakt-oglasavanje--right {
+    align-items: flex-end;
+    margin-right: 3rem;
+  }
+  .kontakt-shared--title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .kontakt-shared--form-row {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .kontakt-shared--form-row--column {
+    width: 100%;
+  }
+}
