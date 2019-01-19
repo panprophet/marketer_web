@@ -1,9 +1,6 @@
 {% extends "base.twig" %}
 {# {% block description %}All posts{% endblock %} #}
 {% block content %}
-
+  {{ include('projekti.twig') }}
+  {{ include('contact_shared.twig') }}
 {% endblock %}
-{%
-  $projekti = $twig->load('projekti.twig');
-  $twig->display('projekti.twig', ['template' => $template]);
- %}

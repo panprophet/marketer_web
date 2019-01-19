@@ -5,5 +5,5 @@
 {% block content %}
 	<h5>{{Post.Title}} <tag style="float:right; text-transform: none;">Posted at {{Post.Date}}</tag></h5>
   {% if Post.Image %} <img src="img/{{Post.Image}}"> {% endif %}
-  <div style="margin-top: 1rem;" >{{Post.Body | raw}} </div> 
+  <div style="margin-top: 1rem;" >{{Post.Body | raw}} </div>
 {% endblock %}
