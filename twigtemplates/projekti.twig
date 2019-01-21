@@ -1,5 +1,4 @@
 
-
 {% set Projekti = fetch("Projekti") %}
 
     <div class="projekti flex flex-wrap">
@@ -21,18 +20,18 @@
                         <img class="projekti-grid-projekat-picture-hover-logo" src="img/{{item.Logo}}">
                         <div class="font-16 font-white margin--bottom-6-per">{{item.Text}}</div>
                         <button class="button-midd background-white font-blue font-14 margin--bottom-10-per">VIŠE</button>
-                        <div class="flex justify-content-center align-items-center margin--bottom-6-per"> 
+                        <div class="flex justify-content-center align-items-center margin--bottom-6-per">
                             {% if item.Google == true %}
-                                <img class="projekti-grid-projekat-picture-hover-icon" src="images/google-icon.svg"> 
+                                <img class="projekti-grid-projekat-picture-hover-icon" src="images/google-icon.svg">
                             {% endif %}
                             {% if item.Facebook == true %}
-                                <img style="padding-bottom: 0.25rem;" class="projekti-grid-projekat-picture-hover-icon" src="images/facebook-icon.svg"> 
+                                <img style="padding-bottom: 0.25rem;" class="projekti-grid-projekat-picture-hover-icon" src="images/facebook-icon.svg">
                             {% endif %}
                             {% if item.Instagram == true %}
-                                <img class="projekti-grid-projekat-picture-hover-icon" src="images/instagram-icon.svg"> 
+                                <img class="projekti-grid-projekat-picture-hover-icon" src="images/instagram-icon.svg">
                             {% endif %}
                             {% if item.Linkedin == true %}
-                                <img class="projekti-grid-projekat-picture-hover-icon" src=""> 
+                                <img class="projekti-grid-projekat-picture-hover-icon" src="">
                             {% endif %}
                         </div>
                     </div>
@@ -48,5 +47,4 @@
     </div>
      <div class="projekti-button flex justify-content-center">
         <button style="margin: 0;" class="button-midd background-blue font-white font-14">VIŠE</button>
-    </div> 
-
+    </div>

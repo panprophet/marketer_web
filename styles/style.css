@@ -123,6 +123,11 @@ a:active {
   font-size: inherit;
   line-height: inherit;
 }
+.font-62 {
+  font-size: 3.875rem;
+  line-height: 5rem;
+  letter-spacing: 0.04rem;
+}
 .font-regular {
   font-weight: 300;
 }
@@ -595,6 +600,7 @@ a:active {
 @media only screen and (max-width: 1024px) {
   .header {
     position: fixed;
+    z-index: 9999999;
   }
   .header-meni {
     width: 0px;
@@ -1000,6 +1006,22 @@ a:active {
     font-size: 0.875rem;
     line-height: 1.5rem;
   }
+}
+.home {
+  height: calc(100vh - 4.6875rem);
+  width: 100%;
+  position: relative;
+}
+.home-video {
+  height: 95px;
+  width: 290px;
+  position: relative;
+}
+.home-video--preview {
+  height: 100%;
+}
+.home-video--preview-image {
+  height: 100%;
 }
 .gallery-blog-big-pic {
   height: 31.3vw;

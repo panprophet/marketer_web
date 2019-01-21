@@ -46,6 +46,11 @@
   font-size: inherit;
   line-height: inherit;
 }
+.font-62 {
+  font-size: 3.875rem;
+  line-height: 5rem;
+  letter-spacing: 0.04rem;
+}
 .font-regular {
   font-weight: 300;
 }
