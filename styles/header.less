@@ -3,4 +3,61 @@
   height: 4.6875rem;
   width: 100%;
   background-color: @black-light;
+  &-logo {
+    span {
+      margin-bottom: 5px;
+    }
+  }
+  &-mobile {
+    display: none;
+  }
+}
+.mobile {
+  width: 100%;
+  position: fixed;
+  top: 4.6875rem;
+  left: 0px;
+  &-inner {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  &-hidden {
+    height: 0px;
+    transition: height 0.8s ease-in-out;
+  }
+  &-shown {
+    height: calc(~"100vh - 4.6875rem");
+    transition: height 0.8s ease-in-out;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header {
+    position: fixed;
+    &-meni {
+      width: 0px;
+      div {
+        display: none;
+      }
+    }
+    &-mobile {
+      display: flex;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    &-kontakt {
+      span:nth-child(1) {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+    .header {
+    &-kontakt {
+      margin-right: 0.625rem;
+    }
+  }
 }

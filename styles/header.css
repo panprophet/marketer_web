@@ -3,3 +3,52 @@
   width: 100%;
   background-color: #1C1C1E;
 }
+.header-logo span {
+  margin-bottom: 5px;
+}
+.header-mobile {
+  display: none;
+}
+.mobile {
+  width: 100%;
+  position: fixed;
+  top: 4.6875rem;
+  left: 0px;
+}
+.mobile-inner {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.mobile-hidden {
+  height: 0px;
+  transition: height 0.8s ease-in-out;
+}
+.mobile-shown {
+  height: calc(100vh - 4.6875rem);
+  transition: height 0.8s ease-in-out;
+}
+@media only screen and (max-width: 1024px) {
+  .header {
+    position: fixed;
+  }
+  .header-meni {
+    width: 0px;
+  }
+  .header-meni div {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header-kontakt span:nth-child(1) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-kontakt {
+    margin-right: 0.625rem;
+  }
+}
