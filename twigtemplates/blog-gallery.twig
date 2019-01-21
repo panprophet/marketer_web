@@ -1,0 +1,40 @@
+{% extends "base.twig" %}
+{% block content %}
+{% set Post = fetch("Post") %}
+
+    <div class="gallery-blog background-black-light flex flex-column">
+        <div class="gallery-blog-big flex flex-direction-1024 padding--left-24 padding--right-24 padding--top-24 padding--bottom-24">
+        
+        {% for item in Post %}
+            {% if loop.index < 2 %}
+            <div class="gallery-blog-big-pic" style="background-image: url('img/{{item.Image}}');"></div>
+            <div class="gallery-blog-big-txt flex flex-1 flex-column padding--left-90 padding--right-90 padding--top-24 padding--bottom-24">
+                <div class="gallery-blog-big-txt-title font-32 font-white margin--bottom-2_5-per ">{{item.Title}}</div>
+                <div class="gallery-blog-big-txt-text font-16 font-white margin--bottom-10-per">{{item.Short | raw }}</div>
+                <div class="flex">
+                    <button class="button-midd button-border-blue background-black-light font-white font-14"> VIŠE</button>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        
+        </div>
+        <div class="gallery-blog-small padding--top-24 padding--bottom-24 padding--left-24 padding--right-24 flex justify-content-between">
+        {% for item in Post %}
+            {% if loop.index > 1 and loop.index < 6 %}
+            <div class="gallery-blog-small-part flex flex-column">
+                <div class="gallery-blog-small-part-pic" style="background-image: url('img/{{item.Image}}');">
+                    <div class="gallery-blog-small-part-pic-text flex flex-column justify-content-end">
+                        <div class="gallery-blog-small-part-pic-text-title font-16 font-white margin--left-24 margin--right-24 margin--bottom-vw-3">Images revealed of David Chipperfield Architects "city palace" apartments...</div>
+                        <div class="margin--left-24 margin--right-24 padding--bottom-24 text-center">
+                            <button class="button-midd button-border-blue background-black-light font-white font-14"> VIŠE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
