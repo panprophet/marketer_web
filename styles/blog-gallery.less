@@ -97,6 +97,7 @@
         &-big{
             align-items: center;
             &-txt{
+                width: 50%;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
@@ -123,14 +124,13 @@
                     grid-column: 2;
                     grid-row: 2;
                 }
-                // &-pic{
-                //     &-text{
-                //         &-btn{
-                //             // width: 6rem;
-                //             // height: 2.875rem;
-                //         }
-                //     }
-                // }
+                &-pic{
+                    &-text{
+                        &-title{
+                            text-align: center;
+                        }
+                    }
+                }
             }
         }
     }
@@ -140,6 +140,9 @@
         &-big{
             &-pic{
                 height: 100vw;
+                width: 100%;
+            }
+            &-txt{
                 width: 100%;
             }
         }
