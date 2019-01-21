@@ -80,6 +80,7 @@
     align-items: center;
   }
   .gallery-blog-big-txt {
+    width: 50%;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -106,10 +107,16 @@
     grid-column: 2;
     grid-row: 2;
   }
+  .gallery-blog-small-part-pic-text-title {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 600px) {
   .gallery-blog-big-pic {
     height: 100vw;
+    width: 100%;
+  }
+  .gallery-blog-big-txt {
     width: 100%;
   }
   .gallery-blog-small {
