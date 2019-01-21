@@ -1,9 +1,8 @@
-{% extends "base.twig" %}
-{% block content %}
+
 {% set Post = fetch("Post") %}
 
     <div class="gallery-blog background-black-light flex flex-column">
-        <div class="gallery-blog-big flex flex-direction-1024 padding--left-24 padding--right-24 padding--top-24 padding--bottom-24">
+        <div class="gallery-blog-big flex flex-direction--1024 padding--left-24 padding--right-24 padding--top-24 padding--bottom-24">
         
         {% for item in Post %}
             {% if loop.index < 2 %}
@@ -37,4 +36,3 @@
         </div>
     </div>
 
-{% endblock %}
