@@ -1,5 +1,6 @@
 .kontakt {
   width: 100%;
+  position: relative;
 }
 .kontakt-oglasavanje {
   width: auto;
@@ -12,6 +13,9 @@
   width: 25%;
 }
 @media only screen and (max-width: 1024px) {
+  .kontakt {
+    top: 4.6875rem;
+  }
   .kontakt-shared--title p {
     text-align: center;
   }

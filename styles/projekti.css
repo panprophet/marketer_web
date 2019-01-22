@@ -1,3 +1,6 @@
+.projekti {
+  position: relative;
+}
 .projekti--naslov {
   height: 11vw;
   width: 50%;
@@ -82,9 +85,14 @@
   margin-right: 7%;
 }
 .projekti-button {
+  top: 4.6875rem;
   height: 7vw;
+  position: relative;
 }
 @media screen and (max-width: 1024px) {
+  .projekti {
+    top: 4.6875rem;
+  }
   .projekti--naslov {
     justify-content: center;
     width: 100%;
