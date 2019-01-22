@@ -1,11 +1,12 @@
 {% extends 'base.twig' %}
 {% block content %}
-{% set Portfolio = fetch("Portfolio") %}
+{% set Projekti = fetch("Projekti") %}
 
-{% for item in Portfolio %}
+{% for item in Projekti %}
+{% if item.Istakni == 'true' %}
     <div class="portfolio flex flex-column justify-content-end align-items-center" style="background: linear-gradient(0deg, rgba(21, 21, 21, 0.5), rgba(21, 21, 21, 0.5)), url(img/{{item.Slika}});">
-        <div class="font-46 font-white margin--bottom-24">{{item.Naziv}}</div>
-        <div class="font-16 font-white text-center margin--bottom-2_5-per">{{item.Opis}}</div>
+        <div class="font-46 font-white margin--bottom-24">{{item.Naslov}}</div>
+        <div class="font-16 font-white text-center margin--bottom-2_5-per">{{item.Text}}</div>
         <div class="line-small background-blue text-center margin--bottom-3-per"></div>
         <button class="button-midd background-blue font-white font-14 margin--bottom-4-per">VIŠE</button>
         <div class="flex justify-content-center align-items-center margin--bottom-10-per">
@@ -23,6 +24,7 @@
             {% endif %}
         </div>
     </div>
+{% endif %}
 {% endfor %}
 
 {% include 'projekti.twig' %}
