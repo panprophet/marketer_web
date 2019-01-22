@@ -1,8 +1,8 @@
 {% extends "base.twig" %}
 {# {% block description %}All posts{% endblock %} #}
 {% block content %}
-  <div class="home flex flex-column padding--top-100 " style="background-image: url('./images/iceberg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-    <div class="home-video flex background-black-light">
+  <div class="home flex flex-column " style="background-image: url('./images/iceberg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div class="home-video flex background-black-light margin--top-100">
       <div class="home-video--link flex align-items-center justify-content-center"><p class="font-white font-12 padding--left-24 padding--right-24">Lorem Ipsum is simply dummy text...</p></div>
       <div class="home-video--preview">
       {% set full_address = 'https://www.youtube.com/watch?v=NxVdZNzjbXw' | split('?v=') %}
@@ -20,10 +20,10 @@
           <div class="font-62 font-white">vaš internet marketing</div>
         </div>
 
-        <div class="font-24 font-white margin--top-24">Kreiramo i implementiramo vrhunske online kampanje koje daju rezultat.</div>
+        <div class="home-hero--text font-24 font-white margin--top-24 margin--bottom-100">Kreiramo i implementiramo vrhunske online kampanje koje daju rezultat.</div>
         <button class="button-big flex align-items-center justify-content-center background-blue"><div class="font-white font-14">Kako mi to radimo</div></button>
-        <div class="margin--bottom-bottom flex align-items-center">
-          <span>
+        <div class="home-hero--social margin--top-100 margin--bottom-100 flex align-items-center">
+          <span class="home-hero--social-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="120" height="38" viewBox="0 0 120 38" fill="none">
             <path d="M14.7792 0H15.8463C19.551 0.0781322 23.1953 1.52358 25.8128 4.08241C24.8464 5.03953 23.8598 5.95758 22.9135 6.9147C21.4437 5.62552 19.6718 4.62933 17.7389 4.27774C14.8799 3.69175 11.7993 4.21914 9.40332 5.80132C6.78586 7.46162 5.01404 10.2744 4.63148 13.2825C4.20866 16.2515 5.07444 19.3768 7.06774 21.6817C8.9805 23.928 11.9 25.3344 14.9201 25.432C17.7389 25.5883 20.6786 24.7484 22.7323 22.8341C24.343 21.4864 25.088 19.4354 25.3296 17.443C21.9873 17.443 18.645 17.4625 15.3027 17.443V13.4192H29.3766C30.1014 17.736 29.0544 22.5997 25.6719 25.686C23.4168 27.8737 20.296 29.1628 17.1148 29.4168C14.0342 29.7098 10.853 29.1433 8.11473 27.6979C4.83283 25.9985 2.21536 23.1271 0.926766 19.7479C-0.281295 16.6422 -0.301429 13.1262 0.826094 10.0009C1.85295 7.1491 3.82611 4.62933 6.36304 2.87136C8.79929 1.13292 11.759 0.175797 14.7792 0Z" fill="white"/>
             <path d="M95.5181 1.01514H99.8268V28.9083C98.3973 28.9083 96.9476 28.9279 95.5181 28.8888C95.5382 19.6106 95.5181 10.3129 95.5181 1.01514Z" fill="white"/>
@@ -33,7 +33,7 @@
             <path d="M105 12.8132C107.416 10.6255 111.141 9.88324 114.242 11.0357C117.181 12.11 119.054 14.8251 120 17.6183C115.631 19.3763 111.282 21.1147 106.913 22.8727C107.517 23.9861 108.443 25.0018 109.691 25.412C111.443 26.0175 113.537 25.8027 115.007 24.6698C115.591 24.24 116.054 23.6736 116.497 23.1266C117.604 23.8494 118.712 24.5526 119.819 25.2753C118.248 27.5607 115.611 29.1624 112.772 29.4163C109.631 29.7874 106.289 28.6154 104.255 26.2324C100.913 22.4821 101.235 16.1924 105 12.8132ZM107.154 16.4268C106.47 17.3839 106.188 18.5559 106.208 19.7084C109.128 18.5364 112.047 17.3644 114.967 16.1729C114.483 15.079 113.316 14.4149 112.128 14.2391C110.215 13.907 108.222 14.9032 107.154 16.4268Z" fill="white"/>
           </svg>
           </span>
-          <span>
+          <span class="home-hero--social-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="146" height="28" viewBox="0 0 146 28" fill="none">
               <path d="M11.3844 4.37432C9.66716 4.37432 9.17956 5.12959 9.17956 6.78697V9.53528H13.7799L13.3241 13.9829H9.17956V27.4728H3.68879V13.9829H0V9.53528H3.68879V6.8604C3.68879 2.37078 5.52258 9.34871e-05 10.6 9.34871e-05C11.6629 -0.00277316 12.725 0.060289 13.7799 0.188909V4.38481L11.3844 4.37432Z" fill="white"/>
               <path d="M14.1284 17.9375C14.1284 12.9233 16.524 9.15753 21.5484 9.15753C22.6377 9.09616 23.7201 9.36436 24.6517 9.92649C25.5833 10.4886 26.3199 11.318 26.7636 12.3045V9.53516H32.0636V27.4726H26.7636V24.7558C26.3186 25.7369 25.5797 26.559 24.6468 27.1107C23.714 27.6623 22.6323 27.9168 21.5484 27.8398C16.524 27.8398 14.1284 24.074 14.1284 19.0703V17.9375ZM19.6086 19.1438C19.6086 21.8187 20.5944 23.5914 23.149 23.5914C25.3962 23.5914 26.541 21.9655 26.541 19.3955V17.5913C26.541 15.0318 25.3962 13.3954 23.149 13.3954C20.5944 13.3954 19.6086 15.1682 19.6086 17.843V19.1438Z" fill="white"/>
