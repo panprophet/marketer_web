@@ -87,6 +87,14 @@
 .text-right {
   text-align: right;
 }
+.line-big {
+  height: 0.375rem;
+  width: 12.063rem;
+}
+.line-small {
+  height: 0.375rem;
+  width: 4.688rem;
+}
 @media screen and (max-width: 1024px) {
   .font-24 {
     font-size: 1.25rem;
