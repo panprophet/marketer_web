@@ -13,9 +13,3 @@
 .button-border-blue {
   border: 1px solid #00AEEF;
 }
-@media screen and (max-width: 480px) {
-  .button-midd {
-    height: 2.313rem;
-    width: 6.375rem;
-  }
-}
