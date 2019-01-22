@@ -8,7 +8,9 @@
         <div class="font-46 font-white margin--bottom-24">{{item.Naslov}}</div>
         <div class="font-16 font-white text-center margin--bottom-2_5-per">{{item.Text}}</div>
         <div class="line-small background-blue text-center margin--bottom-3-per"></div>
-        <button class="button-midd background-blue font-white font-14 margin--bottom-4-per">VIŠE</button>
+        <a class="margin--bottom-4-per" href="project/{{item.Slug}}">
+            <button class="button-midd background-blue font-white font-14">VIŠE</button>
+        </a>
         <div class="flex justify-content-center align-items-center margin--bottom-10-per">
             {% if item.Google == 'true' %}
                 <img class="portfolio-icon" src="images/google-icon.svg">
