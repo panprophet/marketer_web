@@ -616,6 +616,7 @@ a:active {
   position: fixed;
   top: 4.6875rem;
   left: 0px;
+  z-index: 9999999;
 }
 .mobile-inner {
   position: relative;
