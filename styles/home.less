@@ -4,23 +4,49 @@
   width: 100%;
   position: relative;
   &-video {
-    height: 95px;
-    width: 290px;
+    min-height: 95px;
+    // width: 16.4063vw;
+    width: 320px;
     position: relative;
     &--preview{
-      height: 100%;
+      min-height: 100%;
+      min-width: 35%;
       &-image {
         height: 100%;
       }
     }
   }
+  &-line {
+    display: none;
+  }
   &-hero {
     &--text {
-      width: 50%;
+      width: 35%;
     }
     &--social {
       &-link {
 
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px){
+  .home {
+    &-hero {
+      &--text {
+        width: 45%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+  .home {
+    &-line {
+      display: flex;
+    }
+    &-hero {
+      &--text {
+        width: 45%;
       }
     }
   }

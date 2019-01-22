@@ -4,16 +4,33 @@
   position: relative;
 }
 .home-video {
-  height: 95px;
-  width: 290px;
+  min-height: 95px;
+  width: 320px;
   position: relative;
 }
 .home-video--preview {
-  height: 100%;
+  min-height: 100%;
+  min-width: 35%;
 }
 .home-video--preview-image {
   height: 100%;
 }
+.home-line {
+  display: none;
+}
 .home-hero--text {
-  width: 50%;
+  width: 35%;
+}
+@media screen and (max-width: 1440px) {
+  .home-hero--text {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .home-line {
+    display: flex;
+  }
+  .home-hero--text {
+    width: 45%;
+  }
 }
