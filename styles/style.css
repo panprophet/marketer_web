@@ -779,6 +779,9 @@ a:active {
     order: 2;
   }
 }
+.projekti {
+  position: relative;
+}
 .projekti--naslov {
   height: 11vw;
   width: 50%;
@@ -863,9 +866,14 @@ a:active {
   margin-right: 7%;
 }
 .projekti-button {
+  top: 4.6875rem;
   height: 7vw;
+  position: relative;
 }
 @media screen and (max-width: 1024px) {
+  .projekti {
+    top: 4.6875rem;
+  }
   .projekti--naslov {
     justify-content: center;
     width: 100%;
@@ -953,6 +961,7 @@ a:active {
 }
 .kontakt {
   width: 100%;
+  position: relative;
 }
 .kontakt-oglasavanje {
   width: auto;
@@ -965,6 +974,9 @@ a:active {
   width: 25%;
 }
 @media only screen and (max-width: 1024px) {
+  .kontakt {
+    top: 4.6875rem;
+  }
   .kontakt-shared--title p {
     text-align: center;
   }
@@ -1044,9 +1056,12 @@ a:active {
   height: calc(100vh - 4.6875rem);
   width: 100%;
   position: relative;
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .home-video {
-  min-height: 95px;
+  min-height: 8.8vh;
   width: 320px;
   position: relative;
 }
@@ -1065,16 +1080,50 @@ a:active {
 }
 @media screen and (max-width: 1440px) {
   .home-hero--text {
-    width: 45%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 1024px) {
+  .home {
+    top: 4.6875rem;
+  }
   .home-line {
     display: flex;
   }
-  .home-hero--text {
-    width: 45%;
+  .home-hero-cont {
+    align-items: center;
   }
+  .home-hero--title {
+    margin-top: 50px;
+  }
+  .home-hero--title div {
+    text-align: center;
+  }
+  .home-hero--title div div:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+  }
+  .home-hero--title div div:nth-child(2) {
+    display: none;
+  }
+  .home-hero--text {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .home-hero--social {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .home-video {
+    display: none;
+  }
+}
+.gallery-blog {
+  position: relative;
 }
 .gallery-blog-big-pic {
   height: 31.3vw;
@@ -1154,6 +1203,9 @@ a:active {
   }
 }
 @media screen and (max-width: 1024px) {
+  .gallery-blog {
+    top: 4.6875rem;
+  }
   .gallery-blog-big {
     align-items: center;
   }
@@ -1223,6 +1275,7 @@ a:active {
 .klijenti {
   min-height: 38.75rem;
   background-color: #212224;
+  position: relative;
 }
 .klijenti--part-logo {
   height: 12.5rem;
@@ -1232,6 +1285,8 @@ a:active {
   .klijenti {
     min-height: 38.75rem;
     background-color: #212224;
+    top: 4.6875rem;
+    top: ;
   }
   .klijenti--part {
     align-items: center;

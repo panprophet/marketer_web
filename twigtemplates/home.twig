@@ -1,19 +1,18 @@
 {% extends "base.twig" %}
 {# {% block description %}All posts{% endblock %} #}
 {% block content %}
-  <div class="home flex flex-column " style="background-image: url('./images/iceberg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-    <div class="home-video flex background-black-light margin--top-100">
-      <div class="home-video--description flex align-items-center justify-content-center"><p class="font-white font-12 padding--left-24 padding--right-24">Lorem Ipsum is simply dummy text...</p></div>
-      {% set full_address = 'https://www.youtube.com/watch?v=NxVdZNzjbXw' | split('?v=') %}
-      {% set adress = full_address[1] %}
-      <div class="home-video--preview" style="background-image: url('https://img.youtube.com/vi/{{ adress }}/default.jpg');background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div class="home flex flex-column " style="background-image: url('./images/iceberg.png');">
 
-      {# <img class="home-video--preview-image" src="https://img.youtube.com/vi/{{ adress }}/default.jpg" > #}
-      </div>
-    </div>
     <div class="home-hero margin--top-100">
+      <div class="home-video flex background-black-light">
+        <div class="home-video--description flex align-items-center justify-content-center"><p class="font-white font-12 padding--left-24 padding--right-24">Lorem Ipsum is simply dummy text...</p></div>
+        {% set full_address = 'https://www.youtube.com/watch?v=NxVdZNzjbXw' | split('?v=') %}
+        {% set adress = full_address[1] %}
+        <div class="home-video--preview" style="background-image: url('https://img.youtube.com/vi/{{ adress }}/default.jpg');background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+      </div>
+      <div class="home-hero-cont flex flex-column margin--top-100 padding--left-180 padding--right-180">
       <div class="home-line line-big background-blue"></div>
-      <div class="flex flex-column padding--left-180">
+
         <div class="home-hero--title">
           <div class="flex align-items-center">
             <div class="font-64 font-white margin--right-24">Unapredite</div><div class="line-big background-blue"></div>
@@ -51,5 +50,7 @@
     </div>
   </div>
   {{ include('projekti.twig') }}
+  {{ include('klijenti.twig') }}
+  {{ include('blog-gallery.twig') }}
   {{ include('contact_shared.twig') }}
 {% endblock %}

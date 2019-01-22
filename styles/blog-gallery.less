@@ -1,6 +1,7 @@
 @import 'variables';
 
 .gallery-blog{
+    position: relative;
     &-big{
         &-pic{
             height: 31.3vw;
@@ -56,9 +57,9 @@
                 background-size: cover;
                 position: relative;
                 &-text{
-                    background: linear-gradient(179.85deg, rgba(28, 28, 30, 0) 0.12%, @black-light 99.88%); 
-                    height:101%; 
-                    width:101%; 
+                    background: linear-gradient(179.85deg, rgba(28, 28, 30, 0) 0.12%, @black-light 99.88%);
+                    height:101%;
+                    width:101%;
                     position:absolute;
                     &-title{
                         overflow: hidden;
@@ -94,6 +95,7 @@
 }
 @media screen and (max-width: 1024px){
     .gallery-blog{
+        top: 4.6875rem;
         &-big{
             align-items: center;
             &-txt{

@@ -1,3 +1,6 @@
+.gallery-blog {
+  position: relative;
+}
 .gallery-blog-big-pic {
   height: 31.3vw;
   width: 56.3vw;
@@ -53,7 +56,7 @@
   position: relative;
 }
 .gallery-blog-small-part-pic-text {
-  background: linear-gradient(179.85deg, rgba(28, 28, 30, 0) 0.12%, #1C1C1E 99.88%);
+  background: linear-gradient(179.85deg, rgba(28, 28, 30, 0) 0.12%, #212224 99.88%);
   height: 101%;
   width: 101%;
   position: absolute;
@@ -76,6 +79,9 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .gallery-blog {
+    top: 4.6875rem;
+  }
   .gallery-blog-big {
     align-items: center;
   }
