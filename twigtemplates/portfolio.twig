@@ -1,9 +1,41 @@
 {% extends 'base.twig' %}
 {% block content %}
+{% set Portfolio = fetch("Portfolio") %}
+
+{% for item in Portfolio %}
+    <div class="portfolio flex flex-column justify-content-center align-items-center" style="background: linear-gradient(0deg, rgba(21, 21, 21, 0.5), rgba(21, 21, 21, 0.5)), url(img/{{item.Slika}});">
+        <div class="portfolio-logo text-center"><img src="img/{{item.Logo}}"></div>
+        <div class="font-16 font-white text-center">{{item.Opis}}</div>
+        <div class="line-small background-blue text-center"></div>
+        <button></button>
+        <div class="flex justify-content-center align-items-center margin--bottom-6-per">
+            {% if item.Google == true %}
+                <img class="portfolio-icon" src="images/google-icon.svg">
+            {% endif %}
+            {% if item.Facebook == true %}
+                <img style="padding-bottom: 0.25rem;" class="portfolio-icon" src="images/facebook-icon.svg">
+            {% endif %}
+            {% if item.Instagram == true %}
+                <img class="portfolio-icon" src="images/instagram-icon.svg">
+            {% endif %}
+            {% if item.Linkedin == true %}
+                <img class="portfolio-icon" src="">
+            {% endif %}
+        </div>
+    </div>
+{% endfor %}
 
 {% include 'projekti.twig' %}
-{% include 'blog-gallery.twig' %}
+
+<div class="background-black-lighter flex flex-column align-items-center">
+    <div class="font-46 font-white text-center margin--top-100 margin--bottom-24">Radite sa nama</div>
+    <div class="font-24 font-grey text-center margin--bottom-24">Imaš projekat na umu</div>
+    <div class="background-blue line-big margin--bottom-48"></div>
+    <button class="button-big background-blue font-white font-14 margin--bottom-100">POZOVI VIŠE</button>
+</div>
+
 {% include 'klijenti.twig' %}
+{% include 'contact_shared.twig' %}
 
 
 {% endblock %}
