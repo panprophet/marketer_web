@@ -206,6 +206,12 @@ a:active {
     line-height: inherit;
   }
 }
+@media screen and (max-width: 480px) {
+  .font-14 {
+    font-size: 0.75rem;
+    line-height: 0.9rem;
+  }
+}
 @media screen and (max-width: 360px) {
   .font-16 {
     font-size: 0.875rem;
@@ -327,6 +333,16 @@ a:active {
 }
 .button-border-blue {
   border: 1px solid #00AEEF;
+}
+@media screen and (max-width: 480px) {
+  .button-big {
+    height: 2.513rem;
+    width: 8.063rem;
+  }
+  .button-midd {
+    height: 2.313rem;
+    width: 6.375rem;
+  }
 }
 .background-black {
   background-color: #000000;
