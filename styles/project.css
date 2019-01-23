@@ -3,12 +3,32 @@
   width: 39.8vw;
 }
 .project--owl {
-  height: 100vh;
+  height: auto;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 .project--owl-img {
-  height: 532px;
-  width: 907px;
+  height: 27.7vw;
+  width: 47.3vw;
+}
+.project-zadatak {
+  width: 60%;
+}
+.project--rezultat-left {
+  width: 40%;
+}
+.project--rezultat-right {
+  width: 60%;
+}
+.project-line {
+  height: 4.5vw;
+  width: 0.063rem;
+  background-color: #FFFFFF;
+}
+.owl-next span {
+  font-size: 36px;
+}
+.owl-prev span {
+  font-size: 36px;
 }
