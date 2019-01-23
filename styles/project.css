@@ -2,6 +2,9 @@
   height: 24.7vw;
   width: 39.8vw;
 }
+.project-width {
+  width: 50%;
+}
 .project--owl {
   height: auto;
   width: 100%;
@@ -21,13 +24,16 @@
 .project--rezultat-right {
   width: 60%;
 }
+.project-30 {
+  width: 30%;
+}
 .project-line {
-  height: 4.5vw;
+  height: 5vw;
   width: 0.063rem;
   background-color: #FFFFFF;
 }
 .project-prev-next {
-  width: 50vw;
+  width: 100%;
   height: 33vw;
 }
 .project-prev-next-text {
@@ -38,4 +44,21 @@
 }
 .owl-prev span {
   font-size: 36px;
+}
+@media screen and (width: 1024px) {
+  .project-center-text {
+    text-align: center;
+  }
+  .project-center-items {
+    align-items: center;
+  }
+  .project-zadatak {
+    width: 100%;
+  }
+  .project--rezultat-left {
+    width: 100%;
+  }
+  .project--rezultat-right {
+    width: 100%;
+  }
 }

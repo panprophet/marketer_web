@@ -25,11 +25,11 @@
     </div>
 
 
-    <div class="project flex">
-        <div class="flex-2 flex flex-column justify-content-center">
-            <div class="font-32 font-grey padding--left-180 padding--right-180 margin--bottom-24">Izazov:</div>
-            <div class="line-big background-blue margin--left-180 margin--bottom-48"></div>
-            <div class="font-16 font-grey--mid padding--left-180 padding--right-180">{{item.Izazov}}</div>
+    <div class="project flex flex-direction--1024-reverse align-items-center">
+        <div class="flex-2 flex flex-column justify-content-center project-center-items">
+            <div class="font-32 font-grey padding--left-180 padding--right-180 margin--bottom-24 project-center-text">Izazov:</div>
+            <div class="line-big background-blue margin--left-180 margin--right-180 margin--bottom-48"></div>
+            <div class="font-16 font-grey--mid padding--left-180 padding--right-180 project-center-text">{{item.Izazov}}</div>
         </div>
         <div class="flex-2 margin--bottom-100 margin--top-100">
             <img class="project-img" src="img/{{item.IzazovSlika}}">
@@ -37,7 +37,7 @@
     </div>
 
 
-    <div class="background-black-lighter flex">
+    <div class="background-black-lighter flex align-items-center flex-direction--1024">
         <div style="position: relative; width:60%">
             <div class="owl-carousel owl-theme project--owl">
             {% set SlikeZadataka = fetch("SlikeZadataka", {parent_id: item.id}) %}
@@ -48,63 +48,58 @@
             </div>
         </div>
         
-        <div class="project--rezultat-left flex flex-column justify-content-center">
-            <div class="font-32 font-white margin--bottom-24">Zadatak</div>
+        <div class="project--rezultat-left flex flex-column justify-content-center project-center-items">
+            <div class="font-32 font-white margin--bottom-24 project-center-text">Zadatak</div>
             <div class="line-big background-blue margin--bottom-24"></div>
-            
-                <div class="project-zadatak font-16 font-white margin--bottom-24">{{item.Zadatak}}</div>
-            
+            <div class="project-zadatak font-16 font-white margin--bottom-24 project-center-text">{{item.Zadatak}}</div>
         </div>
     </div>
 
-    <div style="min-height: 880px;" class="flex">
-   
-        <div class="project--rezultat-left flex flex-column justify-content-center">
-            <div class="font-32 font-grey margin--bottom-24 margin--left-180">Rezultat</div>
+    <div class="flex align-items-center flex-direction--1024-reverse">
+        <div class="project--rezultat-left flex flex-column justify-content-center project-center-items">
+            <div class="font-32 font-grey margin--bottom-24 margin--left-180 project-center-text">Rezultat</div>
             <div class="line-big background-blue margin--bottom-24 margin--left-180"></div>
-            <div class="font-16 font-grey margin--bottom-24 margin--left-180">{{item.Rezultat}}</div>
+            <div class="font-16 font-grey margin--bottom-24 margin--left-180 project-center-text">{{item.Rezultat}}</div>
         </div>
         <div class="project--rezultat-right"></div>
-   
     </div>
 
-
-        <div class="flex justify-content-between background-black-light padding--top-100 padding--bottom-100 padding--left-180 padding--right-180">
-            <div class="flex align-items-center">
-                <div class="font-64 font-white margin--left-24 margin--right-24">{{item.PosecenostProcenat}}</div>
-                {% if item.PosecenostRast == 'true' %}
-                    <img style="height: 2.5vw" src="images/up.png">
-                {% else %}
-                    <img style="height: 2.5vw" src="images/down.png">
-                {% endif %}
-                <div class="font-16 font-white margin--left-24 margin--right-24">{{item.PosecenostText}}</div>
-            </div>
-            <div class="project-line"></div>
-            <div class="flex align-items-center">
-                <div class="font-64 font-white margin--left-24 margin--right-24">{{item.ShareProcenat}}</div>
-                {% if item.ShareRast == 'true' %}
-                    <img style="height: 2.5vw" src="images/up.png">
-                {% else %}
-                    <img style="height: 2.5vw" src="images/down.png">
-                {% endif %}
-                <div class="font-16 font-white margin--left-24 margin--right-24">{{item.ShareText}}</div>
-            </div>
-            <div class="project-line"></div>
-            <div class="flex align-items-center">
-                <div class="font-64 font-white margin--left-24 margin--right-24">{{item.CTRprocenat}}</div>
-                {% if item.CTRrast == 'true' %}
-                    <img style="height: 2.5vw" src="images/up.png">
-                {% else %}
-                    <img style="height: 2.5vw" src="images/down.png">
-                {% endif %}
-                <div class="font-16 font-white margin--left-24 margin--right-24">{{item.CTRtext}}</div>
-            </div>
+    <div class="flex justify-content-between align-items-center background-black-light padding--top-100 padding--bottom-100 padding--left-90 padding--right-90">
+        <div class="flex align-items-center justify-content-center project-30 margin--right-24">
+            <div class="font-64 font-white margin--right-24">{{item.PosecenostProcenat}}</div>
+            {% if item.PosecenostRast == 'true' %}
+                <img style="height: 2.5vw" src="images/up.png">
+            {% else %}
+                <img style="height: 2.5vw" src="images/down.png">
+            {% endif %}
+            <div class="font-16 font-white margin--left-24">{{item.PosecenostText}}</div>
         </div>
+        <div class="project-line"></div>
+        <div class="flex align-items-center justify-content-center project-30 margin--left-24 margin--right-24">
+            <div class="font-64 font-white margin--right-24">{{item.ShareProcenat}}</div>
+            {% if item.ShareRast == 'true' %}
+                <img style="height: 2.5vw" src="images/up.png">
+            {% else %}
+                <img style="height: 2.5vw" src="images/down.png">
+            {% endif %}
+            <div class="font-16 font-white margin--left-24">{{item.ShareText}}</div>
+        </div>
+        <div class="project-line"></div>
+        <div class="flex align-items-center justify-content-center project-30 margin--left-24">
+            <div class="font-64 font-white margin--right-24">{{item.CTRprocenat}}</div>
+            {% if item.CTRrast == 'true' %}
+                <img style="height: 2.5vw" src="images/up.png">
+            {% else %}
+                <img style="height: 2.5vw" src="images/down.png">
+            {% endif %}
+            <div class="font-16 font-white margin--left-24">{{item.CTRtext}}</div>
+        </div>
+    </div>
 
 {% set prev_proj = fetch ("prev_proj", {id:item.id}) %}
 {% set next_proj = fetch ("next_proj", {id:item.id}) %}
         <div class="flex background-black-lighter">
-            <div class="flex flex-column">
+            <div class="flex flex-column project-width">
                 <a href="project/{{prev_proj.SLug}}">
                     <div class="project-prev-next" style="background-image: url('img/{{ prev_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
                 </a>
@@ -114,7 +109,7 @@
                     <div class="line-big background-blue"></div>
                 </div>
             </div>
-            <div class="flex flex-column">
+            <div class="flex flex-column project-width">
                 <a href="project/{{next_proj.SLug}}">
                     <div class="project-prev-next" style="background-image: url('img/{{ next_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
                 </a>
