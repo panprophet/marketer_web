@@ -6,9 +6,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{% block description %}{% endblock %}"/>
+
+  <link rel="stylesheet" href="owl/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="owl/assets/owl.theme.default.css" />
+
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png">
+  {# <link rel="icon" href="images/favicon.png"> #}
 
 </head>
 <body>
@@ -119,5 +123,20 @@
     </div>
   </footer>
   <script src="./js/menu.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"  crossorigin="anonymous"></script>
+  <script src="owl/owl.carousel.min.js"></script>
+  <script>
+    var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items:1,
+            loop:false,
+            autoplay:false,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            nav:false,
+            dots:true,
+            animateOut: 'fadeOut'
+        });
+  </script>
 </body>
 </html>

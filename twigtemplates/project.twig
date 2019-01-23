@@ -37,6 +37,18 @@
     </div>
 {% endfor %}
 
+    <div class="background-black-lighter flex">
+        <div></div>
+        <div style="position: relative;">
+            <div class="owl-carousel owl-theme project--owl">
+            {% for item in Projekti %}
+                <div class="project--owl-img" style="background-image: url('img/{{ item.Slika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                </div>
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+
 
 {% include 'klijenti.twig' %}
 {% include 'contact_shared.twig' %}
