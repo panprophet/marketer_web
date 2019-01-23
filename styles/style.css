@@ -1344,6 +1344,13 @@ a:active {
   width: 0.063rem;
   background-color: #FFFFFF;
 }
+.project-prev-next {
+  width: 50vw;
+  height: 33vw;
+}
+.project-prev-next-text {
+  width: 40%;
+}
 .owl-next span {
   font-size: 36px;
 }

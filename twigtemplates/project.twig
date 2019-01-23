@@ -100,6 +100,31 @@
                 <div class="font-16 font-white margin--left-24 margin--right-24">{{item.CTRtext}}</div>
             </div>
         </div>
+
+{% set prev_proj = fetch ("prev_proj", {id:item.id}) %}
+{% set next_proj = fetch ("next_proj", {id:item.id}) %}
+        <div class="flex background-black-lighter">
+            <div class="flex flex-column">
+                <a href="project/{{prev_proj.SLug}}">
+                    <div class="project-prev-next" style="background-image: url('img/{{ prev_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+                </a>
+                <div class="flex flex-column margin--left-90 margin--bottom-100 margin--top-48">
+                    <div class="font-32 font-white margin--bottom-24">{{prev_proj.Naziv}}</div>
+                    <div class="project-prev-next-text font-16 font-white margin--bottom-24">{{prev_proj.Opis}}</div>
+                    <div class="line-big background-blue"></div>
+                </div>
+            </div>
+            <div class="flex flex-column">
+                <a href="project/{{next_proj.SLug}}">
+                    <div class="project-prev-next" style="background-image: url('img/{{ next_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+                </a>
+                <div class="flex flex-column margin--left-90 margin--bottom-100 margin--top-48">
+                    <div class="font-32 font-white margin--bottom-24">{{next_proj.Naziv}}</div>
+                    <div class="project-prev-next-text font-16 font-white margin--bottom-24">{{next_proj.Opis}}</div>
+                    <div class="line-big background-blue"></div>
+                </div>
+            </div>
+        </div>
   
 {% include 'klijenti.twig' %}
 {% include 'contact_shared.twig' %}
