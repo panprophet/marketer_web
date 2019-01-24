@@ -1,12 +1,21 @@
 .social {
   min-height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(264deg, #020024 0%, #2c2c7d 47%, #135f6f 100%);
 }
-.social--mid-top {
+.social--mid {
   min-height: 80vh;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+}
+.social--mid-cont {
+  height: 69vh;
+  width: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+}
+.social--bottom {
+  margin-top: -15.125rem;
 }
