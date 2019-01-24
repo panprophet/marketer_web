@@ -1,7 +1,7 @@
 {% extends "base.twig" %}
 {# {% block description %}All posts{% endblock %} #}
 {% block content %}
-  <div class="home flex flex-column " style="background-image: url('./images/iceberg.png');">
+  <div class="home flex flex-column" style="background-image: url('./images/iceberg.png');">
 
     <div class="home-hero margin-xxl--top-100 margin-l--top-50">
       <div class="home-video flex background-black-light">
@@ -10,7 +10,7 @@
         {% set adress = full_address[1] %}
         <div class="home-video--preview" style="background-image: url('https://img.youtube.com/vi/{{ adress }}/default.jpg');background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
       </div>
-      <div class="home-hero-cont flex flex-column margin-xxl--top-100 margin-l--top-50 padding-xxl--left-180 padding-xxl--right-180 padding-xl--left-135 padding-xl--right-135">
+      <div class="home-hero-cont flex flex-column margin-xxl--top-100 margin-l--top-50 padding-xxl--left-180 padding-xl--left-135 padding-xxl--right-180 padding-xl--right-135 padding-s--left-24 padding-s--right-24">
       <div class="home-line line-big background-blue"></div>
 
         <div class="home-hero--title margin-l--top-50 margin-s--top-60 ">
@@ -50,7 +50,7 @@
     </div>
   </div>
   {{ include('projekti.twig') }}
-  {# {{ include('klijenti.twig') }} #}
+  {{ include('klijenti.twig') }}
   {{ include('blog-gallery.twig') }}
   {{ include('contact_shared.twig') }}
 {% endblock %}
