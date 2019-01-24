@@ -2,13 +2,25 @@
   height: 2.813rem;
   width: 12.063rem;
 }
+.button-big:hover {
+  background-color: #000000;
+  border: 1px solid #00AEEF;
+}
 .button-midd {
   height: 2.813rem;
   width: 8.375rem;
 }
+.button-midd:hover {
+  background-color: #000000;
+  border: 1px solid #00AEEF;
+}
 .button-small {
   height: 1.875rem;
   width: 6rem;
+}
+.button-small:hover {
+  background-color: #000000;
+  border: 1px solid #00AEEF;
 }
 .button-border-blue {
   border: 1px solid #00AEEF;

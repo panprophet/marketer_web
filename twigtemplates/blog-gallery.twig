@@ -2,7 +2,7 @@
 {% set Post = fetch("Post") %}
 
     <div class="gallery-blog background-black-light flex flex-column">
-        <div class="gallery-blog-big flex flex-direction--1024 margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18 padding-xxl--top-100 padding-m--top-80 padding-xxl--bottom-24 padding-m--bottom-18">
+        <div class="gallery-blog-big flex flex--1024-direction margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18 padding-xxl--top-100 padding-m--top-80 padding-xxl--bottom-24 padding-m--bottom-18">
 
         {% for item in Post %}
             {% if loop.index < 2 %}
