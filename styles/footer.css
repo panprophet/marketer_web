@@ -1,9 +1,12 @@
+.prazan {
+  min-height: 1.5rem;
+}
 .footer {
-  height: 26.875rem;
+  height: 31.563rem;
   width: 100%;
 }
 .footer-top {
-  height: 9.375rem;
+  height: 11.375rem;
 }
 .footer-bottom {
   height: 14.375rem;
@@ -37,12 +40,14 @@
 @media only screen and (max-width: 1024px) {
   .footer {
     min-height: 45rem;
+    top: 75px;
+    position: relative;
   }
   .footer-top {
     justify-content: center;
   }
   .footer-bottom {
-    height: 35.625rem;
+    height: 33.625rem;
   }
   .footer-bottom--left {
     width: auto;
@@ -66,6 +71,18 @@
   }
   .usluge {
     order: 1;
+    width: auto;
+  }
+  .info {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .footer {
+    height: 43rem;
+  }
+  .footer-bottom {
+    height: 31.625rem;
   }
 }
 @media only screen and (max-width: 600px) {

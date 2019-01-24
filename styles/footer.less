@@ -1,9 +1,12 @@
 @import 'variables';
+.prazan {
+  min-height: 1.5rem;
+}
 .footer {
-  height: 26.875rem;
+  height: 31.563rem;
   width: @w-100;
   &-top {
-    height: 9.375rem;
+    height: 11.375rem;
   }
   &-bottom {
     height: 14.375rem;
@@ -39,11 +42,13 @@
 @media only screen and (max-width: 1024px) {
   .footer {
     min-height: 45rem;
+    top: 75px;
+    position: relative;
     &-top {
       justify-content: center;
     }
     &-bottom {
-      height: 35.625rem;
+      height: 33.625rem;
       &--left {
         width: auto;
         margin-right: 11.25rem;
@@ -68,6 +73,21 @@
   }
   .usluge {
     order: 1;
+    width: auto;
+  }
+  .info {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .footer {
+    height: 43rem;
+    &-top {
+
+    }
+    &-bottom {
+      height: 31.625rem;
+    }
   }
 }
 @media only screen and (max-width: 600px) {

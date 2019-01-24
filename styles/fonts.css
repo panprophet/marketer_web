@@ -78,6 +78,9 @@
 .letter-spacing--0_3 {
   letter-spacing: -0.019rem;
 }
+.letter-spacing--0_4 {
+  letter-spacing: -0.04rem;
+}
 .text-center {
   text-align: center;
 }
