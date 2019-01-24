@@ -9,6 +9,12 @@
 .flex-2 {
   flex: 2;
 }
+.flex-direction {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
 .flex-direction-1024,
 .flex-direction-960,
 .flex-direction-600 {

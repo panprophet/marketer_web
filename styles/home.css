@@ -39,9 +39,6 @@
   .home-hero-cont {
     align-items: center;
   }
-  .home-hero--title {
-    margin-top: 50px;
-  }
   .home-hero--title div {
     text-align: center;
   }
@@ -56,11 +53,6 @@
   .home-hero--text {
     width: 80%;
     text-align: center;
-    margin-bottom: 50px;
-  }
-  .home-hero--social {
-    margin-top: 50px;
-    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 960px) {
