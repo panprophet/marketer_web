@@ -86,9 +86,9 @@
         }
     }
     &-button{
-        top: 4.6875rem;
+        // top: 4.6875rem;
         height: 7vw;
-        position: relative;
+        // position: relative;
     }
 }
 @media screen and (max-width: 1024px){
@@ -132,18 +132,23 @@
                 }
             }
         }
+        &-button{
+            top: 4.6875rem;
+            height: 7vw;
+            position: relative;
+        }
     }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 680px){
     .projekti{
         &--naslov{
-            height: 33vw;
+            height: 24vw;
         }
         &-grid{
             display: grid;
             grid-gap: 0;
             grid-template-columns: 100%;
-            grid-template-rows: 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw;
+            grid-template-rows: 24vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw;
             &-1{
                 grid-column: 1;
                 grid-row: 1;
@@ -186,5 +191,34 @@
             height: 22vw;
             align-items: center;
         }
+    }
+}
+@media screen and (max-width: 360px){
+    .projekti{
+        &--naslov{
+            height: 24vw;
+        }
+        &-grid{
+            display: grid;
+            grid-gap: 0;
+            grid-template-columns: 100%;
+            grid-template-rows: 24vw 33vw 33vw 50vw 33vw 33vw 50vw 33vw 33vw 50vw 33vw 33vw 50vw;
+            &-projekat{
+                &-opis{
+                    height: 50vw;
+                    &-txt{
+                        text-align: center;
+                    }
+                }
+                &-picture{
+                    position: relative;
+                    height: 66vw;
+                    &-hover{
+                        display: none;
+                    }
+                }
+            }
+        }
+
     }
 }

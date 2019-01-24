@@ -302,10 +302,13 @@
     margin-bottom: 13.021vh;
   }
   .margin-l--bottom-70 {
-    margin-bottom: 9.115vh;
+    margin-bottom: 4.375rem;
   }
   .margin-l--bottom-50 {
-    margin-bottom: 6.6vh;
+    margin-bottom: 3.125rem;
+  }
+  .margin-l--bottom-30 {
+    margin-bottom: 1.875rem;
   }
   .margin-l--bottom-24 {
     margin-bottom: 3.125vh;

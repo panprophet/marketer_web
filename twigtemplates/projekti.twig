@@ -3,26 +3,26 @@
 
     <div class="projekti flex flex-wrap">
         <div class="projekti--naslov flex align-items-end">
-            <div class="font-grey font-46 letter-spacing--0_3 margin--bottom-2_5-per margin--left-180-per margin--right-180-per">Projekti</div>
+            <div class="font-grey font-46 letter-spacing--0_3 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60 margin-xxl--bottom-24 margin-m--bottom-18">Projekti</div>
         </div>
         <div style="height: 11vw;"></div>
         <div class="projekti-grid">
             <div class="projekti-grid-1 flex flex-column">
-                <div class="projekti-grid-1-txt font-grey--mid font-24 letter-spacing--0_3 margin--bottom-2_5-per margin--left-180-per margin--right-180-per">Lorem Ipsum is simply dummy text.</div>
-                <div class="line-big background-blue margin--left-180-per margin--right-180-per"></div>
+                <div class="projekti-grid-1-txt font-grey--mid font-24 letter-spacing--0_3 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60 margin-xxl--bottom-24 margin-m--bottom-18">Lorem Ipsum is simply dummy text.</div>
+                <div class="line-big background-blue margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60 margin-xxl--bottom-24 margin-m--bottom-18"></div>
             </div>
         {% for item in Projekti %}
             {% if loop.index < 5 %}
             <div class="projekti-grid-projekat">
                 <div class="projekti-grid-projekat-picture">
-                    <img src="img/{{item.NaslovnaSlika}}">
+                    <a href="project/{{item.Slug}}"><img src="img/{{item.NaslovnaSlika}}"></a>
                     <div class="projekti-grid-projekat-picture-hover flex flex-column justify-content-end align-items-center">
-                        <img class="projekti-grid-projekat-picture-hover-logo" src="img/{{item.Logo}}">
-                        <div class="font-16 font-white margin--bottom-6-per">{{item.Opis}}</div>
-                        <a class="margin--bottom-10-per" href="project/{{item.Slug}}">
+                        <img class="projekti-grid-projekat-picture-hover-logo margin-xxl--bottom-24" src="img/{{item.Logo}}">
+                        <div class="font-16 font-white margin-xxl--bottom-60 margin-l--bottom-30">{{item.Opis}}</div>
+                        <a class="margin-xxl--bottom-100 margin-l--bottom-70 margin-l--bottom-50" href="project/{{item.Slug}}">
                             <button class="button-midd background-white font-blue font-14">VIŠE</button>
                         </a>
-                        <div class="flex justify-content-center align-items-center margin--bottom-6-per">
+                        <div class="flex justify-content-center align-items-center margin-xxl--bottom-48">
                             {% if item.Google == 'true' %}
                                 <img class="projekti-grid-projekat-picture-hover-icon" src="images/google-icon.svg">
                             {% endif %}
@@ -39,8 +39,8 @@
                     </div>
                 </div>
                 <div class="projekti-grid-projekat-opis flex flex-column justify-content-center">
-                    <div class="projekti-grid-projekat-opis-txt font-grey font-32 margin--left-180-per margin--right-180-per margin--bottom-2_5-per">{{item.Naziv}} </div>
-                    <div class="projekti-grid-projekat-opis-txt font-grey--mid font-16 margin--left-180-per margin--right-180-per">{{item.Opis}}</div>
+                    <div class="projekti-grid-projekat-opis-txt font-grey font-32 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60 margin-xxl--bottom-24 margin-m--bottom-18">{{item.Naziv}} </div>
+                    <div class="projekti-grid-projekat-opis-txt font-grey--mid font-16 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60">{{item.Opis}}</div>
                 </div>
             </div>
             {% endif %}
