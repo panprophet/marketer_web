@@ -84,6 +84,9 @@
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .flex-direction--1024-reverse {
+    flex-direction: column-reverse;
+  }
 }
 @media only screen and (max-width: 960px) {
   .flex-direction--960 {
