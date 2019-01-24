@@ -2,30 +2,30 @@
 {% set Post = fetch("Post") %}
 
     <div class="gallery-blog background-black-light flex flex-column">
-        <div class="gallery-blog-big flex flex-direction--1024 padding--left-24 padding--right-24 padding--top-24 padding--bottom-24">
-        
+        <div class="gallery-blog-big flex flex--1024-direction margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18 padding-xxl--top-100 padding-m--top-80 padding-xxl--bottom-24 padding-m--bottom-18">
+
         {% for item in Post %}
             {% if loop.index < 2 %}
             <div class="gallery-blog-big-pic" style="background-image: url('img/{{item.Image}}');"></div>
-            <div class="gallery-blog-big-txt flex flex-1 flex-column padding--left-90 padding--right-90 padding--top-24 padding--bottom-24">
-                <div class="gallery-blog-big-txt-title font-32 font-white margin--bottom-2_5-per ">{{item.Title}}</div>
-                <div class="gallery-blog-big-txt-text font-16 font-white margin--bottom-10-per">{{item.Short | raw }}</div>
+            <div class="gallery-blog-big-txt flex flex-1 flex-column padding-xxl--left-90 padding-xl--left-70 padding-m--left-none padding-xxl--right-90 padding-xl--right-70 padding-m--right-none padding-xxl--top-24 padding-m--top-18 padding-s--top-46 padding-xxl--bottom-24 padding-m--bottom-18">
+                <div class="gallery-blog-big-txt-title font-32 font-white margin-xxl--bottom-2_5-per margin-s--bottom-46">{{item.Title}}</div>
+                <div class="gallery-blog-big-txt-text font-16 font-white margin-xxl--bottom-10-per margin-s--bottom-46">{{item.Short | raw }}</div>
                 <div class="flex">
                     <button class="button-midd button-border-blue background-black-light font-white font-14"> VIŠE</button>
                 </div>
             </div>
             {% endif %}
         {% endfor %}
-        
+
         </div>
-        <div class="gallery-blog-small padding--top-24 padding--bottom-24 padding--left-24 padding--right-24 flex justify-content-between">
+        <div class="gallery-blog-small padding-xxl--top-24 padding-m--top-18 padding-xxl--bottom-24 padding-m--bottom-18 margin-xxl--left-24 margin-m--left-18 margin-xxl--right-24 margin-m--right-18 flex justify-content-between">
         {% for item in Post %}
             {% if loop.index > 1 and loop.index < 6 %}
             <div class="gallery-blog-small-part flex flex-column">
                 <div class="gallery-blog-small-part-pic" style="background-image: url('img/{{item.Image}}');">
                     <div class="gallery-blog-small-part-pic-text flex flex-column justify-content-end">
-                        <div class="gallery-blog-small-part-pic-text-title font-16 font-white margin--left-24 margin--right-24 margin--bottom-vw-3">Images revealed of David Chipperfield Architects "city palace" apartments...</div>
-                        <div class="margin--left-24 margin--right-24 padding--bottom-24 text-center">
+                        <div class="gallery-blog-small-part-pic-text-title font-16 font-white margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18 margin-xxl--bottom-24 margin-m--bottom-18">Images revealed of David Chipperfield Architects "city palace" apartments...</div>
+                        <div class="margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18  padding-xxl--bottom-24 padding-m--bottom-18  text-center">
                             <button class="button-midd button-border-blue background-black-light font-white font-14"> VIŠE</button>
                         </div>
                     </div>
@@ -35,7 +35,6 @@
         {% endfor %}
         </div>
         <div class="flex justify-content-center">
-            <button class="button-midd background-blue font-white font-14 margin--top-48 margin--bottom-48">VIŠE</button>
+            <button class="button-midd background-blue font-white font-14 margin-xxl--top-100 margin-xxl--bottom-100">VIŠE</button>
         </div>
     </div>
-

@@ -131,6 +131,37 @@
     font-size: inherit;
     line-height: inherit;
   }
+  .text--l-center {
+    text-align: center;
+  }
+  .text--l-left {
+    text-align: left;
+  }
+  .text--l-right {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .text--m-center {
+    text-align: center;
+  }
+  .text--m-left {
+    text-align: left;
+  }
+  .text--m-right {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .text--s-center {
+    text-align: center;
+  }
+  .text--s-left {
+    text-align: left;
+  }
+  .text--s-right {
+    text-align: right;
+  }
 }
 @media screen and (max-width: 480px) {
   .font-14 {
