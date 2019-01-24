@@ -84,6 +84,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
   }
+<<<<<<< HEAD
   .flex--1024-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -139,6 +140,10 @@
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+=======
+  .flex-direction--1024-reverse {
+    flex-direction: column-reverse;
+>>>>>>> master
   }
 }
 @media only screen and (max-width: 960px) {

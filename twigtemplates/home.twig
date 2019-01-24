@@ -50,7 +50,13 @@
     </div>
   </div>
   {{ include('projekti.twig') }}
+  <div class="projekti-button flex justify-content-center">
+    <a href="portfolio">
+      <button style="margin: 0;" class="button-midd background-blue font-white font-14">VIŠE</button>
+    </a>
+  </div>
   {{ include('klijenti.twig') }}
+  {# {{ include('klijenti.twig') }} #}
   {{ include('blog-gallery.twig') }}
   {{ include('contact_shared.twig') }}
 {% endblock %}

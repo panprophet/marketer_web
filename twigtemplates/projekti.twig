@@ -15,11 +15,13 @@
             {% if loop.index < 5 %}
             <div class="projekti-grid-projekat">
                 <div class="projekti-grid-projekat-picture">
-                    <img src="img/{{item.Slika}}">
+                    <img src="img/{{item.NaslovnaSlika}}">
                     <div class="projekti-grid-projekat-picture-hover flex flex-column justify-content-end align-items-center">
                         <img class="projekti-grid-projekat-picture-hover-logo" src="img/{{item.Logo}}">
-                        <div class="font-16 font-white margin--bottom-6-per">{{item.Text}}</div>
-                        <button class="button-midd background-white font-blue font-14 margin--bottom-10-per">VIŠE</button>
+                        <div class="font-16 font-white margin--bottom-6-per">{{item.Opis}}</div>
+                        <a class="margin--bottom-10-per" href="project/{{item.Slug}}">
+                            <button class="button-midd background-white font-blue font-14">VIŠE</button>
+                        </a>
                         <div class="flex justify-content-center align-items-center margin--bottom-6-per">
                             {% if item.Google == 'true' %}
                                 <img class="projekti-grid-projekat-picture-hover-icon" src="images/google-icon.svg">
@@ -37,14 +39,12 @@
                     </div>
                 </div>
                 <div class="projekti-grid-projekat-opis flex flex-column justify-content-center">
-                    <div class="projekti-grid-projekat-opis-txt font-grey font-32 margin--left-180-per margin--right-180-per margin--bottom-2_5-per">{{item.Naslov}} </div>
-                    <div class="projekti-grid-projekat-opis-txt font-grey--mid font-16 margin--left-180-per margin--right-180-per">{{item.Text}}</div>
+                    <div class="projekti-grid-projekat-opis-txt font-grey font-32 margin--left-180-per margin--right-180-per margin--bottom-2_5-per">{{item.Naziv}} </div>
+                    <div class="projekti-grid-projekat-opis-txt font-grey--mid font-16 margin--left-180-per margin--right-180-per">{{item.Opis}}</div>
                 </div>
             </div>
             {% endif %}
         {% endfor %}
         </div>
     </div>
-     <div class="projekti-button flex justify-content-center">
-        <button style="margin: 0;" class="button-midd background-blue font-white font-14">VIŠE</button>
-    </div>
+     

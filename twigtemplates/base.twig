@@ -6,21 +6,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{% block description %}{% endblock %}"/>
+
+  <link rel="stylesheet" href="owl/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="owl/assets/owl.theme.default.css" />
+
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png">
+  {# <link rel="icon" href="images/favicon.png"> #}
 
 </head>
 <body>
   <nav class="header flex w-100 align-items-center justify-content-between">
     <div class="header-logo flex align-items-center margin-xxl--left-24 margin-m--left-18">
-      <img src="images/logo.svg"/>
-      <span class="font-24 font-white margin-xxl--left-10">Marketer</span>
+      <a href="home">
+        <img src="images/logo.svg"/>
+        <span class="font-24 font-white margin-xxl--left-10">Marketer</span>
+      </a>
     </div>
     <div class="header-meni flex flex-1 align-items-center justify-content-center">
       <div class="font-14 font-grey">O NAMA</div>
       <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40">USLUGE</div>
-      <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40">PORTFOLIO</div>
+      <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40"><a href="portfolio">PORTFOLIO</a></div>
       <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40">BLOG</div>
       <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40">MARKETER TV</div>
       <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40">DIGITALNI REČNIK</div>
@@ -117,5 +123,20 @@
     </div>
   </footer>
   <script src="./js/menu.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"  crossorigin="anonymous"></script>
+  <script src="owl/owl.carousel.min.js"></script>
+  <script>
+    var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items:1,
+            loop:false,
+            autoplay:false,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            nav:true,
+            dots:true,
+            animateOut: 'fadeOut'
+        });
+  </script>
 </body>
 </html>
