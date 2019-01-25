@@ -40,7 +40,6 @@
 @media only screen and (max-width: 1024px) {
   .footer {
     min-height: 45rem;
-    top: 75px;
     position: relative;
   }
   .footer-top {

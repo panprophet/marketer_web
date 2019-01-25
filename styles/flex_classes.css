@@ -78,197 +78,195 @@
   align-items: flex-end;
 }
 @media only screen and (max-width: 1024px) {
-  .flex--1024-direction {
+  .flex--l-direction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-<<<<<<< HEAD
-  .flex--1024-column {
+  .flex--l-direction-reverse {
+    flex-direction: column-reverse;
+  }
+  .flex--l-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .flex--1024-row {
+  .flex--l-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .align-items--1024-center {
+  .align-items--l-center {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
-  .align-items--1024-start {
+  .align-items--l-start {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
   }
-  .align-items--1024-end {
+  .align-items--l-end {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
   }
-  .justify-content--1024-center {
+  .justify-content--l-center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .justify-content--1024-start {
+  .justify-content--l-start {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
-  .justify-content--1024-end {
+  .justify-content--l-end {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
-  .justify-content--1024-between {
+  .justify-content--l-between {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-  .justify-content--1024-around {
+  .justify-content--l-around {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
-  .justify-content--1024-evenly {
+  .justify-content--l-evenly {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-=======
-  .flex-direction--1024-reverse {
-    flex-direction: column-reverse;
->>>>>>> master
   }
 }
 @media only screen and (max-width: 960px) {
-  .flex--960-direction {
+  .flex--m-direction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .flex--960-column {
+  .flex--m-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .flex--960-row {
+  .flex--m-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .align-items--960-center {
+  .align-items--m-center {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
-  .align-items--960-start {
+  .align-items--m-start {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
   }
-  .align-items--960-end {
+  .align-items--m-end {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
   }
-  .justify-content--960-center {
+  .justify-content--m-center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .justify-content--960-start {
+  .justify-content--m-start {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
-  .justify-content--960-end {
+  .justify-content--m-end {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
-  .justify-content--960-between {
+  .justify-content--m-between {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-  .justify-content--960-around {
+  .justify-content--m-around {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
-  .justify-content--960-evenly {
+  .justify-content--m-evenly {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 }
 @media only screen and (max-width: 600px) {
-  .flex--600-direction {
+  .flex--s-direction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .flex--600-column {
+  .flex--s-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .flex--600-row {
+  .flex--s-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .align-items--600-center {
+  .align-items--s-center {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
-  .align-items--600-start {
+  .align-items--s-start {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
   }
-  .align-items--600-end {
+  .align-items--s-end {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
   }
-  .justify-content--600-center {
+  .justify-content--s-center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .justify-content--600-start {
+  .justify-content--s-start {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
-  .justify-content--600-end {
+  .justify-content--s-end {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
-  .justify-content--600-between {
+  .justify-content--s-between {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-  .justify-content--600-around {
+  .justify-content--s-around {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
-  .justify-content--600-evenly {
+  .justify-content--s-evenly {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
