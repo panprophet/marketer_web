@@ -2186,3 +2186,12 @@ a:active {
 .social--bottom {
   margin-top: -15.125rem;
 }
+.whatdoit--right-image {
+  height: 50%;
+}
+.whatdoit--left-nalog {
+  width: 68%;
+}
+.whatdoit--left-nalog-benefits--col-elem {
+  width: 44%;
+}
