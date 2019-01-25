@@ -19,12 +19,62 @@
 .social--bottom {
   margin-top: -15.125rem;
 }
+.active-link {
+  content: "";
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #00AEEF;
+}
+.whatdoit--right {
+  position: relative;
+}
 .whatdoit--right-image {
-  height: 50%;
+  height: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.whatdoit--left {
+  position: relative;
+}
+.whatdoit--left-menu--item:hover {
+  cursor: pointer;
+  color: #00AEEF;
 }
 .whatdoit--left-nalog {
+  min-width: 100%;
+  position: relative;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.whatdoit--left-nalog-block {
+  width: 68%;
+}
+.whatdoit--left-nalog-benefits {
   width: 68%;
 }
 .whatdoit--left-nalog-benefits--col-elem {
   width: 44%;
+}
+.whatdoit--left-nalog-benefits--col-elem--icon {
+  height: 2.125rem;
+  width: 1.87rem;
+}
+@media only screen and (max-width: 1440px) {
+  .whatdoit--left-nalog-block {
+    width: 76%;
+  }
+  .whatdoit--left-nalog-benefits {
+    width: 76%;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .whatdoit--right {
+    height: 42.5625rem;
+  }
+  .whatdoit--left-nalog-block {
+    width: 100%;
+  }
+  .whatdoit--left-nalog-benefits {
+    width: 100%;
+  }
 }
