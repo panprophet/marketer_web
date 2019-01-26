@@ -67,7 +67,15 @@
     width: 76%;
   }
 }
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1024px) {
+  .social {
+    top: 4.6875rem;
+    position: relative;
+  }
+  .whatdoit {
+    top: 4.6875rem;
+    position: relative;
+  }
   .whatdoit--right {
     height: 42.5625rem;
   }
