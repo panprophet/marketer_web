@@ -1,0 +1,151 @@
+@import 'variables';
+
+.social {
+  min-height: 100vh;
+  background: linear-gradient(264deg, rgba(2,0,36,1) 0%, rgba(44,44,125,1) 47%, rgba(19,95,111,1) 100%);
+  &--top {
+    // height: 19.4375rem;
+  }
+  &--mid {
+      min-height: 100vh;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    &-cont {
+      margin-top: -11rem;
+      width: 60%;
+      height: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 80% 80%;
+    }
+  }
+  &--bottom {
+    margin-top: -15.125rem;
+    &-inside {
+
+    }
+    &-outside {
+
+    }
+  }
+}
+.active {
+  &-link {
+    content: "";
+    padding-bottom: 3rem;
+    border-bottom: 1px solid @blue;
+  }
+}
+.whatdoit {
+  &--right {
+    position: relative;
+    &-image {
+      height: 75%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  &--left {
+    position: relative;
+    &-menu {
+      &--item {
+        &:hover {
+          cursor: pointer;
+          color: @blue;
+        }
+      }
+    }
+    &-nalog {
+      min-width: 100%;
+      position: relative;
+      -webkit-transition: all 0.8s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      &-block {
+        width: 68%;
+      }
+      &-benefits {
+        width: 68%;
+        &--col {
+          &-elem {
+            width: 44%;
+            &--icon {
+              height: 2.125rem;
+              width: 1.87rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.howwhy {
+  background-color: @black-lighter;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: left;
+  min-height: 100vh;
+  &--right {
+    &-how {
+      &--icons {
+        &-icon {
+          flex: 0 50%;
+        }
+      }
+    }
+  }
+}
+.icon {
+  height: 24px;
+  width: 24px;
+}
+@media only screen and (max-width: 1440px) {
+  .whatdoit {
+    &--right {
+      &-image {
+        height: 50%;
+      }
+    }
+    &--left {
+      &-nalog {
+        &-block {
+          width: 76%;
+        }
+        &-benefits {
+          width: 76%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .social {
+    top: 4.6875rem;
+    position: relative;
+    &--bottom {
+      margin-top: 0px;
+    }
+  }
+  .whatdoit {
+    top: 4.6875rem;
+    position: relative;
+    &--right {
+      height: 42.5625rem;
+      &-image {
+        height: 60%;
+      }
+    }
+    &--left {
+      &-nalog {
+        &-block {
+          width: 100%;
+        }
+        &-benefits {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

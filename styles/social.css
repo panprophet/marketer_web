@@ -1,0 +1,112 @@
+.social {
+  min-height: 100vh;
+  background: linear-gradient(264deg, #020024 0%, #2c2c7d 47%, #135f6f 100%);
+}
+.social--mid {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.social--mid-cont {
+  margin-top: -11rem;
+  width: 60%;
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+}
+.social--bottom {
+  margin-top: -15.125rem;
+}
+.active-link {
+  content: "";
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #00AEEF;
+}
+.whatdoit--right {
+  position: relative;
+}
+.whatdoit--right-image {
+  height: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.whatdoit--left {
+  position: relative;
+}
+.whatdoit--left-menu--item:hover {
+  cursor: pointer;
+  color: #00AEEF;
+}
+.whatdoit--left-nalog {
+  min-width: 100%;
+  position: relative;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.whatdoit--left-nalog-block {
+  width: 68%;
+}
+.whatdoit--left-nalog-benefits {
+  width: 68%;
+}
+.whatdoit--left-nalog-benefits--col-elem {
+  width: 44%;
+}
+.whatdoit--left-nalog-benefits--col-elem--icon {
+  height: 2.125rem;
+  width: 1.87rem;
+}
+.howwhy {
+  background-color: #1C1C1E;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: left;
+  min-height: 100vh;
+}
+.howwhy--right-how--icons-icon {
+  flex: 0 50%;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+}
+@media only screen and (max-width: 1440px) {
+  .whatdoit--right-image {
+    height: 50%;
+  }
+  .whatdoit--left-nalog-block {
+    width: 76%;
+  }
+  .whatdoit--left-nalog-benefits {
+    width: 76%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .social {
+    top: 4.6875rem;
+    position: relative;
+  }
+  .social--bottom {
+    margin-top: 0px;
+  }
+  .whatdoit {
+    top: 4.6875rem;
+    position: relative;
+  }
+  .whatdoit--right {
+    height: 42.5625rem;
+  }
+  .whatdoit--right-image {
+    height: 60%;
+  }
+  .whatdoit--left-nalog-block {
+    width: 100%;
+  }
+  .whatdoit--left-nalog-benefits {
+    width: 100%;
+  }
+}
