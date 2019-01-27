@@ -3,15 +3,16 @@
   background: linear-gradient(264deg, #020024 0%, #2c2c7d 47%, #135f6f 100%);
 }
 .social--mid {
-  min-height: 80vh;
+  min-height: 100vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .social--mid-cont {
-  height: 69vh;
+  margin-top: -11rem;
   width: 60%;
+  height: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80% 80%;
@@ -59,7 +60,24 @@
   height: 2.125rem;
   width: 1.87rem;
 }
+.howwhy {
+  background-color: #1C1C1E;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: left;
+  min-height: 100vh;
+}
+.howwhy--right-how--icons-icon {
+  flex: 0 50%;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+}
 @media only screen and (max-width: 1440px) {
+  .whatdoit--right-image {
+    height: 50%;
+  }
   .whatdoit--left-nalog-block {
     width: 76%;
   }
@@ -72,12 +90,18 @@
     top: 4.6875rem;
     position: relative;
   }
+  .social--bottom {
+    margin-top: 0px;
+  }
   .whatdoit {
     top: 4.6875rem;
     position: relative;
   }
   .whatdoit--right {
     height: 42.5625rem;
+  }
+  .whatdoit--right-image {
+    height: 60%;
   }
   .whatdoit--left-nalog-block {
     width: 100%;

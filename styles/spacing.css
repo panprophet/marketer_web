@@ -127,6 +127,9 @@
 .margin-xxl--right-24-per {
   margin-right: 1.25%;
 }
+.margin-xxl--right-18 {
+  margin-right: 1.1125rem;
+}
 .margin-xxl--right-10 {
   margin-right: 0.625rem;
 }
@@ -186,6 +189,9 @@
 }
 .padding-xxl--right-24 {
   padding-right: 1.5rem;
+}
+.padding-xxl--right-18 {
+  padding-right: 1.1125rem;
 }
 .padding-xxl--right-10 {
   padding-right: 0.625rem;
