@@ -1,0 +1,75 @@
+{% extends "base.twig" %}
+{% block description %}All posts{% endblock %}
+{% block content %}
+<div class="usluge w-100" style="background-image: url('./images/sah.jpg')">
+  <div class="usluge--wrap flex align-items-center">
+    <div class="usluge--wrap-left w-50  padding-xxl--left-90  padding-xl--left-70">
+      <div class="font-46 font-white margin-xxl--bottom-24">U čemu smo najbolji</div>
+      <div class="line-big background-blue"></div>
+      <div class="margin-xxl--top-48">
+        <p class="font-18 font-white margin-xxl--bottom-24">Marketer je brzo rastuća agencija za digitalni marketing specijalizovana za Google i Facebook oglašavanje.</p>
+        <p class="font-18 font-white">Mi ne razbacujemo našu energiju i dragocene resurse – radimo ono što volimo i jako smo dobri u tome!</p>
+      </div>
+    </div>
+    <div class="usluge--wrap-right flex justify-content-center w-50">
+      <img src="./images/usluge_skup.svg">
+    </div>
+  </div>
+</div>
+<div class="google w-100" style="background-image: url('./images/google_bck.png')">
+  <div class="google-wrap flex" style="background-image: url('./images/google_oreo.png')">
+    <div class="google-wrap--left flex flex-column justify-content-center padding-xxl--left-90 padding-xl--left-70">
+      <div class="flex align-items-center margin-xxl--bottom-48"><div class="font-46 font-grey margin-xxl--right-24">Google oglašavanje</div><div class="line-small background-blue"></div></div>
+      <div class="font-18 font-grey margin-xxl--bottom-48">Google Ads platforma kreirana je da omogući vašem biznisu da dođe do prave publike - na pravom mestu i u pravo vreme.</br>
+        Mi smo tim sertifikovanih Google stručnjaka spreman da vam pomogne u kreiranju vaše sledeće Google kampanje.
+      </div>
+      <div class="line-small background-grey margin-xxl--bottom-100"></div>
+      <div class="flex align-items-center margin-xxl--bottom-60"><img class="margin-xxl--right-24" src="./images/icons/googleads.svg"><img src="./images/icons/googleanalytics.svg"></div>
+      <button class="button-midd flex align-items-center justify-content-center background-blue"><div class="font-14 font-white">ViŠE</div></button>
+    </div>
+    <div class="google-wrap--right flex align-items-center justify-content-center">
+        <img src="./images/google-left.png">
+    </div>
+  </div>
+</div>
+<div class="drustvene w-100">
+  <div class="drustvene-wrap flex" style="background-image: url('./images/dotted-world.svg')">
+    <div class="drustvene-wrap--left flex align-items-center justify-content-center">
+      <img class="drustvene-wrap--left-cont" src="./images/connected.png"/>
+    </div>
+    <div class="drustvene-wrap--right flex flex-column justify-content-center margin-xxl--right-24 margin-m--right-18">
+      <div class="flex align-items-center margin-xxl--bottom-60">
+        <div class="flex align-items-center font-46 font-white margin-xxl--right-24 margin-m--right-18">Društvene mreže</div><div class="line-big background-blue"></div>
+      </div>
+      <div class="font-16 font-white margin-xxl--bottom-60">Kreiramo relevantan sadržaj i promovišemo ga na najpopularnijim društvenim mrežama sa ciljem širenja svesti o brendu, jačanja veza sa zajednicom, unapređenja korisničkog iskustva, smanjenja marketing troškova, povećanja prodaje…</div>
+      <div class="line-big background-grey margin-xxl--bottom-100"></div>
+      <div class="margin-xxl--bottom-100 flex align-items-center">
+        <div class="flex align-items-center margin-xxl--right-24 margin-m--right-18" style="height: 27px;"><img src="./images/facebook.svg"></div>
+        <div class="flex align-items-center" style="height: 27px;"><img src="./images/instagram.svg"></div>
+      </div>
+      <button class="button-midd flex align-items-center justify-content-center background-blue"><div class="font-14 font-white">ViŠE</div></button>
+    </div>
+  </div>
+</div>
+<div class="vebresejna w-100" style="background-image: url('./images/webresenja.png')">
+  <div class="vebresejna-wrap">
+    <div class="vebresejna-wrap--gradient flex flex-column justify-content-center padding-xxl--left-90 padding-xl--left-70">
+      <div class="flex align-items-center margin-xxl--bottom-60">
+        <div class="flex align-items-center font-46 font-white margin-xxl--right-24 margin-m--right-18">Web rešenja</div><div class="line-small background-blue"></div>
+      </div>
+      <div class="font-16 font-white margin-xxl--bottom-60">
+        <p class="font-16 font-white">Od dizajna i razvoja do digitalnog marketinga.</p>
+        <p class="font-16 font-white">Naš cilj je da kreiramo web rešenja koja će zadovoljiti vaše potrebe.</p>
+      </div>
+      <div class="line-small background-white margin-xxl--bottom-100"></div>
+      <button class="button-midd flex align-items-center justify-content-center background-blue"><div class="font-14 font-white">ViŠE</div></button>
+    </div>
+  </div>
+</div>
+<div class="usluge_mini flex flex-column align-items-center justify-content-center">
+  <div class="font-24 font-grey margin-xxl--top-100 w-75 text-center">Marketer je brzo rastuća agencija za digitalni marketing specijalizovana za Google i Facebook oglašavanje.</div>
+  <div class="font-16 font-grey--mid margin-xxl--bottom-100 margin-xxl--top-48 text-center">Mi ne razbacujemo našu energiju i dragocene resurse – radimo ono što volimo i jako smo dobri u tome!</div>
+</div>
+{{ include('blog-gallery.twig') }}
+{{ include('contact_shared.twig') }}
+{% endblock %}

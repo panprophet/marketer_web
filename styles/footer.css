@@ -25,16 +25,16 @@
 .footer-bottom--right-col {
   width: 50%;
 }
-.info {
+.info_menu {
   order: 1;
 }
-.address {
+.address_menu {
   order: 2;
 }
-.menu {
+.menu_menu {
   order: 1;
 }
-.usluge {
+.usluge_menu {
   order: 2;
 }
 @media only screen and (max-width: 1024px) {
@@ -66,14 +66,14 @@
   .footer-bottom--right-col {
     width: 140px;
   }
-  .menu {
+  .menu_menu {
     order: 2;
   }
-  .usluge {
+  .usluge_menu {
     order: 1;
     width: auto;
   }
-  .info {
+  .info_menu {
     width: auto;
   }
 }
@@ -126,16 +126,16 @@
   .footer-bottom--right-col div a {
     text-align: center;
   }
-  .info {
+  .info_menu {
     order: 1;
   }
-  .address {
+  .address_menu {
     order: 2;
   }
-  .menu {
+  .menu_menu {
     order: 1;
   }
-  .usluge {
+  .usluge_menu {
     order: 2;
   }
 }
