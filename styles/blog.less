@@ -1,0 +1,26 @@
+@import 'variables';
+
+.blog{
+    &--part{
+        width: 23.5%;
+        height: 24vw;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 1.5%;
+        &-grad{
+            background: linear-gradient(179.85deg, rgba(28, 28, 30, 0) 0.12%, @black-light 99.88%);
+            height:100%;
+            width:100%;
+            position:absolute;
+            &-text{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}
