@@ -16,12 +16,16 @@
         }
     }
     &--misija{
-        height: 42vw;
+        min-height: 42vw; // ovo sam ja dodao da bi se strecovao ovaj kontejner koji sam radio, ti posle resi ovo kako god hoces
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: linear-gradient(294.44deg, rgba(47, 50, 129, 0) 44.35%, rgba(47, 95, 129, 0.5) 75.58%), linear-gradient(246.15deg, rgba(28, 28, 30, 0) 21.19%, #1C1C1E 85.98%), linear-gradient(300.79deg, rgba(47, 50, 129, 0) 44.35%, rgba(47, 95, 129, 0.8) 75.58%), url(../images/vizije-i-misije.jpg);
-        
+        &-info {
+            position: relative;
+            -webkit-transition: all 0.6s ease-in-out;
+            transition: all 0.6s ease-in-out;
+        }
     }
     &--vrednosti{
         width: 33%;
