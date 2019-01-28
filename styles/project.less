@@ -8,6 +8,10 @@
     &-width{
         width: 50%;
     }
+    &-slide{
+        position: relative;
+        width: 60%;
+    }
     &--owl{
         height: auto;
         width: 100%;
@@ -18,8 +22,14 @@
             width: 47.3vw;
         }
     }
-    &-zadatak{
-        width: 60%;
+    &--zadatak{
+        min-height: 43vw;
+        &-left{
+            width: 40%;
+            &-text{
+                width: 60%;
+            }
+        }
     }
     &--rezultat{
         &-left{
@@ -27,6 +37,18 @@
         }
         &-right{
             width: 60%;
+            height: 51vw;
+            position: relative;
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
         }
     }
     &-30{
@@ -55,7 +77,16 @@
         font-size: 36px;
     }
 }
-@media screen and (width: 1024px){
+@media screen and (max-width: 1440px){
+    .project{
+        &-prev-next{
+            &-text{
+                width: 60%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
     .project{
         &-center{
             &-text{
@@ -65,16 +96,80 @@
                 align-items: center
             }
         }
-        &-zadatak{
-            width: 100%;
+        &-izazov{
+            &-text{
+                width: 50%;
+            }
+        }
+        &--zadatak{
+            &-left{
+                width: 100%;
+                &-text{
+                    width: 50%;
+                }
+            }
         }
         &--rezultat{
             &-left{
                 width: 100%;
+                &-text{
+                    width: 60%;
+                }
             }
             &-right{
                 width: 100%;
             }
         }
+        &-line{
+            width: 4.625rem;
+            height: 0.063rem;
+        }
+    }
+}
+@media screen and (max-width: 960px){
+    .project{
+        &-img{
+            height: 42vw;
+            width: 79vw;
+        }
+        &-slide{
+            width: 100%;
+        }
+        &--owl{
+            &-img{
+                height: 42vw;
+                width: 79vw;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .project{
+        &-width{
+            width: 100%;
+        }
+        &-izazov{
+            &-text{
+                width: auto;
+            }
+        }
+        &--zadatak{
+            &-left{
+                &-text{
+                    width: auto
+                }
+            }
+        }
+        &--rezultat{
+            &-left{
+                &-text{
+                    width: auto;
+                }
+            }
+        }
+        &-prev-next{
+            height: 66vw;
+        }
+        
     }
 }

@@ -4,16 +4,16 @@
 {% set item = fetch("Projekti", {"id": _GET['1']})[0] %}
 
 
-    <div class="portfolio flex flex-column justify-content-end align-items-center" style="background: linear-gradient(0deg, rgba(21, 21, 21, 0.5), rgba(21, 21, 21, 0.5)), url(img/{{item.NaslovnaSlika}});">
-        <div class="font-46 font-white margin--bottom-24">{{item.Naziv}}</div>
-        <div class="font-16 font-white text-center margin--bottom-2_5-per">{{item.Opis}}</div>
-        <div class="line-small background-blue text-center margin--bottom-3-per"></div>
-        <div class="flex justify-content-center align-items-center margin--bottom-10-per">
+    <div class="position portfolio flex flex-column justify-content-end align-items-center" style="background: linear-gradient(0deg, rgba(21, 21, 21, 0.5), rgba(21, 21, 21, 0.5)), url(img/{{item.NaslovnaSlika}});">
+        <div class="font-46 font-white margin-xxl--bottom-24">{{item.Naziv}}</div>
+        <div class="font-16 font-white text-center margin-xxl--bottom-48 margin-m--bottom-24 margin-xxl--left-24 margin-xxl--right-24">{{item.Opis}}</div>
+        <div class="line-small background-blue text-center margin-xxl--bottom-60 margin-m--bottom-24"></div>
+        <div class="flex justify-content-center align-items-center margin-xxl--bottom-100 margin-l--bottom-50 margin-s--bottom-24">
             {% if item.Google == 'true' %}
                 <img class="portfolio-icon" src="images/google-icon.svg">
             {% endif %}
             {% if item.Facebook == 'true' %}
-                <img style="padding-bottom: 0.85rem;" class="portfolio-icon" src="images/facebook-icon.svg">
+                <img class="portfolio-icon face" src="images/facebook-icon.svg">
             {% endif %}
             {% if item.Instagram == 'true' %}
                 <img class="portfolio-icon" src="images/instagram-icon.svg">
@@ -25,87 +25,91 @@
     </div>
 
 
-    <div class="project flex flex-direction--1024-reverse align-items-center">
-        <div class="flex-2 flex flex-column justify-content-center project-center-items">
-            <div class="font-32 font-grey padding--left-180 padding--right-180 margin--bottom-24 project-center-text">Izazov:</div>
-            <div class="line-big background-blue margin--left-180 margin--right-180 margin--bottom-48"></div>
-            <div class="font-16 font-grey--mid padding--left-180 padding--right-180 project-center-text">{{item.Izazov}}</div>
+    <div class="position project flex flex--l-direction-reverse align-items-center">
+        <div class="flex-2 flex flex-column justify-content-center align-items--l-center">
+            <div class="font-32 font-grey padding-xxl--left-180 padding-xl--left-135 padding-l--left-100 padding-s--left-36 padding-xxl--right-180 padding-xl--right-135 padding-l--right-100 padding-s--right-36 margin-xxl--bottom-24">Izazov:</div>
+            <div class="line-big background-blue margin-xxl--left-180 margin-xl--left-135 margin-l--left-100 margin-s--left-36 margin-xxl--right-180 margin-xl--right-135 margin-l--right-100 margin-s--right-36 margin-xxl--bottom-48"></div>
+            <div class="project-izazov-text font-16 font-grey--mid padding-xxl--left-180 padding-xl--left-135 padding-l--left-100 padding-s--left-36 padding-xxl--right-180 padding-xl--right-135 padding-l--right-100 padding-s--right-36 margin-xxl--bottom-48 text--l-center">{{item.Izazov}}</div>
         </div>
-        <div class="flex-2 margin--bottom-100 margin--top-100">
+        <div class="flex-2 margin-xxl--bottom-100 margin-xxl--top-100">
             <img class="project-img" src="img/{{item.IzazovSlika}}">
         </div>
     </div>
 
 
-    <div class="background-black-lighter flex align-items-center flex-direction--1024">
-        <div style="position: relative; width:60%">
+    <div class="position project-zadatak background-black-lighter flex flex--l-direction align-items-center">
+        <div class="project-slide">
             <div class="owl-carousel owl-theme project--owl">
             {% set SlikeZadataka = fetch("SlikeZadataka", {parent_id: item.id}) %}
             {% for slike in SlikeZadataka %}
-                <div class="project--owl-img margin--top-100 margin--bottom-48 margin--left-180-per" style="background-image: url('img/{{ slike.Slika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                <div class="project--owl-img margin-xxl--top-100 margin-xxl--bottom-48 margin-xxl--left-180-per" style="background-image: url('img/{{ slike.Slika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
                 </div>
             {% endfor %}
             </div>
         </div>
         
-        <div class="project--rezultat-left flex flex-column justify-content-center project-center-items">
-            <div class="font-32 font-white margin--bottom-24 project-center-text">Zadatak</div>
-            <div class="line-big background-blue margin--bottom-24"></div>
-            <div class="project-zadatak font-16 font-white margin--bottom-24 project-center-text">{{item.Zadatak}}</div>
+        <div class="project--zadatak-left flex flex-column align-items--l-center justify-content-center margin-xxl--top-48 margin-xxl--bottom-48">
+            <div class="font-32 font-white margin-xxl--bottom-24">Zadatak</div>
+            <div class="line-big background-blue margin-xxl--bottom-48"></div>
+            <div class="project--zadatak-left-text font-16 font-white margin-xxl--bottom-24 padding-s--left-36 padding-s--right-36 text--l-center">{{item.Zadatak}}</div>
         </div>
     </div>
 
-    <div class="flex align-items-center flex-direction--1024-reverse">
-        <div class="project--rezultat-left flex flex-column justify-content-center project-center-items">
-            <div class="font-32 font-grey margin--bottom-24 margin--left-180 project-center-text">Rezultat</div>
-            <div class="line-big background-blue margin--bottom-24 margin--left-180"></div>
-            <div class="font-16 font-grey margin--bottom-24 margin--left-180 project-center-text">{{item.Rezultat}}</div>
+    <div class="position flex align-items-center flex--l-direction-reverse">
+        <div class="project--rezultat-left flex flex-column align-items--l-center justify-content-center margin-xxl--top-48 margin-xxl--bottom-48">
+            <div class="font-32 font-grey padding-xxl--left-180 padding-xl--left-135 padding-l--left-none margin-xxl--bottom-24">Rezultat</div>
+            <div class="line-big background-blue margin-xxl--left-180 margin-xl--left-135 margin-l--left-none margin-xxl--bottom-48"></div>
+            <div class="project--rezultat-left-text font-16 font-grey padding-xxl--left-180 padding-xl--left-135 padding-l--left-none padding-s--left-36 padding-s--right-36 text--l-center">{{item.Rezultat}}</div>
         </div>
-        <div class="project--rezultat-right"></div>
+        <div class="project--rezultat-right">
+            {# <div style="background-image: url('img/{{item.RezultatSlika}}');background-size: cover; background-position: center; background-repeat: no-repeat;"> #}
+            <img src="img/{{item.RezultatSlika}}">
+        </div>
+        </div>
     </div>
 
-    <div class="flex justify-content-between align-items-center background-black-light padding--top-100 padding--bottom-100 padding--left-90 padding--right-90">
-        <div class="flex align-items-center justify-content-center project-30 margin--right-24">
-            <div class="font-64 font-white margin--right-24">{{item.PosecenostProcenat}}</div>
+    <div class="position flex flex--l-direction justify-content-between align-items-center background-black-light padding-xxl--top-100 padding-xxl--bottom-100 padding-xxl--left-90 padding-xxl--right-90">
+        <div class="flex flex--l-direction align-items-center justify-content-center project-30 margin-xxl--right-24 margin-l--right-none">
+            <div class="font-64 font-white margin-xxl--right-24 margin-l--right-none margin-l--bottom-24">{{item.PosecenostProcenat}}</div>
             {% if item.PosecenostRast == 'true' %}
-                <img style="height: 2.5vw" src="images/up.png">
+                <img style="height: 3rem" src="images/up.png">
             {% else %}
-                <img style="height: 2.5vw" src="images/down.png">
+                <img style="height: 3rem" src="images/down.png">
             {% endif %}
-            <div class="font-16 font-white margin--left-24">{{item.PosecenostText}}</div>
+            <div class="font-16 font-white margin-xxl--left-24 margin-l--left-none margin-l--top-24 margin-l--bottom-24 text--l-center">{{item.PosecenostText}}</div>
         </div>
-        <div class="project-line"></div>
-        <div class="flex align-items-center justify-content-center project-30 margin--left-24 margin--right-24">
-            <div class="font-64 font-white margin--right-24">{{item.ShareProcenat}}</div>
+        <div class="project-line margin-l--top-24 margin-l--bottom-24"></div>
+        <div class="flex flex--l-direction align-items-center justify-content-center project-30 margin-xxl--left-24 margin-xxl--right-24">
+            <div class="font-64 font-white margin-xxl--right-24 margin-l--right-none margin-l--top-24 margin-l--bottom-24">{{item.ShareProcenat}}</div>
             {% if item.ShareRast == 'true' %}
-                <img style="height: 2.5vw" src="images/up.png">
+                <img style="height: 3rem" src="images/up.png">
             {% else %}
-                <img style="height: 2.5vw" src="images/down.png">
+                <img style="height: 3rem" src="images/down.png">
             {% endif %}
-            <div class="font-16 font-white margin--left-24">{{item.ShareText}}</div>
+            <div class="font-16 font-white margin-xxl--left-24 margin-l--left-none margin-l--top-24 margin-l--bottom-24 text--l-center">{{item.ShareText}}</div>
         </div>
-        <div class="project-line"></div>
-        <div class="flex align-items-center justify-content-center project-30 margin--left-24">
-            <div class="font-64 font-white margin--right-24">{{item.CTRprocenat}}</div>
+        <div class="project-line margin-l--top-24 margin-l--bottom-24"></div>
+        <div class="flex flex--l-direction align-items-center justify-content-center project-30 margin-xxl--left-24 margin-l--left-none">
+            <div class="font-64 font-white margin-xxl--right-24 margin-l--right-none margin-l--top-24 margin-l--bottom-24">{{item.CTRprocenat}}</div>
             {% if item.CTRrast == 'true' %}
-                <img style="height: 2.5vw" src="images/up.png">
+                <img style="height: 3rem" src="images/up.png">
             {% else %}
-                <img style="height: 2.5vw" src="images/down.png">
+                <img style="height: 3rem" src="images/down.png">
             {% endif %}
-            <div class="font-16 font-white margin--left-24">{{item.CTRtext}}</div>
+            <div class="font-16 font-white margin-xxl--left-24 margin-l--left-none margin-l--top-24 margin-l--bottom-24 text--l-center">{{item.CTRtext}}</div>
         </div>
     </div>
 
 {% set prev_proj = fetch ("prev_proj", {id:item.id}) %}
 {% set next_proj = fetch ("next_proj", {id:item.id}) %}
-        <div class="flex background-black-lighter">
+        <div class="position flex background-black-lighter flex--s-direction">
             <div class="flex flex-column project-width">
                 <a href="project/{{prev_proj.Slug}}">
                     <div class="project-prev-next" style="background-image: url('img/{{ prev_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
                 </a>
-                <div class="flex flex-column margin--left-90 margin--bottom-100 margin--top-48">
-                    <div class="font-32 font-white margin--bottom-24">{{prev_proj.Naziv}}</div>
-                    <div class="project-prev-next-text font-16 font-white margin--bottom-24">{{prev_proj.Opis}}</div>
+                <div class="flex flex-column margin-xxl--left-90 margin-xl--left-60 margin-xxl--bottom-100 margin-xxl--top-48">
+                    <div class="font-32 font-white margin-xxl--bottom-24">{{prev_proj.Naziv}}</div>
+                    <div class="project-prev-next-text font-16 font-white margin-xxl--bottom-24">{{prev_proj.Opis}}</div>
                     <div class="line-big background-blue"></div>
                 </div>
             </div>
@@ -113,9 +117,9 @@
                 <a href="project/{{next_proj.Slug}}">
                     <div class="project-prev-next" style="background-image: url('img/{{ next_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
                 </a>
-                <div class="flex flex-column margin--left-90 margin--bottom-100 margin--top-48">
+                <div class="flex flex-column margin-xxl--left-90 margin-xl--left-60 margin-xxl--bottom-100 margin-xxl--top-48">
                     <div class="font-32 font-white margin--bottom-24">{{next_proj.Naziv}}</div>
-                    <div class="project-prev-next-text font-16 font-white margin--bottom-24">{{next_proj.Opis}}</div>
+                    <div class="project-prev-next-text font-16 font-white margin-xxl--bottom-24">{{next_proj.Opis}}</div>
                     <div class="line-big background-blue"></div>
                 </div>
             </div>
