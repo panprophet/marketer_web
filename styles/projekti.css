@@ -111,13 +111,13 @@
     height: 7vw;
     position: relative;
   }
+  .face {
+    padding-bottom: 0.35rem;
+  }
 }
 @media screen and (max-width: 960px) {
   .projekti-grid-projekat-picture-hover {
     display: none;
-  }
-  .face {
-    padding-bottom: 0.35rem;
   }
 }
 @media screen and (max-width: 680px) {

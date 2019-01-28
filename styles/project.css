@@ -5,6 +5,10 @@
 .project-width {
   width: 50%;
 }
+.project-slide {
+  position: relative;
+  width: 60%;
+}
 .project--owl {
   height: auto;
   width: 100%;
@@ -94,7 +98,37 @@
     width: 100%;
   }
   .project-line {
-    width: 5vw;
+    width: 4.625rem;
     height: 0.063rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .project-img {
+    height: 42vw;
+    width: 79vw;
+  }
+  .project-slide {
+    width: 100%;
+  }
+  .project--owl-img {
+    height: 42vw;
+    width: 79vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .project-width {
+    width: 100%;
+  }
+  .project-izazov-text {
+    width: auto;
+  }
+  .project--zadatak-left-text {
+    width: auto;
+  }
+  .project--rezultat-left-text {
+    width: auto;
+  }
+  .project-prev-next {
+    height: 66vw;
   }
 }

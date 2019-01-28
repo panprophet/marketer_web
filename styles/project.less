@@ -8,6 +8,10 @@
     &-width{
         width: 50%;
     }
+    &-slide{
+        position: relative;
+        width: 60%;
+    }
     &--owl{
         height: auto;
         width: 100%;
@@ -117,8 +121,55 @@
             }
         }
         &-line{
-            width: 5vw;
+            width: 4.625rem;
             height: 0.063rem;
         }
+    }
+}
+@media screen and (max-width: 960px){
+    .project{
+        &-img{
+            height: 42vw;
+            width: 79vw;
+        }
+        &-slide{
+            width: 100%;
+        }
+        &--owl{
+            &-img{
+                height: 42vw;
+                width: 79vw;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .project{
+        &-width{
+            width: 100%;
+        }
+        &-izazov{
+            &-text{
+                width: auto;
+            }
+        }
+        &--zadatak{
+            &-left{
+                &-text{
+                    width: auto
+                }
+            }
+        }
+        &--rezultat{
+            &-left{
+                &-text{
+                    width: auto;
+                }
+            }
+        }
+        &-prev-next{
+            height: 66vw;
+        }
+        
     }
 }
