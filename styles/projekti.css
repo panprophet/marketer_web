@@ -3,7 +3,7 @@
 }
 .projekti--naslov {
   height: 11vw;
-  width: 50%;
+  width: 100%;
 }
 .projekti--naslov-linija {
   height: 0.313rem;
@@ -11,34 +11,22 @@
   bottom: -15%;
 }
 .projekti-grid {
-  display: grid;
-  grid-gap: 0;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 11vw 11vw 11vw 11vw 11vw 11vw 11vw 11vw 11vw;
+  flex-wrap: wrap;
 }
 .projekti-grid-1 {
-  grid-column: 1;
-  grid-row: 1;
+  height: 11vw;
+  width: 50%;
 }
 .projekti-grid-projekat {
-  grid-column: 1;
-  grid-row: 2;
+  width: 50%;
 }
-.projekti-grid-projekat:nth-child(2) {
-  grid-column: 1;
-  grid-row: 2 / 6;
+.projekti-grid-projekat:nth-of-type(even) {
+  margin-top: -11vw;
 }
-.projekti-grid-projekat:nth-child(3) {
-  grid-column: 2;
-  grid-row: 1 / 5;
-}
-.projekti-grid-projekat:nth-child(4) {
-  grid-column: 1;
-  grid-row: 6 / 10;
-}
-.projekti-grid-projekat:nth-child(5) {
-  grid-column: 2;
-  grid-row: 5 / 9;
+.projekti-grid-projekat:last-of-type:nth-of-type(odd) {
+  position: relative;
+  left: 50%;
+  margin-top: -11vw;
 }
 .projekti-grid-projekat img {
   width: 100%;
@@ -85,9 +73,10 @@
   margin-right: 7%;
 }
 .projekti-button {
-  top: 4.6875rem;
   height: 7vw;
-  position: relative;
+}
+.face {
+  padding-bottom: 0.85rem;
 }
 @media screen and (max-width: 1024px) {
   .projekti {
@@ -97,68 +86,49 @@
     justify-content: center;
     width: 100%;
   }
-  .projekti-grid {
-    grid-template-rows: 11vw 11vw 11vw 11vw 14vw 11vw 11vw 11vw 14vw;
-  }
   .projekti-grid-1 {
-    align-items: center;
-    grid-column: 1 / 3;
+    width: 100%;
   }
   .projekti-grid-1-txt {
     text-align: center;
   }
-  .projekti-grid-projekat {
-    grid-column: 1;
-    grid-row: 2;
+  .projekti-grid-projekat:nth-of-type(even) {
+    margin-top: 0vw;
   }
-  .projekti-grid-projekat:nth-child(3) {
-    grid-column: 2;
-    grid-row: 2 / 6;
-  }
-  .projekti-grid-projekat:nth-child(5) {
-    grid-column: 2;
-    grid-row: 6 / 10;
+  .projekti-grid-projekat:last-of-type:nth-of-type(odd) {
+    position: relative;
+    left: 0%;
+    margin-top: 0vw;
   }
   .projekti-grid-projekat-picture-hover-logo {
     max-width: 13.75rem;
   }
   .projekti-grid-projekat-opis {
-    height: 14vw;
+    height: 15vw;
+  }
+  .projekti-button {
+    top: 4.6875rem;
+    height: 7vw;
+    position: relative;
+  }
+  .face {
+    padding-bottom: 0.35rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
+  .projekti-grid-projekat-picture-hover {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
   .projekti--naslov {
     height: 33vw;
   }
-  .projekti-grid {
-    display: grid;
-    grid-gap: 0;
-    grid-template-columns: 100%;
-    grid-template-rows: 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw;
-  }
   .projekti-grid-1 {
-    grid-column: 1;
-    grid-row: 1;
+    height: 33vw;
   }
   .projekti-grid-projekat {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .projekti-grid-projekat:nth-child(2) {
-    grid-column: 1;
-    grid-row: 2 / 5;
-  }
-  .projekti-grid-projekat:nth-child(3) {
-    grid-column: 1;
-    grid-row: 5 / 8;
-  }
-  .projekti-grid-projekat:nth-child(4) {
-    grid-column: 1;
-    grid-row: 8 / 11;
-  }
-  .projekti-grid-projekat:nth-child(5) {
-    grid-column: 1;
-    grid-row: 11 / 14;
+    width: 100%;
   }
   .projekti-grid-projekat-opis {
     height: 33vw;
@@ -176,5 +146,10 @@
   .projekti-button {
     height: 22vw;
     align-items: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .projekti-grid-projekat-opis {
+    height: 50vw;
   }
 }
