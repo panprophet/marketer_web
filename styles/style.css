@@ -598,7 +598,7 @@ a:active {
   overflow: hidden;
 }
 .margin-xxl--top-100 {
-  margin-top: 9.46vh;
+  margin-top: 6.25rem;
 }
 .margin-xxl--top-100-per {
   margin-top: 15%;
@@ -607,7 +607,7 @@ a:active {
   margin-top: 3.75rem;
 }
 .margin-xxl--top-48 {
-  margin-top: 4.54vh;
+  margin-top: 3rem;
 }
 .margin-xxl--top-48-per {
   margin-top: 6.51%;
@@ -619,7 +619,7 @@ a:active {
   margin-top: 2.5%;
 }
 .margin-xxl--bottom-100 {
-  margin-bottom: 9.46vh;
+  margin-bottom: 6.25rem;
 }
 .margin-xxl--bottom-100-per {
   margin-bottom: 15%;
@@ -733,10 +733,10 @@ a:active {
   margin-right: 0.5208%;
 }
 .padding-xxl--top-100 {
-  padding-top: 9.46vh;
+  padding-top: 6.25rem;
 }
 .padding-xxl--top-48 {
-  padding-top: 4.54vh;
+  padding-top: 3rem;
 }
 .padding-xxl--top-24 {
   padding-top: 1.5rem;
@@ -745,10 +745,10 @@ a:active {
   padding-top: 2.5%;
 }
 .padding-xxl--bottom-100 {
-  padding-bottom: 9.46vh;
+  padding-bottom: 6.25rem;
 }
 .padding-xxl--bottom-48 {
-  padding-bottom: 4.45vh;
+  padding-bottom: 3rem;
 }
 .padding-xxl--bottom-24 {
   padding-bottom: 1.5rem;
@@ -1024,7 +1024,7 @@ a:active {
     padding-top: 6.6vh;
   }
   .padding-l--top-24 {
-    padding-top: 3.125vh;
+    padding-top: 1.5rem;
   }
   .padding-l--top-2_5-per {
     padding-top: 2.5%;
@@ -1036,7 +1036,7 @@ a:active {
     padding-bottom: 6.6vh;
   }
   .padding-l--bottom-24 {
-    padding-bottom: 3.125vh;
+    padding-bottom: 1.5rem;
   }
   .padding-l--bottom-2_5-per {
     padding-bottom: 2.5%;
@@ -1080,7 +1080,7 @@ a:active {
 }
 @media screen and (max-width: 960px) {
   .margin-m--top-100 {
-    margin-top: 12.578vh;
+    margin-top: 6.25rem;
   }
   .margin-m--top-70 {
     margin-top: 8.81vh;
@@ -1095,7 +1095,7 @@ a:active {
     margin-top: 1.5rem;
   }
   .margin-m--bottom-100 {
-    margin-bottom: 12.578vh;
+    margin-bottom: 6.25rem;
   }
   .margin-m--bottom-70 {
     margin-bottom: 8.81vh;
@@ -1122,7 +1122,7 @@ a:active {
     margin-right: 1.125;
   }
   .padding-m--top-100 {
-    padding-top: 12.578vh;
+    padding-top: 6.25rem;
   }
   .padding-m--top-70 {
     padding-top: 8.81vh;
@@ -1134,13 +1134,13 @@ a:active {
     padding-top: 5.786vh;
   }
   .padding-m--top-24 {
-    padding-top: 3.019vh;
+    padding-top: 1.5rem;
   }
   .padding-m--top-18 {
     padding-top: 1.125rem;
   }
   .padding-m--bottom-100 {
-    padding-bottom: 12.578vh;
+    padding-bottom: 6.25rem;
   }
   .padding-m--bottom-70 {
     padding-bottom: 8.81vh;
@@ -1152,7 +1152,7 @@ a:active {
     padding-bottom: 5.786vh;
   }
   .padding-m--bottom-24 {
-    padding-bottom: 3.019vh;
+    padding-bottom: 1.5rem;
   }
   .padding-m--bottom-18 {
     padding-bottom: 1.125rem;
@@ -1161,7 +1161,7 @@ a:active {
     padding-left: 7.375rem;
   }
   .padding-m--left-100 {
-    padding-left: 7.375rem;
+    padding-left: 6.25rem;
   }
   .padding-m--left-90 {
     padding-left: 5.625rem;
@@ -1185,7 +1185,7 @@ a:active {
     padding-right: 7.375rem;
   }
   .padding-m--right-100 {
-    padding-right: 7.375rem;
+    padding-right: 6.25rem;
   }
   .padding-m--right-90 {
     padding-right: 5.625rem;
@@ -1208,7 +1208,7 @@ a:active {
 }
 @media screen and (max-width: 600px) {
   .margin-s--top-100 {
-    margin-top: 11.429vh;
+    margin-top: 6.25rem;
   }
   .margin-s--top-80 {
     margin-top: 9.142vh;
@@ -1220,13 +1220,13 @@ a:active {
     margin-top: 6.6vh;
   }
   .margin-s--top-24 {
-    margin-top: 3.125vh;
+    margin-top: 1.5rem;
   }
   .margin-s--top-22 {
     margin-top: 3.125vh;
   }
   .margin-s--bottom-100 {
-    margin-bottom: 11.429vh;
+    margin-bottom: 6.25rem;
   }
   .margin-s--bottom-80 {
     margin-bottom: 9.142vh;
@@ -1262,7 +1262,7 @@ a:active {
     margin-right: 1.5rem;
   }
   .padding-s--top-100 {
-    padding-top: 11.429vh;
+    padding-top: 6.25rem;
   }
   .padding-s--top-80 {
     padding-top: 9.142vh;
@@ -1274,13 +1274,13 @@ a:active {
     padding-top: 6.6vh;
   }
   .padding-s--top-24 {
-    padding-top: 3.125vh;
+    padding-top: 1.5rem;
   }
   .padding-s--top-22 {
     padding-top: 3.125vh;
   }
   .padding-s--bottom-100 {
-    padding-bottom: 11.429vh;
+    padding-bottom: 6.25rem;
   }
   .padding-s--bottom-80 {
     padding-bottom: 9.142vh;
@@ -1292,7 +1292,7 @@ a:active {
     padding-bottom: 6.6vh;
   }
   .padding-s--bottom-24 {
-    padding-bottom: 3.125vh;
+    padding-bottom: 1.5rem;
   }
   .padding-s--bottom-22 {
     padding-bottom: 3.125vh;
@@ -2107,7 +2107,6 @@ a:active {
     min-height: 38.75rem;
     background-color: #212224;
     top: 4.6875rem;
-    top: ;
   }
   .klijenti--part {
     align-items: center;
