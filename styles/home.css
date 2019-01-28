@@ -37,6 +37,7 @@
 @media screen and (max-width: 1024px) {
   .home {
     top: 4.6875rem;
+    position: relative;
   }
   .home-line {
     display: flex;

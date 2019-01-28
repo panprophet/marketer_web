@@ -78,6 +78,9 @@
   align-items: flex-end;
 }
 @media only screen and (max-width: 1024px) {
+  .flex--l {
+    display: flex;
+  }
   .flex--l-direction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -145,6 +148,9 @@
   }
 }
 @media only screen and (max-width: 960px) {
+  .flex--m {
+    display: flex;
+  }
   .flex--m-direction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -209,6 +215,9 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .flex--s {
+    display: flex;
+  }
   .flex--s-direction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
