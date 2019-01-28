@@ -1,11 +1,12 @@
 function nextTab(event) {
   var tab = event.target.id;
-  var nalog = document.getElementById('nalog');
-  var kampanje = document.getElementById('kampanje');
-  var nalogtab = document.getElementById('nalogtab');
-  var kampanjetab = document.getElementById('kampanjetab');
+  var nalog = document.getElementById('choice1');
+  var kampanje = document.getElementById('choice2');
+  var nalogtab = document.getElementById('tab1');
+  var kampanjetab = document.getElementById('tab2');
+console.log(tab);
 
-  if(tab === 'nalog' && nalog.classList.contains('active-link') === false) {
+  if(tab === 'choice1' && nalog.classList.contains('active-link') === false) {
     nalog.classList.add('active-link');
     kampanje.classList.remove('active-link');
     nalogtab.style.transform = "translateX(0)";
@@ -13,7 +14,7 @@ function nextTab(event) {
     kampanjetab.style.transform = "translateX(0)";
     kampanjetab.style.opacity = "0";
   } else
-  if(tab === 'kampanje' && kampanje.classList.contains('active-link') === false) {
+  if(tab === 'choice2' && kampanje.classList.contains('active-link') === false) {
     kampanje.classList.add('active-link');
     nalog.classList.remove('active-link');
     nalogtab.style.transform = "translateX(-100%)";
