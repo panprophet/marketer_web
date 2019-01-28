@@ -102,12 +102,12 @@
 
 {% set prev_proj = fetch ("prev_proj", {id:item.id}) %}
 {% set next_proj = fetch ("next_proj", {id:item.id}) %}
-        <div class="position flex background-black-lighter flex--s-direction">
+        <div class="position flex background-black-lighter flex--s-direction flex-wrap justify-content-center">
             <div class="flex flex-column project-width">
                 <a href="project/{{prev_proj.Slug}}">
                     <div class="project-prev-next" style="background-image: url('img/{{ prev_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
                 </a>
-                <div class="flex flex-column margin-xxl--left-90 margin-xl--left-60 margin-xxl--bottom-100 margin-xxl--top-48">
+                <div class="flex flex-column margin-xxl--left-90 margin-xl--left-60 margin-xxl--bottom-60 margin-xxl--top-48">
                     <div class="font-32 font-white margin-xxl--bottom-24">{{prev_proj.Naziv}}</div>
                     <div class="project-prev-next-text font-16 font-white margin-xxl--bottom-24">{{prev_proj.Opis}}</div>
                     <div class="line-big background-blue"></div>
@@ -117,10 +117,19 @@
                 <a href="project/{{next_proj.Slug}}">
                     <div class="project-prev-next" style="background-image: url('img/{{ next_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
                 </a>
-                <div class="flex flex-column margin-xxl--left-90 margin-xl--left-60 margin-xxl--bottom-100 margin-xxl--top-48">
+                <div class="flex flex-column margin-xxl--left-90 margin-xl--left-60 margin-xxl--bottom-60 margin-xxl--top-48">
                     <div class="font-32 font-white margin--bottom-24">{{next_proj.Naziv}}</div>
                     <div class="project-prev-next-text font-16 font-white margin-xxl--bottom-24">{{next_proj.Opis}}</div>
                     <div class="line-big background-blue"></div>
+                </div>
+            </div>
+            <div class="flex flex-column align-items-center">
+                <button class="button-midd background-blue font-14 font-white margin-xxl--bottom-48">NAŠE USLUGE</button>
+                <div class="flex margin-xxl--bottom-60">
+                    <img class="margin-xxl--left-24 margin-xxl--right-24" src="images/icons/instagram-small-icon.png">
+                    <img class="margin-xxl--left-24 margin-xxl--right-24" src="images/icons/facebook-small-icon.png">
+                    <img class="margin-xxl--left-24 margin-xxl--right-24" src="images/icons/twitter-small-icon.png">
+                    <img class="margin-xxl--left-24 margin-xxl--right-24" src="images/icons/linkedin-small-icon.png">
                 </div>
             </div>
         </div>
