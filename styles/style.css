@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat');
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -2518,6 +2519,23 @@ a:active {
 }
 .o-nama--poruka-text {
   width: 50%;
+}
+.o-nama--koraci {
+  width: 40%;
+  height: 32.25rem;
+  margin-top: -7.6rem;
+}
+.o-nama--koraci-line {
+  height: 61.863rem;
+  width: 0.063rem;
+}
+.o-nama--koraci-text {
+  font-family: 'Caveat', cursive;
+  font-size: 6rem;
+  line-height: 7.438rem;
+  letter-spacing: -0.02rem;
+  font-weight: bold;
+  transform: rotate(-11.22deg);
 }
 .o-nama--misija {
   min-height: 42vw;
