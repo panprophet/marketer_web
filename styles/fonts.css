@@ -106,6 +106,13 @@
   height: 0.375rem;
   width: 4.688rem;
 }
+.line-marker {
+  height: 0.0625rem;
+  width: 2.25rem;
+}
+.line-marker:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 1024px) {
   .font-24 {
     font-size: 1.25rem;

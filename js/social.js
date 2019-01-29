@@ -1,3 +1,5 @@
+var count = 0;
+
 function nextTab(event) {
   var tab = event.target.id;
   var nalog = document.getElementById('choice1');
@@ -23,3 +25,31 @@ console.log(tab);
     kampanjetab.style.opacity = "1";
   }
 };
+function nextTestemonial(event) {
+  var testcount = document.getElementById('testemonials').children.length;
+
+  if(event === 'prev') {
+    count = count - 1;
+  } else {
+    count += 1;
+  }
+  if(count < 0) {
+    count = 0;
+  }
+  if(count >= testcount) {
+    count = testcount - 1;
+  }
+
+  for(var i = 1; i <= testcount; i++) {
+    trans = -100 * count;
+    document.getElementById("test" + i ).style.transform = "translateX(" + trans + "%)";
+    document.getElementById("test" + i ).style.opacity = "0";
+    if( ( i === count+1) ) {
+      document.getElementById("test" + i ).style.opacity = "1";
+    }
+    if(document.getElementById("active" + i ).classList.contains('active-marker')) {
+      document.getElementById("active" + i ).classList.remove('active-marker');
+    }
+    document.getElementById("active" + (count + 1) ).classList.add('active-marker');
+  }
+}
