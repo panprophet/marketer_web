@@ -19,3 +19,14 @@
 .background-white {
   background-color: #FFFFFF;
 }
+.active-link {
+  content: "";
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #00AEEF;
+}
+.active-marker {
+  background-color: #00AEEF;
+}
+.active-tab {
+  color: #00AEEF;
+}

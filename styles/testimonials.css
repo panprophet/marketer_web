@@ -1,0 +1,14 @@
+.testimonials--inner-mid--single {
+  position: relative;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+  .testimonials {
+    top: 4.6875rem;
+    position: relative;
+  }
+}
