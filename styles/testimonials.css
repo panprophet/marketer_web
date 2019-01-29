@@ -6,3 +6,9 @@
 .arrow:hover {
   cursor: pointer;
 }
+@media only screen and (max-width: 1024px) {
+  .testimonials {
+    top: 4.6875rem;
+    position: relative;
+  }
+}

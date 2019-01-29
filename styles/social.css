@@ -17,17 +17,27 @@
   background-repeat: no-repeat;
   background-size: 80% 80%;
 }
+.social--mid-cont2 {
+  margin-top: -3.5rem;
+  width: 90%;
+}
 .social--bottom {
   margin-top: -15.125rem;
+}
+.social--bottom-inside--info {
+  width: 34.5%;
 }
 .whatdoit--right {
   position: relative;
 }
 .whatdoit--right-image {
-  height: 75%;
+  height: 50%;
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 75% 85%;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 .whatdoit--left {
   position: relative;
@@ -68,6 +78,7 @@
 .icon {
   height: 24px;
   width: 24px;
+  background-repeat: no-repeat;
 }
 @media only screen and (max-width: 1440px) {
   .whatdoit--right-image {
