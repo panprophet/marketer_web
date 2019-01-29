@@ -2,13 +2,16 @@
   background-color: #000000;
 }
 .background-black-light {
-  background-color: #1C1C1E;
+  background-color: #212224;
 }
 .background-black-lighter {
-  background-color: #262626;
+  background-color: #1C1C1E;
 }
 .background-blue {
   background-color: #00AEEF;
+}
+.background-grey {
+  background-color: #4D4D4D;
 }
 .background-grey-lighter {
   background-color: #f8f8f8;

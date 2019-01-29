@@ -1,5 +1,5 @@
 {% extends "base.twig" %}
-{# {% block description %}All posts{% endblock %} #}
+{% block description %}All posts{% endblock %}
 {% block content %}
 
 <div class="social w-100">
@@ -62,18 +62,18 @@
     </div>
   </div>
 </div>
-<div class="whatdoit flex flex--l-column w-100"> 
+<div class="whatdoit flex flex--l-column w-100">
   <div class="whatdoit--left w-50 w--l-100 margin-xxl--top-100 margin-xxl--bottom-100  padding-xxl--left-90 padding-xl--left-70 padding-l--left-none">
     <div class="whatdoit--left-menu flex justify-content--l-center w-100 border--bottom-grey w-50 w--xl-75 w--l-100">
-      <div class="whatdoit--left-menu--item font-24 font-grey--mid margin-xxl--right-100 active-link" id="nalog" onclick="nextTab(event);">Vođenje naloga</div>
-      <div class="whatdoit--left-menu--item font-24 font-grey--mid" id="kampanje" onclick="nextTab(event);">Kampanje</div>
+      <div class="whatdoit--left-menu--item font-24 font-grey--mid margin-xxl--right-100 active-link" id="choice1" onclick="nextTab(event);">Vođenje naloga</div>
+      <div class="whatdoit--left-menu--item font-24 font-grey--mid" id="choice2" onclick="nextTab(event);">Kampanje</div>
     </div>
     <div class="flex overflow-hidden">
-      <div class="whatdoit--left-nalog" id="nalogtab">
+      <div class="whatdoit--left-nalog" id="tab1">
         <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 flex--l flex--l-column align-items--l-center"> <!-- napravi borders, ovde treba bottom -->
           <div class="margin-xxl--bottom-24 font-24 font-weight font-grey text--l-center">Facebook menadžment</div>
           <div class="w--l-50">
-              <p class="font-16 font-grey text--l-center">Fakebook zvezda nastavlja da raste kao moćna društvena mreža sa izuzetno velikom i aktivnom bazom korisnika.</p>
+              <p class="font-16 font-grey text--l-center">Facebook zvezda nastavlja da raste kao moćna društvena mreža sa izuzetno velikom i aktivnom bazom korisnika.</p>
               <p class="font-16 font-grey text--l-center">Međutim, pošto je Facebook stvoren da bude društvena mreža za povezivanje prijatelja, brendovi moraju biti svesni onoga što objavljuju i kako sebe predstavljaju.</p>
           </div>
         </div>
@@ -178,7 +178,7 @@
           </div>
         </div>
       </div>
-      <div class="whatdoit--left-nalog" id="kampanjetab">
+      <div class="whatdoit--left-nalog" id="tab2">
         <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 flex--l flex--l-column align-items--l-center"> <!-- napravi borders, ovde treba bottom -->
           <div class="margin-xxl--bottom-24 font-24 font-weight font-grey text--l-center">Facebook menadžment</div>
           <div class="w--l-50">
@@ -334,12 +334,14 @@
         <p class="font-14 font-white">Imaćete vašeg sopstvenog account menadžera sa kim možete da razgovarate u bilo kom trenutku. Verujte nam, dobićete više!</p>
       </div>
     </div>
-    <div class="howwhy--right-cta margin-xxl--top-60">
-      <div class="howwhy--right-cta--links flex margin-xxl--bottom-60">
-        <div class=""></div><div class=""></div>
-      </div>
-      <div class="howwhy--right-cta--buttons flex">
+    <div class="howwhy--right-cta margin-xxl--top-60 flex align-items-center ">
+      <div class="howwhy--right-cta--links flex flex-column">
+        <div class="flex align-items-center margin-xxl--bottom-60" style="height: 27px;"><img src="./images/facebook.svg"></div>
         <button class="button-big flex align-items-center justify-content-center background-blue margin-xxl--right-24"><div class="font-14 font-white">DRUŠTVENE MREŽE</div></button>
+
+      </div>
+      <div class="howwhy--right-cta--buttons flex flex-column">
+        <div class="flex align-items-center margin-xxl--bottom-60" style="height: 27px;"><img src="./images/instagram.svg"></div>
         <button class="button-big flex align-items-center justify-content-center background-blue"><div class="font-14 font-white">WEB REŠENJA</div></button>
       </div>
     </div>
