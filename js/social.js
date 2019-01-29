@@ -1,16 +1,13 @@
 var count = 0;
-function nextTab(whereto) {
+function nextTabs(whereto) {
   var where = -100 * (whereto - 1);
   var noofitems = document.getElementById('numberofitems').children.length;
 
-  // console.log(whereto, where, noofitems);
-
   for(var i = 1; i <= noofitems; i++) {
-    console.log(document.getElementById("tab" + i));
-
     document.getElementById("tab" + i).style.transform = "translateX(" + where + "%)";
     document.getElementById("tab" + i).style.opacity = "0";
     if(i === whereto) {
+      console.log(i, whereto);
       document.getElementById("tab" + i).style.opacity = "1";
     }
     document.getElementById("rightpic" + i).style.transform = "translateX(" + where + "%)";
@@ -26,34 +23,35 @@ function nextTab(whereto) {
   document.getElementById("choice" + whereto).classList.add('active-link');
   document.getElementById("choice" + whereto).classList.add('active-tab');
 };
-// function nextTab(event) {
-//   var tab = event.target.id;
-//   var nalog = document.getElementById('choice1');
-//   var kampanje = document.getElementById('choice2');
-//   var nalogtab = document.getElementById('tab1');
-//   var kampanjetab = document.getElementById('tab2');
 
-//   if(tab === 'choice1' && nalog.classList.contains('active-link') === false) {
-//     nalog.classList.add('active-link');
-//     nalog.classList.add('active-tab');
-//     kampanje.classList.remove('active-link');
-//     kampanje.classList.remove('active-tab');
-//     nalogtab.style.transform = "translateX(0)";
-//     nalogtab.style.opacity = "1";
-//     kampanjetab.style.transform = "translateX(0)";
-//     kampanjetab.style.opacity = "0";
-//   } else
-//   if(tab === 'choice2' && kampanje.classList.contains('active-link') === false) {
-//     kampanje.classList.add('active-link');
-//     kampanje.classList.add('active-tab');
-//     nalog.classList.remove('active-link');
-//     nalog.classList.remove('active-tab');
-//     nalogtab.style.transform = "translateX(-100%)";
-//     nalogtab.style.opacity = "0";
-//     kampanjetab.style.transform = "translateX(-100%)";
-//     kampanjetab.style.opacity = "1";
-//   }
-// };
+function nextTab(event) {
+  var tab = event.target.id;
+  var nalog = document.getElementById('choice1');
+  var kampanje = document.getElementById('choice2');
+  var nalogtab = document.getElementById('tab1');
+  var kampanjetab = document.getElementById('tab2');
+
+  if(tab === 'choice1' && nalog.classList.contains('active-link') === false) {
+    nalog.classList.add('active-link');
+    nalog.classList.add('active-tab');
+    kampanje.classList.remove('active-link');
+    kampanje.classList.remove('active-tab');
+    nalogtab.style.transform = "translateX(0)";
+    nalogtab.style.opacity = "1";
+    kampanjetab.style.transform = "translateX(0)";
+    kampanjetab.style.opacity = "0";
+  } else
+  if(tab === 'choice2' && kampanje.classList.contains('active-link') === false) {
+    kampanje.classList.add('active-link');
+    kampanje.classList.add('active-tab');
+    nalog.classList.remove('active-link');
+    nalog.classList.remove('active-tab');
+    nalogtab.style.transform = "translateX(-100%)";
+    nalogtab.style.opacity = "0";
+    kampanjetab.style.transform = "translateX(-100%)";
+    kampanjetab.style.opacity = "1";
+  }
+};
 function nextTestemonial(event) {
   var testcount = document.getElementById('testemonials').children.length;
 

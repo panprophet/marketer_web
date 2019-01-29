@@ -41,13 +41,14 @@
   &--right {
     position: relative;
     &-image {
-      height: 50%;
+      height: 100%;
       position: relative;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 75% 85%;
-      -webkit-transition: all 0.6s ease-in-out;
-      transition: all 0.6s ease-in-out;
+      -webkit-transition: opacity 0.9s ease-in;
+      transition: opacity 0.9s ease-in;
+      img {
+        // height: 80%;
+        width: 95%;
+      }
     }
   }
   &--left {
