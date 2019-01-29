@@ -1,6 +1,9 @@
 .overflow-hidden {
   overflow: hidden;
 }
+.margin-xxl--top-200 {
+  margin-top: 12.5rem;
+}
 .margin-xxl--top-100 {
   margin-top: 6.25rem;
 }
@@ -85,6 +88,9 @@
 .margin-xxl--left-60-per {
   margin-left: 3.125%;
 }
+.margin-xxl--left-48 {
+  margin-left: 3rem;
+}
 .margin-xxl--left-24 {
   margin-left: 1.5rem;
 }
@@ -120,6 +126,9 @@
 }
 .margin-xxl--right-60-per {
   margin-right: 3.125%;
+}
+.margin-xxl--right-48 {
+  margin-right: 3rem;
 }
 .margin-xxl--right-24 {
   margin-right: 1.5rem;

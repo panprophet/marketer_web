@@ -1,9 +1,49 @@
 {% extends "base.twig" %}
-{% set slug = _GET['1'] %}
-{% set Post = fetch("Post", {id:slug})[0] %}
-{% block description %}{{Post.Description}}{% endblock %}
+
+{% set Post = fetch("Post", {"id": _GET['1']})[0] %}
+
+{# {% block description %}{{Post.Description}}{% endblock %} #}
 {% block content %}
-	<h5>{{Post.Title}} <tag style="float:right; text-transform: none;">Posted at {{Post.Date}}</tag></h5>
-  {% if Post.Image %} <img src="img/{{Post.Image}}"> {% endif %}
-  <div style="margin-top: 1rem;" >{{Post.Body | raw}} </div>
+	{# <h5>{{Post.Title}} <tag style="float:right; text-transform: none;">Posted at {{Post.Date}}</tag></h5> #}
+  {# {% if Post.Image %} <img src="img/{{Post.Image}}"> {% endif %} #}
+  {# <div style="margin-top: 1rem;" >{{Post.Body | raw}} </div> #}
+
+  <div class="position background-black-lighter flex flex-column justify-content-center align-items-center padding-xxl--top-100 padding-xxl--bottom-100">
+    <div class="post--text font-46 font-white margin-xxl--bottom-60">{{Post.Title}}</div>
+    <div class="post--text font-16 font-white">{{Post.Short}}</div>
+  </div>
+
+  <div class="position background-black-light flex justify-content-center padding-xxl--top-24 padding-xxl--bottom-24">
+    <div class="margin-xxl--left-24 margin-xxl--right-24"><img src="./images/icons/instagram-blue.png"></div>
+    <div class="margin-xxl--left-24 margin-xxl--right-24"><img src="./images/icons/facebook-blue.png"></div>
+    <div class="margin-xxl--left-24 margin-xxl--right-24"><img src="./images/icons/twitter-blue.png"></div>
+    <div class="margin-xxl--left-24 margin-xxl--right-24"><img src="./images/icons/linkedin-blue.png"></div>
+  </div>
+
+  <div class="position flex justify-content-center">
+    <div class="post--text font-16 font-grey">{{Post.Body}}</div>
+  </div>
+
+  <div class="background-black-lighter">
+    <div class="flex flex-wrap justify-content-center padding-xxl--bottom-100 padding-xxl--top-100 margin-xxl--left-24 margin-m--left-18 margin-xxl--right-24 margin-m--right-18">
+      {% set Post = fetch("Post") %}
+      {% for item in Post %}
+          {% if loop.index < 4 %}
+          {# <div class="blog--part flex flex-column"> #}
+              <div class="blog--part margin-xxl--top-24 margin-xxl--bottom-24" style="background-image: url('img/{{item.Image}}');">
+                  <div class="blog--part-grad flex flex-column justify-content-end">
+                      <div class="blog--part-grad-text font-16 font-white margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18 margin-xxl--bottom-24 margin-m--bottom-18">Images revealed of David Chipperfield Architects "city palace" apartments...</div>
+                      <div class="margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18  padding-xxl--bottom-24 padding-m--bottom-18  text-center">
+                          <button class="button-midd button-border-blue background-black-light font-white font-14"> VIŠE</button>
+                      </div>
+                  </div>
+              </div>
+          {# </div> #}
+          {% endif %}
+      {% endfor %}
+      </div>
+  </div>
+
+{% include 'contact_shared.twig' %}
+
 {% endblock %}
