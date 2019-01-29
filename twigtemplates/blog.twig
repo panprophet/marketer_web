@@ -12,9 +12,9 @@
             <div class="gallery-blog-big-txt flex flex-1 flex-column padding-xxl--left-90 padding-xl--left-70 padding-m--left-none padding-xxl--right-90 padding-xl--right-70 padding-m--right-none padding-xxl--top-24 padding-m--top-18 padding-s--top-46 padding-xxl--bottom-24 padding-m--bottom-18">
                 <div class="gallery-blog-big-txt-title font-32 font-white margin-xxl--bottom-2_5-per margin-s--bottom-46">{{item.Title}}</div>
                 <div class="gallery-blog-big-txt-text font-16 font-white margin-xxl--bottom-10-per margin-s--bottom-46">{{item.Short | raw }}</div>
-                <div class="flex">
+                <a class="flex" href="post/{{item.Slug}}">
                     <button class="button-midd button-border-blue background-black-light font-white font-14"> VIŠE</button>
-                </div>
+                </a>
             </div>
             {% endif %}
         {% endfor %}
@@ -33,9 +33,9 @@
                 <div class="blog--part margin-xxl--top-24" style="background-image: url('img/{{item.Image}}');">
                     <div class="blog--part-grad flex flex-column justify-content-end">
                         <div class="blog--part-grad-text font-16 font-white margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18 margin-xxl--bottom-24 margin-m--bottom-18">Images revealed of David Chipperfield Architects "city palace" apartments...</div>
-                        <div class="margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18  padding-xxl--bottom-24 padding-m--bottom-18  text-center">
+                        <a class="margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18  padding-xxl--bottom-24 padding-m--bottom-18 text-center" href="post/{{item.Slug}}">
                             <button class="button-midd button-border-blue background-black-light font-white font-14"> VIŠE</button>
-                        </div>
+                        </a>
                     </div>
                 </div>
             {# </div> #}

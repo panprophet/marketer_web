@@ -2644,6 +2644,9 @@ a:active {
 .recnik--blok3-right-text {
   width: 26vw;
 }
+.post--text {
+  width: 43vw;
+}
 @media only screen and (max-width: 1024px) {
   .display--l-none {
     display: none;
