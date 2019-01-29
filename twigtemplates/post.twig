@@ -14,14 +14,30 @@
   </div>
 
   <div class="position background-black-light flex justify-content-center padding-xxl--top-24 padding-xxl--bottom-24">
-    <div class="margin-xxl--left-24 margin-xxl--right-24"><img src="./images/icons/instagram-blue.png"></div>
-    <div class="margin-xxl--left-24 margin-xxl--right-24"><img src="./images/icons/facebook-blue.png"></div>
-    <div class="margin-xxl--left-24 margin-xxl--right-24"><img src="./images/icons/twitter-blue.png"></div>
-    <div class="margin-xxl--left-24 margin-xxl--right-24"><img src="./images/icons/linkedin-blue.png"></div>
+    {# <div class="margin-xxl--left-24 margin-xxl--right-24">
+      <a href="" target="_blank">
+        <img src="./images/icons/instagram-blue.png">
+      <a>
+    </div> #}
+    <div class="margin-xxl--left-24 margin-xxl--right-24">
+      <a href="http://www.facebook.com/sharer.php?u={{post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
+        <img src="./images/icons/facebook-blue.png">
+      </a>
+    </div>
+    <div class="margin-xxl--left-24 margin-xxl--right-24">
+      <a href="https://twitter.com/share?url={{post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
+        <img src="./images/icons/twitter-blue.png">
+      </a>
+    </div>
+    <div class="margin-xxl--left-24 margin-xxl--right-24">
+      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
+        <img src="./images/icons/linkedin-blue.png">
+      <a>
+    </div>
   </div>
 
-  <div class="position flex justify-content-center">
-    <div class="post--text font-16 font-grey">{{Post.Body}}</div>
+  <div class="position flex justify-content-center margin-xxl--top-48 margin-xxl--bottom-48">
+    <div class="post--text font-16 font-grey">{{Post.Body | raw}}</div>
   </div>
 
   <div class="background-black-lighter">
