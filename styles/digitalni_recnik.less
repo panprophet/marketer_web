@@ -1,6 +1,16 @@
 @import 'variables';
 
 .recnik{
+    &--blok1{
+        height: 42vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: linear-gradient(84.23deg, #111111 -3%, rgba(22, 22, 22, 0.93) 28.8%, rgba(30, 30, 30, 0) 53.54%),  url(../images/digitalni-recnik.png);
+        &-text{
+            width: 21.5rem;
+        }
+    }
     &--blok2{
         height: auto;
         &-left{
@@ -33,6 +43,25 @@
             &-big{
                 height: 64.063rem;
                 width: 0.063rem;
+            }
+        }
+    }
+    &--blok3{
+        &-left{
+            width: 40%;
+            &-line{
+                height: 5.125rem;
+                width: 0.063rem;
+                opacity: 0.5;
+            }
+            // .apostrofi{
+                
+            // }
+        }
+        &-right{
+            width: 60%;
+            &-text{
+                width: 26vw;
             }
         }
     }
