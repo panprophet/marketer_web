@@ -1,0 +1,67 @@
+{% extends 'base.twig' %}
+{% block content %}
+
+<div class="recnik--blok2 background-black-light flex padding-xxl--top-100">
+    <div class="recnik--blok2-left margin-xxl--top-100 flex flex-column">
+        <div class="flex justify-content-end text-right margin-xxl--top-200">
+            <div class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/blue1.png"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Relevance Score</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Relevance Score je Facebook metrika koja nam pokazuje koliko je naša kampanja relevanta za publiku kojoj se obraćamo. Sa boljom reakcijom na kampanju Relevance score će biti viši, i obrnuto. Izražava se u brojevima od 1 do 10.</div>
+                <div class="font-16 font-white">Savet: Iako na neki način pokazuje odziv ljudi na određenu kampanju, nije neophodno fokusirati se na postizanje što većeg Relevance score-a sve dok kampanje postižu zadovoljavajući rezultat.</div>
+            </div>
+            <div class="recnik--blok2-line background-blue"></div>
+        </div>
+        <div class="flex justify-content-end text-right">
+            <div class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/blue2.png"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">PPC - Pay Per Click</div>
+                <div class="font-16 font-white">Pay Per Click ili plaćanje po kliku je model oglašavanja koji se koristi za generisanje većeg broja poseta web sajtu, gde će vam određen iznos biti naplaćen svaki put kada neko klikne na vaš oglas. PPC je često i sinonim za oglašavanje na pretraživačima kao što je Google, ali obuhvata i oglašavanje na drugim web sajtovima, portalima, itd.</div>
+            </div>
+            <div class="recnik--blok2-line background-blue"></div>
+        </div>
+        <div class="flex justify-content-end text-right">
+            <div class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/blue3.png"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Bid</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Bid je jednostavno maksimalan iznos koji smo spremni da platimo Google-u za jedan klik na naš oglas. To ne znači da ćete svaki put platiti maksimalan iznos (npr. 0.5 EUR po kliku), već će cenu po kliku Google određivati svaki put iznova, aukcijom u realnom vremenu. Bid ima direktan uticaj na Quality Score i performanse kampanje.</div>
+                <div class="font-16 font-white">Savet: Kada određujete Bid za kampanju, vodite računa da je on dovoljno visok kako bi se vaš oglas prikazivao na prvim pozicijama Google pretrage. Takođe, možete pokušati i sa različitim Bid strategijama, kao što su: maksimiziranje klikova, maksimiziranje konverzija, prva pozicija...</div>
+            </div>
+            <div class="recnik--blok2-line background-blue"></div>
+        </div>
+    </div>
+    <div class="recnik--blok2-line-big background-blue margin-xxl--top-100"></div>
+    <div class="recnik--blok2-right margin-xxl--top-100 flex flex-column">
+        <div class="flex">
+            <div class="recnik--blok2-line background-blue"></div>
+            <div class="recnik--blok2-right-part margin-xxl--left-48">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/blue4.png"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Frequency</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Frekvencija, po definiciji Facebook-a, je broj koji pokazuje koliko je prosečno puta svaka osoba videla vaš oglas. Kako vaša kompanja troši više novca i generiše više impresija, vaša frekvencija će takođe rasti, to je prosta matematika.</div>
+                <div class="font-16 font-white">Savet: Važno je da pratite ovu metriku jer sa rastom frekvencije raste i cena po kliku (CPC), dok CTR opada. Pokušajte da vam Frequency ne prelazi 5 prikaza u proseku.</div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="recnik--blok2-line background-blue"></div>
+            <div class="recnik--blok2-right-part margin-xxl--left-48">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/blue5.png"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Remarketing</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Remarketing je zapravo način da se ponovo povežete sa korisnicima koji su već bili u interakciji sa vašim biznisom. Svakako je jedan od najvažnijih elemenata uspešne online marketing strategije.</div>
+                <div class="font-16 font-white">Savet: Koristite Google Analytics i Facebook Custom Audience kako biste kreirali grupu ljudi koju želite da zadržite i pridobijete kao kupce vaših proizvoda ili usluga.</div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="recnik--blok2-line background-blue"></div>
+            <div class="recnik--blok2-right-part margin-xxl--left-48">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/blue6.png"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Quality Score</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Quality Score je veoma važna Google metrika koja nam pokazuje kvalitet našeg oglasa na pretraživačkoj mreži. Quality Score obuhvata više faktora koji zbirno utiču na njegovo formiranje, od načina na koji je oglas napisan, ključnih reči koje se koriste u kampanji, cene koju ste spremni da platite za svaki klik (Bid) i kvaliteta web stranice koju oglašavate (Landing page).</div>
+                <div class="font-16 font-white">Savet: Kako biste povećali Quality Score vodite računa da sadržaj Landing page-a, odnosno stranice na koju će korisnik doći nakon što klikne na vaš oglas, bude relevantan u odnosu na oglas i ključne reči koje koristite.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'contact_shared.twig' %}
+
+{% endblock %}

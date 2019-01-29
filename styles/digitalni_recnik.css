@@ -1,0 +1,35 @@
+.recnik--blok2 {
+  height: auto;
+}
+.recnik--blok2-left {
+  width: 50%;
+}
+.recnik--blok2-left-part {
+  width: 65%;
+  height: 32.25rem;
+  margin-top: -6.5rem;
+}
+.recnik--blok2-left-part-icon {
+  height: 4.063rem;
+  width: 5.313rem;
+}
+.recnik--blok2-left-part-icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.recnik--blok2-right {
+  width: 50%;
+}
+.recnik--blok2-right-part {
+  width: 65%;
+  margin-top: -6.5rem;
+  height: 32.25rem;
+}
+.recnik--blok2-line {
+  width: 3.125rem;
+  height: 0.063rem;
+}
+.recnik--blok2-line-big {
+  height: 64.063rem;
+  width: 0.063rem;
+}
