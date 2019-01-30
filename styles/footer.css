@@ -8,6 +8,9 @@
 .footer-top {
   height: 11.375rem;
 }
+.footer-top span:nth-child(2) {
+  padding-bottom: 4px;
+}
 .footer-bottom {
   height: 14.375rem;
 }

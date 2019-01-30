@@ -115,6 +115,14 @@ a:active {
   font-size: inherit;
   line-height: inherit;
 }
+.font-36 {
+  font-size: 2.25rem;
+  line-height: 2.7rem;
+}
+.font-36 * {
+  font-size: inherit;
+  line-height: inherit;
+}
 .font-46 {
   font-size: 2.875rem;
   line-height: 3.7375rem;
@@ -182,6 +190,10 @@ a:active {
 .line-small {
   height: 0.375rem;
   width: 4.688rem;
+}
+.line-tiny {
+  width: 6rem;
+  height: 0.3125rem;
 }
 .line-marker {
   height: 0.0625rem;
@@ -837,6 +849,9 @@ a:active {
   width: 100%;
 }
 @media screen and (max-width: 1440px) {
+  .margin-xl--top-100 {
+    margin-top: 6.25rem;
+  }
   .margin-xl--bottom-18 {
     margin-bottom: 1.125rem;
   }
@@ -1404,6 +1419,9 @@ a:active {
 .w-25 {
   width: 25%;
 }
+.w-25--min {
+  min-width: 25%;
+}
 @media only screen and (max-width: 1440px) {
   .w--xl-100 {
     width: 100%;
@@ -1546,6 +1564,9 @@ a:active {
 }
 .footer-top {
   height: 11.375rem;
+}
+.footer-top span:nth-child(2) {
+  padding-bottom: 4px;
 }
 .footer-bottom {
   height: 14.375rem;
@@ -1845,6 +1866,9 @@ a:active {
 }
 .kontakt-shared--form-row--column {
   width: 25%;
+}
+.kontakt_solo {
+  min-height: 88vh;
 }
 @media only screen and (max-width: 1024px) {
   .kontakt {

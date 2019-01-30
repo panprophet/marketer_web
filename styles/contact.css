@@ -12,6 +12,9 @@
 .kontakt-shared--form-row--column {
   width: 25%;
 }
+.kontakt_solo {
+  min-height: 88vh;
+}
 @media only screen and (max-width: 1024px) {
   .kontakt {
     top: 4.6875rem;

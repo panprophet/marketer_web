@@ -209,6 +209,9 @@
   width: 100%;
 }
 @media screen and (max-width: 1440px) {
+  .margin-xl--top-100 {
+    margin-top: 6.25rem;
+  }
   .margin-xl--bottom-18 {
     margin-bottom: 1.125rem;
   }
