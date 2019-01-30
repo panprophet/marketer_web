@@ -1,7 +1,7 @@
 .usluge {
   height: 100vh;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .usluge--wrap {
@@ -35,8 +35,7 @@
   height: 100%;
 }
 .google-wrap--right img {
-  width: 80%;
-  height: 80%;
+  width: 90%;
 }
 .drustvene {
   height: 100vh;
@@ -63,7 +62,7 @@
 .vebresejna {
   height: 100vh;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .vebresejna-wrap {
