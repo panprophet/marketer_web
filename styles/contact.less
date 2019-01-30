@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'animation';
 
 .kontakt {
   width: 100%;
@@ -19,11 +20,20 @@
     }
   }
 }
+.fade_in_cont {
+  // transform: scale(1);
+  animation: fadeIn 0.9s ease-in-out 0.2s;
+}
+.fade_out_cont {
+  // transform: scale(0);
+  animation: fadeOut 0.9s ease-in-out 0.2s;
+}
 .kontakt_solo {
   height: 100vh;
   background-color: @black-light;
   &--inner {
     height: 100%;
+    // transition: transform 0.1s ease-in-out 0.9s;
   }
 }
 @media only screen and (max-width: 1024px) {

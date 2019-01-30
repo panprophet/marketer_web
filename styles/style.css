@@ -1886,6 +1886,22 @@ a:active {
     height: 50vw;
   }
 }
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 .kontakt {
   width: 100%;
   position: relative;
@@ -1899,6 +1915,12 @@ a:active {
 }
 .kontakt-shared--form-row--column {
   width: 25%;
+}
+.fade_in_cont {
+  animation: fadeIn 0.9s ease-in-out 0.2s;
+}
+.fade_out_cont {
+  animation: fadeOut 0.9s ease-in-out 0.2s;
 }
 .kontakt_solo {
   height: 100vh;
