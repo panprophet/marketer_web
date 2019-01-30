@@ -2,30 +2,87 @@
 {% block description %}All posts{% endblock %}
 {% block content %}
 
-<div class="kontakt_solo flex align-items-center w-100" style="background-image: url('./images/kontaktbck.png')">
-  <div class="kontakt_solo--inner flex flex-column justify-content-between w-100--min">
-    <div class="margin-xxl--top-200 margin-xl--top-100 margin-l--top-100">
+<div class="kontakt_solo flex w-100 overflow-hidden" style="background-image: url('./images/kontaktbck.png')" id="contactwrap">
+  <div class="kontakt_solo--inner flex flex-column justify-content-between w-100--min" id="strana1">
+    <div class="margin-xxl--top-200 margin-xl--top-100 margin-l--top-100 padding-xxl--left-180 padding-xl--left-60 padding-l--left-100 padding-xxl--right-180 padding-xl--right-60 padding-l--right-100">
         <div class="font-36 font-white margin-xxl-bottom-24 margin-xl--bottom-18">Kontakt</div>
         <div class="line-big background-blue"></div>
     </div>
-    <div class="flex w-100">
-      <div class="flex justify-content-center w-100">
-        <div class="font-32 font-white"><label>Zdravo, ja sam</label><input type="text" name="ime" /></div><div class="font-32 font-white"><label>moja kompanija je</label><input type="text" name="nazivkompanije" /></div>
-      </div>
+    <div class="flex align-items-center padding-xxl--left-180 padding-xl--left-60 padding-l--left-100 padding-xxl--right-180 padding-xl--right-60 padding-l--right-100">
+      <div class="font-32 font-white"><label class="margin-xxl--right-24">Zdravo, ja sam</label><input class="input-kontakt input-kontakt-normal font-32 font-white padding-xxl--left-10 padding-xxl--right-10" type="text" name="ime" /></div>
+      <div class="font-32 font-white margin-xxl--left-180 margin-xl--left-60 margin-l--left-none"><label class="margin-xxl--right-24">moja kompanija je</label><input class="input-kontakt input-kontakt-normal font-32 font-white padding-xxl--left-10 padding-xxl--right-10" type="text" name="nazivkompanije" /></div>
     </div>
     <div class="flex justify-content-between w-100 margin-xxl--bottom-60">
       <div class="flex align-items-center w-25--min"></div>
       <div class="flex align-items-center justify-content-end w-25--min">
         <div class="flex align-items-center font-18">
-          <div class="font-blue">1</div><div style="border: 1px solid #606060; width: 24px;"></div><div class="font-white">4</div>
+          <div class="font-blue">1</div><div class="margin-xxl--left-10" style="border: 1px solid #606060; width: 24px;"></div><div class="font-white margin-xxl--left-10">4</div>
         </div>
-        <div>
-          <span class="font-white">Sledeći korak</span><span><img src="./images/icons/next.svg" /></span>
+        <div class="margin-xxl--left-24 text-hover" onclick="nextStep(100)">
+          <span class="font-white">Sledeći korak</span><span class="margin-xxl--left-24"><img src="./images/icons/next.svg" /></span>
         </div>
-        <div class="line-tiny background-blue"></div>
+        <div class="line-tiny background-blue margin-xxl--left-24"></div>
+      </div>
+    </div>
+  </div>
+  <!-- prvi ekran -->
+  <div class="kontakt_solo--inner flex flex-column justify-content-between w-100--min" id="strana2">
+    <div class="margin-xxl--top-200 margin-xl--top-100 margin-l--top-100 padding-xxl--left-180 padding-xl--left-60 padding-l--left-100 padding-xxl--right-180 padding-xl--right-60 padding-l--right-100">
+        <div class="font-36 font-white margin-xxl-bottom-24 margin-xl--bottom-18">Kontakt</div>
+        <div class="font-18 font-grey margin-xxl-bottom-24 margin-xl--bottom-18">Lorem Ipsum is simply dummy text.</div>
+        <div class="line-big background-blue"></div>
+    </div>
+    <div class="flex align-items-center justify-content-between padding-xxl--left-180 padding-xl--left-60 padding-l--left-100 padding-xxl--right-180 padding-xl--right-60 padding-l--right-100">
+      <div class="font-32 font-white"><label class="margin-xxl--right-24">Web sajt moje kompanije</label><input class="input-kontakt input-kontakt-mid font-32 font-white padding-xxl--left-10 padding-xxl--right-10" type="text" name="webpage" /></div>
+      <div class="font-32 font-white"><label class="margin-xxl--right-24">Mi se bavimo</label><input class="input-kontakt input-kontakt-mid font-32 font-white padding-xxl--left-10 padding-xxl--right-10" type="text" name="cimesebavimo" /></div>
+    </div>
+    <div class="flex justify-content-between w-100 margin-xxl--bottom-60">
+      <div class="flex align-items-center justify-content-start w-25--min">
+        <div class="line-tiny background-blue margin-xxl--left-24"></div>
+        <div class="margin-xxl--left-24 text-hover" onclick="nextStep(0)">
+          <span class="margin-xxl--left-24"><img class="icon-rotate-180" src="./images/icons/next.svg" /></span><span class="font-white">Vrati se</span>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-end w-25--min">
+        <div class="flex align-items-center font-18">
+          <div class="font-blue">2</div><div class="margin-xxl--left-10" style="border: 1px solid #606060; width: 24px;"></div><div class="font-white margin-xxl--left-10">4</div>
+        </div>
+        <div class="margin-xxl--left-24 text-hover" onclick="nextStep(200)">
+          <span class="font-white">Sledeći korak</span><span class="margin-xxl--left-24"><img src="./images/icons/next.svg" /></span>
+        </div>
+        <div class="line-tiny background-blue margin-xxl--left-24"></div>
+      </div>
+    </div>
+  </div>
+  <div class="kontakt_solo--inner flex flex-column justify-content-between w-100--min" id="strana3">
+    <div class="margin-xxl--top-200 margin-xl--top-100 margin-l--top-100 padding-xxl--left-180 padding-xl--left-60 padding-l--left-100 padding-xxl--right-180 padding-xl--right-60 padding-l--right-100">
+        <div class="font-36 font-white margin-xxl-bottom-24 margin-xl--bottom-18">Kontakt</div>
+        <div class="font-18 font-grey margin-xxl-bottom-24 margin-xl--bottom-18">Lorem Ipsum is simply dummy text.</div>
+        <div class="line-big background-blue"></div>
+    </div>
+    <div class="flex align-items-center padding-xxl--left-180 padding-xl--left-60 padding-l--left-100 padding-xxl--right-180 padding-xl--right-60 padding-l--right-100 w-100">
+      <div class="font-32 font-white w-100"><label class="margin-xxl--right-24">Zainteresovani smo za </label><input class="input-kontakt input-kontakt-wide font-32 font-white padding-xxl--left-10 padding-xxl--right-10 w-50" type="text" name="interesovanje" /></div>
+    </div>
+    <div class="flex justify-content-between w-100 margin-xxl--bottom-60">
+      <div class="flex align-items-center justify-content-start w-25--min">
+        <div class="line-tiny background-blue margin-xxl--left-24"></div>
+        <div class="margin-xxl--left-24 text-hover" onclick="nextStep(100)">
+          <span class="margin-xxl--left-24"><img class="icon-rotate-180" src="./images/icons/next.svg" /></span><span class="font-white">Vrati se</span>
+        </div>
+      </div>
+      <div class="flex align-items-center justify-content-end w-25--min">
+        <div class="flex align-items-center font-18">
+          <div class="font-blue">3</div><div class="margin-xxl--left-10" style="border: 1px solid #606060; width: 24px;"></div><div class="font-white margin-xxl--left-10">4</div>
+        </div>
+        <div class="margin-xxl--left-24 text-hover" onclick="nextStep(300)">
+          <span class="font-white">Sledeći korak</span><span class="margin-xxl--left-24"><img src="./images/icons/next.svg" /></span>
+        </div>
+        <div class="line-tiny background-blue margin-xxl--left-24"></div>
       </div>
     </div>
   </div>
 </div>
+<!-- drugi ekran -->
+
 
 {% endblock %}

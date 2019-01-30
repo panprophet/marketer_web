@@ -129,6 +129,22 @@
   &-right {
     text-align: right;
   }
+  &-hover {
+    cursor: pointer;
+    &:hover {
+      * {
+        color: @blue;
+      }
+    }
+  }
+}
+.icon {
+  &-rotate {
+    &-180 {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+  }
 }
 .line{
   &-big{

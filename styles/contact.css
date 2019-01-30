@@ -13,7 +13,11 @@
   width: 25%;
 }
 .kontakt_solo {
-  min-height: 88vh;
+  height: 88vh;
+  background-color: #212224;
+}
+.kontakt_solo--inner {
+  height: 100%;
 }
 @media only screen and (max-width: 1024px) {
   .kontakt {

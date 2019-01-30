@@ -183,6 +183,16 @@ a:active {
 .text-right {
   text-align: right;
 }
+.text-hover {
+  cursor: pointer;
+}
+.text-hover:hover * {
+  color: #00AEEF;
+}
+.icon-rotate-180 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
 .line-big {
   height: 0.375rem;
   width: 12.063rem;
@@ -1401,6 +1411,26 @@ a:active {
 .input-form:active {
   background-color: #f8f8f8;
 }
+.input-kontakt {
+  background-color: transparent;
+  border: 1px solid #00AEEF;
+}
+.input-kontakt-wide {
+  width: auto;
+}
+.input-kontakt-normal {
+  width: 18.125rem;
+}
+.input-kontakt-mid {
+  width: 16.125rem;
+}
+.input-kontakt-small {
+  width: 14.375rem;
+}
+.input-kontakt:active,
+.input-kontakt:focus {
+  background-color: #212224;
+}
 .w-100 {
   width: 100%;
 }
@@ -1868,7 +1898,11 @@ a:active {
   width: 25%;
 }
 .kontakt_solo {
-  min-height: 88vh;
+  height: 88vh;
+  background-color: #212224;
+}
+.kontakt_solo--inner {
+  height: 100%;
 }
 @media only screen and (max-width: 1024px) {
   .kontakt {

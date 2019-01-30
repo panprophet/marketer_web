@@ -9,3 +9,23 @@
 .input-form:active {
   background-color: #f8f8f8;
 }
+.input-kontakt {
+  background-color: transparent;
+  border: 1px solid #00AEEF;
+}
+.input-kontakt-wide {
+  width: auto;
+}
+.input-kontakt-normal {
+  width: 18.125rem;
+}
+.input-kontakt-mid {
+  width: 16.125rem;
+}
+.input-kontakt-small {
+  width: 14.375rem;
+}
+.input-kontakt:active,
+.input-kontakt:focus {
+  background-color: #212224;
+}
