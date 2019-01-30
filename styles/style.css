@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Caveat');
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -2541,6 +2540,12 @@ a:active {
 }
 .vebresejna-wrap--gradient {
   height: 100%;
+}
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Caveat Regular'), local('Caveat-Regular'), url(https://fonts.gstatic.com/s/caveat/v5/Wnz6HAc5bAfYB2Q7ZjYd.ttf) format('truetype');
 }
 .o-nama {
   height: 42vw;
