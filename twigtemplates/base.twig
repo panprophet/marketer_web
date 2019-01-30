@@ -9,8 +9,10 @@
 
   <link rel="stylesheet" href="owl/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="owl/assets/owl.theme.default.css" />
-
+ 
+  <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="cms/sharedstyle.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   {# <link rel="icon" href="images/favicon.png"> #}
 
@@ -116,6 +118,7 @@
           <div class="font-14 font-white margin-xxl--bottom-24"><a href="usluge">USLUGE</a></div>
           <div class="font-14 font-grey--mid margin-xxl--bottom-24 prazan"></div>
           <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="google_oglasavanje">GOOLGE OGLAŠAVANJE</a></div>
+
           <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="drustvene_mreze">FACEBOOK OGLAŠAVANJE</a></div>
           <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="web_oglasavanje">WEB OGLAŠAVANJE</a></div>
         </div>
@@ -126,6 +129,8 @@
   <script src="./js/social.js"></script>
   <script src="./js/about.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.js"  crossorigin="anonymous"></script>
+  <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+
   <script src="owl/owl.carousel.min.js"></script>
   <script>
     var owl = $('.owl-carousel');
@@ -137,8 +142,22 @@
             autoplayHoverPause:true,
             nav:true,
             dots:true,
-            animateOut: 'fadeOut'
+            animateOut: 'fadeOut',
+            hideOnContentClick: 'false'
         });
   </script>
+
+  <script>
+    $(document).ready(function() {
+      
+      $('[data-fancybox]').fancybox({
+      youtube : {
+        showinfo : 0
+      }
+    
+});
+      
+    });
+</script>
 </body>
 </html>

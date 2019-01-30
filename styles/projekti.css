@@ -12,6 +12,7 @@
 }
 .projekti-grid {
   flex-wrap: wrap;
+  width: 100%;
 }
 .projekti-grid-1 {
   height: 11vw;

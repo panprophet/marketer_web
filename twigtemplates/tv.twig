@@ -1,0 +1,56 @@
+{% extends 'base.twig' %}
+{% block content %}
+{% set MarketerTV = fetch("MarketerTV") %}
+
+<div class="position">
+    <div class="flex align-items-center background-black-lighter padding-xxl--top-100 padding-xxl--bottom-100">
+        <div class="flex flex-2 flex-column margin-xxl--left-180">
+            <div class="font-46 font-white margin-xxl--bottom-24">Marketer tv</div>
+            <div class="line-big background-blue"></div>
+        </div>
+        <div class="flex-2  margin-xxl--left-180">
+            <div class="font-16 font-white">Targetirano oglašavanje na relevantnim veb sajtovima </br> Biti primećen na internetu postaje sve teže i teže.</div>
+        </div>
+    </div>
+    {% for item in MarketerTV %}
+    {% if loop.index < 2 %}
+        <div class="tv--blok1" style="background-image: url('http://img.youtube.com/vi/{{item.VideoID}}/maxresdefault.jpg')">
+            <a data-fancybox  href="https://www.youtube.com/embed/{{item.VideoID}}">
+                <img src="images/play.png">
+            </a>
+        </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+<div class="projekti flex flex-wrap">
+        <div class="projekti--naslov flex align-items-end">
+            <div class="font-grey font-46 letter-spacing--0_3 margin-xxl--bottom-24 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60">Video</div>
+        </div>
+        <div class="projekti-grid-1 flex flex-column align-items--1024-center">
+            <div class="projekti-grid-1-txt font-grey--mid font-24 letter-spacing--0_3 margin-xxl--bottom-24 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60">Lorem Ipsum is simply dummy text.</div>
+            <div class="line-big background-blue margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60"></div>
+        </div>
+        <div class="tv--blok2 flex-wrap"> 
+        {% for item in MarketerTV %}
+        {% if loop.index > 1 %}
+            <div class="tv--blok2-video">
+                <div class="tv--blok2-video-part" style="background-image: url('http://img.youtube.com/vi/{{item.VideoID}}/maxresdefault.jpg')">
+                    <a data-fancybox href="https://www.youtube.com/embed/{{item.VideoID}}">
+                        <img src="images/play.png">
+                    </a>
+                </div>
+                <div class="projekti-grid-projekat-opis flex flex-column justify-content-center">
+                    <div class="projekti-grid-projekat-opis-txt font-grey font-32 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60 margin-s--left-24 margin-s--right-24 margin-xxl--bottom-24 margin-xl--bottom-18">{{item.Naslov}} </div>
+                    <div class="projekti-grid-projekat-opis-txt font-grey--mid font-16 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60 margin-s--left-24 margin-s--right-24">{{item.Opis}}</div>
+                </div>
+            </div>
+        {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+
+{% include 'klijenti.twig' %}
+{% include 'contact_shared.twig' %}
+
+{% endblock %}

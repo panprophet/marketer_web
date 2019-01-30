@@ -1,0 +1,55 @@
+@import "variables";
+
+.tv{
+    &--blok1{
+        height: 39.3vw;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    &--blok2{
+        width: 100%;
+        &-video{
+            width: 50%;
+            &:nth-of-type(even){
+                margin-top: -11vw;
+            }
+            &:last-of-type:nth-of-type(odd){
+                position: relative;
+                left: 50%;
+                margin-top: -11vw;
+            }
+            &-part{
+                position: relative;
+                height: 33vw;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}

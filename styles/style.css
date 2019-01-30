@@ -653,6 +653,9 @@ a:active {
 .margin-xxl--top-2_5-per {
   margin-top: 2.5%;
 }
+.margin-xxl--bottom-200 {
+  margin-bottom: 12.5rem;
+}
 .margin-xxl--bottom-100 {
   margin-bottom: 6.25rem;
 }
@@ -773,6 +776,9 @@ a:active {
 .margin-xxl--right-10-per {
   margin-right: 0.5208%;
 }
+.padding-xxl--top-200 {
+  padding-top: 12.5rem;
+}
 .padding-xxl--top-100 {
   padding-top: 6.25rem;
 }
@@ -784,6 +790,9 @@ a:active {
 }
 .padding-xxl--top-2_5-per {
   padding-top: 2.5%;
+}
+.padding-xxl--bottom-200 {
+  padding-bottom: 12.5rem;
 }
 .padding-xxl--bottom-100 {
   padding-bottom: 6.25rem;
@@ -1691,6 +1700,7 @@ a:active {
 }
 .projekti-grid {
   flex-wrap: wrap;
+  width: 100%;
 }
 .projekti-grid-1 {
   height: 11vw;
@@ -2684,6 +2694,57 @@ a:active {
 }
 .post--text {
   width: 43vw;
+}
+.tv--blok1 {
+  height: 39.3vw;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.tv--blok1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.tv--blok1 img:hover {
+  opacity: 0.5;
+}
+.tv--blok2 {
+  width: 100%;
+}
+.tv--blok2-video {
+  width: 50%;
+}
+.tv--blok2-video:nth-of-type(even) {
+  margin-top: -11vw;
+}
+.tv--blok2-video:last-of-type:nth-of-type(odd) {
+  position: relative;
+  left: 50%;
+  margin-top: -11vw;
+}
+.tv--blok2-video-part {
+  position: relative;
+  height: 33vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tv--blok2-video-part img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.tv--blok2-video-part img:hover {
+  opacity: 0.5;
 }
 @media only screen and (max-width: 1024px) {
   .display--l-none {
