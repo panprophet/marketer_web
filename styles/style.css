@@ -862,6 +862,9 @@ a:active {
   .margin-xl--top-100 {
     margin-top: 6.25rem;
   }
+  .margin-xl--top-80 {
+    margin-top: 5rem;
+  }
   .margin-xl--bottom-18 {
     margin-bottom: 1.125rem;
   }
@@ -1425,7 +1428,7 @@ a:active {
   width: 16.125rem;
 }
 .input-kontakt-small {
-  width: 14.375rem;
+  width: 13.375rem;
 }
 .input-kontakt:active,
 .input-kontakt:focus {
@@ -1898,7 +1901,7 @@ a:active {
   width: 25%;
 }
 .kontakt_solo {
-  height: 88vh;
+  height: 100vh;
   background-color: #212224;
 }
 .kontakt_solo--inner {
