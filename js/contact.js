@@ -5,7 +5,7 @@ function nextStep(number) {
 
   for(var i = 1; i <= count; i++) {
 
-    if((effDiv - 1) === i) {
+    if(document.getElementById("strana" + i).classList.contains("fade_in_cont")) {
 
       document.getElementById("strana" + i).classList.remove("fade_in_cont");
 
@@ -13,7 +13,7 @@ function nextStep(number) {
 
     }
 
-    document.getElementById("strana" + i).style.transform = "translateX(" + move + "%)";
+    // document.getElementById("strana" + i).style.transform = "translateX(" + move + "%)";
 
     if(effDiv === i) {
 

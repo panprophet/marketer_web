@@ -1886,22 +1886,6 @@ a:active {
     height: 50vw;
   }
 }
-@keyframes fadeIn {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes fadeOut {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
 .kontakt {
   width: 100%;
   position: relative;
@@ -1917,10 +1901,12 @@ a:active {
   width: 25%;
 }
 .fade_in_cont {
-  animation: fadeIn 0.9s ease-in-out 0.2s;
+  transform: scale(1);
+  transition: transform 0.9s ease-in-out 0.2s;
 }
 .fade_out_cont {
-  animation: fadeOut 0.9s ease-in-out 0.2s;
+  transform: scale(0);
+  transition: transform 0.9s ease-in-out 0.2s;
 }
 .kontakt_solo {
   height: 100vh;
@@ -1928,6 +1914,9 @@ a:active {
 }
 .kontakt_solo--inner {
   height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 75px;
 }
 @media only screen and (max-width: 1024px) {
   .kontakt {
