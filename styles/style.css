@@ -2682,7 +2682,7 @@ a:active {
   width: 40%;
 }
 .recnik--blok3-left-line {
-  height: 5.125rem;
+  height: 4.3vw;
   width: 0.063rem;
   opacity: 0.5;
 }
@@ -2694,6 +2694,8 @@ a:active {
 }
 .post--text {
   width: 43vw;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 .tv--blok1 {
   height: 39.3vw;
