@@ -92,6 +92,7 @@
 }
 @media only screen and (max-width: 1024px) {
   .social {
+    height: auto;
     top: 4.6875rem;
     position: relative;
   }
@@ -104,14 +105,38 @@
   }
   .whatdoit--right {
     height: 42.5625rem;
+    order: 1;
   }
   .whatdoit--right-image {
     height: 60%;
+  }
+  .whatdoit--left {
+    order: 2;
   }
   .whatdoit--left-nalog-block {
     width: 100%;
   }
   .whatdoit--left-nalog-benefits {
     width: 100%;
+  }
+  .howwhy {
+    height: auto;
+    top: 4.6875rem;
+    position: relative;
+    background-size: 100% 50%;
+    background-position: top;
+    background-color: #212224;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .social--mid {
+    min-height: 50vh;
+  }
+  .social--mid-cont {
+    margin-top: 0rem;
+    width: 75%;
+  }
+  .howwhy {
+    background-size: 110% 20%;
   }
 }

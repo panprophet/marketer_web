@@ -1192,13 +1192,13 @@ a:active {
     margin-left: 6.25rem;
   }
   .margin-m--left-18 {
-    margin-left: 1.125;
+    margin-left: 1.125rem;
   }
   .margin-m--right-100 {
     margin-right: 6.25rem;
   }
   .margin-m--right-18 {
-    margin-right: 1.125;
+    margin-right: 1.125rem;
   }
   .padding-m--top-100 {
     padding-top: 6.25rem;
@@ -1346,16 +1346,11 @@ a:active {
   .margin-s--right-24 {
     margin-right: 1.5rem;
   }
-<<<<<<< HEAD
   .margin-s--right-18 {
     margin-right: 1.125rem;
   }
   .margin-s--right-none {
     margin-right: 0px;
-=======
-  .margin-s--right-none {
-    margin-right: 0rem;
->>>>>>> master
   }
   .padding-s--top-100 {
     padding-top: 6.25rem;
@@ -1408,6 +1403,9 @@ a:active {
   .padding-s--left-24 {
     padding-left: 1.5rem;
   }
+  .padding-s--left-18 {
+    padding-left: 1.125rem;
+  }
   .padding-s--left-10 {
     padding-left: 0.625rem;
   }
@@ -1428,6 +1426,9 @@ a:active {
   }
   .padding-s--right-24 {
     padding-right: 1.5rem;
+  }
+  .padding-s--right-18 {
+    padding-right: 1.125rem;
   }
   .padding-s--right-10 {
     padding-right: 0.625rem;
@@ -2573,6 +2574,7 @@ a:active {
 }
 @media only screen and (max-width: 1024px) {
   .social {
+    height: auto;
     top: 4.6875rem;
     position: relative;
   }
@@ -2585,15 +2587,39 @@ a:active {
   }
   .whatdoit--right {
     height: 42.5625rem;
+    order: 1;
   }
   .whatdoit--right-image {
     height: 60%;
+  }
+  .whatdoit--left {
+    order: 2;
   }
   .whatdoit--left-nalog-block {
     width: 100%;
   }
   .whatdoit--left-nalog-benefits {
     width: 100%;
+  }
+  .howwhy {
+    height: auto;
+    top: 4.6875rem;
+    position: relative;
+    background-size: 100% 50%;
+    background-position: top;
+    background-color: #212224;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .social--mid {
+    min-height: 50vh;
+  }
+  .social--mid-cont {
+    margin-top: 0rem;
+    width: 75%;
+  }
+  .howwhy {
+    background-size: 110% 20%;
   }
 }
 .usluge {
@@ -3043,14 +3069,11 @@ a:active {
     display: none;
   }
 }
-<<<<<<< HEAD
-=======
 @media only screen and (max-width: 960px) {
   .display--m-none {
     display: none;
   }
 }
->>>>>>> master
 @media only screen and (max-width: 600px) {
   .display--s-none {
     display: none;
