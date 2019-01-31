@@ -25,6 +25,9 @@
 .margin-xxl--top-2_5-per {
   margin-top: 2.5%;
 }
+.margin-xxl--bottom-200 {
+  margin-bottom: 12.5rem;
+}
 .margin-xxl--bottom-100 {
   margin-bottom: 6.25rem;
 }
@@ -145,6 +148,9 @@
 .margin-xxl--right-10-per {
   margin-right: 0.5208%;
 }
+.padding-xxl--top-200 {
+  padding-top: 12.5rem;
+}
 .padding-xxl--top-100 {
   padding-top: 6.25rem;
 }
@@ -156,6 +162,9 @@
 }
 .padding-xxl--top-2_5-per {
   padding-top: 2.5%;
+}
+.padding-xxl--bottom-200 {
+  padding-bottom: 12.5rem;
 }
 .padding-xxl--bottom-100 {
   padding-bottom: 6.25rem;
