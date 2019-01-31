@@ -9,6 +9,8 @@
 
   <link rel="stylesheet" href="owl/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="owl/assets/owl.theme.default.css" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  
   <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -131,6 +133,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js"  crossorigin="anonymous"></script>
   <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script src="owl/owl.carousel.min.js"></script>
   <script>
     var owl = $('.owl-carousel');
@@ -159,6 +163,11 @@
       $('.post--text p:has(img)').css({'margin-left':'-4rem', 'margin-right':'-4rem', 'margin-top':'4em', 'margin-bottom':'4em',  });
 
     });
+</script>
+<script>
+  AOS.init({
+    once: true
+  });
 </script>
 </body>
 </html>
