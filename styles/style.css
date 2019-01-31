@@ -1068,10 +1068,10 @@ a:active {
     margin-right: 0px;
   }
   .padding-l--top-70 {
-    padding-top: 9.115vh;
+    padding-top: 4.375rem;
   }
   .padding-l--top-50 {
-    padding-top: 6.6vh;
+    padding-top: 3.125rem;
   }
   .padding-l--top-24 {
     padding-top: 1.5rem;
@@ -1080,10 +1080,10 @@ a:active {
     padding-top: 2.5%;
   }
   .padding-l--bottom-70 {
-    padding-bottom: 9.115vh;
+    padding-bottom: 4.375rem;
   }
   .padding-l--bottom-50 {
-    padding-bottom: 6.6vh;
+    padding-bottom: 3.125rem;
   }
   .padding-l--bottom-24 {
     padding-bottom: 1.5rem;
@@ -1364,6 +1364,9 @@ a:active {
   }
   .padding-s--left-10 {
     padding-left: 0.625rem;
+  }
+  .padding-s--left-none {
+    padding-left: 0;
   }
   .padding-s--right-180 {
     padding-right: 11.25rem;
@@ -2282,6 +2285,10 @@ a:active {
   width: 0.063rem;
   background-color: #FFFFFF;
 }
+.project-prev:nth-child(2) .project-prev-next-child {
+  text-align: end;
+  align-items: flex-end;
+}
 .project-prev-next {
   width: 100%;
   height: 33vw;
@@ -2342,6 +2349,20 @@ a:active {
     height: 42vw;
     width: 79vw;
   }
+  .project-width {
+    width: 100%;
+  }
+  .project-prev:nth-child(2) .project-prev-next-child {
+    text-align: center;
+    align-items: center;
+  }
+  .project-prev-next {
+    height: 66vw;
+  }
+  .project-prev-next-child {
+    text-align: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 600px) {
   .project-width {
@@ -2358,6 +2379,9 @@ a:active {
   }
   .project-prev-next {
     height: 66vw;
+  }
+  .project-prev-next-text {
+    width: 100%;
   }
 }
 .social {
@@ -2622,8 +2646,8 @@ a:active {
 }
 .blog--part-grad {
   background: linear-gradient(179.85deg, rgba(28, 28, 30, 0) 0.12%, #212224 99.88%);
-  height: 100%;
-  width: 100%;
+  height: 101%;
+  width: 101%;
   position: absolute;
 }
 .blog--part-grad-text {
@@ -2692,6 +2716,70 @@ a:active {
 .recnik--blok3-right-text {
   width: 26vw;
 }
+@media screen and (max-width: 1440px) {
+  .recnik--blok3-right-text {
+    width: 36vw;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .recnik--blok1 {
+    height: 50vw;
+  }
+  .recnik--blok2-left-part {
+    height: 35.625rem;
+  }
+  .recnik--blok2-right-part {
+    height: 35.625rem;
+  }
+  .recnik--blok2-line-big {
+    height: 70.863rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .recnik--blok1 {
+    height: 60vw;
+    background-image: linear-gradient(360deg, #1C1C1E 0%, rgba(22, 22, 22, 0.93) 32.37%, rgba(30, 30, 30, 0) 57.55%), url(../images/digitalni-recnik.png);
+  }
+  .recnik--blok2-left {
+    width: 100%;
+  }
+  .recnik--blok2-left-part {
+    height: auto;
+    margin-top: 0;
+  }
+  .recnik--blok2-right {
+    width: 100%;
+  }
+  .recnik--blok2-right-part {
+    height: auto;
+    margin-top: 0;
+  }
+  .recnik--blok2-line {
+    height: 15vw;
+    width: 0.063rem;
+    opacity: 0.5;
+  }
+  .recnik--blok3-left {
+    width: 15%;
+  }
+  .recnik--blok3-left-line {
+    height: 5.188rem;
+  }
+  .recnik--blok3-right {
+    width: 85%;
+  }
+  .recnik--blok3-right-text {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recnik--blok1 {
+    height: 100vw;
+  }
+  .recnik--blok1-text {
+    width: 100%;
+  }
+}
 .post--text {
   width: 43vw;
   margin-left: 24px;
@@ -2750,6 +2838,16 @@ a:active {
 }
 @media only screen and (max-width: 1024px) {
   .display--l-none {
+    display: none;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .display--m-none {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .display--s-none {
     display: none;
   }
 }
