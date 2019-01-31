@@ -828,6 +828,9 @@ a:active {
 .padding-xxl--bottom-10 {
   padding-bottom: 0.625rem;
 }
+.padding-xxl--bottom-10-per {
+  padding-bottom: 10%;
+}
 .padding-xxl--bottom-8 {
   padding-bottom: 0.5rem;
 }
@@ -1530,7 +1533,7 @@ a:active {
     width: 25%;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 600px) {
   .w--s-100 {
     width: 100%;
   }
@@ -1581,7 +1584,7 @@ a:active {
   transition: height 0.8s ease-in-out;
 }
 .mobile-shown {
-  height: calc(100vh - 4.6875rem);
+  height: calc(100% - 4.6875rem);
   transition: height 0.8s ease-in-out;
 }
 @media only screen and (max-width: 1024px) {
@@ -2643,6 +2646,7 @@ a:active {
 }
 @media only screen and (max-width: 1024px) {
   .usluge {
+    height: auto;
     top: 4.6875rem;
     position: relative;
   }
@@ -2667,6 +2671,7 @@ a:active {
     order: 2;
   }
   .google-wrap--right {
+    width: 80%;
     order: 1;
   }
   .google-wrap--right img {
@@ -2676,6 +2681,28 @@ a:active {
     height: auto;
     top: 4.6875rem;
     position: relative;
+  }
+  .drustvene-wrap {
+    background-position: -100% 20%;
+  }
+  .drustvene-wrap--left {
+    width: 80%;
+  }
+  .vebresejna {
+    height: auto;
+    top: 4.6875rem;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .google-wrap--left {
+    width: 75%;
+  }
+  .drustvene-wrap--left {
+    width: 80%;
+  }
+  .drustvene-wrap--right {
+    width: 75%;
   }
 }
 .o-nama {

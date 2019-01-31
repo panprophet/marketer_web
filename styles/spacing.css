@@ -178,6 +178,9 @@
 .padding-xxl--bottom-10 {
   padding-bottom: 0.625rem;
 }
+.padding-xxl--bottom-10-per {
+  padding-bottom: 10%;
+}
 .padding-xxl--bottom-8 {
   padding-bottom: 0.5rem;
 }

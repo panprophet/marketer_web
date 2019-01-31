@@ -75,6 +75,7 @@
 }
 @media only screen and (max-width: 1024px) {
   .usluge {
+    height: auto;
     top: 4.6875rem;
     position: relative;
   }
@@ -99,6 +100,7 @@
     order: 2;
   }
   .google-wrap--right {
+    width: 80%;
     order: 1;
   }
   .google-wrap--right img {
@@ -108,5 +110,27 @@
     height: auto;
     top: 4.6875rem;
     position: relative;
+  }
+  .drustvene-wrap {
+    background-position: -100% 20%;
+  }
+  .drustvene-wrap--left {
+    width: 80%;
+  }
+  .vebresejna {
+    height: auto;
+    top: 4.6875rem;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .google-wrap--left {
+    width: 75%;
+  }
+  .drustvene-wrap--left {
+    width: 80%;
+  }
+  .drustvene-wrap--right {
+    width: 75%;
   }
 }
