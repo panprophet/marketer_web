@@ -23,6 +23,9 @@
 .kontakt_solo {
   height: 100vh;
   background-color: #212224;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .kontakt_solo--inner {
   height: 100%;
@@ -33,6 +36,7 @@
 @media only screen and (max-width: 1024px) {
   .kontakt {
     top: 4.6875rem;
+    position: relative;
   }
   .kontakt-shared--title p {
     text-align: center;
@@ -56,6 +60,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .kontakt_solo {
+    top: 4.6875rem;
+    position: relative;
+  }
+  .kontakt_solo--inner {
+    top: 0px;
   }
 }
 @media only screen and (max-width: 960px) {

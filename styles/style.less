@@ -110,11 +110,20 @@ a:focus, a:active{
 @import 'tv';
 
 @media only screen and (max-width: 1024px) {
-.display {
-  &--l {
-    &-none {
-      display: none;
+    .display {
+        &--l {
+            &-none {
+            display: none;
+            }
+        }
     }
-  }
 }
+@media only screen and (max-width: 600px) {
+    .display {
+        &--s {
+            &-none {
+            display: none;
+            }
+        }
+    }
 }

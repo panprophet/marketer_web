@@ -73,3 +73,40 @@
 .vebresejna-wrap--gradient {
   height: 100%;
 }
+@media only screen and (max-width: 1024px) {
+  .usluge {
+    top: 4.6875rem;
+    position: relative;
+  }
+  .usluge--wrap-left {
+    height: 50%;
+    order: 2;
+  }
+  .usluge--wrap-right {
+    height: 50%;
+    order: 1;
+  }
+  .usluge--wrap-right img {
+    height: 70%;
+    width: 70%;
+  }
+  .google {
+    height: auto;
+    top: 4.6875rem;
+    position: relative;
+  }
+  .google-wrap--left {
+    order: 2;
+  }
+  .google-wrap--right {
+    order: 1;
+  }
+  .google-wrap--right img {
+    width: 100%;
+  }
+  .drustvene {
+    height: auto;
+    top: 4.6875rem;
+    position: relative;
+  }
+}
