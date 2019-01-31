@@ -9,8 +9,8 @@
 }
 .blog--part-grad {
   background: linear-gradient(179.85deg, rgba(28, 28, 30, 0) 0.12%, #212224 99.88%);
-  height: 100%;
-  width: 100%;
+  height: 101%;
+  width: 101%;
   position: absolute;
 }
 .blog--part-grad-text {

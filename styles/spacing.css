@@ -446,10 +446,10 @@
     margin-right: 0px;
   }
   .padding-l--top-70 {
-    padding-top: 9.115vh;
+    padding-top: 4.375rem;
   }
   .padding-l--top-50 {
-    padding-top: 6.6vh;
+    padding-top: 3.125rem;
   }
   .padding-l--top-24 {
     padding-top: 1.5rem;
@@ -458,10 +458,10 @@
     padding-top: 2.5%;
   }
   .padding-l--bottom-70 {
-    padding-bottom: 9.115vh;
+    padding-bottom: 4.375rem;
   }
   .padding-l--bottom-50 {
-    padding-bottom: 6.6vh;
+    padding-bottom: 3.125rem;
   }
   .padding-l--bottom-24 {
     padding-bottom: 1.5rem;
@@ -742,6 +742,9 @@
   }
   .padding-s--left-10 {
     padding-left: 0.625rem;
+  }
+  .padding-s--left-none {
+    padding-left: 0;
   }
   .padding-s--right-180 {
     padding-right: 11.25rem;

@@ -37,7 +37,7 @@
   </div>
 
   <div class="position flex justify-content-center margin-xxl--top-48 margin-xxl--bottom-48">
-    <div class="post--text font-16 font-grey">{{Post.Body | raw}}</div>
+    <div id="html" class="post--text font-16 font-grey">{{Post.Body | raw}}</div>
   </div>
 
   <div class="background-black-lighter">
@@ -45,7 +45,6 @@
       {% set Post = fetch("Post") %}
       {% for item in Post %}
           {% if loop.index < 4 %}
-          {# <div class="blog--part flex flex-column"> #}
               <div class="blog--part margin-xxl--top-24 margin-xxl--bottom-24" style="background-image: url('img/{{item.Image}}');">
                   <div class="blog--part-grad flex flex-column justify-content-end">
                       <div class="blog--part-grad-text font-16 font-white margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18 margin-xxl--bottom-24 margin-m--bottom-18">Images revealed of David Chipperfield Architects "city palace" apartments...</div>
@@ -54,7 +53,6 @@
                       </div>
                   </div>
               </div>
-          {# </div> #}
           {% endif %}
       {% endfor %}
       </div>
