@@ -43,6 +43,7 @@
 @media only screen and (max-width: 1024px) {
   .footer {
     min-height: 45rem;
+    top: 4.6875rem;
     position: relative;
   }
   .footer-top {
@@ -53,7 +54,6 @@
   }
   .footer-bottom--left {
     width: auto;
-    margin-right: 11.25rem;
     justify-content: space-between;
   }
   .footer-bottom--left-col {
@@ -61,7 +61,6 @@
   }
   .footer-bottom--right {
     width: auto;
-    margin-right: 11.25rem;
     justify-content: space-between;
     padding-bottom: 6.25rem;
   }
@@ -91,19 +90,12 @@
   .footer {
     height: auto;
   }
-  .footer-top {
-    margin-left: 0;
-    margin-right: 0;
-  }
   .footer-bottom {
     height: auto;
   }
   .footer-bottom--left {
     order: 2;
-    margin-left: 0px;
-    margin-right: 0px;
     align-items: center;
-    padding-bottom: 100px;
   }
   .footer-bottom--left-col {
     align-items: center;
@@ -113,8 +105,6 @@
   }
   .footer-bottom--right {
     order: 1;
-    margin-left: 0px;
-    margin-right: 0px;
     align-items: center;
     padding-bottom: 0px;
   }
