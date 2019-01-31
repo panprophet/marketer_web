@@ -689,6 +689,9 @@
   .margin-s--right-24 {
     margin-right: 1.5rem;
   }
+  .margin-s--right-none {
+    margin-right: 0rem;
+  }
   .padding-s--top-100 {
     padding-top: 6.25rem;
   }

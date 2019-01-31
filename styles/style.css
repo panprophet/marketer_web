@@ -215,7 +215,6 @@ a:active {
 @media screen and (max-width: 1024px) {
   .font-24 {
     font-size: 1.25rem;
-    line-height: 1.375rem;
   }
   .font-24 * {
     font-size: inherit;
@@ -283,7 +282,6 @@ a:active {
 @media screen and (max-width: 480px) {
   .font-14 {
     font-size: 0.75rem;
-    line-height: 0.9rem;
   }
 }
 @media screen and (max-width: 360px) {
@@ -1338,6 +1336,9 @@ a:active {
   }
   .margin-s--right-24 {
     margin-right: 1.5rem;
+  }
+  .margin-s--right-none {
+    margin-right: 0rem;
   }
   .padding-s--top-100 {
     padding-top: 6.25rem;
@@ -2658,9 +2659,6 @@ a:active {
 .o-nama--text {
   width: 21.5rem;
 }
-.o-nama--poruka {
-  min-height: 18.75rem;
-}
 .o-nama--poruka-text {
   width: 50%;
 }
@@ -2675,7 +2673,7 @@ a:active {
 }
 .o-nama--koraci-text {
   font-family: 'Caveat', cursive;
-  font-size: 6rem;
+  font-size: 5.375rem;
   line-height: 7.438rem;
   letter-spacing: -0.02rem;
   font-weight: bold;
@@ -2706,6 +2704,55 @@ a:active {
 .o-nama--vrednosti-slika img {
   max-width: 100%;
   max-height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .o-nama {
+    height: 60vw;
+    background-image: linear-gradient(179.73deg, rgba(28, 28, 30, 0) 47.16%, #1C1C1E 91.95%), url(../images/o-nama.jpg);
+  }
+  .o-nama--text {
+    width: auto;
+  }
+  .o-nama--poruka-text {
+    width: 70%;
+  }
+  .o-nama--koraci {
+    height: auto;
+    margin-top: 0;
+    width: 60%;
+  }
+  .o-nama--misija {
+    background-image: linear-gradient(294.44deg, rgba(47, 50, 129, 0) 44.35%, rgba(47, 95, 129, 0.5) 75.58%), linear-gradient(246.15deg, rgba(28, 28, 30, 0) 21.19%, #1C1C1E 85.98%), linear-gradient(300.79deg, rgba(47, 50, 129, 0) 14.35%, rgba(47, 95, 129, 0.8) 39.58%), url(../images/vizije-i-misije.jpg);
+  }
+  .o-nama--vrednosti {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .o-nama--koraci-text {
+    font-size: 4.375rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .o-nama--koraci-text {
+    font-size: 3.75rem;
+    line-height: 4.75rem;
+  }
+  .o-nama--vrednosti {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .o-nama {
+    height: 110vw;
+    background-image: linear-gradient(179.73deg, rgba(28, 28, 30, 0) 37.16%, #1C1C1E 77.95%), url(../images/o-nama.jpg);
+  }
+  .o-nama--koraci-text {
+    font-size: 2.875rem;
+  }
+  .o-nama--poruka-text {
+    width: 85%;
+  }
 }
 .blog--part {
   width: 23.5%;

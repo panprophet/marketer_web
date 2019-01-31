@@ -5,7 +5,7 @@
         <div class="projekti--naslov flex align-items-end">
             <div class="font-grey font-46 letter-spacing--0_3 margin-xxl--bottom-24 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60">Projekti</div>
         </div>
-        <div class="projekti-grid-1 flex flex-column align-items--1024-center">
+        <div class="projekti-grid-1 flex flex-column align-items--l-center">
             <div class="projekti-grid-1-txt font-grey--mid font-24 letter-spacing--0_3 margin-xxl--bottom-24 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60">Lorem Ipsum is simply dummy text.</div>
             <div class="line-big background-blue margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60"></div>
         </div>
@@ -13,7 +13,7 @@
         <div class="projekti-grid flex"> 
         {% for item in Projekti %}
          {% if loop.index < 5 %}
-            <div class="projekti-grid-projekat">
+            <div data-aos="zoom-in" class="projekti-grid-projekat">
                 <div class="projekti-grid-projekat-picture">
                     <a href="project/{{item.Slug}}">
                         <img src="img/{{item.NaslovnaSlika}}">
