@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="owl/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="owl/assets/owl.theme.default.css" />
 
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <link rel="stylesheet" type="text/css" href="cms/sharedstyle.css">
@@ -69,7 +71,6 @@
     <div class="mobile-inner flex flex-column align-items-center justify-content-center">
       <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="o_nama">O NAMA</a></div>
       <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="usluge">USLUGE</a></div>
-      <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="portfolio">PORTFOLIO</a></div>
       <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="blog">BLOG</a></div>
       <div class="font-14 font-grey padding-xxl--bottom-10-per">MARKETER TV</div>
       <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="digitalni_recnik">DIGITALNI REČNIK</a></div>
@@ -132,6 +133,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js"  crossorigin="anonymous"></script>
   <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script src="owl/owl.carousel.min.js"></script>
   <script>
     var owl = $('.owl-carousel');
@@ -152,13 +155,17 @@
     $(document).ready(function() {
 
       $('[data-fancybox]').fancybox({
-      youtube : {
-        showinfo : 0
-      }
-
-});
-
+        youtube : {
+          showinfo : 0
+        }
+      });
+      $('.post--text p:has(img)').css({'margin-left':'-4rem', 'margin-right':'-4rem', 'margin-top':'4em', 'margin-bottom':'4em',  });
     });
+</script>
+<script>
+  AOS.init({
+    once: true
+  });
 </script>
 </body>
 </html>

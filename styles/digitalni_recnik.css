@@ -47,7 +47,7 @@
   width: 40%;
 }
 .recnik--blok3-left-line {
-  height: 5.125rem;
+  height: 4.3vw;
   width: 0.063rem;
   opacity: 0.5;
 }
@@ -56,4 +56,68 @@
 }
 .recnik--blok3-right-text {
   width: 26vw;
+}
+@media screen and (max-width: 1440px) {
+  .recnik--blok3-right-text {
+    width: 36vw;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .recnik--blok1 {
+    height: 50vw;
+  }
+  .recnik--blok2-left-part {
+    height: 35.625rem;
+  }
+  .recnik--blok2-right-part {
+    height: 35.625rem;
+  }
+  .recnik--blok2-line-big {
+    height: 70.863rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .recnik--blok1 {
+    height: 60vw;
+    background-image: linear-gradient(360deg, #1C1C1E 0%, rgba(22, 22, 22, 0.93) 32.37%, rgba(30, 30, 30, 0) 57.55%), url(../images/digitalni-recnik.png);
+  }
+  .recnik--blok2-left {
+    width: 100%;
+  }
+  .recnik--blok2-left-part {
+    height: auto;
+    margin-top: 0;
+  }
+  .recnik--blok2-right {
+    width: 100%;
+  }
+  .recnik--blok2-right-part {
+    height: auto;
+    margin-top: 0;
+  }
+  .recnik--blok2-line {
+    height: 15vw;
+    width: 0.063rem;
+    opacity: 0.5;
+  }
+  .recnik--blok3-left {
+    width: 15%;
+  }
+  .recnik--blok3-left-line {
+    height: 5.188rem;
+  }
+  .recnik--blok3-right {
+    width: 85%;
+  }
+  .recnik--blok3-right-text {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recnik--blok1 {
+    height: 100vw;
+  }
+  .recnik--blok1-text {
+    width: 100%;
+  }
 }

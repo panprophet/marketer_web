@@ -54,6 +54,10 @@
   width: 0.063rem;
   background-color: #FFFFFF;
 }
+.project-prev:nth-child(2) .project-prev-next-child {
+  text-align: end;
+  align-items: flex-end;
+}
 .project-prev-next {
   width: 100%;
   height: 33vw;
@@ -114,6 +118,20 @@
     height: 42vw;
     width: 79vw;
   }
+  .project-width {
+    width: 100%;
+  }
+  .project-prev:nth-child(2) .project-prev-next-child {
+    text-align: center;
+    align-items: center;
+  }
+  .project-prev-next {
+    height: 66vw;
+  }
+  .project-prev-next-child {
+    text-align: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 600px) {
   .project-width {
@@ -130,5 +148,8 @@
   }
   .project-prev-next {
     height: 66vw;
+  }
+  .project-prev-next-text {
+    width: 100%;
   }
 }
