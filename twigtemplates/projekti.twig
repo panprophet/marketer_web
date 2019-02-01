@@ -21,9 +21,10 @@
                     <div class="projekti-grid-projekat-picture-hover flex flex-column justify-content-end align-items-center">
                             <img class="projekti-grid-projekat-picture-hover-logo margin-xxl--bottom-24" src="img/{{item.Logo}}">
                         <div class="font-16 font-white margin-xxl--bottom-60 margin-l--bottom-30">{{item.Opis}}</div>
-                        <a class="margin-xxl--bottom-100 margin-l--bottom-50" href="project/{{item.Slug}}">
-                            <button class="button-midd background-white font-blue font-14">VIŠE</button>
-                        </a>
+                        
+                            <button class="button-midd background-white font-blue font-14 margin-xxl--bottom-100 margin-l--bottom-50">
+                                <a href="project/{{item.Slug}}">VIŠE</a></button>
+                        
                         <div class="flex justify-content-center align-items-center margin-xxl--bottom-48 margin-l--bottom-24">
                             {% if item.Google == 'true' %}
                                 <img class="projekti-grid-projekat-picture-hover-icon" src="images/google-icon.svg">
