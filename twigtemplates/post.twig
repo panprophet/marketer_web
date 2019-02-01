@@ -10,7 +10,7 @@
 
   <div class="position background-black-lighter flex flex-column justify-content-center align-items-center padding-xxl--top-100 padding-xxl--bottom-100">
     <div class="post--text font-46 font-white margin-xxl--bottom-60">{{Post.Title}}</div>
-    <div class="post--text font-16 font-white">{{Post.Short}}</div>
+    <div class="post--text font-16 font-white">{{Post.Short | raw}}</div>
   </div>
 
   <div class="position background-black-light flex justify-content-center padding-xxl--top-24 padding-xxl--bottom-24">
@@ -32,7 +32,7 @@
     <div class="margin-xxl--left-24 margin-xxl--right-24">
       <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
         <img src="./images/icons/linkedin-blue.png">
-      <a>
+      </a>
     </div>
   </div>
 
