@@ -39491,7 +39491,7 @@ module.exports = Ractive.extend(component.exports);
 /* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var Ractive = __webpack_require__(0);
+/* WEBPACK VAR INJECTION */(function(module, console) {var Ractive = __webpack_require__(0);
 var component = module;
 
   component.exports ={
@@ -39500,6 +39500,7 @@ var component = module;
       //this.set('id', GLOBALHtmlEditCounter++)
       var id = this.get('id');
       var child = document.getElementById("summernoteframe"+id).contentWindow.window;
+      console.log('summernoteframe child', child)
       child.PARENT = this
       // store to global var
       window['summernoteframe'+id] = this;
@@ -39519,8 +39520,8 @@ var component = module;
       })
 
       var tryinject = function(v){
-        if (child.$) child.$('#summernote').summernote('code', v)
-        else setTimeout(function(){tryinject(v)}, 1000)
+        if (child.$ && child.summerReady) { child.$('#summernote').summernote('code', v) }
+        else setTimeout(function(){tryinject(v)}, 500)
       }
       this.observe('code', function(v){
           if( self.get('fromParent') ) {
@@ -39542,10 +39543,10 @@ var component = module;
 }
 
 
-component.exports.template = {v:4,t:[{p:[1,1,0],t:7,e:"iframe",m:[{n:"style",f:"width: 100%; border: 0;height: 400px",t:13},{n:"id",f:["summernoteframe",{t:2,r:"id",p:[1,73,72]}],t:13},{n:"src",f:"summernoteframe.html",t:13}]}," ",{t:4,f:[{p:[4,1,141],t:7,e:"modal",m:[{n:"show",f:[{t:2,r:"showFileBrowse",p:[4,14,154]}],t:13},{n:"cw",f:[{t:2,r:"cw",p:[4,38,178]}],t:13},{n:"title",f:"Browse",t:13},{n:"class",f:"animated fadeInRight",t:13},{n:"showOverlay",f:[{t:2,x:{r:[],s:"true"},p:[5,43,244]}],t:13},{n:"style",f:"\nheight: 44em;\nwidth: 50em;\nleft: calc(50% - 25em);\nright: inherit;\ntop: calc(50% - 22em);\nbottom: inherit;",t:13}],f:[{p:[12,5,376],t:7,e:"ImageBrowser",m:[{n:"path",f:[{t:2,r:"pathvarname",p:[12,25,396]}],t:13},{n:"show",f:[{t:2,r:"showFileBrowse",p:[12,48,419]}],t:13}]}]}],n:50,r:"showFileBrowse",p:[3,1,118]}],e:{"true":function (){return(true);}}};
+component.exports.template = {v:4,t:[{p:[1,1,0],t:7,e:"iframe",m:[{n:"style",f:"width: 100%; border: 0;height: 410px",t:13},{n:"id",f:["summernoteframe",{t:2,r:"id",p:[1,73,72]}],t:13},{n:"src",f:"summernoteframe.html",t:13}]}," ",{t:4,f:[{p:[4,1,141],t:7,e:"modal",m:[{n:"show",f:[{t:2,r:"showFileBrowse",p:[4,14,154]}],t:13},{n:"cw",f:[{t:2,r:"cw",p:[4,38,178]}],t:13},{n:"title",f:"Browse",t:13},{n:"class",f:"animated fadeInRight",t:13},{n:"showOverlay",f:[{t:2,x:{r:[],s:"true"},p:[5,43,244]}],t:13},{n:"style",f:"\nheight: 44em;\nwidth: 50em;\nleft: calc(50% - 25em);\nright: inherit;\ntop: calc(50% - 22em);\nbottom: inherit;",t:13}],f:[{p:[12,5,376],t:7,e:"ImageBrowser",m:[{n:"path",f:[{t:2,r:"pathvarname",p:[12,25,396]}],t:13},{n:"show",f:[{t:2,r:"showFileBrowse",p:[12,48,419]}],t:13}]}]}],n:50,r:"showFileBrowse",p:[3,1,118]}],e:{"true":function (){return(true);}}};
 module.exports = Ractive.extend(component.exports);
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
 
 /***/ }),
 /* 31 */
