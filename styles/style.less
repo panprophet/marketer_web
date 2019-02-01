@@ -109,6 +109,24 @@ a:focus, a:active{
 @import 'post';
 @import 'tv';
 
+// ovo prebaciti posle u neki drugi fajl
+
+.hover {
+    &-tab {
+        &:hover {
+            cursor: pointer;
+            color: #00AEEF;
+        }
+    }
+}
+
+.display {
+    &--xxl {
+        &-none {
+            display: none;
+        }
+    }
+}
 @media only screen and (max-width: 1024px) {
     .display {
         &--l {

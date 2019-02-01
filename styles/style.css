@@ -3067,6 +3067,13 @@ a:active {
 .tv--blok2-video-part img:hover {
   opacity: 0.5;
 }
+.hover-tab:hover {
+  cursor: pointer;
+  color: #00AEEF;
+}
+.display--xxl-none {
+  display: none;
+}
 @media only screen and (max-width: 1024px) {
   .display--l-none {
     display: none;
