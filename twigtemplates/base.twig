@@ -81,6 +81,8 @@
 
   {% block content %}{% endblock %}
 
+  {% set link = _GET['0'] %}
+  {% if link != 'kontakt' %}
   <footer class="footer background-black-light">
     <div class="footer-top flex align-items-end margin-xxl--left-180 margin-xxl--right-180 margin-xl--left-135 margin-xl--right-135 margin-l--left-180 margin-l--right-180 margin-s--left-none margin-s--right-none">
       <span class="margin-xxl--bottom-60 margin-l--bottom-100 margin-s--bottom-80"><img src="images/logo.svg"/></span>
@@ -128,6 +130,7 @@
       </div>
     </div>
   </footer>
+  {% endif %}
   <script src="./js/menu.js"></script>
   <script src="./js/social.js"></script>
   <script src="./js/about.js"></script>
