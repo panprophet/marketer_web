@@ -2520,6 +2520,9 @@ a:active {
 }
 .whatdoit--right-image img {
   width: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .whatdoit--left {
   position: relative;
@@ -2578,6 +2581,13 @@ a:active {
     top: 4.6875rem;
     position: relative;
   }
+  .social--mid {
+    min-height: 45vh;
+  }
+  .social--mid-cont {
+    margin-top: 0px;
+    width: 80%;
+  }
   .social--bottom {
     margin-top: 0px;
   }
@@ -2586,11 +2596,14 @@ a:active {
     position: relative;
   }
   .whatdoit--right {
-    height: 42.5625rem;
+    height: 40.5625rem;
     order: 1;
   }
   .whatdoit--right-image {
-    height: 60%;
+    height: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   .whatdoit--left {
     order: 2;
@@ -2608,6 +2621,9 @@ a:active {
     background-size: 100% 50%;
     background-position: top;
     background-color: #212224;
+  }
+  .howwhy--right-how--icons-icon {
+    flex: 0 33.33%;
   }
 }
 @media only screen and (max-width: 600px) {
