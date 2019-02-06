@@ -28,12 +28,12 @@
       </a>
     </div>
     <div class="header-meni flex flex-1 align-items-center justify-content-center">
-      <div class="font-14 font-grey"><a href="o_nama">O NAMA</a></div>
-      <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40"><a href="usluge">USLUGE</a></div>
-      <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40"><a href="portfolio">PORTFOLIO</a></div>
-      <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40"><a href="blog">BLOG</a></div>
-      <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40"><a href="tv">MARKETER TV</a></div>
-      <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40"><a href="digitalni_recnik">DIGITALNI REČNIK</a></div>
+      <div class="{{'o_nama' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14"><a href="o_nama">O NAMA</a></div>
+      <div class="{{'usluge' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="usluge">USLUGE</a></div>
+      <div class="{{'portfolio' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="portfolio">PORTFOLIO</a></div>
+      <div class="{{'blog' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="blog">BLOG</a></div>
+      {# <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40"><a href="tv">MARKETER TV</a></div> #}
+      <div class="{{'digitalni_recnik' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="digitalni_recnik">DIGITALNI REČNIK</a></div>
     </div>
     <div class="header-kontakt flex align-items-center margin-xxl--right-24 margin-m--right-18">
         <span class="font-14 font-white padding-xxl--right-24"><a href="kontakt">KONTAKT</a></span>
@@ -71,11 +71,11 @@
   </nav>
   <div class="mobile mobile-hidden background-black-light" id="mobilemenu">
     <div class="mobile-inner flex flex-column align-items-center justify-content-center">
-      <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="o_nama">O NAMA</a></div>
-      <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="usluge">USLUGE</a></div>
-      <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="blog">BLOG</a></div>
-      <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="tv">MARKETER TV</a></div>
-      <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="digitalni_recnik">DIGITALNI REČNIK</a></div>
+      <div class="{{'o_nama' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="o_nama">O NAMA</a></div>
+      <div class="{{'usluge' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="usluge">USLUGE</a></div>
+      <div class="{{'blog' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="blog">BLOG</a></div>
+      {# <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="tv">MARKETER TV</a></div> #}
+      <div class="{{'digitalni_recnik' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="digitalni_recnik">DIGITALNI REČNIK</a></div>
     </div>
   </div>
 
@@ -131,11 +131,13 @@
     </div>
   </footer>
   {% endif %}
+   <script src="https://code.jquery.com/jquery-3.3.1.js"  crossorigin="anonymous"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/social.js"></script>
   <script src="./js/about.js"></script>
   <script src="./js/contact.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"  crossorigin="anonymous"></script>
+  <script src="./js/typing_effect.js"></script>
+ 
   <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

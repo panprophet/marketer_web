@@ -2348,6 +2348,7 @@ a:active {
   width: 100%;
   overflow: hidden;
   position: relative;
+  padding-bottom: 3rem;
 }
 .project--owl-img {
   height: 27.7vw;
@@ -2768,6 +2769,12 @@ a:active {
     width: 75%;
   }
 }
+.text {
+  display: none;
+}
+.naslov {
+  display: none;
+}
 .o-nama {
   height: 42vw;
   background-position: center;
@@ -3051,6 +3058,13 @@ a:active {
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
+}
+.post--text ul,
+.post--text ol {
+  margin-left: 3rem;
+}
+.post--text p b {
+  font-weight: bold;
 }
 @media screen and (max-width: 1440px) {
   .post {
