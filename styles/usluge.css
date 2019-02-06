@@ -95,6 +95,11 @@
     height: auto;
     top: 4.6875rem;
     position: relative;
+    background-size: 150% 35%;
+    background-position: -35%;
+  }
+  .google-wrap {
+    background-position: 80% 2%;
   }
   .google-wrap--left {
     order: 2;
@@ -125,13 +130,20 @@
 }
 @media only screen and (max-width: 600px) {
   .google-wrap--left {
-    width: 75%;
+    width: 100%;
+  }
+  .google-wrap--right {
+    width: 95%;
   }
   .drustvene-wrap {
-    background-position: 0% 11%;
+    background-position: 115% 11%;
+    background-size: 108%;
   }
   .drustvene-wrap--left {
     width: 80%;
+  }
+  .drustvene-wrap--left-cont {
+    width: 100%;
   }
   .drustvene-wrap--right {
     width: 75%;

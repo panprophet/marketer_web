@@ -54,14 +54,12 @@
   }
   .footer-bottom--left {
     width: auto;
-    justify-content: space-between;
   }
   .footer-bottom--left-col {
     width: 140px;
   }
   .footer-bottom--right {
     width: auto;
-    justify-content: space-between;
     padding-bottom: 6.25rem;
   }
   .footer-bottom--right-col {
