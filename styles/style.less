@@ -53,6 +53,14 @@ input:focus {
     box-shadow: none;
     border-color: none;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px @white inset;
+    box-shadow: 0 0 0px 1000px @white inset;
+    -webkit-text-fill-color: @grey-dark !important;
+}
 // button:hover {
 //     opacity: 0.5;
 // }
