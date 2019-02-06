@@ -4,14 +4,14 @@
 {% set Post = fetch("Post") %}
 
     <div class="position gallery-blog background-black-light flex flex-column">
-        <div class="gallery-blog-big flex flex--l-direction padding-xxl--left-24 padding-m--left-18 margin-l--right-24 margin-m--right-18 padding-xxl--top-100 padding-m--top-80 padding-xxl--bottom-100 padding-m--bottom-80 border--bottom-grey-dark">
+        <div class="gallery-blog-big flex flex--l-direction padding-xxl--left-24 padding-m--left-18 padding-s--left-none margin-l--right-24 margin-m--right-18 margin-s--right-none padding-xxl--top-100 padding-l--top-70 padding-xxl--bottom-100 padding-l--bottom-70 border--bottom-grey-dark">
 
         {% for item in Post %}
             {% if loop.index < 2 %}
             <div class="gallery-blog-big-pic" style="background-image: url('img/{{item.Image}}');"></div>
             <div class="gallery-blog-big-txt flex flex-1 flex-column padding-xxl--left-90 padding-xl--left-70 padding-m--left-none padding-xxl--right-90 padding-xl--right-70 padding-m--right-none padding-xxl--top-24 padding-m--top-18 padding-s--top-46 padding-xxl--bottom-24 padding-m--bottom-18">
-                <div class="gallery-blog-big-txt-title font-32 font-white margin-xxl--bottom-2_5-per margin-s--bottom-46">{{item.Title}}</div>
-                <div class="gallery-blog-big-txt-text font-16 font-white margin-xxl--bottom-10-per margin-s--bottom-46">{{item.Short | raw }}</div>
+                <div class="gallery-blog-big-txt-title font-32 font-white margin-xxl--bottom-2_5-per margin-l--bottom-50 margin-s--left-24 margin-s--right-24">{{item.Title}}</div>
+                <div class="gallery-blog-big-txt-text font-16 font-white margin-xxl--bottom-10-per margin-l--bottom-50 margin-s--left-24 margin-s--right-24">{{item.Short | raw }}</div>
                     <button class="button-midd button-border-blue background-black-light font-white font-14">
                         <a href="post/{{item.Slug}}">VIŠE</a>
                     </button>
@@ -21,18 +21,18 @@
 
         </div>
 
-        <div class="flex flex-column background-black-light padding-xxl--top-100 padding-xxl--bottom-100 padding-xxl--left-90">
-            <div class="font-46 font-white margin-xxl--bottom-24">Prošli postovi</div>
+        <div class="flex flex-column background-black-light padding-xxl--top-100 padding-xxl--bottom-100 padding-xxl--left-90 padding-l--left-none padding-l--top-70 padding-l--bottom-70 align-items--l-center">
+            <div class="font-46 font-white margin-xxl--bottom-24 text--l-center">Prošli postovi</div>
             <div class="background-blue line-big"></div>
         </div>
 
-        <div class="flex flex-wrap padding-xxl--bottom-100 margin-xxl--left-24 margin-m--left-18 flex">
+        <div class="flex flex-wrap padding-xxl--bottom-100 margin-xxl--left-24 margin-m--left-18 flex margin-s--right-18">
         {% for item in Post %}
             {% if loop.index > 1 %}
             {# <div class="blog--part flex flex-column"> #}
                 <div class="blog--part margin-xxl--top-24" style="background-image: url('img/{{item.Image}}');">
                     <div class="blog--part-grad flex flex-column justify-content-end align-items-center">
-                        <div class="blog--part-grad-text font-16 font-white margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18 margin-xxl--bottom-24 margin-m--bottom-18">Images revealed of David Chipperfield Architects "city palace" apartments...</div>
+                        <div class="blog--part-grad-text font-16 font-white margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18 margin-xxl--bottom-24 margin-m--bottom-18 text--l-center">Images revealed of David Chipperfield Architects "city palace" apartments...</div>
                         <button class="button-midd button-border-blue background-black-light font-white font-14 margin-xxl--bottom-24">
                             <a href="post/{{item.Slug}}">VIŠE</a>
                         </button>

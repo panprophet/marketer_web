@@ -20,3 +20,27 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+@media screen and (max-width: 1024px) {
+  .blog--part {
+    width: 47%;
+    height: 48vw;
+    margin-right: 3%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .blog--part {
+    width: 48%;
+    margin-right: 2%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .blog--part {
+    width: 100%;
+    height: 92vw;
+    margin-right: 0%;
+  }
+  .blog--part-grad {
+    height: 100%;
+    width: 100%;
+  }
+}

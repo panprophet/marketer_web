@@ -9,8 +9,8 @@
   {# <div style="margin-top: 1rem;" >{{Post.Body | raw}} </div> #}
 
   <div class="position background-black-lighter flex flex-column justify-content-center align-items-center padding-xxl--top-100 padding-xxl--bottom-100">
-    <div class="post--text font-46 font-white margin-xxl--bottom-60">{{Post.Title}}</div>
-    <div class="post--text font-16 font-white">{{Post.Short | raw}}</div>
+    <div class="post font-46 font-white margin-xxl--bottom-60 margin-l--left-24 margin-l--right-24 text--l-center padding-l--left-180 padding-l--right-180 padding-m--left-90 padding-m--right-90 padding-s--left-none padding-s--right-none">{{Post.Title}}</div>
+    <div class="post font-16 font-white margin-l--left-24 margin-l--right-24 text--l-center">{{Post.Short | raw}}</div>
   </div>
 
   <div class="position background-black-light flex justify-content-center padding-xxl--top-24 padding-xxl--bottom-24">
@@ -20,7 +20,7 @@
       <a>
     </div> #}
     <div class="margin-xxl--left-24 margin-xxl--right-24">
-      <a href="http://www.facebook.com/sharer.php?u={{post.Slug | url_encode}}&amp;url={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
+      <a href="http://www.facebook.com/sharer/sharer.php?u={{_BASE | url_encode}}prost%2F{{post.Slug | url_encode}}" target="_blank">
         <img src="./images/icons/facebook-blue.png">
       </a>
     </div>
@@ -40,11 +40,11 @@
     <div id="html" class="post--text font-16 font-grey">{{Post.Body | raw}}</div>
   </div>
 
-  <div class="background-black-lighter">
-    <div class="flex flex-wrap justify-content-center padding-xxl--bottom-100 padding-xxl--top-100 margin-xxl--left-24 margin-m--left-18 margin-xxl--right-24 margin-m--right-18">
+  <div class="position background-black-lighter">
+    <div class="flex flex-wrap justify-content-center padding-xxl--bottom-100 padding-xxl--top-100 padding-m--bottom-70 padding-m--top-70 margin-xxl--left-24 margin-m--left-18 margin-xxl--right-24 margin-l--right-none margin-s--right-18">
       {% set Post = fetch("Post") %}
       {% for item in Post %}
-          {% if loop.index < 4 %}
+          {% if loop.index < 3 %}
               <div class="blog--part margin-xxl--top-24 margin-xxl--bottom-24" style="background-image: url('img/{{item.Image}}');">
                   <div class="blog--part-grad flex flex-column justify-content-end">
                       <div class="blog--part-grad-text font-16 font-white margin-xxl--left-24 margin-m--left-18 margin-l--right-24 margin-m--right-18 margin-xxl--bottom-24 margin-m--bottom-18">Images revealed of David Chipperfield Architects "city palace" apartments...</div>

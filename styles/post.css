@@ -1,5 +1,31 @@
+.post {
+  width: 43vw;
+}
 .post--text {
   width: 43vw;
-  margin-left: 24px;
-  margin-right: 24px;
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+@media screen and (max-width: 1440px) {
+  .post {
+    width: 56vw;
+  }
+  .post--text {
+    width: 56vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .post {
+    width: auto;
+  }
+  .post--text {
+    width: calc(100% - 9rem);
+  }
+}
+@media screen and (max-width: 600px) {
+  .post--text {
+    width: calc(100% - 6rem);
+  }
 }
