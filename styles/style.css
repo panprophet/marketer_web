@@ -2764,10 +2764,12 @@ a:active {
   }
 }
 .usluge {
-  height: 100vh;
+  height: calc(100vh - 4.6875rem);
+  background-image: url('../images/sah_1920.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #101010;
 }
 .usluge--wrap {
   height: 100%;
@@ -2843,6 +2845,8 @@ a:active {
     height: auto;
     top: 4.6875rem;
     position: relative;
+    background-image: url('../images/sah_1024.png');
+    background-position: 100% 0%;
   }
   .usluge--wrap-left {
     height: 50%;
