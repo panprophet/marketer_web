@@ -8,6 +8,13 @@
   word-wrap: break-word;
   hyphens: auto;
 }
+.post--text ul,
+.post--text ol {
+  margin-left: 3rem;
+}
+.post--text p b {
+  font-weight: bold;
+}
 @media screen and (max-width: 1440px) {
   .post {
     width: 56vw;
