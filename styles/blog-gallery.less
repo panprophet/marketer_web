@@ -62,11 +62,15 @@
                     width:101%;
                     position:absolute;
                     &-title{
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 2;
-                        -webkit-box-orient: vertical;
+                        p:first-child{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: block;
+                        }
+                        p{
+                            display: none;
+                        }
                     }
                     &-btn{
                         width: 8.875rem;

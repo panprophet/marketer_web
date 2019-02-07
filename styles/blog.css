@@ -13,12 +13,14 @@
   width: 101%;
   position: absolute;
 }
-.blog--part-grad-text {
+.blog--part-grad-text p:first-child {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  display: block;
+}
+.blog--part-grad-text p {
+  display: none;
 }
 @media screen and (max-width: 1024px) {
   .blog--part {
