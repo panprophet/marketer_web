@@ -2,20 +2,24 @@
 
 .social {
   min-height: 100vh;
-  background: linear-gradient(264deg, rgba(2,0,36,1) 0%, rgba(44,44,125,1) 47%, rgba(19,95,111,1) 100%);
+  background-image: url('../images/pozadina_mreze.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  // background: linear-gradient(264deg, rgba(2,0,36,1) 0%, rgba(44,44,125,1) 47%, rgba(19,95,111,1) 100%);
   // &--top {
   //   // height: 19.4375rem;
   // }
   &--mid {
-      min-height: 100vh;
+      min-height: 60rem;
       width: 100%;
+      background-image: url('../images/dotted-world.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100% 100%;
     &-cont {
       margin-top: -11rem;
       width: 60%;
-      height: 60%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: 80% 80%;
@@ -43,6 +47,10 @@
     &-image {
       height: 100%;
       position: relative;
+      background-image: url('../images/drustvene_howwedoit_1920.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      // background-size: 80% 80%;
       -webkit-transition: opacity 0.9s ease-in;
       transition: opacity 0.9s ease-in;
       img {
@@ -89,6 +97,7 @@
 }
 .howwhy {
   // background-color: @black-lighter;
+  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 31.65%, #1C1C1E 80.12%), url('../images/social3.png');
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left;
@@ -109,6 +118,14 @@
   background-repeat: no-repeat;
 }
 @media only screen and (max-width: 1440px) {
+  .social {
+    &--mid {
+      min-height: 48.5625rem;
+    }
+    &--bottom {
+      margin-top: -9rem;
+    }
+  }
   .whatdoit {
     &--right {
       &-image {
@@ -132,6 +149,13 @@
     height: auto;
     top: 4.6875rem;
     position: relative;
+    &--top {
+      &-right {
+        p:nth-child(2) {
+          width: 79%;
+        }
+      }
+    }
     &--mid {
       min-height: 45vh;
       &-cont {
@@ -151,9 +175,10 @@
       order: 1;
       &-image {
         height: 75%;
+        background-image: url('../images/drustvene_howwedoit_1024.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
       }
     }
     &--left {
@@ -172,10 +197,12 @@
     height: auto;
     top: 4.6875rem;
     position: relative;
-    background-size: 100% 50%;
+    background-image: url('../images/social3_1024.png');
+    background-size: contain;
     background-position: top;
-    background-color: @black-light;
+    background-color: @black-lighter;
     &--right {
+      margin-top: 28.75rem;
       &-how {
         &--icons {
           &-icon {
@@ -186,10 +213,17 @@
     }
   }
 }
+@media only screen and (max-width: 960px) {
+  .howwhy {
+    &--right {
+      margin-top: 25.75rem;
+    }
+  }
+}
 @media only screen and (max-width: 600px) {
   .social {
     &--mid {
-      min-height: 50vh;
+      min-height: 40vh;
       &-cont {
         margin-top: 0rem;
         width: 75%;
@@ -197,6 +231,8 @@
     }
   }
   .howwhy {
-    background-size: 110% 20%;
+    &--right {
+      margin-top: 15.75rem;
+    }
   }
 }

@@ -205,6 +205,10 @@ a:active {
   height: 0.375rem;
   width: 12.063rem;
 }
+.line-mid {
+  height: 0.375rem;
+  width: 8.125rem;
+}
 .line-small {
   height: 0.375rem;
   width: 4.688rem;
@@ -276,7 +280,7 @@ a:active {
     text-align: right;
   }
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 600px) {
   .text--s-center {
     text-align: center;
   }
@@ -288,19 +292,8 @@ a:active {
   }
 }
 @media screen and (max-width: 480px) {
-  .font-14 {
-    font-size: 0.75rem;
-  }
 }
 @media screen and (max-width: 360px) {
-  .font-16 {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
-  }
-  .font-16 * {
-    font-size: inherit;
-    line-height: inherit;
-  }
 }
 .flex {
   display: -webkit-box;
@@ -1552,8 +1545,20 @@ a:active {
   }
 }
 @media screen and (max-width: 480px) {
+  .margin-xs--top-60 {
+    margin-top: 3.75rem;
+  }
+  .margin-xs--top-24 {
+    margin-top: 1.5rem;
+  }
+  .margin-xs--bottom-60 {
+    margin-bottom: 3.75rem;
+  }
   .margin-xs--bottom-24 {
     margin-bottom: 1.5rem;
+  }
+  .margin-xs--right-36 {
+    margin-right: 2.25rem;
   }
   .margin-xs--right-none {
     margin-right: 0rem;
@@ -2620,11 +2625,15 @@ a:active {
 }
 .social {
   min-height: 100vh;
-  background: linear-gradient(264deg, #020024 0%, #2c2c7d 47%, #135f6f 100%);
+  background-image: url('../images/pozadina_mreze.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .social--mid {
-  min-height: 100vh;
+  min-height: 60rem;
   width: 100%;
+  background-image: url('../images/dotted-world.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -2632,7 +2641,6 @@ a:active {
 .social--mid-cont {
   margin-top: -11rem;
   width: 60%;
-  height: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80% 80%;
@@ -2653,6 +2661,9 @@ a:active {
 .whatdoit--right-image {
   height: 100%;
   position: relative;
+  background-image: url('../images/drustvene_howwedoit_1920.png');
+  background-position: center;
+  background-repeat: no-repeat;
   -webkit-transition: opacity 0.9s ease-in;
   transition: opacity 0.9s ease-in;
 }
@@ -2689,6 +2700,7 @@ a:active {
   width: 1.87rem;
 }
 .howwhy {
+  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 31.65%, #1C1C1E 80.12%), url('../images/social3.png');
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left;
@@ -2703,6 +2715,12 @@ a:active {
   background-repeat: no-repeat;
 }
 @media only screen and (max-width: 1440px) {
+  .social--mid {
+    min-height: 48.5625rem;
+  }
+  .social--bottom {
+    margin-top: -9rem;
+  }
   .whatdoit--right-image {
     height: 50%;
   }
@@ -2718,6 +2736,9 @@ a:active {
     height: auto;
     top: 4.6875rem;
     position: relative;
+  }
+  .social--top-right p:nth-child(2) {
+    width: 79%;
   }
   .social--mid {
     min-height: 45vh;
@@ -2739,9 +2760,10 @@ a:active {
   }
   .whatdoit--right-image {
     height: 75%;
+    background-image: url('../images/drustvene_howwedoit_1024.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
   }
   .whatdoit--left {
     order: 2;
@@ -2756,24 +2778,33 @@ a:active {
     height: auto;
     top: 4.6875rem;
     position: relative;
-    background-size: 100% 50%;
+    background-image: url('../images/social3_1024.png');
+    background-size: contain;
     background-position: top;
-    background-color: #212224;
+    background-color: #1C1C1E;
+  }
+  .howwhy--right {
+    margin-top: 28.75rem;
   }
   .howwhy--right-how--icons-icon {
     flex: 0 33.33%;
   }
 }
+@media only screen and (max-width: 960px) {
+  .howwhy--right {
+    margin-top: 25.75rem;
+  }
+}
 @media only screen and (max-width: 600px) {
   .social--mid {
-    min-height: 50vh;
+    min-height: 40vh;
   }
   .social--mid-cont {
     margin-top: 0rem;
     width: 75%;
   }
-  .howwhy {
-    background-size: 110% 20%;
+  .howwhy--right {
+    margin-top: 15.75rem;
   }
 }
 .usluge {
@@ -2795,6 +2826,7 @@ a:active {
 }
 .google {
   height: 100vh;
+  background-image: url('../images/google_bck.png');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -2881,8 +2913,7 @@ a:active {
     height: auto;
     top: 4.6875rem;
     position: relative;
-    background-size: 150% 35%;
-    background-position: -35%;
+    background-image: url('../images/google_bck_1024.png');
   }
   .google-wrap {
     background-position: 80% 2%;
@@ -3413,7 +3444,14 @@ a:active {
   }
 }
 @media only screen and (max-width: 600px) {
+  * {
+    font-size: 14px;
+    line-height: 14px;
+  }
   .display--s-none {
     display: none;
+  }
+  .display--s-flex {
+    display: flex;
   }
 }
