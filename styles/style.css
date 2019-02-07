@@ -2181,8 +2181,8 @@ a:active {
   height: calc(100vh - 4.6875rem);
   width: 100%;
   position: relative;
-  background-size: 100% 100%;
-  background-position: center;
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .home-video {
@@ -2696,8 +2696,10 @@ a:active {
   width: 44%;
 }
 .whatdoit--left-nalog-benefits--col-elem--icon {
-  height: 2.125rem;
-  width: 1.87rem;
+  height: 2rem;
+}
+.whatdoit--left-nalog-benefits--col-elem--icon img {
+  width: 100%;
 }
 .howwhy {
   background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 31.65%, #1C1C1E 80.12%), url('../images/social3.png');
