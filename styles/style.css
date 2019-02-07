@@ -2300,12 +2300,14 @@ a:active {
   width: 101%;
   position: absolute;
 }
-.gallery-blog-small-part-pic-text-title {
+.gallery-blog-small-part-pic-text-title p:first-child {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  display: block;
+}
+.gallery-blog-small-part-pic-text-title p {
+  display: none;
 }
 .gallery-blog-small-part-pic-text-btn {
   width: 8.875rem;
@@ -3051,12 +3053,14 @@ a:active {
   width: 101%;
   position: absolute;
 }
-.blog--part-grad-text {
+.blog--part-grad-text p:first-child {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  display: block;
+}
+.blog--part-grad-text p {
+  display: none;
 }
 @media screen and (max-width: 1024px) {
   .blog--part {
