@@ -17,10 +17,15 @@ function typeEffect(element, speed) {
 $(document).ready(function(){
     var speed = 75;
     var delay = $('.naslov').text().length * speed + speed;
+    var delay2 = $('.text').text().length * speed + speed + delay;
     $('.naslov').css('display', 'flex');
     typeEffect($('.naslov'), speed);
     setTimeout(function(){
         $('.text').css('display', 'flex');
         typeEffect($('.text'), speed);
     }, delay);
+    setTimeout(function(){
+        $('.text2').css('display', 'flex');
+        typeEffect($('.text2'), speed);
+    }, delay2);
 });
