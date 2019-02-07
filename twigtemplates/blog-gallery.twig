@@ -7,7 +7,7 @@
         {% for item in Post %}
             {% if loop.index < 2 %}
             <div class="gallery-blog-big-pic" style="background-image: url('img/{{item.Image}}');"></div>
-            <div class="gallery-blog-big-txt flex flex-1 flex-column padding-xxl--left-90 padding-xl--left-70 padding-m--left-none padding-xxl--right-90 padding-xl--right-70 padding-m--right-none padding-xxl--top-24 padding-m--top-18 padding-s--top-46 padding-xxl--bottom-24 padding-m--bottom-18">
+            <div class="gallery-blog-big-txt flex flex-1 flex-column padding-xxl--left-90 padding-xl--left-70 padding-m--left-none padding-xxl--right-90 padding-xl--right-70 padding-m--right-none padding-m--top-18 padding-s--top-46 padding-m--bottom-18">
                 <div class="gallery-blog-big-txt-title font-32 font-white margin-xxl--bottom-2_5-per margin-l--bottom-50">{{item.Title}}</div>
                 <div class="gallery-blog-big-txt-text font-16 font-white margin-xxl--bottom-10-per margin-l--bottom-50">{{item.Short | raw }}</div>
                 <div class="flex">

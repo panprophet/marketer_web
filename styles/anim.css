@@ -1,0 +1,84 @@
+.op1 {
+  opacity: 0;
+  animation: pulse1 2s infinite;
+}
+@keyframes pulse1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.op8 {
+  opacity: 0;
+  animation: pulse8 2s infinite;
+}
+@keyframes pulse8 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.8;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.op5 {
+  opacity: 0;
+  animation: pulse5 2s infinite;
+}
+@keyframes pulse5 {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.5;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.op2 {
+  opacity: 0;
+  animation: pulse2 2s infinite;
+}
+@keyframes pulse2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

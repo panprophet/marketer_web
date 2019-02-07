@@ -9,7 +9,7 @@
   background-size: cover;
 }
 .gallery-blog-big-txt {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .gallery-blog-big-txt-title {
   overflow: hidden;
@@ -18,12 +18,15 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.gallery-blog-big-txt-text {
+.gallery-blog-big-txt-text p:first-child {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
+}
+.gallery-blog-big-txt-text p {
+  display: none;
 }
 .gallery-blog-small {
   display: grid;
