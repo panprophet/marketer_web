@@ -42,11 +42,12 @@
             <div data-aos="zoom-in" class="projekti-grid-projekat">
                 <div class="projekti-grid-projekat-picture">
                     <a href="project/{{item.Slug}}">
-                        <img src="img/{{item.NaslovnaSlika}}">
+                        {# <img src="img/{{item.NaslovnaSlika}}"> #}
+                        <div class="projekti-grid-projekat-picture-img" style="background-image: url('img/{{item.NaslovnaSlika}}');"></div>
                     </a>
                     <div class="projekti-grid-projekat-picture-hover flex flex-column justify-content-end align-items-center">
                             <img class="projekti-grid-projekat-picture-hover-logo margin-xxl--bottom-24" src="img/{{item.Logo}}">
-                        <div class="font-16 font-white margin-xxl--bottom-60 margin-l--bottom-30">{{item.Opis}}</div>
+                        <div class="font-16 font-white margin-xxl--left-24 margin-xxl--right-24 margin-xxl--bottom-60 margin-l--bottom-30">{{item.Opis}}</div>
                         
                             <button class="button-midd background-white font-blue margin-xxl--bottom-100 margin-l--bottom-50 font-14">
                                 <a href="project/{{item.Slug}}">VIŠE</a>

@@ -1912,6 +1912,13 @@ a:active {
   position: relative;
   height: 33vw;
 }
+.projekti-grid-projekat-picture-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .projekti-grid-projekat-picture:hover {
   opacity: 1;
 }
@@ -2248,7 +2255,7 @@ a:active {
   background-size: cover;
 }
 .gallery-blog-big-txt {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .gallery-blog-big-txt-title {
   overflow: hidden;
@@ -2257,12 +2264,15 @@ a:active {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.gallery-blog-big-txt-text {
+.gallery-blog-big-txt-text p:first-child {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
+}
+.gallery-blog-big-txt-text p {
+  display: none;
 }
 .gallery-blog-small {
   display: grid;
@@ -3297,6 +3307,90 @@ a:active {
 }
 .tv--blok2-video-part img:hover {
   opacity: 0.5;
+}
+.op1 {
+  opacity: 0;
+  animation: pulse1 2s infinite;
+}
+@keyframes pulse1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.op8 {
+  opacity: 0;
+  animation: pulse8 2s infinite;
+}
+@keyframes pulse8 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.8;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.op5 {
+  opacity: 0;
+  animation: pulse5 2s infinite;
+}
+@keyframes pulse5 {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.5;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.op2 {
+  opacity: 0;
+  animation: pulse2 2s infinite;
+}
+@keyframes pulse2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .hover-tab:hover {
   cursor: pointer;

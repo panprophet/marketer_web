@@ -16,7 +16,8 @@
             <div data-aos="zoom-in" class="projekti-grid-projekat">
                 <div class="projekti-grid-projekat-picture">
                     <a href="project/{{item.Slug}}">
-                        <img src="img/{{item.NaslovnaSlika}}">
+                        {# <img src="img/{{item.NaslovnaSlika}}"> #}
+                        <div class="projekti-grid-projekat-picture-img" style="background-image: url('img/{{item.NaslovnaSlika}}');"></div>
                     </a>
                     <div class="projekti-grid-projekat-picture-hover flex flex-column justify-content-end align-items-center">
                             <img class="projekti-grid-projekat-picture-hover-logo margin-xxl--bottom-24" src="img/{{item.Logo}}">
