@@ -802,8 +802,20 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .margin-xs--top-60 {
+    margin-top: 3.75rem;
+  }
+  .margin-xs--top-24 {
+    margin-top: 1.5rem;
+  }
+  .margin-xs--bottom-60 {
+    margin-bottom: 3.75rem;
+  }
   .margin-xs--bottom-24 {
     margin-bottom: 1.5rem;
+  }
+  .margin-xs--right-36 {
+    margin-right: 2.25rem;
   }
   .margin-xs--right-none {
     margin-right: 0rem;

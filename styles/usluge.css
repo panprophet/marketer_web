@@ -17,6 +17,7 @@
 }
 .google {
   height: 100vh;
+  background-image: url('../images/google_bck.png');
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -103,8 +104,7 @@
     height: auto;
     top: 4.6875rem;
     position: relative;
-    background-size: 150% 35%;
-    background-position: -35%;
+    background-image: url('../images/google_bck_1024.png');
   }
   .google-wrap {
     background-position: 80% 2%;
