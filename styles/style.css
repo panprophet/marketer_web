@@ -2181,8 +2181,8 @@ a:active {
   height: calc(100vh - 4.6875rem);
   width: 100%;
   position: relative;
-  background-size: 100% 100%;
-  background-position: center;
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .home-video {
@@ -2202,6 +2202,9 @@ a:active {
 }
 .home-hero--text {
   width: 35%;
+}
+.home-hero--social-link {
+  height: 3.125rem;
 }
 @media screen and (max-width: 1440px) {
   .home-hero--text {
