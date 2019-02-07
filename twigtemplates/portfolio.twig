@@ -12,16 +12,16 @@
                 <a href="project/{{item.Slug}}">VIŠE </a></button>
         <div class="flex justify-content-center align-items-center margin-xxl--bottom-100 margin-l--bottom-50 margin-s--bottom-24">
             {% if item.Google == 'true' %}
-                <img class="portfolio-icon" src="images/google-icon.svg">
+                <img data-aos="zoom-in" class="portfolio-icon" src="images/google-icon.svg">
             {% endif %}
             {% if item.Facebook == 'true' %}
-                <img class="portfolio-icon face" src="images/facebook-icon.svg">
+                <img data-aos="zoom-in" class="portfolio-icon face" src="images/facebook-icon.svg">
             {% endif %}
             {% if item.Instagram == 'true' %}
-                <img class="portfolio-icon" src="images/instagram-icon.svg">
+                <img data-aos="zoom-in" class="portfolio-icon" src="images/instagram-icon.svg">
             {% endif %}
             {% if item.Linkedin == 'true' %}
-                <img class="portfolio-icon" src="">
+                <img data-aos="zoom-in" class="portfolio-icon" src="">
             {% endif %}
         </div>
     </div>
@@ -82,7 +82,7 @@
     <div class="font-46 font-white text-center margin-xxl--top-100 margin-l--top-70 margin-xxl--bottom-24">Radite sa nama</div>
     <div class="font-24 font-grey text-center margin-xxl--bottom-24">Imaš projekat na umu</div>
     <div class="background-blue line-big margin-xxl--bottom-48"></div>
-    <button class="button-big background-blue font-white font-14 margin-xxl--bottom-100 margin-l--bottom-70">POZOVI VIŠE</button>
+    <button class="button-big background-blue font-white font-14 margin-xxl--bottom-100 margin-l--bottom-70"><a href="kontakt">POZOVI</a></button>
 </div>
 
 {% include 'klijenti.twig' %}

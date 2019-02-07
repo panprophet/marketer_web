@@ -24,6 +24,9 @@
 .home-hero--text {
   width: 35%;
 }
+.home-hero--social-link {
+  height: 3.125rem;
+}
 @media screen and (max-width: 1440px) {
   .home-hero--text {
     width: 50%;
