@@ -207,6 +207,10 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .line-tiny {
+    width: 2.1875rem;
+    height: 0.3125rem;
+  }
 }
 @media screen and (max-width: 360px) {
 }
