@@ -4,6 +4,7 @@
 
 {% for item in Projekti %}
 {% if item.Istakni == 'true' %}
+{# {% set tip = item.Slug } #}
     <div class="position portfolio flex flex-column justify-content-end align-items-center" style="background: linear-gradient(0deg, rgba(21, 21, 21, 0.5), rgba(21, 21, 21, 0.5)), url(img/{{item.NaslovnaSlika}});">
         <div class="font-46 font-white margin-xxl--bottom-24">{{item.Naziv}}</div>
         <div class="font-16 font-white text-center margin-xxl--bottom-48 margin-m--bottom-24 margin-xxl--left-24 margin-xxl--right-24">{{item.Opis}}</div>
@@ -39,6 +40,8 @@
 
         <div class="projekti-grid flex">
         {% for item in Projekti %}
+
+            {% if not item.Istakni or item.Istakni == 'false' %}
             <div data-aos="zoom-in" class="projekti-grid-projekat">
                 <div class="projekti-grid-projekat-picture">
                     <a href="project/{{item.Slug}}">
@@ -74,6 +77,7 @@
                     <div class="projekti-grid-projekat-opis-txt font-grey--mid font-16 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60 margin-s--left-24 margin-s--right-24">{{item.Opis}}</div>
                 </div>
             </div>
+            {% endif %}
         {% endfor %}
         </div>
     </div>
