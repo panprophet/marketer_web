@@ -292,6 +292,10 @@ a:active {
   }
 }
 @media screen and (max-width: 480px) {
+  .line-tiny {
+    width: 2.1875rem;
+    height: 0.3125rem;
+  }
 }
 @media screen and (max-width: 360px) {
 }
@@ -3478,6 +3482,14 @@ a:active {
     display: none;
   }
   .display--s-flex {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .display--xxs-none {
+    display: none;
+  }
+  .display--xxs-flex {
     display: flex;
   }
 }
