@@ -49,3 +49,21 @@
 .tv--blok2-video-part img:hover {
   opacity: 0.5;
 }
+@media screen and (max-width: 1024px) {
+  .tv--blok2-video:nth-of-type(even) {
+    margin-top: 0vw;
+  }
+  .tv--blok2-video:last-of-type:nth-of-type(odd) {
+    position: relative;
+    left: 0%;
+    margin-top: 0vw;
+  }
+}
+@media screen and (max-width: 680px) {
+  .tv--blok2-video {
+    width: 100%;
+  }
+  .tv--blok2-video-part {
+    height: 66vw;
+  }
+}
