@@ -53,12 +53,15 @@
       // background-size: 80% 80%;
       -webkit-transition: opacity 0.9s ease-in;
       transition: opacity 0.9s ease-in;
-      img {
+      picture {
         // height: 80%;
         width: 95%;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -86,8 +89,11 @@
           &-elem {
             width: 44%;
             &--icon {
-              height: 2.125rem;
-              width: 1.87rem;
+              height: 2rem;
+              // width: 1.87rem;
+              img {
+                height: 100%;
+              }
             }
           }
         }
@@ -110,6 +116,9 @@
         }
       }
     }
+  }
+  &-g {
+    background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 31.65%, #1C1C1E 80.12%), url('../images/howwhy_g_1920.png');
   }
 }
 .icon {
@@ -179,6 +188,12 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        picture {
+          width: 60%;
+          img {
+            width: 100%;
+          }
+        }
       }
     }
     &--left {
@@ -211,6 +226,9 @@
         }
       }
     }
+    &-g {
+      background-image: url('../images/howwhy_g_1024.png');
+    }
   }
 }
 @media only screen and (max-width: 960px) {
@@ -233,6 +251,11 @@
   .howwhy {
     &--right {
       margin-top: 15.75rem;
+    }
+  }
+  .whatdoit {
+    &--right {
+      height: 25.5625rem;
     }
   }
 }

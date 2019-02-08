@@ -42,11 +42,14 @@
   -webkit-transition: opacity 0.9s ease-in;
   transition: opacity 0.9s ease-in;
 }
-.whatdoit--right-image img {
+.whatdoit--right-image picture {
   width: 95%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.whatdoit--right-image picture img {
+  width: 100%;
 }
 .whatdoit--left {
   position: relative;
@@ -71,8 +74,10 @@
   width: 44%;
 }
 .whatdoit--left-nalog-benefits--col-elem--icon {
-  height: 2.125rem;
-  width: 1.87rem;
+  height: 2rem;
+}
+.whatdoit--left-nalog-benefits--col-elem--icon img {
+  height: 100%;
 }
 .howwhy {
   background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 31.65%, #1C1C1E 80.12%), url('../images/social3.png');
@@ -83,6 +88,9 @@
 }
 .howwhy--right-how--icons-icon {
   flex: 0 50%;
+}
+.howwhy-g {
+  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 31.65%, #1C1C1E 80.12%), url('../images/howwhy_g_1920.png');
 }
 .icon {
   height: 24px;
@@ -140,6 +148,12 @@
     background-position: center;
     background-size: contain;
   }
+  .whatdoit--right-image picture {
+    width: 60%;
+  }
+  .whatdoit--right-image picture img {
+    width: 100%;
+  }
   .whatdoit--left {
     order: 2;
   }
@@ -164,6 +178,9 @@
   .howwhy--right-how--icons-icon {
     flex: 0 33.33%;
   }
+  .howwhy-g {
+    background-image: url('../images/howwhy_g_1024.png');
+  }
 }
 @media only screen and (max-width: 960px) {
   .howwhy--right {
@@ -180,5 +197,8 @@
   }
   .howwhy--right {
     margin-top: 15.75rem;
+  }
+  .whatdoit--right {
+    height: 25.5625rem;
   }
 }
