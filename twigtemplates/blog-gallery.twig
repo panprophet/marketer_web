@@ -23,7 +23,7 @@
         <div class="gallery-blog-small padding-xxl--top-24 padding-m--top-18 padding-xxl--bottom-24 padding-m--bottom-18 margin-xxl--left-24 margin-m--left-18 margin-xxl--right-24 margin-m--right-18 flex justify-content-between">
         {% for item in Post %}
             {% if loop.index > 1 and loop.index < 6 %}
-            <div class="gallery-blog-small-part flex flex-column">
+            <div class="gallery-blog-small-part flex flex-column margin-l--bottom-24">
                 <div class="gallery-blog-small-part-pic" style="background-image: url('img/{{item.Image}}');">
                     <div class="gallery-blog-small-part-pic-text flex flex-column justify-content-end">
                         <div class="gallery-blog-small-part-pic-text-title font-16 font-white margin-xxl--left-24 margin-m--left-18 margin-xxl--right-24 margin-m--right-18 margin-xxl--bottom-24 margin-m--bottom-18 text-center">{{item.Short | raw }}</div>
