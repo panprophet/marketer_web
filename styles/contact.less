@@ -42,6 +42,15 @@
     // transition: transform 0.1s ease-in-out 0.9s;
   }
 }
+.next {
+  &-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  &-enabled {
+    pointer-events: all;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .kontakt {
     top: 4.6875rem;
