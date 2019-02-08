@@ -2080,6 +2080,13 @@ a:active {
   left: 0px;
   top: 75px;
 }
+.next-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.next-enabled {
+  pointer-events: all;
+}
 @media only screen and (max-width: 1024px) {
   .kontakt {
     top: 4.6875rem;
