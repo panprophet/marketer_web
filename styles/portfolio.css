@@ -10,10 +10,7 @@
   max-height: 6.25rem;
 }
 .portfolio-icon {
-  max-width: 12.5rem;
-  max-height: 5rem;
-  margin-left: 7%;
-  margin-right: 7%;
+  height: 2.5rem;
 }
 @media screen and (max-width: 1024px) {
   .position {

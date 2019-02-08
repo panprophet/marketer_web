@@ -21,23 +21,23 @@
                     </a>
                     <div class="projekti-grid-projekat-picture-hover flex flex-column justify-content-end align-items-center">
                             <img class="projekti-grid-projekat-picture-hover-logo margin-xxl--bottom-24" src="img/{{item.Logo}}">
-                        <div class="font-16 font-white margin-xxl--bottom-60 margin-l--bottom-30">{{item.Opis}}</div>
+                        <div class="font-16 font-white margin-xxl--bottom-60 margin-l--bottom-30 margin-xxl--left-24 margin-xxl--right-24">{{item.Opis}}</div>
                         
-                            <button class="button-midd background-white font-blue font-14 margin-xxl--bottom-100 margin-l--bottom-50">
+                            <button class="button-midd background-white font-blue font-14 margin-xxl--bottom-60">
                                 <a href="project/{{item.Slug}}">VIŠE</a></button>
                         
-                        <div class="flex justify-content-center align-items-center margin-xxl--bottom-48 margin-l--bottom-24">
+                        <div class="projekti-grid-projekat-picture-hover-icon flex justify-content-center align-items-start margin-xxl--bottom-48 margin-l--bottom-24">
                             {% if item.Google == 'true' %}
-                                <img class="projekti-grid-projekat-picture-hover-icon" src="images/google-icon.svg">
+                                <img class="margin-xxl--right-24" style="max-height: 100%;" src="images/google-icon.svg">
                             {% endif %}
                             {% if item.Facebook == 'true' %}
-                                <img class="projekti-grid-projekat-picture-hover-icon face" src="images/facebook-icon.svg">
+                                <img class="margin-xxl--right-24" style="max-height: 80%;" src="images/facebook-icon.svg">
                             {% endif %}
                             {% if item.Instagram == 'true' %}
-                                <img class="projekti-grid-projekat-picture-hover-icon" src="images/instagram-icon.svg">
+                                <img class="margin-xxl--right-24" style="height: 100%;margin-top: 1px;" src="images/instagram-icon.svg">
                             {% endif %}
-                            {% if item.Linkedin == 'true' %}
-                                <img class="projekti-grid-projekat-picture-hover-icon" src="">
+                            {% if item.Linkendin == 'true' %}
+                                <img style="max-height: 90%;" src="images/Linkedin-icon.svg">
                             {% endif %}
                         </div>
                     </div>
