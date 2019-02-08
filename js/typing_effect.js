@@ -15,7 +15,7 @@ function typeEffect(element, speed) {
 }
 
 $(document).ready(function(){
-    var speed = 75;
+    var speed = 20;
     var delay = $('.naslov').text().length * speed + speed;
     var delay2 = $('.text').text().length * speed + speed + delay;
     $('.naslov').css('display', 'flex');
