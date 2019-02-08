@@ -136,11 +136,24 @@ a:focus, a:active{
         }
     }
 }
+.callme {
+    height: 3.666rem;
+    width: 3.666rem;
+    position: fixed;
+    top: 9.375rem;
+    right: 0.625rem;
+    border: 1px solid @white;
+    border-radius: 50%;
+    z-index: 99999999;
+}
 @media only screen and (max-width: 1024px) {
     .display {
         &--l {
             &-none {
             display: none;
+            }
+            &-flex {
+                display: flex;
             }
         }
     }
@@ -150,6 +163,9 @@ a:focus, a:active{
         &--m {
             &-none {
             display: none;
+            }
+            &-flex {
+                display: flex;
             }
         }
     }

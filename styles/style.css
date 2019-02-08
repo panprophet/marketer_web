@@ -2075,6 +2075,13 @@ a:active {
   left: 0px;
   top: 75px;
 }
+.next-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.next-enabled {
+  pointer-events: all;
+}
 @media only screen and (max-width: 1024px) {
   .kontakt {
     top: 4.6875rem;
@@ -3458,14 +3465,30 @@ a:active {
 .display--xxl-none {
   display: none;
 }
+.callme {
+  height: 3.666rem;
+  width: 3.666rem;
+  position: fixed;
+  top: 9.375rem;
+  right: 0.625rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  z-index: 99999999;
+}
 @media only screen and (max-width: 1024px) {
   .display--l-none {
     display: none;
+  }
+  .display--l-flex {
+    display: flex;
   }
 }
 @media only screen and (max-width: 960px) {
   .display--m-none {
     display: none;
+  }
+  .display--m-flex {
+    display: flex;
   }
 }
 @media only screen and (max-width: 600px) {
