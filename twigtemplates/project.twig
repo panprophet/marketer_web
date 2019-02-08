@@ -8,18 +8,18 @@
         <div class="font-46 font-white margin-xxl--bottom-24">{{item.Naziv}}</div>
         <div class="font-16 font-white text-center margin-xxl--bottom-48 margin-m--bottom-24 margin-xxl--left-24 margin-xxl--right-24">{{item.Opis}}</div>
         <div class="line-small background-blue text-center margin-xxl--bottom-60 margin-m--bottom-24"></div>
-        <div class="flex justify-content-center align-items-center margin-xxl--bottom-100 margin-l--bottom-50 margin-s--bottom-24">
+        <div class="portfolio-icon flex justify-content-center align-items-start margin-xxl--bottom-100 margin-l--bottom-50 margin-s--bottom-24">
             {% if item.Google == 'true' %}
-                <img data-aos="zoom-in" class="portfolio-icon" src="images/google-icon.svg">
+                <img data-aos="zoom-in" data-aos-delay="400" style="max-height: 100%;" src="images/google-icon.svg">
             {% endif %}
             {% if item.Facebook == 'true' %}
-                <img data-aos="zoom-in" class="portfolio-icon face" src="images/facebook-icon.svg">
+                <img data-aos="zoom-in" data-aos-delay="525" class="margin-xxl--left-24" style="max-height: 75%;" src="images/facebook-icon.svg">
             {% endif %}
             {% if item.Instagram == 'true' %}
-                <img data-aos="zoom-in" class="portfolio-icon" src="images/instagram-icon.svg">
+                <img data-aos="zoom-in" data-aos-delay="550" class="margin-xxl--left-24" style="height: 100%;margin-top: 1px;" src="images/instagram-icon.svg">
             {% endif %}
-            {% if item.Linkedin == 'true' %}
-                <img data-aos="zoom-in" class="portfolio-icon" src="">
+            {% if item.Linkendin == 'true' %}
+                <img data-aos="zoom-in" data-aos-delay="575" class="margin-xxl--left-24" style="max-height: 100%;" src="images/Linkedin-icon.svg">
             {% endif %}
         </div>
     </div>
