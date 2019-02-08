@@ -1,4 +1,4 @@
-{% set testimonials = fetch("Testimonials") %}
+{% set Testimonial = fetch("Testimonial") %}
 
 <div class="testimonials flex flex-column justify-content-center align-items-center w-100 background-black-lighter" style="min-height: 100vh;">
   <div class="testimonials--title flex flex-column align-items-center margin-xxl--top-100 w-100">
@@ -14,29 +14,16 @@
       </div>
     </div>
     <div class="testimonials--inner-mid flex align-items-center overflow-hidden margin-xxl--left-180 margin-xxl--right-180 margin-l--left-100 margin-l--right-100 margin-s--left-24 margin-s--right-24" id="testemonials">
-      <div class="testimonials--inner-mid--single flex flex-column align-items-center w-100--min" id="test1">
-        <div class="logo margin-xxl--bottom-48"><img src="./images/CryoSave.svg"></div>
+      {% for item in Testimonial %}
+      <div class="testimonials--inner-mid--single flex flex-column align-items-center w-100--min" id="test{{loop.index}}">
+        <div class="logo margin-xxl--bottom-48"><img src="img/{{ item.Logo }}"></div>
         <div class="person margin-xxl--bottom-48">
-          <p class="font-24 font-white margin-xxl--bottom-24 text-center">Gunther Cousters</p>
-          <p class="font-16 font-grey text-center">izvršni direktor operacija, CryoSave</p>
+          <p class="font-24 font-white margin-xxl--bottom-24 text-center">{{ item.ImePrezime }}</p>
+          <p class="font-16 font-grey text-center">{{ item.Pozicija }}</p>
         </div>
-        <div class="testimony font-16 font-white text-center">"Poklon paket za trudnice #zdravobebo lansiran je na naše tržište pre par meseci i za veoma kratko vreme je pronašao put i osvojio srca trudnica. Marketer nam je pomogao da se putem online promocije veoma visoko pozicioniramo u svesti korisnika i postanemo prepoznatljivi kod trudnica i mama. Lojalnost i rast potražnje pokazuju nam da smo na dobrom putu."</div>
+        <div class="testimony font-16 font-white text-center">{{ item.Text }}</div>
       </div>
-      <div class="testimonials--inner-mid--single flex flex-column align-items-center w-100--min" id="test2">
-        <div class="logo margin-xxl--bottom-48"><img src="./images/CryoSave.svg"></div>
-        <div class="person margin-xxl--bottom-48">
-          <p class="font-24 font-white margin-xxl--bottom-24 text-center">Cunther Gousters</p>
-          <p class="font-16 font-grey text-center">izvršni direktor operacija, CryoSave</p>
-        </div>
-        <div class="testimony font-16 font-white text-center">"Poklon paket za trudnice #zdravobebo lansiran je na naše tržište pre par meseci i za veoma kratko vreme je pronašao put i osvojio srca trudnica. Marketer nam je pomogao da se putem online promocije veoma visoko pozicioniramo u svesti korisnika i postanemo prepoznatljivi kod trudnica i mama. Lojalnost i rast potražnje pokazuju nam da smo na dobrom putu."</div>
-      </div>
-      <div class="testimonials--inner-mid--single flex flex-column align-items-center w-100--min" id="test3">  <div class="logo margin-xxl--bottom-48"><img src="./images/CryoSave.svg"></div>
-        <div class="person margin-xxl--bottom-48">
-          <p class="font-24 font-white margin-xxl--bottom-24 text-center">Runtheg Sousterc</p>
-          <p class="font-16 font-grey text-center">izvršni direktor operacija, CryoSave</p>
-        </div>
-        <div class="testimony font-16 font-white text-center">"Poklon paket za trudnice #zdravobebo lansiran je na naše tržište pre par meseci i za veoma kratko vreme je pronašao put i osvojio srca trudnica. Marketer nam je pomogao da se putem online promocije veoma visoko pozicioniramo u svesti korisnika i postanemo prepoznatljivi kod trudnica i mama. Lojalnost i rast potražnje pokazuju nam da smo na dobrom putu."</div>
-      </div>
+      {% endfor %}
     </div>
     <div class="testimonials--inner-right flex align-items-center margin-l--right-60 display--s-none">
       <div class="testimonials--inner-left--arrow arrow" onclick="nextTestemonial('next');"><img src="./images/icons/arrow.svg" style="transform: rotate(180deg);">
@@ -44,6 +31,12 @@
     </div>
   </div>
   <div class="testimonials--markers flex align-items-center justify-content-center w-50 w--xl-75 margin-xxl--bottom-100">
-    <div class="testimonials--markers-marker margin-xxl--right-60 line-marker background-grey active-marker" id="active1"></div><div class="testimonials--markers-marker margin-xxl--right-60 line-marker background-grey" id="active2"></div><div class="testimonials--markers-marker line-marker background-grey" id="active3"></div>
+    {% for item in Testimonial %}
+      {% if loop.index == 1 %}
+      <div class="testimonials--markers-marker margin-xxl--right-60 line-marker background-grey active-marker" id="active{{loop.index}}"></div>
+      {% else %}
+      <div class="testimonials--markers-marker margin-xxl--right-60 line-marker background-grey" id="active{{loop.index}}"></div>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
