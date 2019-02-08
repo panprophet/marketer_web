@@ -19,15 +19,17 @@ function nextStep(number) {
 }
 
 var inputArray = document.querySelectorAll("input");
-
-inputArray.forEach(function(elem){
-  elem.addEventListener("keyup", function(){
     var elem1;
     var elem2;
-    if(elem1 !== '') {
+inputArray.forEach(function(elem){
+  elem.addEventListener("keyup", function(){
+
+    console.log(elem.id, elem1, elem2);
+
+    if(!elem1) {
       elem1 = elem.id;
     } else if (elem1 !== elem.id) {
-      elem2.elem.id;
+      elem2 = elem.id;
     }
     console.log(elem.id, elem1, elem2);
 
