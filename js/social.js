@@ -10,10 +10,12 @@ function nextTabs(whereto) {
       if(i === whereto) {
         document.getElementById("tab" + i).style.opacity = "1";
       }
-      document.getElementById("rightpic" + i).style.transform = "translateX(" + where + "%)";
-      document.getElementById("rightpic" + i).style.opacity = "0";
-      if(i === whereto) {
-        document.getElementById("rightpic" + i).style.opacity = "1";
+      if(document.getElementById("rightpic" + i)) {
+        document.getElementById("rightpic" + i).style.transform = "translateX(" + where + "%)";
+        document.getElementById("rightpic" + i).style.opacity = "0";
+        if(i === whereto) {
+          document.getElementById("rightpic" + i).style.opacity = "1";
+        }
       }
       if(document.getElementById("choice" + i).classList.contains('active-link')) {
         document.getElementById("choice" + i).classList.remove('active-link');
@@ -147,6 +149,41 @@ window.addEventListener('load', function(){
     }, false);
 
     googletabs.addEventListener('touchend', function(e) {
+      if(Math.abs(distX) > Math.abs(distY) == true) {
+          if(distX > 0) {
+            move = parseInt(move) - 1;
+          } else if(distX < 0) {
+            move = parseInt(move) + 1;
+          }
+          setTimeout(() => {
+              nextTabs(move);
+          }, 100);
+      }
+    },false);
+  }
+  if(document.getElementById("onamatabs")) {
+    var onamatabs = document.getElementById("onamatabs");
+
+    onamatabs.addEventListener('touchstart', function(e) {
+      touchobj = e.changedTouches[0];
+      elem = e.target.closest('.o-nama--misija-info');
+      elemId = elem.id;
+      startx = parseInt(touchobj.clientX);
+      starty = parseInt(touchobj.clientY);
+      move = elemId.substring(3);
+    }, false);
+
+
+    onamatabs.addEventListener('touchmove', function(e) {
+      touchobj = e.changedTouches[0];
+      distX = parseInt(touchobj.clientX) - startx;
+      distY = parseInt(touchobj.clientY) - starty;
+      if(Math.abs(distX) > Math.abs(distY) == true) {
+          e.preventDefault();
+      }
+    }, false);
+
+    onamatabs.addEventListener('touchend', function(e) {
       if(Math.abs(distX) > Math.abs(distY) == true) {
           if(distX > 0) {
             move = parseInt(move) - 1;
