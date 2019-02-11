@@ -66,7 +66,6 @@ function nextTestemonial(event) {
   if(count >= testcount) {
     count = testcount - 1;
   }
-
   for(var i = 1; i <= testcount; i++) {
     trans = -100 * count;
     document.getElementById("test" + i ).style.transform = "translateX(" + trans + "%)";
@@ -80,3 +79,47 @@ function nextTestemonial(event) {
     document.getElementById("active" + (count + 1) ).classList.add('active-marker');
   }
 }
+window.addEventListener('load', function(){
+  var countTest = document.getElementById('testemonials').children.length
+  var test = document.getElementById('testemonials');
+  var inputArray = document.querySelectorAll(".testimonials--inner-mid--single");
+
+  // console.log(inputArray, countTest);
+
+  var startx,
+  starty,
+  distX = 0,
+  distY = 0,
+  touchobj = null;
+  var move;
+    test.addEventListener('touchstart', function(e) {
+      touchobj = e.changedTouches[0];
+      startx = parseInt(touchobj.clientX);
+      starty = parseInt(touchobj.clientY);
+    }, false);
+
+
+    test.addEventListener('touchmove', function(e) {
+      touchobj = e.changedTouches[0];
+      distX = parseInt(touchobj.clientX) - startx;
+      distY = parseInt(touchobj.clientY) - starty;
+      if(Math.abs(distX) > Math.abs(distY) == true) {
+          e.preventDefault();
+      }
+    }, false);
+
+    test.addEventListener('touchend', function(e) {
+      if(Math.abs(distX) > Math.abs(distY) == true) {
+          if(distX > 0) {
+            move = "prev";
+          } else if(distX < 0) {
+            move="next";
+          }
+          setTimeout(() => {
+              nextTestemonial(move);
+          }, 100);
+      }
+      console.log(move);
+    },false);
+
+}, false);
