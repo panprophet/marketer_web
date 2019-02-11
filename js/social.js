@@ -3,25 +3,26 @@ function nextTabs(whereto) {
   var where = -100 * (whereto - 1);
   var noofitems = document.getElementById('numberofitems').children.length;
 
-  for(var i = 1; i <= noofitems; i++) {
-    document.getElementById("tab" + i).style.transform = "translateX(" + where + "%)";
-    document.getElementById("tab" + i).style.opacity = "0";
-    if(i === whereto) {
-      console.log(i, whereto);
-      document.getElementById("tab" + i).style.opacity = "1";
+  if(whereto > 0 && whereto <= noofitems ){
+    for(var i = 1; i <= noofitems; i++) {
+      document.getElementById("tab" + i).style.transform = "translateX(" + where + "%)";
+      document.getElementById("tab" + i).style.opacity = "0";
+      if(i === whereto) {
+        document.getElementById("tab" + i).style.opacity = "1";
+      }
+      document.getElementById("rightpic" + i).style.transform = "translateX(" + where + "%)";
+      document.getElementById("rightpic" + i).style.opacity = "0";
+      if(i === whereto) {
+        document.getElementById("rightpic" + i).style.opacity = "1";
+      }
+      if(document.getElementById("choice" + i).classList.contains('active-link')) {
+        document.getElementById("choice" + i).classList.remove('active-link');
+        document.getElementById("choice" + i).classList.remove('active-tab');
+      }
     }
-    document.getElementById("rightpic" + i).style.transform = "translateX(" + where + "%)";
-    document.getElementById("rightpic" + i).style.opacity = "0";
-    if(i === whereto) {
-      document.getElementById("rightpic" + i).style.opacity = "1";
-    }
-    if(document.getElementById("choice" + i).classList.contains('active-link')) {
-      document.getElementById("choice" + i).classList.remove('active-link');
-      document.getElementById("choice" + i).classList.remove('active-tab');
-    }
+    document.getElementById("choice" + whereto).classList.add('active-link');
+    document.getElementById("choice" + whereto).classList.add('active-tab');
   }
-  document.getElementById("choice" + whereto).classList.add('active-link');
-  document.getElementById("choice" + whereto).classList.add('active-tab');
 };
 
 function nextTab(event) {
@@ -80,11 +81,6 @@ function nextTestemonial(event) {
   }
 }
 window.addEventListener('load', function(){
-  var countTest = document.getElementById('testemonials').children.length
-  var test = document.getElementById('testemonials');
-  var inputArray = document.querySelectorAll(".testimonials--inner-mid--single");
-
-  // console.log(inputArray, countTest);
 
   var startx,
   starty,
@@ -92,6 +88,12 @@ window.addEventListener('load', function(){
   distY = 0,
   touchobj = null;
   var move;
+
+  if(document.getElementById('testemonials')) {
+    var countTest = document.getElementById('testemonials').children.length
+    var test = document.getElementById('testemonials');
+    var inputArray = document.querySelectorAll(".testimonials--inner-mid--single");
+
     test.addEventListener('touchstart', function(e) {
       touchobj = e.changedTouches[0];
       startx = parseInt(touchobj.clientX);
@@ -119,7 +121,42 @@ window.addEventListener('load', function(){
               nextTestemonial(move);
           }, 100);
       }
-      console.log(move);
     },false);
 
+  }
+  if(document.getElementById("uslugetabs")) {
+    var googletabs = document.getElementById("uslugetabs");
+
+    googletabs.addEventListener('touchstart', function(e) {
+      touchobj = e.changedTouches[0];
+      elem = e.target.closest('.whatdoit--left-nalog');
+      elemId = elem.id;
+      startx = parseInt(touchobj.clientX);
+      starty = parseInt(touchobj.clientY);
+      move = elemId.substring(3);
+    }, false);
+
+
+    googletabs.addEventListener('touchmove', function(e) {
+      touchobj = e.changedTouches[0];
+      distX = parseInt(touchobj.clientX) - startx;
+      distY = parseInt(touchobj.clientY) - starty;
+      if(Math.abs(distX) > Math.abs(distY) == true) {
+          e.preventDefault();
+      }
+    }, false);
+
+    googletabs.addEventListener('touchend', function(e) {
+      if(Math.abs(distX) > Math.abs(distY) == true) {
+          if(distX > 0) {
+            move = parseInt(move) - 1;
+          } else if(distX < 0) {
+            move = parseInt(move) + 1;
+          }
+          setTimeout(() => {
+              nextTabs(move);
+          }, 100);
+      }
+    },false);
+  }
 }, false);
