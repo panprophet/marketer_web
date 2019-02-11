@@ -1,5 +1,7 @@
 .usluge {
   height: calc(100vh - 4.6875rem);
+  top: 4.6875rem;
+  position: relative;
   background-image: url('../images/sah_1920.png');
   background-position: center;
   background-size: cover;
@@ -17,6 +19,8 @@
 }
 .google {
   height: 100vh;
+  top: 4.6875rem;
+  position: relative;
   background-image: url('../images/google_bck.png');
   background-position: center;
   background-size: 100% 100%;
@@ -35,6 +39,8 @@
 }
 .drustvene {
   height: 100vh;
+  top: 4.6875rem;
+  position: relative;
   background-image: url('../images/pozadina_mreze.png');
   background-position: center;
   background-size: 100% 100%;
@@ -59,9 +65,11 @@
   height: 100%;
 }
 .vebresejna {
-  height: 100vh;
+  height: calc(100vh - 4.6875rem);
+  top: 4.6875rem;
+  position: relative;
   background-position: center;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 .vebresejna-wrap {
@@ -75,8 +83,6 @@
 @media only screen and (max-width: 1024px) {
   .usluge {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
     background-image: url('../images/sah_1024.png');
     background-position: 100% 0%;
   }
@@ -94,8 +100,6 @@
   }
   .google {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
     background-image: url('../images/google_bck_1024.png');
   }
   .google-wrap {
@@ -113,8 +117,6 @@
   }
   .drustvene {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
   }
   .drustvene-wrap {
     background-position: -100% 20%;
@@ -124,8 +126,6 @@
   }
   .vebresejna {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
   }
 }
 @media only screen and (max-width: 960px) {

@@ -1,5 +1,7 @@
 .social {
   min-height: 100vh;
+  top: 4.6875rem;
+  position: relative;
   background-image: url('../images/pozadina_mreze.png');
   background-position: center;
   background-size: 100% 100%;
@@ -29,6 +31,10 @@
 }
 .social--bottom-inside--info {
   width: 34.5%;
+}
+.whatdoit {
+  top: 4.6875rem;
+  position: relative;
 }
 .whatdoit--right {
   position: relative;
@@ -84,6 +90,8 @@
   height: 100%;
 }
 .howwhy {
+  top: 4.6875rem;
+  position: relative;
   background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 68.12%), url('../images/Kako-marketer-moze-da-vam-pomogne-drustvene-mreze.jpg');
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -124,8 +132,6 @@
 @media only screen and (max-width: 1024px) {
   .social {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
   }
   .social--top-right p:nth-child(2) {
     width: 79%;
@@ -139,10 +145,6 @@
   }
   .social--bottom {
     margin-top: 0px;
-  }
-  .whatdoit {
-    top: 4.6875rem;
-    position: relative;
   }
   .whatdoit--right {
     height: 40.5625rem;
@@ -171,8 +173,6 @@
   }
   .howwhy {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
     background-image: url('../images/social3_1024.png');
     background-size: contain;
     background-position: top;

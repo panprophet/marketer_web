@@ -1,4 +1,5 @@
 .gallery-blog {
+  top: 4.6875rem;
   position: relative;
 }
 .gallery-blog-big-pic {
@@ -84,9 +85,6 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .gallery-blog {
-    top: 4.6875rem;
-  }
   .gallery-blog-big {
     align-items: center;
   }

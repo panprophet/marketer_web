@@ -4,6 +4,8 @@
 .footer {
   height: 31.563rem;
   width: 100%;
+  top: 4.6875rem;
+  position: relative;
 }
 .footer-top {
   height: 11.375rem;
@@ -43,8 +45,6 @@
 @media only screen and (max-width: 1024px) {
   .footer {
     min-height: 45rem;
-    top: 4.6875rem;
-    position: relative;
   }
   .footer-top {
     justify-content: center;

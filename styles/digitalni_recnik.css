@@ -1,3 +1,7 @@
+.recnik {
+  top: 4.6875rem;
+  position: relative;
+}
 .recnik--blok1 {
   height: 42vw;
   background-position: center;
