@@ -1141,6 +1141,9 @@ a:active {
   .margin-l--left-60-per {
     margin-left: 3.125%;
   }
+  .margin-l--left-48 {
+    margin-left: 3rem;
+  }
   .margin-l--left-24 {
     margin-left: 1.5rem;
   }
@@ -1179,6 +1182,9 @@ a:active {
   }
   .margin-l--right-60-per {
     margin-right: 3.125%;
+  }
+  .margin-l--right-48 {
+    margin-right: 3rem;
   }
   .margin-l--right-24 {
     margin-right: 1.5rem;
