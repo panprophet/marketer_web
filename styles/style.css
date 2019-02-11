@@ -2672,12 +2672,14 @@ a:active {
 }
 .whatdoit--right-images-image picture {
   width: 95%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .whatdoit--right-images-image picture img {
   width: 100%;
+  max-height: 100%;
 }
 .whatdoit--left {
   position: relative;
@@ -2782,7 +2784,7 @@ a:active {
     width: 60%;
   }
   .whatdoit--right-images-image picture img {
-    width: 100%;
+    width: auto;
   }
   .whatdoit--left {
     order: 2;
