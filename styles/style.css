@@ -2858,14 +2858,6 @@ a:active {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.google-wrap {
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/google_oreo.png');
-  background-position: 80%;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 .google-wrap--left {
   width: 45%;
   height: 100%;
