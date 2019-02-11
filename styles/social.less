@@ -44,23 +44,26 @@
 .whatdoit {
   &--right {
     position: relative;
-    &-image {
+    &-images {
       height: 100%;
-      position: relative;
-      background-image: url('../images/drustvene_howwedoit_1920.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      // background-size: 80% 80%;
-      -webkit-transition: opacity 0.9s ease-in;
-      transition: opacity 0.9s ease-in;
-      picture {
-        // height: 80%;
-        width: 95%;
-        background-repeat: no-repeat;
+      &-image {
+        height: 100%;
+        position: relative;
+        // background-image: url('../images/drustvene_howwedoit_1920.png');
         background-position: center;
-        background-size: cover;
-        img {
-          width: 100%;
+        background-repeat: no-repeat;
+        // background-size: 80% 80%;
+        -webkit-transition: opacity 0.9s ease-in;
+        transition: opacity 0.9s ease-in;
+        picture {
+          // height: 80%;
+          width: 95%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          img {
+            width: 100%;
+          }
         }
       }
     }
@@ -137,8 +140,10 @@
   }
   .whatdoit {
     &--right {
-      &-image {
-        height: 50%;
+      &-images {
+        &-image {
+          height: 50%;
+        }
       }
     }
     &--left {
@@ -185,9 +190,10 @@
     &--right {
       height: 40.5625rem;
       order: 1;
-      &-image {
+      &-images{
+        &-image {
         height: 75%;
-        background-image: url('../images/drustvene_howwedoit_1024.png');
+        // background-image: url('../images/drustvene_howwedoit_1024.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -197,6 +203,7 @@
             width: 100%;
           }
         }
+      }
       }
     }
     &--left {
