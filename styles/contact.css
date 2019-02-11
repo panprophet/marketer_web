@@ -1,5 +1,6 @@
 .kontakt {
   width: 100%;
+  top: 4.6875rem;
   position: relative;
 }
 .kontakt-oglasavanje {
@@ -21,7 +22,9 @@
   transition: transform 0.9s ease-in-out;
 }
 .kontakt_solo {
-  height: 100vh;
+  height: calc(100vh - 4.6875rem);
+  top: 4.6875rem;
+  position: relative;
   background-color: #212224;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +34,6 @@
   height: 100%;
   position: absolute;
   left: 0px;
-  top: 75px;
 }
 .next-disabled {
   pointer-events: none;
@@ -41,10 +43,6 @@
   pointer-events: all;
 }
 @media only screen and (max-width: 1024px) {
-  .kontakt {
-    top: 4.6875rem;
-    position: relative;
-  }
   .kontakt-shared--title p {
     text-align: center;
   }

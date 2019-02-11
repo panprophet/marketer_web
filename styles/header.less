@@ -2,6 +2,8 @@
 .header {
   height: 4.6875rem;
   width: 100%;
+  position: fixed;
+  z-index: 9999999;
   background-color: @black-light;
   &-logo {
     span {
@@ -34,8 +36,8 @@
 }
 @media only screen and (max-width: 1024px) {
   .header {
-    position: fixed;
-    z-index: 9999999;
+    // position: fixed;
+    // z-index: 9999999;
     &-meni {
       width: 0px;
       div {

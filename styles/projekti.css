@@ -1,4 +1,5 @@
 .projekti {
+  top: 4.6875rem;
   position: relative;
 }
 .projekti--naslov {
@@ -82,9 +83,6 @@
   padding-bottom: 0.85rem;
 }
 @media screen and (max-width: 1024px) {
-  .projekti {
-    top: 4.6875rem;
-  }
   .projekti--naslov {
     justify-content: center;
     width: 100%;

@@ -1617,8 +1617,14 @@ a:active {
 .w-75 {
   width: 75%;
 }
+.w-60 {
+  width: 55%;
+}
 .w-50 {
   width: 50%;
+}
+.w-40 {
+  width: 45%;
 }
 .w-33 {
   width: 33.33%;
@@ -1709,6 +1715,8 @@ a:active {
 .header {
   height: 4.6875rem;
   width: 100%;
+  position: fixed;
+  z-index: 9999999;
   background-color: #212224;
 }
 .header-logo span {
@@ -1738,10 +1746,6 @@ a:active {
   transition: height 0.8s ease-in-out;
 }
 @media only screen and (max-width: 1024px) {
-  .header {
-    position: fixed;
-    z-index: 9999999;
-  }
   .header-meni {
     width: 0px;
   }
@@ -1763,6 +1767,8 @@ a:active {
 .footer {
   height: 31.563rem;
   width: 100%;
+  top: 4.6875rem;
+  position: relative;
 }
 .footer-top {
   height: 11.375rem;
@@ -1802,8 +1808,6 @@ a:active {
 @media only screen and (max-width: 1024px) {
   .footer {
     min-height: 45rem;
-    top: 4.6875rem;
-    position: relative;
   }
   .footer-top {
     justify-content: center;
@@ -1889,6 +1893,7 @@ a:active {
   }
 }
 .projekti {
+  top: 4.6875rem;
   position: relative;
 }
 .projekti--naslov {
@@ -1972,9 +1977,6 @@ a:active {
   padding-bottom: 0.85rem;
 }
 @media screen and (max-width: 1024px) {
-  .projekti {
-    top: 4.6875rem;
-  }
   .projekti--naslov {
     justify-content: center;
     width: 100%;
@@ -2048,6 +2050,7 @@ a:active {
 }
 .kontakt {
   width: 100%;
+  top: 4.6875rem;
   position: relative;
 }
 .kontakt-oglasavanje {
@@ -2069,7 +2072,9 @@ a:active {
   transition: transform 0.9s ease-in-out;
 }
 .kontakt_solo {
-  height: 100vh;
+  height: calc(100vh - 4.6875rem);
+  top: 4.6875rem;
+  position: relative;
   background-color: #212224;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2079,7 +2084,6 @@ a:active {
   height: 100%;
   position: absolute;
   left: 0px;
-  top: 75px;
 }
 .next-disabled {
   pointer-events: none;
@@ -2089,10 +2093,6 @@ a:active {
   pointer-events: all;
 }
 @media only screen and (max-width: 1024px) {
-  .kontakt {
-    top: 4.6875rem;
-    position: relative;
-  }
   .kontakt-shared--title p {
     text-align: center;
   }
@@ -2184,6 +2184,10 @@ a:active {
     line-height: 1.5rem;
   }
 }
+.testimonials {
+  top: 4.6875rem;
+  position: relative;
+}
 .testimonials--inner-mid--single {
   position: relative;
   -webkit-transition: all 0.8s ease-in-out;
@@ -2200,15 +2204,10 @@ a:active {
 .arrow:hover {
   cursor: pointer;
 }
-@media only screen and (max-width: 1024px) {
-  .testimonials {
-    top: 4.6875rem;
-    position: relative;
-  }
-}
 .home {
   height: calc(100vh - 4.6875rem);
   width: 100%;
+  top: 4.6875rem;
   position: relative;
   background-size: cover;
   background-position: top;
@@ -2235,6 +2234,10 @@ a:active {
 .home-hero--social-link {
   height: 3.125rem;
 }
+.usluge_mini {
+  top: 4.6875rem;
+  position: relative;
+}
 @media screen and (max-width: 1440px) {
   .home-hero--text {
     width: 50%;
@@ -2246,10 +2249,6 @@ a:active {
   }
 }
 @media screen and (max-width: 1024px) {
-  .home {
-    top: 4.6875rem;
-    position: relative;
-  }
   .home-line {
     display: flex;
   }
@@ -2271,10 +2270,6 @@ a:active {
     width: 80%;
     text-align: center;
   }
-  .usluge_mini {
-    top: 4.6875rem;
-    position: relative;
-  }
 }
 @media screen and (max-width: 960px) {
   .home-video {
@@ -2287,6 +2282,7 @@ a:active {
   }
 }
 .gallery-blog {
+  top: 4.6875rem;
   position: relative;
 }
 .gallery-blog-big-pic {
@@ -2372,9 +2368,6 @@ a:active {
   }
 }
 @media screen and (max-width: 1024px) {
-  .gallery-blog {
-    top: 4.6875rem;
-  }
   .gallery-blog-big {
     align-items: center;
   }
@@ -2416,6 +2409,7 @@ a:active {
 .klijenti {
   min-height: 38.75rem;
   background-color: #212224;
+  top: 4.6875rem;
   position: relative;
 }
 .klijenti--part-logo {
@@ -2426,7 +2420,6 @@ a:active {
   .klijenti {
     min-height: 38.75rem;
     background-color: #212224;
-    top: 4.6875rem;
   }
   .klijenti--part {
     align-items: center;
@@ -2449,11 +2442,11 @@ a:active {
 .portfolio-icon span {
   height: 2.5rem;
 }
+.position {
+  position: relative;
+  top: 4.6875rem;
+}
 @media screen and (max-width: 1024px) {
-  .position {
-    position: relative;
-    top: 4.6875rem;
-  }
   .portfolio-icon span {
     height: 1.78rem;
   }
@@ -2467,6 +2460,10 @@ a:active {
   .portfolio {
     height: 100vw;
   }
+}
+.project {
+  position: relative;
+  top: 4.6875rem;
 }
 .project-img {
   height: 24.7vw;
@@ -2626,6 +2623,8 @@ a:active {
 }
 .social {
   min-height: 100vh;
+  top: 4.6875rem;
+  position: relative;
   background-image: url('../images/pozadina_mreze.png');
   background-position: center;
   background-size: 100% 100%;
@@ -2656,6 +2655,10 @@ a:active {
 .social--bottom-inside--info {
   width: 34.5%;
 }
+.whatdoit {
+  top: 4.6875rem;
+  position: relative;
+}
 .whatdoit--right {
   position: relative;
 }
@@ -2671,7 +2674,7 @@ a:active {
   transition: opacity 0.9s ease-in;
 }
 .whatdoit--right-images-image picture {
-  width: 95%;
+  width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -2710,6 +2713,8 @@ a:active {
   height: 100%;
 }
 .howwhy {
+  top: 4.6875rem;
+  position: relative;
   background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 68.12%), url('../images/Kako-marketer-moze-da-vam-pomogne-drustvene-mreze.jpg');
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -2735,7 +2740,7 @@ a:active {
     margin-top: -9rem;
   }
   .whatdoit--right-images-image {
-    height: 50%;
+    height: 100%;
   }
   .whatdoit--left-nalog-block {
     width: 76%;
@@ -2747,11 +2752,19 @@ a:active {
     background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 96.12%), url('../images/Kako-marketer-moze-da-vam-pomogne-drustvene-mreze.jpg');
   }
 }
+@media only screen and (max-width: 1440px) {
+  .whatdoit--right {
+    order: 1;
+    overflow: hidden;
+  }
+  .whatdoit--right-images-image picture img {
+    width: 130%;
+    margin-left: 11.25rem;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .social {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
   }
   .social--top-right p:nth-child(2) {
     width: 79%;
@@ -2765,10 +2778,6 @@ a:active {
   }
   .social--bottom {
     margin-top: 0px;
-  }
-  .whatdoit {
-    top: 4.6875rem;
-    position: relative;
   }
   .whatdoit--right {
     height: 40.5625rem;
@@ -2785,6 +2794,7 @@ a:active {
   }
   .whatdoit--right-images-image picture img {
     width: auto;
+    margin-left: 0rem;
   }
   .whatdoit--left {
     order: 2;
@@ -2797,8 +2807,6 @@ a:active {
   }
   .howwhy {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
     background-image: url('../images/social3_1024.png');
     background-size: contain;
     background-position: top;
@@ -2836,6 +2844,8 @@ a:active {
 }
 .usluge {
   height: calc(100vh - 4.6875rem);
+  top: 4.6875rem;
+  position: relative;
   background-image: url('../images/sah_1920.png');
   background-position: center;
   background-size: cover;
@@ -2853,6 +2863,8 @@ a:active {
 }
 .google {
   height: 100vh;
+  top: 4.6875rem;
+  position: relative;
   background-image: url('../images/google_bck.png');
   background-position: center;
   background-size: 100% 100%;
@@ -2871,6 +2883,8 @@ a:active {
 }
 .drustvene {
   height: 100vh;
+  top: 4.6875rem;
+  position: relative;
   background-image: url('../images/pozadina_mreze.png');
   background-position: center;
   background-size: 100% 100%;
@@ -2895,9 +2909,11 @@ a:active {
   height: 100%;
 }
 .vebresejna {
-  height: 100vh;
+  height: calc(100vh - 4.6875rem);
+  top: 4.6875rem;
+  position: relative;
   background-position: center;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 .vebresejna-wrap {
@@ -2911,8 +2927,6 @@ a:active {
 @media only screen and (max-width: 1024px) {
   .usluge {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
     background-image: url('../images/sah_1024.png');
     background-position: 100% 0%;
   }
@@ -2930,8 +2944,6 @@ a:active {
   }
   .google {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
     background-image: url('../images/google_bck_1024.png');
   }
   .google-wrap {
@@ -2949,8 +2961,6 @@ a:active {
   }
   .drustvene {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
   }
   .drustvene-wrap {
     background-position: -100% 20%;
@@ -2960,8 +2970,6 @@ a:active {
   }
   .vebresejna {
     height: auto;
-    top: 4.6875rem;
-    position: relative;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -2998,6 +3006,8 @@ a:active {
 }
 .o-nama {
   height: 42vw;
+  top: 4.6875rem;
+  position: relative;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3101,6 +3111,10 @@ a:active {
     width: 85%;
   }
 }
+.blog {
+  top: 4.6875rem;
+  position: relative;
+}
 .blog--part {
   width: 23.5%;
   height: 24vw;
@@ -3148,6 +3162,10 @@ a:active {
     height: 100%;
     width: 100%;
   }
+}
+.recnik {
+  top: 4.6875rem;
+  position: relative;
 }
 .recnik--blok1 {
   height: 42vw;
@@ -3309,6 +3327,10 @@ a:active {
   .post--text {
     width: calc(100% - 6rem);
   }
+}
+.tv {
+  position: relative;
+  top: 4.6875rem;
 }
 .tv--blok1 {
   height: 39.3vw;

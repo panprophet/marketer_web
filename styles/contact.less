@@ -3,6 +3,7 @@
 
 .kontakt {
   width: 100%;
+  top: 4.6875rem;
   position: relative;
   &-oglasavanje {
     width: auto;
@@ -29,7 +30,9 @@
   transition: transform 0.9s ease-in-out;
 }
 .kontakt_solo {
-  height: 100vh;
+  height: calc(~"100vh - 4.6875rem");
+  top: 4.6875rem;
+  position: relative;
   background-color: @black-light;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +41,6 @@
     height: 100%;
     position: absolute;
     left: 0px;
-    top: 75px;
     // transition: transform 0.1s ease-in-out 0.9s;
   }
 }
@@ -53,8 +55,6 @@
 }
 @media only screen and (max-width: 1024px) {
   .kontakt {
-    top: 4.6875rem;
-    position: relative;
     &-shared {
       &--title{
         p {

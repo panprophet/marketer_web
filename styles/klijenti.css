@@ -1,6 +1,7 @@
 .klijenti {
   min-height: 38.75rem;
   background-color: #212224;
+  top: 4.6875rem;
   position: relative;
 }
 .klijenti--part-logo {
@@ -11,7 +12,6 @@
   .klijenti {
     min-height: 38.75rem;
     background-color: #212224;
-    top: 4.6875rem;
   }
   .klijenti--part {
     align-items: center;
