@@ -9,7 +9,7 @@
   max-width: 21.875rem;
   max-height: 6.25rem;
 }
-.portfolio-icon {
+.portfolio-icon span {
   height: 2.5rem;
 }
 @media screen and (max-width: 1024px) {
@@ -17,9 +17,8 @@
     position: relative;
     top: 4.6875rem;
   }
-  .portfolio-icon {
-    max-width: 6.25rem;
-    max-height: 3.125rem;
+  .portfolio-icon span {
+    height: 1.78rem;
   }
 }
 @media screen and (max-width: 960px) {

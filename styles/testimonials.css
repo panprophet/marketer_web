@@ -3,6 +3,14 @@
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
+.testimonials--inner-mid--single-logo {
+  width: 15.625rem;
+  height: 6.875rem;
+}
+.testimonials--inner-mid--single-logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
 .arrow:hover {
   cursor: pointer;
 }

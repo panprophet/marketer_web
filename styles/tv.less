@@ -15,7 +15,7 @@
             right: 0;
             bottom: 0;
             margin: auto;
-            &:hover{
+            &:hover{ 
                 opacity: 0.5;
             }
         }
@@ -48,6 +48,35 @@
                     &:hover{
                         opacity: 0.5;
                     }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .tv{
+        &--blok2{
+            &-video{
+                &:nth-of-type(even){
+                    margin-top: 0vw;
+                }
+                &:last-of-type:nth-of-type(odd){
+                    position: relative;
+                    left: 0%;
+                    margin-top: 0vw;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 680px){
+    .tv{
+        &--blok2{
+            // width: 100%;
+            &-video{
+                width: 100%;
+                &-part{
+                    height: 66vw;
                 }
             }
         }
