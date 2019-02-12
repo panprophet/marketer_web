@@ -27,7 +27,7 @@ function nextStep(number) {
   }
 }
 
-inputArray.forEach(function(elem){
+inputArray.forEach(function(elem) {
   elem.addEventListener("keyup", function(){
     if(!elem1) {
       elem1 = elem;
