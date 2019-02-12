@@ -33,6 +33,9 @@
 .projekti-grid-projekat-opis {
   height: 11vw;
 }
+.projekti-grid-projekat-opis-txt {
+  width: 60%;
+}
 .projekti-grid-projekat-picture {
   position: relative;
   height: 33vw;
@@ -81,6 +84,11 @@
 }
 .face {
   padding-bottom: 0.85rem;
+}
+@media screen and (max-width: 1440px) {
+  .projekti-grid-projekat-opis-txt {
+    width: auto;
+  }
 }
 @media screen and (max-width: 1024px) {
   .projekti--naslov {
