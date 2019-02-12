@@ -33,9 +33,11 @@
   <div class="testimonials--markers flex align-items-center justify-content-center w-50 w--xl-75 margin-xxl--bottom-100">
     {% for item in Testimonial %}
       {% if loop.index == 1 %}
-      <div class="testimonials--markers-marker margin-xxl--right-60 line-marker background-grey active-marker" id="active{{loop.index}}"></div>
+        <div class="testimonials--markers-marker margin-xxl--right-60 line-marker background-grey active-marker" id="active{{loop.index}}"></div>
+      {% elseif loop.last %}
+        <div class="testimonials--markers-marker line-marker background-grey" id="active{{loop.index}}"></div>
       {% else %}
-      <div class="testimonials--markers-marker margin-xxl--right-60 line-marker background-grey" id="active{{loop.index}}"></div>
+        <div class="testimonials--markers-marker margin-xxl--right-60 line-marker background-grey" id="active{{loop.index}}"></div>
       {% endif %}
     {% endfor %}
   </div>
