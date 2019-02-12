@@ -202,7 +202,7 @@ a:active {
   transform: rotate(180deg);
 }
 .line-big {
-  height: 0.375rem;
+  height: 0.7rem;
   width: 12.063rem;
 }
 .line-mid {
@@ -679,29 +679,39 @@ a:active {
 .button-big {
   height: 2.813rem;
   width: 12.063rem;
+  background-color: #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-big:hover {
   background-color: #000000;
   border: 1px solid #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-midd {
   height: 2.813rem;
   width: 8.375rem;
+  background-color: #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-midd:hover {
   background-color: #000000;
   border: 1px solid #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-small {
   height: 1.875rem;
   width: 6rem;
+  background-color: #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-small:hover {
   background-color: #000000;
   border: 1px solid #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-border-blue {
   border: 1px solid #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 @media screen and (max-width: 480px) {
   .button-big {
@@ -2866,13 +2876,16 @@ a:active {
   top: 4.6875rem;
   position: relative;
   background-image: url('../images/google_bck.png');
-  background-position: center;
-  background-size: 100% 100%;
+  background-position: 100% 10%;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .google-wrap--left {
   width: 45%;
   height: 100%;
+}
+.google-wrap--left-inner-text {
+  width: 60%;
 }
 .google-wrap--right {
   width: 55%;
@@ -2908,6 +2921,9 @@ a:active {
   width: 45%;
   height: 100%;
 }
+.drustvene-wrap--right-inner-text {
+  width: 65%;
+}
 .vebresejna {
   height: calc(100vh - 4.6875rem);
   top: 4.6875rem;
@@ -2923,6 +2939,20 @@ a:active {
 }
 .vebresejna-wrap--gradient {
   height: 100%;
+}
+.vebresejna-wrap--gradient-inner-text {
+  width: 20%;
+}
+@media only screen and (max-width: 1440px) {
+  .google-wrap--left-inner-text {
+    width: 75%;
+  }
+  .drustvene-wrap--right-inner-text {
+    width: 85%;
+  }
+  .vebresejna-wrap--gradient-inner-text {
+    width: 29%;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .usluge {
@@ -2944,13 +2974,17 @@ a:active {
   }
   .google {
     height: auto;
-    background-image: url('../images/google_bck_1024.png');
+    background-color: #F7F7F7;
+    background-image: url('../images/google.png');
+    background-position: 42% 50%;
+    background-size: 50%;
   }
   .google-wrap {
     background-position: 80% 2%;
   }
   .google-wrap--left {
     order: 2;
+    height: 120%;
   }
   .google-wrap--right {
     width: 80%;
@@ -2970,11 +3004,22 @@ a:active {
   }
   .vebresejna {
     height: auto;
+    background-position: top;
+    background-color: #101010;
+  }
+  .vebresejna-wrap {
+    padding-top: 21.875rem;
+  }
+  .vebresejna-wrap--gradient-inner-text {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 960px) {
   .drustvene-wrap--left-cont {
     width: 100%;
+  }
+  .google-wrap--left {
+    height: 160%;
   }
 }
 @media only screen and (max-width: 600px) {

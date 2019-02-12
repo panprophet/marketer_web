@@ -1,29 +1,39 @@
 .button-big {
   height: 2.813rem;
   width: 12.063rem;
+  background-color: #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-big:hover {
   background-color: #000000;
   border: 1px solid #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-midd {
   height: 2.813rem;
   width: 8.375rem;
+  background-color: #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-midd:hover {
   background-color: #000000;
   border: 1px solid #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-small {
   height: 1.875rem;
   width: 6rem;
+  background-color: #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-small:hover {
   background-color: #000000;
   border: 1px solid #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 .button-border-blue {
   border: 1px solid #00AEEF;
+  transition: all 0.4s ease-in-out;
 }
 @media screen and (max-width: 480px) {
   .button-big {
