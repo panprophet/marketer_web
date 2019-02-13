@@ -44,6 +44,9 @@
   .w--xl-25 {
     width: 25%;
   }
+  .w--xl-auto {
+    width: auto;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .w--l-100 {
@@ -60,6 +63,9 @@
   }
   .w--l-25 {
     width: 25%;
+  }
+  .w--l-auto {
+    width: auto;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -78,6 +84,9 @@
   .w--m-25 {
     width: 25%;
   }
+  .w--m-auto {
+    width: auto;
+  }
 }
 @media only screen and (max-width: 600px) {
   .w--s-100 {
@@ -94,5 +103,8 @@
   }
   .w--s-25 {
     width: 25%;
+  }
+  .w--s-auto {
+    width: auto;
   }
 }
