@@ -2,11 +2,10 @@
 {% block description %}kontakt{% endblock %}
 {% block content %}
 
-<div class="kontakt_solo flex w-100 overflow-hidden" style="background-image: url('./images/kontaktbck.png')" id="contactwrap">
+<form class="kontakt_solo flex w-100 overflow-hidden" style="background-image: url('./images/kontaktbck.png')" id="contactwrap">
   <div class="kontakt_solo--inner fade_in_cont flex flex-column justify-content-between align-items--l-center w-100--min w--m-100" id="strana1">
     <div class="margin-xxl--top-200 margin-xl--top-80 margin-l--top-100 padding-xxl--left-180 padding-xl--left-60 padding-l--left-100 padding-xxl--right-180 padding-xl--right-60 padding-l--right-100 text--l-center">
         <div class="font-36 font-white margin-xxl-bottom-24 margin-xl--bottom-18">Kontakt</div>
-        {# <div class="margin-xxl-bottom-24 margin-xl--bottom-18" style="min-height: 1.3125rem;"></div> #}
         <div class="line-big background-blue"></div>
     </div>
     <div class="flex align-items-center flex--l-column padding-xxl--left-180 padding-xl--left-60 padding-l--left-100 padding-xxl--right-180 padding-xl--right-60 padding-l--right-100">
@@ -104,8 +103,8 @@
         <div class="flex align-items-center justify-content--m-start font-18 display--xxs-none w--m-100">
           <div class="font-blue">4</div><div class="margin-xxl--left-10" style="border: 1px solid #606060; width: 24px;"></div><div class="font-white margin-xxl--left-10">4</div>
         </div>
-        <div class="flex align-items-center justify-content--m-end margin-xxl--left-24 text-hover w--m-75 next-disabled" onclick="nextStep(400)" id="next4">
-          <span class="font-white">Pošalji poruku</span><span class="margin-xxl--l4ft-24 margin-s--left-18"><img src="./images/icons/next.svg" /></span>
+        <div class="flex align-items-center justify-content--m-end margin-xxl--left-24 text-hover w--m-75 next-disabled" onclick="sendMessage()" id="next4">
+          <span class="font-white">Pošalji poruku</span><span class="margin-xxl--left-24 margin-s--left-18"><img src="./images/icons/next.svg" /></span>
           <span class="line-tiny background-blue margin-xxl--left-24 margin-s--left-18"></span>
         </div>
       </div>
@@ -118,13 +117,13 @@
         <div class="line-big background-blue"></div>
     </div>
     <div class="flex flex-column align-items-center justify-content-between padding-xxl--left-180 padding-xl--left-60 padding-l--left-100 padding-xxl--right-180 padding-xl--right-60 padding-l--right-100">
-      <div class="font-46 font-white letter-spacing--0_4 text--l-center  margin-l--bottom-50">Hvala što ste nas kontaktirali.</div>
-      <div class="font-46 font-white letter-spacing--0_4 text--l-center">Javićemo se ubrzo!</div>
+      <div class="font-46 font-white letter-spacing--0_4 text--l-center  margin-l--bottom-50" id="kontaktporuka">Hvala što ste nas kontaktirali.</div>
+      <div class="font-46 font-white letter-spacing--0_4 text--l-center" id="kontaktporuka2">Javićemo se ubrzo!</div>
     </div>
     <div class="flex justify-content-between w-100 margin-xxl--bottom-60">
     </div>
   </div>
-</div>
+</form>
 <!-- drugi ekran -->
 
 

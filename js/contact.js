@@ -22,9 +22,6 @@ function nextStep(number) {
       elem2 = null;
     }
   }
-  if(number === 400) {
-    //ovde submit
-  }
 }
 
 inputArray.forEach(function(elem) {
@@ -58,3 +55,46 @@ inputArray.forEach(function(elem) {
     }
   });
 });
+
+function sendMessage() {
+  var ime = $("#ime").val();
+  var naziv = $("#nazivkompanije").val();
+  var weburl = $("#webpage").val();
+  var cimesebavimo = $("#cimesebavimo").val();
+  var interesovanje = $("#interesovanje").val();
+  var email = $("#email").val();
+  var telefon = $("#telefon").val();
+
+  var data = {"name": ime, "naziv": naziv, "email": email, "weburl": weburl, "cimesebavimo": cimesebavimo, "interesovanje": interesovanje, "telefon": telefon};
+
+  $("#contactform").prop("disabled", true);
+
+  var request = $.ajax({
+    url: "./php/mail.php",
+    type: "post",
+    data: data
+  });
+
+  request.done(function (response, textStatus, jqXHR) {
+    var jsonobj = response;
+    $("#kontaktporuka").text(jsonobj.message);
+    $("#kontaktporuka2").text(jsonobj.message2);
+    if(jsonobj.status) {
+      nextStep(400);
+      $("#contactwrap").trigger("reset");
+    }
+  })
+  request.fail(function (jqXHR, textStatus, errorThrown){
+
+  // Log the error to the console
+    console.log(
+      "The following error occurred: " +
+      textStatus, errorThrown
+    );
+  });
+
+  request.always(function () {
+    // Reenable the inputs
+    $("#contactform").prop("disabled", false);
+  });
+}
