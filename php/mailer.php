@@ -12,7 +12,7 @@
     $subject = $_POST["weburl"];
     $message = $_POST["message"];
     $message = "Poruka od:" .$imeprezime. "\r\n" .$message;
-    $headers = "From: $imeprezime <$from>"."\r\n"."Reply-to: $from"."\r\n"."X-Mailer: PHP/".phpversion();
+    $headers = "From: $imeprezime <$to>"."\r\n"."Reply-to: $from"."\r\n"."X-Mailer: PHP/".phpversion();
 
     if(mail($to, $subject, $message, $headers)) {
       echo json_encode(array("message" => "Poruka je uspešno poslata, javićemo vam se u najkraćem mogućem roku.", "status" => true ));

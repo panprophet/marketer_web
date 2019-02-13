@@ -67,7 +67,7 @@ function sendMessage() {
 
   var data = {"name": ime, "naziv": naziv, "email": email, "weburl": weburl, "cimesebavimo": cimesebavimo, "interesovanje": interesovanje, "telefon": telefon};
 
-  $("#contactform").prop("disabled", true);
+  $("#contactwrap").prop("disabled", true);
 
   var request = $.ajax({
     url: "./php/mail.php",
@@ -95,6 +95,6 @@ function sendMessage() {
 
   request.always(function () {
     // Reenable the inputs
-    $("#contactform").prop("disabled", false);
+    $("#contactwrap").prop("disabled", false);
   });
 }
