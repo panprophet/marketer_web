@@ -18,7 +18,7 @@
     }
     $message = $message . "Mozete nam pisati na email adresu " . $from . ", ili kontaktirati telefonom na " . $phone . ".";
     // $message = "Poruka od:" .$imeprezime. "\r\n" .$message;
-    $headers = "From: $imeprezime <$from>"."\r\n"."Reply-to: $from"."\r\n"."X-Mailer: PHP/".phpversion();
+    $headers = "From: $imeprezime <$to>"."\r\n"."Reply-to: $from"."\r\n"."X-Mailer: PHP/".phpversion();
 
     if(mail($to, $subject, $message, $headers)) {
       echo json_encode(array("message" => "Hvala što ste nas kontaktirali.", "message2" => "Javićemo se ubrzo!" , "status" => true ));
