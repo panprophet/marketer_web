@@ -1,7 +1,6 @@
 <?php
     header('Content-Type: application/json');
-    // $to = "office@marketer.rs";
-    $to = "marko.ilic@buildcon.org";
+    $to = "office@marketer.rs";
     $imeprezime = $_POST["name"];
     $naziv_kompanije = $_POST["naziv"];
     $from = $_POST["email"];
@@ -10,7 +9,7 @@
     $usluga = $_POST["interesovanje"];
     $phone = $_POST["telefon"];
 
-    $subject = "Poruka sa web sajta od " . $imeprezime;
+    $subject = "Poruka sa web sajta od " . $imeprezime . " email: " . $form .".";
 
     $message = "Pozdrav, ja sam " . $imeprezime . ", iz kompanije " . $naziv_kompanije .". Nasa kompanija se bavi " . $delatnost . " i zainteresovani smo za vasu uslugu " . $usluga .".";
     if($weburl != '') {
