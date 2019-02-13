@@ -6,23 +6,48 @@ function submitMe() {
 
   // console.log(ime, email, weburl, poruka);
   // console.log("jel radis?");
-  var FD = new FormData(form);
+  // var FD = new FormData(form);
 
+  if(document.getElementById("imeprezime").value === '') {
+    document.getElementById("imeprezime").focus();
+  } else if(document.getElementById("email").value === '') {
+    document.getElementById("email").focus();
+  } else if(document.getElementById("poruka").value === '') {
+    document.getElementById("poruka").focus();
+  } else {
+    sendData(ime, email, weburl, poruka);
+  }
 };
 
-function sendData() {
-  var xhr = new XMLHttpRequest();
+function sendData(ime, email, weburl, poruka) {
 
-  xhr.addEventListener("load", function(event) {
-    alert(event.target.responseText);
-  });
+    var data = {"name": ime, "email": email, "weburl": weburl, "message": poruka};
+    $("#contactform").prop("disabled", true);
 
-  xhr.addEventListener("error", function(event) {
-    alert("Oops! Nesto je poslo napoako.");
-  });
+    var request = $.ajax({
+      url: "./php/mailer.php",
+      type: "post",
+      data: data
+    });
 
-  xhr.open("POST", "./php/mailer.php");
+    request.done(function (response, textStatus, jqXHR) {
+      var jsonobj = response;
+      $("#kontaktporuka").text(jsonobj.message);
+      if(jsonobj.status) {
+        $("#contactform").trigger("reset");
+      }
+    })
+    request.fail(function (jqXHR, textStatus, errorThrown){
 
-  xhr.send(FD);
+    // Log the error to the console
+      console.log(
+        "The following error occurred: " +
+        textStatus, errorThrown
+      );
+    });
 
+    request.always(function () {
+      // Reenable the inputs
+      $("#contactform").prop("disabled", false);
+    });
 }
