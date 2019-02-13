@@ -4,10 +4,6 @@ function submitMe() {
   var weburl = document.getElementById("weburl").value;
   var poruka = document.getElementById("poruka").value;
 
-  // console.log(ime, email, weburl, poruka);
-  // console.log("jel radis?");
-  // var FD = new FormData(form);
-
   if(document.getElementById("imeprezime").value === '') {
     document.getElementById("imeprezime").focus();
   } else if(document.getElementById("email").value === '') {
