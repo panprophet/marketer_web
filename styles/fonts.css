@@ -205,6 +205,10 @@
   .text--s-right {
     text-align: right;
   }
+  .line-marker {
+    height: 0.13rem;
+    width: 1.8rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .line-tiny {
