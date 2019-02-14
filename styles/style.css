@@ -290,6 +290,9 @@ a:active {
   .text--s-right {
     text-align: right;
   }
+  .font--s-blue {
+    color: #00AEEF;
+  }
 }
 @media screen and (max-width: 480px) {
   .line-tiny {
@@ -2185,17 +2188,11 @@ a:active {
   .kontakt-oglasavanje--left-head {
     display: none;
   }
-  .kontakt-oglasavanje--left-title a span:nth-child(1) {
-    display: none;
-  }
   .kontakt-oglasavanje--right {
     align-items: flex-end;
     margin-right: 8%;
   }
   .kontakt-oglasavanje--right-head {
-    display: none;
-  }
-  .kontakt-oglasavanje--right-title a span:nth-child(2) {
     display: none;
   }
   .kontakt-shared--title {
@@ -2462,6 +2459,17 @@ a:active {
   }
   .klijenti--part-center {
     text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .klijenti--part-logo {
+    height: 9.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .klijenti--part-logo {
+    height: 6.5rem;
+    width: 10.625rem;
   }
 }
 .portfolio {
@@ -3075,6 +3083,12 @@ a:active {
 .naslov {
   display: none;
 }
+.korak-display {
+  display: flex;
+}
+.korak-mob {
+  display: none;
+}
 .o-nama {
   height: 42vw;
   top: 4.6875rem;
@@ -3157,6 +3171,12 @@ a:active {
   }
 }
 @media screen and (max-width: 960px) {
+  .korak-display {
+    display: none;
+  }
+  .korak-mob {
+    display: flex;
+  }
   .o-nama--koraci-text {
     font-size: 4.375rem;
   }

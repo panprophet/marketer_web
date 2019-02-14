@@ -205,6 +205,9 @@
   .text--s-right {
     text-align: right;
   }
+  .font--s-blue {
+    color: #00AEEF;
+  }
 }
 @media screen and (max-width: 480px) {
   .line-tiny {
