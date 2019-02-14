@@ -290,8 +290,14 @@ a:active {
   .text--s-right {
     text-align: right;
   }
+<<<<<<< HEAD
   .font--s-blue {
     color: #00AEEF;
+=======
+  .line-marker {
+    height: 0.13rem;
+    width: 1.8rem;
+>>>>>>> master
   }
 }
 @media screen and (max-width: 480px) {
@@ -989,6 +995,9 @@ a:active {
   }
   .margin-xl--top-50 {
     margin-top: 3.125rem;
+  }
+  .margin-xl--bottom-80 {
+    margin-bottom: 5rem;
   }
   .margin-xl--bottom-48 {
     margin-bottom: 3rem;
@@ -2220,6 +2229,7 @@ a:active {
 .testimonials {
   top: 4.6875rem;
   position: relative;
+  min-height: calc(100vh - 4.6875rem);
 }
 .testimonials--inner-mid--single {
   position: relative;
@@ -2236,6 +2246,11 @@ a:active {
 }
 .arrow:hover {
   cursor: pointer;
+}
+@media only screen and (max-width: 1440px) {
+  .testimonials--inner-mid--single-logo {
+    height: 3.875rem;
+  }
 }
 .home {
   height: calc(100vh - 4.6875rem);
