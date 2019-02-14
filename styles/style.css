@@ -984,6 +984,9 @@ a:active {
   .margin-xl--top-80 {
     margin-top: 5rem;
   }
+  .margin-xl--top-50 {
+    margin-top: 3.125rem;
+  }
   .margin-xl--bottom-48 {
     margin-bottom: 3rem;
   }
