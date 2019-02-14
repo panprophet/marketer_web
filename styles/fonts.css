@@ -205,6 +205,9 @@
   .text--s-right {
     text-align: right;
   }
+  .font--s-blue {
+    color: #00AEEF;
+  }
   .line-marker {
     height: 0.13rem;
     width: 1.8rem;

@@ -20,3 +20,14 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 600px) {
+  .klijenti--part-logo {
+    height: 9.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .klijenti--part-logo {
+    height: 6.5rem;
+    width: 10.625rem;
+  }
+}
