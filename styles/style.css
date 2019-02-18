@@ -3077,6 +3077,7 @@ a:active {
 @media only screen and (max-width: 600px) {
   .google-wrap--left {
     width: 100%;
+    height: 190%;
   }
   .google-wrap--right {
     width: 95%;
@@ -3099,6 +3100,11 @@ a:active {
   }
   .drustvene-wrap--right {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .google-wrap--left {
+    height: 235%;
   }
 }
 .text {
