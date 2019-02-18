@@ -13,13 +13,22 @@
   &-mobile {
     display: none;
   }
+  &-up {
+    margin-top: -4.6875rem;
+    transition: all 0.4s ease-in-out;
+  }
+  &-down {
+  margin-top: 0rem;
+  transition: all 0.2s ease-in-out;
+  }
 }
+
 .mobile {
   width: 100%;
   position: fixed;
-  top: 4.6875rem;
+  // top: 4.6875rem;
   left: 0px;
-  z-index: 9999999;
+  z-index: 999999;
   &-inner {
     position: relative;
     height: 100%;
@@ -31,13 +40,13 @@
   }
   &-shown {
     height: calc(~"100% - 4.6875rem");
+    // height: 100%;
+    padding-top: 4.6875rem;
     transition: height 0.8s ease-in-out;
   }
 }
 @media only screen and (max-width: 1024px) {
   .header {
-    // position: fixed;
-    // z-index: 9999999;
     &-meni {
       width: 0px;
       div {

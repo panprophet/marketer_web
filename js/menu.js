@@ -4,6 +4,7 @@ function toggle_menu(){
     menu.classList.remove('mobile-hidden');
     menu.classList.add('mobile-shown');
     svg_paint('expanded');
+
   } else {
     menu.classList.remove('mobile-shown');
     menu.classList.add('mobile-hidden');
@@ -31,3 +32,21 @@ function svg_paint(state) {
     }
   }
 }
+var mytop = 150;
+var lastScrollTop = 0;
+window.addEventListener('scroll', function(){
+  var st = window.scrollY;
+  if(document.getElementById('mobilemenu').classList.contains("mobile-shown")){
+    return;
+  }
+  if(st >= mytop && lastScrollTop - st < 0) {
+    this.document.getElementById("header").classList.remove("header-down");
+    this.document.getElementById("header").classList.add("header-up");
+    lastScrollTop = st;
+  } else {
+    this.document.getElementById("header").classList.remove("header-up");
+    this.document.getElementById("header").classList.add("header-down");
+    lastScrollTop = st;
+  }
+
+});
