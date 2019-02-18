@@ -290,14 +290,12 @@ a:active {
   .text--s-right {
     text-align: right;
   }
-<<<<<<< HEAD
   .font--s-blue {
     color: #00AEEF;
-=======
+  }
   .line-marker {
     height: 0.13rem;
     width: 1.8rem;
->>>>>>> master
   }
 }
 @media screen and (max-width: 480px) {
