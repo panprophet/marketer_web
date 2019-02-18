@@ -161,11 +161,24 @@
   }
 }
 @media only screen and (max-width: 960px) {
+  .usluge--wrap-right img {
+    width: 100%;
+  }
   .drustvene-wrap--left-cont {
     width: 100%;
   }
+  .drustvene-wrap--right {
+    width: 95%;
+  }
+  .drustvene-wrap--right-inner-text {
+    width: 75%;
+  }
   .google-wrap--left {
     height: 160%;
+    width: 80%;
+  }
+  .google-wrap--left-inner-text {
+    width: 85%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -184,5 +197,14 @@
   }
   .drustvene-wrap--right {
     width: 75%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .drustvene-wrap {
+    background-position: 115% 11%;
+    background-size: 108%;
+  }
+  .drustvene-wrap--right {
+    width: 100%;
   }
 }

@@ -214,11 +214,28 @@
   }
 }
 @media only screen and (max-width: 960px) {
+  .usluge {
+    &--wrap {
+      &-right {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
   .drustvene {
     &-wrap {
       &--left {
         &-cont {
           width: 100%;
+        }
+      }
+      &--right {
+        width: 95%;
+        &-inner {
+          &-text {
+            width: 75%;
+          }
         }
       }
     }
@@ -227,6 +244,12 @@
     &-wrap {
       &--left {
         height: 160%;
+        width: 80%;
+        &-inner {
+          &-text {
+            width: 85%;
+          }
+        }
       }
     }
   }
@@ -251,6 +274,17 @@
       }
       &--right {
         width: 75%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .drustvene {
+    &-wrap {
+      background-position: 115% 11%;
+      background-size: 108%;
+      &--right {
+        width: 100%;
       }
     }
   }
