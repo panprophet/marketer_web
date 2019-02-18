@@ -2780,7 +2780,7 @@ a:active {
 .howwhy {
   top: 4.6875rem;
   position: relative;
-  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 68.12%), url('../images/Kako-marketer-moze-da-vam-pomogne-drustvene-mreze.jpg');
+  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 68.12%), url('../images/Kako-marketer-moze-da-pomogne-drustvene-mreze.jpg');
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left;
@@ -2791,6 +2791,9 @@ a:active {
 }
 .howwhy-g {
   background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 80.12%), url('../images/Kako-marketer-moze-da-pomogne.jpg');
+}
+.howwhy-r {
+  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 68.12%), url('../images/Kako-marketer-moze-da-vam-pomogne-drustvene-mreze.jpg');
 }
 .icon {
   height: 24px;
@@ -2812,9 +2815,6 @@ a:active {
   }
   .whatdoit--left-nalog-benefits {
     width: 76%;
-  }
-  .howwhy {
-    background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 96.12%), url('../images/Kako-marketer-moze-da-vam-pomogne-drustvene-mreze.jpg');
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -2872,7 +2872,7 @@ a:active {
   }
   .howwhy {
     height: auto;
-    background-image: url('../images/social3_1024.png');
+    background-image: url('../images/Kako-marketer-moze-da-pomogne-drustvene-mreze.jpg');
     background-size: contain;
     background-position: top;
     background-color: #1C1C1E;
@@ -2884,7 +2884,10 @@ a:active {
     flex: 0 33.33%;
   }
   .howwhy-g {
-    background-image: url('../images/howwhy_g_1024.png');
+    background-image: url('../images/Kako-marketer-moze-da-pomogne.jpg');
+  }
+  .howwhy-r {
+    background-image: url('../images/Kako-marketer-moze-da-vam-pomogne-drustvene-mreze.jpg');
   }
 }
 @media only screen and (max-width: 960px) {
