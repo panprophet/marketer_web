@@ -224,6 +224,16 @@ a:active {
 .line-marker:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 1366px) {
+  .font-64 {
+    font-size: 2.875rem;
+    line-height: 4.106rem;
+  }
+  .font-64 * {
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
 @media screen and (max-width: 1024px) {
   .font-24 {
     font-size: 1.25rem;
@@ -245,14 +255,6 @@ a:active {
     line-height: 2.7rem;
   }
   .font-46 * {
-    font-size: inherit;
-    line-height: inherit;
-  }
-  .font-64 {
-    font-size: 2.875rem;
-    line-height: 4.106rem;
-  }
-  .font-64 * {
     font-size: inherit;
     line-height: inherit;
   }
@@ -863,6 +865,9 @@ a:active {
 }
 .margin-xxl--left-24-per {
   margin-left: 1.25%;
+}
+.margin-xxl--left-18 {
+  margin-left: 1.1125rem;
 }
 .margin-xxl--left-10 {
   margin-left: 0.625rem;
@@ -2629,6 +2634,9 @@ a:active {
   .project-line {
     width: 4.625rem;
     height: 0.063rem;
+  }
+  .project-30 {
+    width: 95%;
   }
 }
 @media screen and (max-width: 960px) {
