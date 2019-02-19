@@ -571,19 +571,22 @@
       <div class="whatdoit--left-menu--item font-24 font-grey--mid margin-xxl--right-90 margin-xl--right-60 margin-s--right-24 margin-xs--right-18" id="choice3" onclick="nextTabs(3);">YouTube</div>
       <div class="whatdoit--left-menu--item font-24 font-grey--mid" id="choice4" onclick="nextTabs(4);">Remarketing</div>
     </div>
+  {% set Usluge = fetch("Usluge")%}
+  {% for item in Usluge %}
+  {% if item.Strana == 'Search' %}
     <div class="flex overflow-hidden" id="uslugetabs">
       <div class="whatdoit--left-nalog" id="tab1">
         <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 flex--l flex--l-column align-items--l-center">
-          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">Budite tu kada treba</div>
+          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">{{item.Naslov}}</div>
           <div class="w--l-50 w--s-75">
-              <p class="font-16 font-grey text--l-center">Kada pomislimo na Google oglašavanje onda vrlo često zapravo mislimo na Search oglase ili oglase na Mreži za pretragu.</p>
-              <p class="font-16 font-grey text--l-center">Ova vrsta kampanje vam omogućava da oglašavate vaš web sajt ljudima koji na Google-u pretražuju reči koje su relevantne za vaš biznis. Izborom pravih ključnih reči, vaši oglasi će se prikazivati na prvim pozicijama, na prvoj stranici Google pretrage, korisnicima koji su zainteresovani za proizvode ili usluge koje nudite.</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis1}}</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis2}}</p>
           </div>
         </div>
         <div class="line-mid background-blue line--l-center"></div>
         <div  class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-48 margin-l--bottom-70 flex--l flex--l-column align-items--l-center">
-          <div class="font-24 font-bold font-grey margin-xxl--bottom-24 text--l-center">Prednosti Google Search oglasa</div>
-          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">Uz milione pretraga dnevno na Google-u, možete da budete sigurni da će klijenti primetiti vaš brend i razmisliti o vašoj ponudi i preduzeti radnju.</div>
+          <div class="font-24 font-bold font-grey margin-xxl--bottom-24 text--l-center">{{item.Prednosti}}</div>
+          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">{{item.PrednostiOpis}}</div>
         </div>
         <div class="whatdoit--left-nalog-benefits flex--l flex--l-column align-items--l-center">
           <div class="whatdoit--left-nalog-benefits--col margin-xxl--bottom-48 margin-l--bottom-70 flex justify-content-between w--l-75 w--s-75">
@@ -616,18 +619,23 @@
           </div>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
+
+      {% for item in Usluge %}
+      {% if item.Strana == 'Display' %}
       <div class="whatdoit--left-nalog" id="tab2">
         <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 margin-l--bottom-70 margin-l--bottom-70 flex--l flex--l-column align-items--l-center"> <!-- napravi borders, ovde treba bottom -->
-          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">Dosegnite prave klijente</div>
+          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">{{item.Naslov}}</div>
           <div class="w--l-50 w--s-75">
-              <p class="font-16 font-grey text--l-center">Google mreža multimedijalnog oglašavanja (GDN) je kreirana da pomogne vašem biznisu da dođe do prave publike.</p>
-              <p class="font-16 font-grey text--l-center">Multimedijalni oglasi (baneri) prikazuju se korisnicima interneta na najposećenijim web sajtovima, portalima sa vestima, blogovima, kao i na Google servisima kao što su YouTube i Gmail.</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis1}}</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis2}}</p>
           </div>
         </div>
         <div class="line-mid background-blue line--l-center"></div>
         <div  class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-48 margin-l--bottom-70 flex--l flex--l-column align-items--l-center">
-          <div class="font-24 font-weight font-grey margin-xxl--bottom-24 text--l-center">Prednosti Google Display oglašavanja</div>
-          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">Napredne opcije ciljanja prema ključnim rečima, demografskim kategorijama, interesovanjima, kao i ponovno oglašavanje (Remarketing) vam omogućavaju da podstičete klijente da primete vaš brend, posete vaš web sajt i obave željenu akciju.</div>
+          <div class="font-24 font-weight font-grey margin-xxl--bottom-24 text--l-center">{{item.Prednosti}}</div>
+          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">{{item.PrednostiOpis}}</div>
         </div>
         <div class="whatdoit--left-nalog-benefits flex--l flex--l-column align-items--l-center">
           <div class="whatdoit--left-nalog-benefits--col margin-xxl--bottom-48 margin-l--bottom-70 flex justify-content-between w--l-75 w--s-75">
@@ -660,18 +668,23 @@
           </div>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
+
+      {% for item in Usluge %}
+      {% if item.Strana == 'YouTube' %}
       <div class="whatdoit--left-nalog" id="tab3">
         <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 margin-l--bottom-70 margin-l--bottom-70 flex--l flex--l-column align-items--l-center"> <!-- napravi borders, ovde treba bottom -->
-          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">Budite viđeni tamo gde svi gledaju</div>
+          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">{{item.Naslov}}</div>
           <div class="w--l-50 w--s-75">
-              <p class="font-16 font-grey text--l-center">Angažujte korisnike i pokrenite akciju na najvećoj online platformi za video sadržaj.</p>
-              <p class="font-16 font-grey text--l-center">Ljudi iz celog sveta - iz svih životnih sfera gledaju preko milijardu sati YouTube videa svakog dana. Kreirajte atraktivan video o vašem biznisu, izaberite vrstu oglasa koji najviše odgovara vašem cilju i budite primećeni!</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis1}}</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis2}}</p>
           </div>
         </div>
         <div class="line-mid background-blue line--l-center"></div>
         <div  class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-48 margin-l--bottom-70 flex--l flex--l-column align-items--l-center">
-          <div class="font-24 font-weight font-grey margin-xxl--bottom-24 text--l-center">Prednosti YouTube oglašavanja</div>
-          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">Nije potrebno da se oglašavate svima - već samo ljudima koji mogu biti zainteresovani za ono što nudite. Publiku0 možete birati prema lokaciji, godinama, interesima i sl. Sa YouTube oglasima, možete doći do potencijalnih klijenata u momentu kada oni gledaju ili pretražuju video sadžaj na YouTube-u, dok plaćate Google-u samo kada oni zaista pokažu interesovanje i pogledaju vaš video.</div>
+          <div class="font-24 font-weight font-grey margin-xxl--bottom-24 text--l-center">{{item.Prednosti}}</div>
+          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">{{item.PrednostiOpis}}</div>
         </div>
         <div class="whatdoit--left-nalog-benefits flex--l flex--l-column align-items--l-center">
           <div class="whatdoit--left-nalog-benefits--col margin-xxl--bottom-48 margin-l--bottom-70 flex justify-content-between w--l-75 w--s-75">
@@ -704,18 +717,23 @@
           </div>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
+
+      {% for item in Usluge %}
+      {% if item.Strana == 'Remarketing' %}
       <div class="whatdoit--left-nalog" id="tab4">
         <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 flex--l flex--l-column align-items--l-center"> <!-- napravi borders, ovde treba bottom -->
-          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">Ne dozvolite da se vaši korisnici ohlade</div>
+          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">{{item.Naslov}}</div>
           <div class="w--l-50 w--s-75">
-              <p class="font-16 font-grey text--l-center">Remarketing je vrsta bihejvioralnog oglašavanja koja omogućava marketarima da ciljaju publiku koja je prethodno posetila web sajta.</p>
-              <p class="font-16 font-grey text--l-center">Ako se pravilno postavi i koristi, Remarketing može biti veoma efikasan način oglašavanja. U stvari, studija pokazuje da je verovatnoća da će potrošači dovršiti proces kupovine za 70% veća kod onih kod kojih je korišćen Remarketing u odnosu na potrošače koji nisu ciljani ovom metodom oglašavanja.</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis1}}</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis2}}</p>
           </div>
         </div>
         <div class="line-mid background-blue line--l-center"></div>
         <div  class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-48 margin-l--bottom-70 flex--l flex--l-column align-items--l-center">
-          <div class="font-32 font-weight font-grey margin-xxl--bottom-24 text--l-center">Prednosti Remarketing oglašavanja</div>
-          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">Remakreting je pre svega pametna tehnika oglašavanja koja vam omogućava  da se ponovo povežete sa posetiocima vašeg web sajta i aktivno utičete na odluku o kupovini.</div>
+          <div class="font-32 font-weight font-grey margin-xxl--bottom-24 text--l-center">{{item.Prednosti}}</div>
+          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">{{item.PrednostiOpis}}</div>
         </div>
         <div class="whatdoit--left-nalog-benefits flex--l flex--l-column align-items--l-center">
           <div class="whatdoit--left-nalog-benefits--col margin-xxl--bottom-48 margin-l--bottom-70 flex justify-content-between w--l-75 w--s-75">
@@ -749,6 +767,8 @@
           </div>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
 
     </div>
   </div>
@@ -756,20 +776,20 @@
   <div class="whatdoit--right-images flex overflow-hidden">
     <div class="whatdoit--right-images-image flex align-items-center justify-content-center w-100--min" id="rightpic1">
       <picture class="flex align-items-center justify-content-center">
-        <source srcset="./images/google_search_1920.png" media="(min-width: 1025px)">
-        <img src="./images/google_search_1024.png">
+        <source srcset="./images/google-oglasavanje-search-1920.png" media="(min-width: 1025px)">
+        <img src="./images/google-oglasavanje-search-1024.png">
       </picture>
     </div>
     <div class="whatdoit--right-images-image flex align-items-center justify-content-center w-100--min" id="rightpic2">
       <picture class="flex align-items-center justify-content-center">
-        <source srcset="./images/google_display_1920.png" media="(min-width: 1025px)">
-        <img src="./images/google_display_1920.png">
+        <source srcset="./images/google-oglasavanje-display.png" media="(min-width: 1025px)">
+        <img src="./images/google-oglasavanje-display.png">
       </picture>
     </div>
     <div class="whatdoit--right-images-image flex align-items-center justify-content-center w-100--min" id="rightpic3">
       <picture class="flex align-items-center justify-content-center">
-        <source srcset="./images/google_youtube_1920.png" media="(min-width: 1025px)">
-        <img src="./images/google_youtube_1920.png">
+        <source srcset="./images/google-oglasavanje-youtube-1920.png" media="(min-width: 1025px)">
+        <img src="./images/google-oglasavanje-youtube-1920.png">
       </picture>
     </div>
     <div class="whatdoit--right-images-image flex align-items-center justify-content-center w-100--min" id="rightpic4">
