@@ -11,12 +11,19 @@
 .header-mobile {
   display: none;
 }
+.header-up {
+  margin-top: -4.6875rem;
+  transition: all 0.4s ease-in-out;
+}
+.header-down {
+  margin-top: 0rem;
+  transition: all 0.2s ease-in-out;
+}
 .mobile {
   width: 100%;
   position: fixed;
-  top: 4.6875rem;
   left: 0px;
-  z-index: 9999999;
+  z-index: 999999;
 }
 .mobile-inner {
   position: relative;
@@ -29,6 +36,7 @@
 }
 .mobile-shown {
   height: calc(100% - 4.6875rem);
+  padding-top: 4.6875rem;
   transition: height 0.8s ease-in-out;
 }
 @media only screen and (max-width: 1024px) {

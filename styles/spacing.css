@@ -100,6 +100,9 @@
 .margin-xxl--left-24-per {
   margin-left: 1.25%;
 }
+.margin-xxl--left-18 {
+  margin-left: 1.1125rem;
+}
 .margin-xxl--left-10 {
   margin-left: 0.625rem;
 }
@@ -229,6 +232,9 @@
   }
   .margin-xl--top-50 {
     margin-top: 3.125rem;
+  }
+  .margin-xl--bottom-80 {
+    margin-bottom: 5rem;
   }
   .margin-xl--bottom-48 {
     margin-bottom: 3rem;

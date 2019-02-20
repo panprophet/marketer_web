@@ -110,6 +110,9 @@
     width: 4.625rem;
     height: 0.063rem;
   }
+  .project-30 {
+    width: 95%;
+  }
 }
 @media screen and (max-width: 960px) {
   .project-img {

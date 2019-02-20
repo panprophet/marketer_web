@@ -171,7 +171,18 @@
     }
   }
 }
-
+@media screen and (max-width: 1366px){
+  .font{
+    &-64 {
+      font-size: 2.875rem;
+      line-height: 4.106rem;
+      *{
+        font-size: inherit;
+        line-height: inherit;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1024px){
   .font {
     &-24 {
@@ -193,14 +204,6 @@
     &-46 {
       font-size: 2rem;
       line-height: 2.7rem;
-      *{
-        font-size: inherit;
-        line-height: inherit;
-      }
-    }
-    &-64 {
-      font-size: 2.875rem;
-      line-height: 4.106rem;
       *{
         font-size: inherit;
         line-height: inherit;
@@ -255,6 +258,20 @@
       &-right {
         text-align: right;
       }
+    }
+  }
+
+  .font{
+    &--s{
+      &-blue{
+        color: @blue;
+      }
+    }
+  }
+  .line {
+    &-marker {
+      height: 0.13rem;
+      width: 1.8rem;
     }
   }
 }

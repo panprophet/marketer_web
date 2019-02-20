@@ -1,6 +1,7 @@
 .testimonials {
   top: 4.6875rem;
   position: relative;
+  min-height: calc(100vh - 4.6875rem);
 }
 .testimonials--inner-mid--single {
   position: relative;
@@ -17,4 +18,9 @@
 }
 .arrow:hover {
   cursor: pointer;
+}
+@media only screen and (max-width: 1440px) {
+  .testimonials--inner-mid--single-logo {
+    height: 3.875rem;
+  }
 }

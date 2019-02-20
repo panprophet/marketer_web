@@ -8,6 +8,12 @@
 .naslov {
   display: none;
 }
+.korak-display {
+  display: flex;
+}
+.korak-mob {
+  display: none;
+}
 .o-nama {
   height: 42vw;
   top: 4.6875rem;
@@ -90,6 +96,12 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .korak-display {
+    display: none;
+  }
+  .korak-mob {
+    display: flex;
+  }
   .o-nama--koraci-text {
     font-size: 4.375rem;
   }

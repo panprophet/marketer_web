@@ -68,64 +68,60 @@
         </div>
     </div>
 
-    <div class="position flex flex--l-direction justify-content-between align-items-center background-black-light padding-xxl--top-100 padding-xxl--bottom-100 padding-xxl--left-90 padding-xxl--right-90">
-        <div class="flex flex--l-direction align-items-center justify-content-center project-30 margin-xxl--right-24 margin-l--right-none">
-            <div class="font-64 font-white margin-xxl--right-24 margin-l--right-none margin-l--bottom-24">{{item.PosecenostProcenat}}</div>
+    <div class="position flex flex--l-direction justify-content-between align-items-center background-black-light padding-xxl--top-100 padding-xxl--bottom-100 padding-xxl--left-90 padding-xxl--right-90 padding-xl--left-60 padding-xl--right-60">
+        <div class="flex flex--l-direction align-items-center justify-content-center project-30 margin-xxl--right-18 margin-l--right-none">
+            <div class="font-64 font-white margin-xxl--right-18 margin-l--right-none margin-l--bottom-24">{{item.PosecenostProcenat}}</div>
             {% if item.PosecenostRast == 'true' %}
-                <img style="height: 3rem" src="images/up.png">
+                <img style="height: 3rem" src="images/project-percent-up.png">
             {% else %}
-                <img style="height: 3rem" src="images/down.png">
+                <img style="height: 3rem" src="images/project-percent-down.png">
             {% endif %}
-            <div class="font-16 font-white margin-xxl--left-24 margin-l--left-none margin-l--top-24 margin-l--bottom-24 text--l-center">{{item.PosecenostText}}</div>
+            <div class="font-16 font-white margin-xxl--left-18 margin-l--left-none margin-l--top-24 margin-l--bottom-24 text--l-center">{{item.PosecenostText}}</div>
         </div>
         <div class="project-line margin-l--top-24 margin-l--bottom-24"></div>
-        <div class="flex flex--l-direction align-items-center justify-content-center project-30 margin-xxl--left-24 margin-xxl--right-24">
-            <div class="font-64 font-white margin-xxl--right-24 margin-l--right-none margin-l--top-24 margin-l--bottom-24">{{item.ShareProcenat}}</div>
+        <div class="flex flex--l-direction align-items-center justify-content-center project-30 margin-xxl--left-18 margin-xxl--right-18">
+            <div class="font-64 font-white margin-xxl--right-18 margin-l--right-none margin-l--top-24 margin-l--bottom-24">{{item.ShareProcenat}}</div>
             {% if item.ShareRast == 'true' %}
-                <img style="height: 3rem" src="images/up.png">
+                <img style="height: 3rem" src="images/project-percent-up.png">
             {% else %}
-                <img style="height: 3rem" src="images/down.png">
+                <img style="height: 3rem" src="images/project-percent-down.png">
             {% endif %}
-            <div class="font-16 font-white margin-xxl--left-24 margin-l--left-none margin-l--top-24 margin-l--bottom-24 text--l-center">{{item.ShareText}}</div>
+            <div class="font-16 font-white margin-xxl--left-18 margin-l--left-none margin-xxl--right-18 margin-l--right-none margin-l--top-24 margin-l--bottom-24 text--l-center">{{item.ShareText}}</div>
         </div>
         <div class="project-line margin-l--top-24 margin-l--bottom-24"></div>
-        <div class="flex flex--l-direction align-items-center justify-content-center project-30 margin-xxl--left-24 margin-l--left-none">
-            <div class="font-64 font-white margin-xxl--right-24 margin-l--right-none margin-l--top-24 margin-l--bottom-24">{{item.CTRprocenat}}</div>
+        <div class="flex flex--l-direction align-items-center justify-content-center project-30 margin-xxl--left-18 margin-l--left-none">
+            <div class="font-64 font-white margin-xxl--right-18 margin-l--right-none margin-l--top-24 margin-l--bottom-24">{{item.CTRprocenat}}</div>
             {% if item.CTRrast == 'true' %}
-                <img style="height: 3rem" src="images/up.png">
+                <img style="height: 3rem" src="images/project-percent-up.png">
             {% else %}
-                <img style="height: 3rem" src="images/down.png">
+                <img style="height: 3rem" src="images/project-percent-down.png">
             {% endif %}
-            <div class="font-16 font-white margin-xxl--left-24 margin-l--left-none margin-l--top-24 margin-l--bottom-24 text--l-center">{{item.CTRtext}}</div>
+            <div class="font-16 font-white margin-xxl--left-18 margin-l--left-none margin-l--top-24 margin-l--bottom-24 text--l-center">{{item.CTRtext}}</div>
         </div>
     </div>
 
-{# {% set prev_proj = fetch ("prev_proj", {id:item.id}) %}
-{% set next_proj = fetch ("next_proj", {id:item.id}) %} #}
+{% set prev_proj = fetch ("prev_proj", {id:item.id}) %}
+{% set next_proj = fetch ("next_proj", {id:item.id}) %}
 {% set Project = fetch ("Projekti") %}
 
         <div class="position flex background-black-lighter flex--s-direction flex-wrap justify-content-center">
-            {# <div class="flex flex-column project-width">
-                <a href="project/{{prev_proj.Slug}}">
-                    <div class="project-prev-next" style="background-image: url('img/{{ prev_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-                </a>
-                <div class="flex flex-column margin-xxl--left-90 margin-xl--left-60 margin-xxl--bottom-60 margin-xxl--top-48">
-                    <div class="font-32 font-white margin-xxl--bottom-24">{{prev_proj.Naziv}}</div>
-                    <div class="project-prev-next-text font-16 font-white margin-xxl--bottom-24">{{prev_proj.Opis}}</div>
+            <div class="flex flex-column project-width">
+                <a href="project/{{prev_proj.Slug}}" class="project-prev-next" style="background-image: url('img/{{ prev_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></a>
+                <div class="flex flex-column align-items--m-center  margin-xxl--left-90 margin-xl--left-60 margin-m--right-18 margin-m--left-18 margin-xxl--bottom-60 margin-xxl--top-48">
+                    <div class="font-32 font-white margin-xxl--bottom-24 text--m-center">{{prev_proj.Naziv}}</div>
+                    <div class="project-prev-next-text font-16 font-white text--m-center margin-xxl--bottom-24">{{prev_proj.Opis}}</div>
                     <div class="line-big background-blue"></div>
                 </div>
             </div>
             <div class="flex flex-column project-width">
-                <a href="project/{{next_proj.Slug}}">
-                    <div class="project-prev-next" style="background-image: url('img/{{ next_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
-                </a>
-                <div class="flex flex-column margin-xxl--left-90 margin-xl--left-60 margin-xxl--bottom-60 margin-xxl--top-48">
-                    <div class="font-32 font-white margin--bottom-24">{{next_proj.Naziv}}</div>
-                    <div class="project-prev-next-text font-16 font-white margin-xxl--bottom-24">{{next_proj.Opis}}</div>
+                <a href="project/{{next_proj.Slug}}" class="project-prev-next" style="background-image: url('img/{{ next_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></a>
+                <div class="flex flex-column align-items-end align-items--m-center margin-xxl--right-90 margin-xl--right-60 margin-m--right-18 margin-m--left-18 margin-xxl--bottom-60 margin-xxl--top-48">
+                    <div class="font-32 font-white text-right text--m-center margin-xxl--bottom-24">{{next_proj.Naziv}}</div>
+                    <div class="project-prev-next-text text-right text--m-center font-16 font-white margin-xxl--bottom-24">{{next_proj.Opis}}</div>
                     <div class="line-big background-blue"></div>
                 </div>
-            </div> #}
-            {% for project in Project %}
+            </div>
+            {# {% for project in Project %}
             {% if project.Podeli == 'true' %}
             <div class="flex flex-column project-width">
                 <a href="project/{{project.Slug}}">
@@ -138,7 +134,7 @@
                 </div>
             </div>
             {% endif %}
-            {% endfor %}
+            {% endfor %} #}
             {# <div class="flex flex-column project-width">
                 <a href="project/{{next_proj.Slug}}">
                     <div class="project-prev-next" style="background-image: url('img/{{ next_proj.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>

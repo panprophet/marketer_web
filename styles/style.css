@@ -14,7 +14,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  border: 0px;
+  border: 0p;
 }
 hr {
   -webkit-box-sizing: content-box;
@@ -224,6 +224,16 @@ a:active {
 .line-marker:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 1366px) {
+  .font-64 {
+    font-size: 2.875rem;
+    line-height: 4.106rem;
+  }
+  .font-64 * {
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
 @media screen and (max-width: 1024px) {
   .font-24 {
     font-size: 1.25rem;
@@ -245,14 +255,6 @@ a:active {
     line-height: 2.7rem;
   }
   .font-46 * {
-    font-size: inherit;
-    line-height: inherit;
-  }
-  .font-64 {
-    font-size: 2.875rem;
-    line-height: 4.106rem;
-  }
-  .font-64 * {
     font-size: inherit;
     line-height: inherit;
   }
@@ -289,6 +291,13 @@ a:active {
   }
   .text--s-right {
     text-align: right;
+  }
+  .font--s-blue {
+    color: #00AEEF;
+  }
+  .line-marker {
+    height: 0.13rem;
+    width: 1.8rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -857,6 +866,9 @@ a:active {
 .margin-xxl--left-24-per {
   margin-left: 1.25%;
 }
+.margin-xxl--left-18 {
+  margin-left: 1.1125rem;
+}
 .margin-xxl--left-10 {
   margin-left: 0.625rem;
 }
@@ -986,6 +998,9 @@ a:active {
   }
   .margin-xl--top-50 {
     margin-top: 3.125rem;
+  }
+  .margin-xl--bottom-80 {
+    margin-bottom: 5rem;
   }
   .margin-xl--bottom-48 {
     margin-bottom: 3rem;
@@ -1753,12 +1768,19 @@ a:active {
 .header-mobile {
   display: none;
 }
+.header-up {
+  margin-top: -4.6875rem;
+  transition: all 0.4s ease-in-out;
+}
+.header-down {
+  margin-top: 0rem;
+  transition: all 0.2s ease-in-out;
+}
 .mobile {
   width: 100%;
   position: fixed;
-  top: 4.6875rem;
   left: 0px;
-  z-index: 9999999;
+  z-index: 999999;
 }
 .mobile-inner {
   position: relative;
@@ -1771,6 +1793,7 @@ a:active {
 }
 .mobile-shown {
   height: calc(100% - 4.6875rem);
+  padding-top: 4.6875rem;
   transition: height 0.8s ease-in-out;
 }
 @media only screen and (max-width: 1024px) {
@@ -2185,17 +2208,11 @@ a:active {
   .kontakt-oglasavanje--left-head {
     display: none;
   }
-  .kontakt-oglasavanje--left-title a span:nth-child(1) {
-    display: none;
-  }
   .kontakt-oglasavanje--right {
     align-items: flex-end;
     margin-right: 8%;
   }
   .kontakt-oglasavanje--right-head {
-    display: none;
-  }
-  .kontakt-oglasavanje--right-title a span:nth-child(2) {
     display: none;
   }
   .kontakt-shared--title {
@@ -2223,6 +2240,7 @@ a:active {
 .testimonials {
   top: 4.6875rem;
   position: relative;
+  min-height: calc(100vh - 4.6875rem);
 }
 .testimonials--inner-mid--single {
   position: relative;
@@ -2239,6 +2257,11 @@ a:active {
 }
 .arrow:hover {
   cursor: pointer;
+}
+@media only screen and (max-width: 1440px) {
+  .testimonials--inner-mid--single-logo {
+    height: 3.875rem;
+  }
 }
 .home {
   height: calc(100vh - 4.6875rem);
@@ -2464,6 +2487,17 @@ a:active {
     text-align: center;
   }
 }
+@media screen and (max-width: 600px) {
+  .klijenti--part-logo {
+    height: 9.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .klijenti--part-logo {
+    height: 6.5rem;
+    width: 10.625rem;
+  }
+}
 .portfolio {
   height: calc(100vh - 4.6875rem);
   width: 100%;
@@ -2609,6 +2643,9 @@ a:active {
     width: 4.625rem;
     height: 0.063rem;
   }
+  .project-30 {
+    width: 95%;
+  }
 }
 @media screen and (max-width: 960px) {
   .project-img {
@@ -2751,7 +2788,7 @@ a:active {
 .howwhy {
   top: 4.6875rem;
   position: relative;
-  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 68.12%), url('../images/Kako-marketer-moze-da-vam-pomogne-drustvene-mreze.jpg');
+  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 68.12%), url('../images/Drustvene-mreze.jpg');
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left;
@@ -2761,7 +2798,10 @@ a:active {
   flex: 0 50%;
 }
 .howwhy-g {
-  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 80.12%), url('../images/Kako-marketer-moze-da-pomogne.jpg');
+  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 80.12%), url('../images/google-oglasavanje.jpg');
+}
+.howwhy-r {
+  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 68.12%), url('../images/Kako-marketer-moze-da-vam-pomogne-drustvene-mreze.jpg');
 }
 .icon {
   height: 24px;
@@ -2783,9 +2823,6 @@ a:active {
   }
   .whatdoit--left-nalog-benefits {
     width: 76%;
-  }
-  .howwhy {
-    background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 96.12%), url('../images/Kako-marketer-moze-da-vam-pomogne-drustvene-mreze.jpg');
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -2843,7 +2880,7 @@ a:active {
   }
   .howwhy {
     height: auto;
-    background-image: url('../images/social3_1024.png');
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) 12.65%, #1C1C1E 26.12%), url('../images/Drustvene-mreze.jpg');
     background-size: contain;
     background-position: top;
     background-color: #1C1C1E;
@@ -2855,12 +2892,29 @@ a:active {
     flex: 0 33.33%;
   }
   .howwhy-g {
-    background-image: url('../images/howwhy_g_1024.png');
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) 12.65%, #1C1C1E 26.12%), url('../images/google-oglasavanje.jpg');
+  }
+  .howwhy-r {
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) 12.65%, #1C1C1E 26.12%), url('../images/web-resenja.jpg');
   }
 }
 @media only screen and (max-width: 960px) {
   .howwhy--right {
     margin-top: 25.75rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .howwhy {
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) -1.35%, #1C1C1E 20.12%), url('../images/Drustvene-mreze.jpg');
+  }
+  .howwhy--right {
+    margin-top: 15.75rem;
+  }
+  .howwhy-g {
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) -1.35%, #1C1C1E 20.12%), url('../images/google-oglasavanje.jpg');
+  }
+  .howwhy-r {
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) -1.35%, #1C1C1E 20.12%), url('../images/web-resenja.jpg');
   }
 }
 @media only screen and (max-width: 600px) {
@@ -2876,6 +2930,20 @@ a:active {
   }
   .whatdoit--right {
     height: 25.5625rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .howwhy {
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) 8.35%, #1C1C1E 12.12%), url('../images/Drustvene-mreze.jpg');
+  }
+  .howwhy--right {
+    margin-top: 15.75rem;
+  }
+  .howwhy-g {
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) 8.35%, #1C1C1E 12.12%), url('../images/google-oglasavanje.jpg');
+  }
+  .howwhy-r {
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) 8.35%, #1C1C1E 12.12%), url('../images/web-resenja.jpg');
   }
 }
 .usluge {
@@ -3041,16 +3109,30 @@ a:active {
   }
 }
 @media only screen and (max-width: 960px) {
+  .usluge--wrap-right img {
+    width: 85%;
+  }
   .drustvene-wrap--left-cont {
     width: 100%;
   }
+  .drustvene-wrap--right {
+    width: 95%;
+  }
+  .drustvene-wrap--right-inner-text {
+    width: 75%;
+  }
   .google-wrap--left {
     height: 160%;
+    width: 80%;
+  }
+  .google-wrap--left-inner-text {
+    width: 85%;
   }
 }
 @media only screen and (max-width: 600px) {
   .google-wrap--left {
     width: 100%;
+    height: 190%;
   }
   .google-wrap--right {
     width: 95%;
@@ -3066,6 +3148,20 @@ a:active {
     width: 75%;
   }
 }
+@media only screen and (max-width: 480px) {
+  .drustvene-wrap {
+    background-position: 115% 11%;
+    background-size: 108%;
+  }
+  .drustvene-wrap--right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .google-wrap--left {
+    height: 235%;
+  }
+}
 .text {
   display: none;
 }
@@ -3073,6 +3169,12 @@ a:active {
   display: none;
 }
 .naslov {
+  display: none;
+}
+.korak-display {
+  display: flex;
+}
+.korak-mob {
   display: none;
 }
 .o-nama {
@@ -3157,6 +3259,12 @@ a:active {
   }
 }
 @media screen and (max-width: 960px) {
+  .korak-display {
+    display: none;
+  }
+  .korak-mob {
+    display: flex;
+  }
   .o-nama--koraci-text {
     font-size: 4.375rem;
   }
@@ -3243,7 +3351,7 @@ a:active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(84.23deg, #111111 -3%, rgba(22, 22, 22, 0.93) 28.8%, rgba(30, 30, 30, 0) 53.54%), url(../images/digitalni-recnik.png);
+  background-image: linear-gradient(84.23deg, #111111 -3%, rgba(22, 22, 22, 0.93) 28.8%, rgba(30, 30, 30, 0) 53.54%), url(../images/digitalni-recnik-intro.png);
 }
 .recnik--blok1-text {
   width: 21.5rem;
@@ -3319,7 +3427,7 @@ a:active {
 @media screen and (max-width: 1024px) {
   .recnik--blok1 {
     height: 60vw;
-    background-image: linear-gradient(360deg, #1C1C1E 0%, rgba(22, 22, 22, 0.93) 32.37%, rgba(30, 30, 30, 0) 57.55%), url(../images/digitalni-recnik.png);
+    background-image: linear-gradient(360deg, #1C1C1E 0%, rgba(22, 22, 22, 0.93) 32.37%, rgba(30, 30, 30, 0) 57.55%), url(../images/digitalni-recnik-intro.png);
   }
   .recnik--blok2-left {
     width: 100%;
