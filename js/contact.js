@@ -1,3 +1,5 @@
+var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
 var inputArray = document.querySelectorAll("input");
     var elem1;
     var elem2;
@@ -35,7 +37,7 @@ inputArray.forEach(function(elem) {
     if(elem1 && elem2) {
       if(elem1.value !== '' && elem2.value !== '') {
         if(elem1.id === 'email') {
-// ako ije ispravan maejl izadji
+
         }
         document.getElementById("next" + pagecount).classList.remove('next-disabled');
         document.getElementById("next" + pagecount).classList.add('next-enabled');
