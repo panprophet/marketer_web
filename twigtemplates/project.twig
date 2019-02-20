@@ -1,7 +1,10 @@
 {% extends 'base.twig' %}
+{% set item = fetch("Projekti", {"id": _GET['1']})[0] %}
+{% block title %}Projekat{% endblock %}
+{% block description %}{{item.Description}}{% endblock %}
 {% block content %}
 
-{% set item = fetch("Projekti", {"id": _GET['1']})[0] %}
+
 
 
     <div class="position portfolio flex flex-column justify-content-end align-items-center" style="background: linear-gradient(0deg, rgba(21, 21, 21, 0.5), rgba(21, 21, 21, 0.5)), url(img/{{item.NaslovnaSlika}});">

@@ -1,5 +1,6 @@
 {% extends "base.twig" %}
-{# {% block description %}All posts{% endblock %} #}
+{% block title %}Početna{% endblock %}
+{% block description %}Kreiramo i implementiramo vrhunske online kampanje koje daju rezultat{% endblock %}
 {% block content %}
   <div class="home flex flex-column" style="background-image: url('./images/home-intro.png');">
 
@@ -41,7 +42,7 @@
     <button class="button-midd flex align-items-center justify-content-center margin-xxl--top-48 margin-xxl--bottom-100"><a href="usluge"><div class="font-14 font-white">Naše usluge</div></a></button>
   </div>
   {{ include('projekti.twig') }}
-  <div class="projekti-button flex justify-content-center">
+  <div class="project projekti-button flex justify-content-center">
 
       <button style="margin: 0;" class="button-midd font-white font-14">
         <a href="portfolio">VIŠE</a></button>
