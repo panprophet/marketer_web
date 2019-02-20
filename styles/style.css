@@ -2788,7 +2788,7 @@ a:active {
 .howwhy {
   top: 4.6875rem;
   position: relative;
-  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 68.12%), url('../images/drustvene-mreze.jpg');
+  background-image: linear-gradient(-267.16deg, rgba(28, 28, 30, 0) 11.65%, #1C1C1E 68.12%), url('../images/Drustvene-mreze.jpg');
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left;
@@ -2880,7 +2880,7 @@ a:active {
   }
   .howwhy {
     height: auto;
-    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) 12.65%, #1C1C1E 26.12%), url('../images/drustvene-mreze.jpg');
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) 12.65%, #1C1C1E 26.12%), url('../images/Drustvene-mreze.jpg');
     background-size: contain;
     background-position: top;
     background-color: #1C1C1E;
@@ -2905,7 +2905,7 @@ a:active {
 }
 @media screen and (max-width: 800px) {
   .howwhy {
-    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) -1.35%, #1C1C1E 20.12%), url('../images/drustvene-mreze.jpg');
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) -1.35%, #1C1C1E 20.12%), url('../images/Drustvene-mreze.jpg');
   }
   .howwhy--right {
     margin-top: 15.75rem;
@@ -2934,7 +2934,7 @@ a:active {
 }
 @media screen and (max-width: 560px) {
   .howwhy {
-    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) 8.35%, #1C1C1E 12.12%), url('../images/drustvene-mreze.jpg');
+    background-image: linear-gradient(-180.16deg, rgba(28, 28, 30, 0) 8.35%, #1C1C1E 12.12%), url('../images/Drustvene-mreze.jpg');
   }
   .howwhy--right {
     margin-top: 15.75rem;
@@ -3351,7 +3351,7 @@ a:active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(84.23deg, #111111 -3%, rgba(22, 22, 22, 0.93) 28.8%, rgba(30, 30, 30, 0) 53.54%), url(../images/digitalni-recnik.png);
+  background-image: linear-gradient(84.23deg, #111111 -3%, rgba(22, 22, 22, 0.93) 28.8%, rgba(30, 30, 30, 0) 53.54%), url(../images/digitalni-recnik-intro.png);
 }
 .recnik--blok1-text {
   width: 21.5rem;
@@ -3427,7 +3427,7 @@ a:active {
 @media screen and (max-width: 1024px) {
   .recnik--blok1 {
     height: 60vw;
-    background-image: linear-gradient(360deg, #1C1C1E 0%, rgba(22, 22, 22, 0.93) 32.37%, rgba(30, 30, 30, 0) 57.55%), url(../images/digitalni-recnik.png);
+    background-image: linear-gradient(360deg, #1C1C1E 0%, rgba(22, 22, 22, 0.93) 32.37%, rgba(30, 30, 30, 0) 57.55%), url(../images/digitalni-recnik-intro.png);
   }
   .recnik--blok2-left {
     width: 100%;
