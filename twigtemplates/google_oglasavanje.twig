@@ -571,19 +571,22 @@
       <div class="whatdoit--left-menu--item font-24 font-grey--mid margin-xxl--right-90 margin-xl--right-60 margin-s--right-24 margin-xs--right-18" id="choice3" onclick="nextTabs(3);">YouTube</div>
       <div class="whatdoit--left-menu--item font-24 font-grey--mid" id="choice4" onclick="nextTabs(4);">Remarketing</div>
     </div>
+  {% set Usluge = fetch("Usluge")%}
+  {% for item in Usluge %}
+  {% if item.Strana == 'Search' %}
     <div class="flex overflow-hidden" id="uslugetabs">
       <div class="whatdoit--left-nalog" id="tab1">
         <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 flex--l flex--l-column align-items--l-center">
-          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">Budite tu kada treba</div>
+          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">{{item.Naslov}}</div>
           <div class="w--l-50 w--s-75">
-              <p class="font-16 font-grey text--l-center">Kada pomislimo na Google oglašavanje onda vrlo često zapravo mislimo na Search oglase ili oglase na Mreži za pretragu.</p>
-              <p class="font-16 font-grey text--l-center">Ova vrsta kampanje vam omogućava da oglašavate vaš web sajt ljudima koji na Google-u pretražuju reči koje su relevantne za vaš biznis. Izborom pravih ključnih reči, vaši oglasi će se prikazivati na prvim pozicijama, na prvoj stranici Google pretrage, korisnicima koji su zainteresovani za proizvode ili usluge koje nudite.</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis1}}</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis2}}</p>
           </div>
         </div>
         <div class="line-mid background-blue line--l-center"></div>
         <div  class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-48 margin-l--bottom-70 flex--l flex--l-column align-items--l-center">
-          <div class="font-24 font-bold font-grey margin-xxl--bottom-24 text--l-center">Prednosti Google Search oglasa</div>
-          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">Uz milione pretraga dnevno na Google-u, možete da budete sigurni da će klijenti primetiti vaš brend i razmisliti o vašoj ponudi i preduzeti radnju.</div>
+          <div class="font-24 font-bold font-grey margin-xxl--bottom-24 text--l-center">{{item.Prednosti}}</div>
+          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">{{item.PrednostiOpis}}</div>
         </div>
         <div class="whatdoit--left-nalog-benefits flex--l flex--l-column align-items--l-center">
           <div class="whatdoit--left-nalog-benefits--col margin-xxl--bottom-48 margin-l--bottom-70 flex justify-content-between w--l-75 w--s-75">
@@ -609,25 +612,30 @@
             </div>
             <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
               <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none  margin-l--bottom-10 flex align-items-center">
-                <img src="./images/icons/custom-audience.svg" alt="custom audience"/>
+                <img src="./images/icons/control.svg" alt="control"/>
               </div>
               <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Kontrola budžeta i plaćanje po kliku</div>
             </div>
           </div>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
+
+      {% for item in Usluge %}
+      {% if item.Strana == 'Display' %}
       <div class="whatdoit--left-nalog" id="tab2">
         <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 margin-l--bottom-70 margin-l--bottom-70 flex--l flex--l-column align-items--l-center"> <!-- napravi borders, ovde treba bottom -->
-          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">Dosegnite prave klijente</div>
+          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">{{item.Naslov}}</div>
           <div class="w--l-50 w--s-75">
-              <p class="font-16 font-grey text--l-center">Google mreža multimedijalnog oglašavanja (GDN) je kreirana da pomogne vašem biznisu da dođe do prave publike.</p>
-              <p class="font-16 font-grey text--l-center">Multimedijalni oglasi (baneri) prikazuju se korisnicima interneta na najposećenijim web sajtovima, portalima sa vestima, blogovima, kao i na Google servisima kao što su YouTube i Gmail.</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis1}}</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis2}}</p>
           </div>
         </div>
         <div class="line-mid background-blue line--l-center"></div>
         <div  class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-48 margin-l--bottom-70 flex--l flex--l-column align-items--l-center">
-          <div class="font-24 font-weight font-grey margin-xxl--bottom-24 text--l-center">Prednosti Google Display oglašavanja</div>
-          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">Napredne opcije ciljanja prema ključnim rečima, demografskim kategorijama, interesovanjima, kao i ponovno oglašavanje (Remarketing) vam omogućavaju da podstičete klijente da primete vaš brend, posete vaš web sajt i obave željenu akciju.</div>
+          <div class="font-24 font-weight font-grey margin-xxl--bottom-24 text--l-center">{{item.Prednosti}}</div>
+          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">{{item.PrednostiOpis}}</div>
         </div>
         <div class="whatdoit--left-nalog-benefits flex--l flex--l-column align-items--l-center">
           <div class="whatdoit--left-nalog-benefits--col margin-xxl--bottom-48 margin-l--bottom-70 flex justify-content-between w--l-75 w--s-75">
@@ -647,43 +655,48 @@
           <div class="whatdoit--left-nalog-benefits--col flex justify-content-between w--l-75 w--s-75">
             <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
               <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
-                <img src="./images/icons/leads.svg" alt="leads"/>
+                <img src="./images/icons/bid.svg" alt="bid"/>
               </div>
               <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Niži troškovi u odnosu na klasičan Media Buying</div>
             </div>
             <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
               <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
-                <img src="./images/icons/custom-audience.svg" alt="custom audience"/>
+                <img src="./images/icons/market.svg" alt="market"/>
               </div>
               <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Kreiranje tražnje</div>
             </div>
           </div>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
+
+      {% for item in Usluge %}
+      {% if item.Strana == 'YouTube' %}
       <div class="whatdoit--left-nalog" id="tab3">
         <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 margin-l--bottom-70 margin-l--bottom-70 flex--l flex--l-column align-items--l-center"> <!-- napravi borders, ovde treba bottom -->
-          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">Budite viđeni tamo gde svi gledaju</div>
+          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">{{item.Naslov}}</div>
           <div class="w--l-50 w--s-75">
-              <p class="font-16 font-grey text--l-center">Angažujte korisnike i pokrenite akciju na najvećoj online platformi za video sadržaj.</p>
-              <p class="font-16 font-grey text--l-center">Ljudi iz celog sveta - iz svih životnih sfera gledaju preko milijardu sati YouTube videa svakog dana. Kreirajte atraktivan video o vašem biznisu, izaberite vrstu oglasa koji najviše odgovara vašem cilju i budite primećeni!</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis1}}</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis2}}</p>
           </div>
         </div>
         <div class="line-mid background-blue line--l-center"></div>
         <div  class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-48 margin-l--bottom-70 flex--l flex--l-column align-items--l-center">
-          <div class="font-24 font-weight font-grey margin-xxl--bottom-24 text--l-center">Prednosti YouTube oglašavanja</div>
-          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">Nije potrebno da se oglašavate svima - već samo ljudima koji mogu biti zainteresovani za ono što nudite. Publiku0 možete birati prema lokaciji, godinama, interesima i sl. Sa YouTube oglasima, možete doći do potencijalnih klijenata u momentu kada oni gledaju ili pretražuju video sadžaj na YouTube-u, dok plaćate Google-u samo kada oni zaista pokažu interesovanje i pogledaju vaš video.</div>
+          <div class="font-24 font-weight font-grey margin-xxl--bottom-24 text--l-center">{{item.Prednosti}}</div>
+          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">{{item.PrednostiOpis}}</div>
         </div>
         <div class="whatdoit--left-nalog-benefits flex--l flex--l-column align-items--l-center">
           <div class="whatdoit--left-nalog-benefits--col margin-xxl--bottom-48 margin-l--bottom-70 flex justify-content-between w--l-75 w--s-75">
             <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
               <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
-                <img src="./images/icons/remarketing.svg" alt="remarketing" />
+                <img src="./images/icons/reach.svg" alt="reach" />
               </div>
               <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center flex align-items-center">Veliki uticaj i vidljivost</div>
             </div>
             <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
               <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
-                <img src="./images/icons/relevance-score.svg" alt="relevance"/>
+                <img src="./images/icons/landing-page.svg" alt="landing page"/>
               </div>
               <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center flex align-items-center">Detaljna analiza i merenje učinka</div>
             </div>
@@ -697,37 +710,42 @@
             </div>
             <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
               <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
-                <img src="./images/icons/custom-audience.svg" alt="custom audience"/>
+                <img src="./images/icons/ROAS.svg" alt="ROAS"/>
               </div>
               <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Niži troškovi oglašavanja</div>
             </div>
           </div>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
+
+      {% for item in Usluge %}
+      {% if item.Strana == 'Remarketing' %}
       <div class="whatdoit--left-nalog" id="tab4">
         <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 flex--l flex--l-column align-items--l-center"> <!-- napravi borders, ovde treba bottom -->
-          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">Ne dozvolite da se vaši korisnici ohlade</div>
+          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">{{item.Naslov}}</div>
           <div class="w--l-50 w--s-75">
-              <p class="font-16 font-grey text--l-center">Remarketing je vrsta bihejvioralnog oglašavanja koja omogućava marketarima da ciljaju publiku koja je prethodno posetila web sajta.</p>
-              <p class="font-16 font-grey text--l-center">Ako se pravilno postavi i koristi, Remarketing može biti veoma efikasan način oglašavanja. U stvari, studija pokazuje da je verovatnoća da će potrošači dovršiti proces kupovine za 70% veća kod onih kod kojih je korišćen Remarketing u odnosu na potrošače koji nisu ciljani ovom metodom oglašavanja.</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis1}}</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis2}}</p>
           </div>
         </div>
         <div class="line-mid background-blue line--l-center"></div>
         <div  class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-48 margin-l--bottom-70 flex--l flex--l-column align-items--l-center">
-          <div class="font-32 font-weight font-grey margin-xxl--bottom-24 text--l-center">Prednosti Remarketing oglašavanja</div>
-          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">Remakreting je pre svega pametna tehnika oglašavanja koja vam omogućava  da se ponovo povežete sa posetiocima vašeg web sajta i aktivno utičete na odluku o kupovini.</div>
+          <div class="font-32 font-weight font-grey margin-xxl--bottom-24 text--l-center">{{item.Prednosti}}</div>
+          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">{{item.PrednostiOpis}}</div>
         </div>
         <div class="whatdoit--left-nalog-benefits flex--l flex--l-column align-items--l-center">
           <div class="whatdoit--left-nalog-benefits--col margin-xxl--bottom-48 margin-l--bottom-70 flex justify-content-between w--l-75 w--s-75">
             <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
               <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
-                <img src="./images/icons/remarketing.svg" alt="remarketing" />
+                <img src="./images/icons/CTR.svg" alt="CTR" />
               </div>
               <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center flex align-items-center">Ciljanje visoko relevantne publike</div>
             </div>
             <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
               <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
-                <img src="./images/icons/relevance-score.svg" alt="relevance"/>
+                <img src="./images/icons/CPA.svg" alt="CPA"/>
               </div>
               <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center flex align-items-center">Veći broj konverzija</div>
             </div>
@@ -735,20 +753,22 @@
           <div class="whatdoit--left-nalog-benefits--col flex justify-content-between w--l-75 w--s-75">
             <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
               <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
-                <img src="./images/icons/leads.svg" alt="leads"/>
+                <img src="./images/icons/impression.svg" alt="impression"/>
               </div>
               <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Niža cena po kliku</div>
             </div>
 
             <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
               <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
-                <img src="./images/icons/custom-audience.svg" alt="custom audience"/>
+                <img src="./images/icons/CPM.svg" alt="CPM"/>
               </div>
               <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Aktivan uticaj na odluku o kupovini</div>
             </div>
           </div>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
 
     </div>
   </div>
@@ -756,26 +776,26 @@
   <div class="whatdoit--right-images flex overflow-hidden">
     <div class="whatdoit--right-images-image flex align-items-center justify-content-center w-100--min" id="rightpic1">
       <picture class="flex align-items-center justify-content-center">
-        <source srcset="./images/google_search_1920.png" media="(min-width: 1025px)">
-        <img src="./images/google_search_1024.png">
+        <source srcset="./images/Search.png" media="(min-width: 1025px)">
+        <img src="./images/Search.png">
       </picture>
     </div>
     <div class="whatdoit--right-images-image flex align-items-center justify-content-center w-100--min" id="rightpic2">
       <picture class="flex align-items-center justify-content-center">
-        <source srcset="./images/google_display_1920.png" media="(min-width: 1025px)">
-        <img src="./images/google_display_1920.png">
+        <source srcset="./images/Display.png" media="(min-width: 1025px)">
+        <img src="./images/Display.png">
       </picture>
     </div>
     <div class="whatdoit--right-images-image flex align-items-center justify-content-center w-100--min" id="rightpic3">
       <picture class="flex align-items-center justify-content-center">
-        <source srcset="./images/google_youtube_1920.png" media="(min-width: 1025px)">
-        <img src="./images/google_youtube_1920.png">
+        <source srcset="./images/YouTube.png" media="(min-width: 1025px)">
+        <img src="./images/YouTube.png">
       </picture>
     </div>
     <div class="whatdoit--right-images-image flex align-items-center justify-content-center w-100--min" id="rightpic4">
       <picture class="flex align-items-center justify-content-center">
-        <source srcset="./images/Remarketing_1920.png" media="(min-width: 1025px)">
-        <img src="./images/Remarketing_1920.png">
+        <source srcset="./images/Remarketing.png" media="(min-width: 1025px)">
+        <img src="./images/Remarketing.png">
       </picture>
     </div>
   </div>
@@ -802,21 +822,21 @@
     </div>
     <div class="howwhy--right-how margin-xxl--top-60 margin-xl--top-40  flex--l flex--l-column align-items--l-center justify-content--l-center">
       <div class="howwhy--right-how--icons flex flex-wrap align-items-start justify-content--l-center w--l-75 w--s-100">
-        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/targetiranje.svg')"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Targetiranje pravih ljudi u pravom trenutku
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/content.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Targetiranje pravih ljudi u pravom trenutku
           </div></div>
-        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/vecibroj.svg')"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Veći broj relevantnih poseta veb sajtu
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/remarketing.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Veći broj relevantnih poseta veb sajtu
           </div></div>
-        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/vecibroj.svg')"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Povezivanje sa Google Analytics platformom
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/custom-audience.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Povezivanje sa Google Analytics platformom
           </div></div>
-        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/definisanjeciljeva.svg')"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Kreiranje jedinstvenog Google Eco sistema
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/quality-score.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Kreiranje jedinstvenog Google Eco sistema
           </div></div>
-        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/pracenje.svg')"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Definisanje željenih ciljeva
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/loyalty.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Definisanje željenih ciljeva
           </div></div>
-        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/veciROI.svg')"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Praćenje konverzija i aktivnosti korisnika na sajtu 
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/monitoring.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Praćenje konverzija i aktivnosti korisnika na sajtu 
           </div></div>
-        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/veciROI.svg')"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Veći ROI
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/ROAS.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Veći ROI
         </div></div>
-        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/boljakontrola.svg')"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Bolju kontrolu budžeta
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/control.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Bolju kontrolu budžeta
           </div></div>
       </div>
       <div class="howwhy--right-how--text margin-xxl--top-48 text--l-center w--l-75">
@@ -824,14 +844,15 @@
         {# <p class="font-14 font-white">Od strategije i kreiranja sadržaja do implementacije i izveštavanja, mi osnažujemo naše klijente da ostvare svoje ciljeve.</p> #}
       </div>
     </div>
-    <div class="howwhy--right-cta margin-xxl--top-60 flex align-items-center justify-content--s-between flex--xs-column w--s-75">
-      <div class="howwhy--right-cta--links flex flex-column align-items--s-center">
-        <div class="flex align-items-center margin-xxl--bottom-60 margin-xs--bottom-24" style="height: 27px;"><img src="./images/icons/googleads_white.svg"></div>
-        <button class="button-big flex align-items-center justify-content-center margin-xxl--right-24 margin-s--right-none"><a href="drustvene_mreze"><div class="font-14 font-white">DRUŠTVENE MREŽE</div></a></button>
-
+    <div class="howwhy--right-cta margin-xxl--top-60 flex justify-content--s-between flex-column w--s-75">
+      <div class="howwhy--right-cta--links flex flex--s-column align-items--s-center">
+        <div class="flex align-items-center margin-xxl--bottom-60 margin-s--bottom-24 margin-xxl--right-24 margin-s--right-none justify-content--s-center" style="height: 27px;width: 12.063rem;"><img src="./images/icons/googleads_white.svg"></div>
+        <div class="flex align-items-center margin-xxl--bottom-60 justify-content--s-center" style="height: 27px;width: 12.063rem;"><img src="./images/icons/googleanalytics_white.svg"></div>
+        {# <button class="button-big flex align-items-center justify-content-center margin-xxl--right-24 margin-s--right-none"><a href="drustvene_mreze"><div class="font-14 font-white">DRUŠTVENE MREŽE</div></a></button> #}
       </div>
-      <div class="howwhy--right-cta--buttons flex flex-column align-items--s-center margin-xs--top-60">
-        <div class="flex align-items-center margin-xxl--bottom-60 margin-xs--bottom-24" style="height: 27px;"><img src="./images/icons/googleanalytics_white.svg"></div>
+      <div class="howwhy--right-cta--buttons flex flex--s-column align-items--s-center margin-xs--top-60">
+        {# <div class="flex align-items-center margin-xxl--bottom-60 margin-xs--bottom-24" style="height: 27px;"><img src="./images/icons/googleanalytics_white.svg"></div> #}
+        <button class="button-big flex align-items-center justify-content-center margin-xxl--right-24 margin-s--right-none margin-s--bottom-24"><a href="drustvene_mreze"><div class="font-14 font-white">DRUŠTVENE MREŽE</div></a></button>
         <button class="button-big flex align-items-center justify-content-center"><a href="web_oglasavanje"><div class="font-14 font-white">WEB REŠENJA</div></a></button>
       </div>
     </div>
