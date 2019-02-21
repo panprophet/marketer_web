@@ -1,16 +1,11 @@
 <?php
     header('Content-Type: application/json');
-    // $to = "office@marketer.rs";
-    $to = "marko.ilic@buildcon.org";
+    $to = "office@marketer.rs";
     $from = $_POST["email"];
     $imeprezime = $_POST["name"];
-    // if ($_POST["phone"]){
-    //   $phone = $_POST["phone"];
-    // }
-    // $subject = $_POST["subject"];
-    $subject = "Poruka sa web sajta od " . $imeprezime;
-    $subject = $_POST["weburl"];
-    $message = $_POST["message"];
+    $subject = "Poruka sa web sajta od " . $imeprezime . " email: " . $from . ".";
+    $weburl = $_POST["weburl"];
+    $message = $_POST["message"] . " \r\n Nas websajt: " . $weburl . "";
     $message = "Poruka od:" .$imeprezime. "\r\n" .$message;
     $headers = "From: $imeprezime <$to>"."\r\n"."Reply-to: $from"."\r\n"."X-Mailer: PHP/".phpversion();
 
