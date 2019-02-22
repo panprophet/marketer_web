@@ -21,6 +21,12 @@
   transform: scale(0);
   transition: transform 0.9s ease-in-out;
 }
+.email-hidden {
+  display: none;
+}
+.email-shown {
+  display: flex;
+}
 .kontakt_solo {
   height: calc(100vh - 4.6875rem);
   top: 4.6875rem;
