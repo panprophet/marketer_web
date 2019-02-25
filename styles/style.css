@@ -3004,6 +3004,9 @@ a:active {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.google-wrap {
+  height: 100%;
+}
 .google-wrap--left {
   width: 45%;
   height: 100%;
@@ -3152,7 +3155,7 @@ a:active {
     width: 75%;
   }
   .google-wrap--left {
-    height: 160%;
+    height: auto;
     width: 80%;
   }
   .google-wrap--left-inner-text {
