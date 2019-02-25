@@ -2502,7 +2502,7 @@ a:active {
   position: relative;
 }
 .klijenti--part-logo {
-  height: 12.5rem;
+  height: 8.5rem;
   width: 15.625rem;
 }
 @media screen and (max-width: 1024px) {
@@ -2524,7 +2524,7 @@ a:active {
 }
 @media screen and (max-width: 480px) {
   .klijenti--part-logo {
-    height: 6.5rem;
+    height: 4.5rem;
     width: 10.625rem;
   }
 }
@@ -3381,7 +3381,7 @@ a:active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(84.23deg, #111111 -3%, rgba(22, 22, 22, 0.93) 28.8%, rgba(30, 30, 30, 0) 53.54%), url(../images/digitalni-recnik-intro.png);
+  background-image: linear-gradient(84.23deg, #111111 -3%, rgba(22, 22, 22, 0.93) 28.8%, rgba(30, 30, 30, 0) 53.54%), url(../images/digitalni-recnik-intro.jpg);
 }
 .recnik--blok1-text {
   width: 21.5rem;
@@ -3457,7 +3457,7 @@ a:active {
 @media screen and (max-width: 1024px) {
   .recnik--blok1 {
     height: 60vw;
-    background-image: linear-gradient(360deg, #1C1C1E 0%, rgba(22, 22, 22, 0.93) 32.37%, rgba(30, 30, 30, 0) 57.55%), url(../images/digitalni-recnik-intro.png);
+    background-image: linear-gradient(360deg, #1C1C1E 0%, rgba(22, 22, 22, 0.93) 32.37%, rgba(30, 30, 30, 0) 57.55%), url(../images/digitalni-recnik-intro.jpg);
   }
   .recnik--blok2-left {
     width: 100%;
