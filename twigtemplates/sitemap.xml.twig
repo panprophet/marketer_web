@@ -6,7 +6,6 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>http://www.marketer.rs/</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
@@ -115,7 +114,7 @@
 {% set Post = fetch("Post") %}
 {% for item in Post %}
   <url>
-    <loc>http://www.marketer.rs/project/{{item.Slug}}</loc>
+    <loc>http://www.marketer.rs/post/{{item.Slug}}</loc>
     <lastmod>{{item.Date}}</lastmod>
     <priority>0.8</priority>
   </url>
