@@ -8,62 +8,62 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://www.marketer.rs/</loc>
+  <loc>{{_BASE}}</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.marketer.rs/index</loc>
+  <loc>{{_BASE}}index</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.marketer.rs/o_nama</loc>
+  <loc>{{_BASE}}o_nama</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.marketer.rs/usluge</loc>
+  <loc>{{_BASE}}usluge</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.marketer.rs/portfolio</loc>
+  <loc>{{_BASE}}portfolio</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.marketer.rs/blog</loc>
+  <loc>{{_BASE}}blog</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.marketer.rs/digitalni_recnik</loc>
+  <loc>{{_BASE}}digitalni_recnik</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.marketer.rs/kontakt</loc>
+  <loc>{{_BASE}}kontakt</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.marketer.rs/google_oglasavanje</loc>
+  <loc>{{_BASE}}google_oglasavanje</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.marketer.rs/drustvene_mreze</loc>
+  <loc>{{_BASE}}drustvene_mreze</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.marketer.rs/privacy</loc>
+  <loc>{{_BASE}}privacy</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.marketer.rs/web_oglasavanje</loc>
+  <loc>{{_BASE}}web_oglasavanje</loc>
   <lastmod>2019-02-22T15:51:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -71,7 +71,7 @@
 {% set Projekti = fetch("Projekti") %}
 {% for item in Projekti %}
   <url>
-    <loc>http://www.marketer.rs/project/{{item.Slug}}</loc>
+    <loc>{{_BASE}}project/{{item.Slug}}</loc>
     <lastmod>{{item.Datum}}</lastmod>
     <priority>0.8</priority>
   </url>
@@ -115,7 +115,7 @@
 {% set Post = fetch("Post") %}
 {% for item in Post %}
   <url>
-    <loc>http://www.marketer.rs/post/{{item.Slug}}</loc>
+    <loc>{{_BASE}}post/{{item.Slug}}</loc>
     <lastmod>{{item.Date}}</lastmod>
     <priority>0.8</priority>
   </url>
