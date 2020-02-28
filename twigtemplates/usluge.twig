@@ -1,6 +1,7 @@
 {% extends "base.twig" %}
-{% block title %}Usluge{% endblock %}
-{% block description %}Vođeni vašim poslovnim cijevima kreiramo efikasne online marketing kampanje usmerene na rast, profit i unapređenje vašeg interent makretinga{% endblock %}
+{% set item = fetch("Title_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{item.Title}}{% endblock %}
+{% block description %}{{item.Descriprion}}{% endblock %}
 {% block content %}
 <div class="usluge w-100">
   <div class="usluge--wrap flex flex--l-column align-items-center">

@@ -1,6 +1,6 @@
 {% extends 'base.twig' %}
 {% set item = fetch("Projekti", {"id": _GET['1']})[0] %}
-{% block title %}Projekat{% endblock %}
+{% block title %} | {{item.Title}}{% endblock %}
 {% block description %}{{item.Description}}{% endblock %}
 {% block content %}
 

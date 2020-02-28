@@ -1,6 +1,7 @@
 {% extends "base.twig" %}
-{% block title %}Početna{% endblock %}
-{% block description %}Kreiramo i implementiramo vrhunske online kampanje koje daju rezultat{% endblock %}
+{% set item = fetch("Title_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{item.Title}}{% endblock %}
+{% block description %}{{item.Descriprion}}{% endblock %}
 {% block content %}
   <div class="home flex flex-column" style="background-image: url('./images/home-intro.jpg');">
 

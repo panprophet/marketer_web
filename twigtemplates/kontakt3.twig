@@ -1,6 +1,7 @@
 {% extends "base.twig" %}
-{% block title %}Kontakt{% endblock %}
-{% block description %}Kontakt{% endblock %}
+{% set item = fetch("Title_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{item.Title}}{% endblock %}
+{% block description %}{{item.Descriprion}}{% endblock %}
 {% block content %}
 
 <div class="kontakt_solo flex w-100 overflow-hidden" style="background-image: url('./images/kontaktbck.png')" id="contactwrap">
