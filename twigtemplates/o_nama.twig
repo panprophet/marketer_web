@@ -1,6 +1,7 @@
 {% extends 'base.twig' %}
-{% block title %}O nama{% endblock %}
-{% block description %}Tim ljudi koji voli svoj posao, uživa u njemu i raduje se svakom novom izazovu{% endblock %}
+{% set item = fetch("Title_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{item.Title}}{% endblock %}
+{% block description %}{{item.Descriprion}}{% endblock %}
 {% block content %}
 
 <div class="position o-nama flex align-items-center align-items--l-end justify-content--l-center">

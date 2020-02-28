@@ -1,6 +1,7 @@
 {% extends "base.twig" %}
-{% block title %}Web oglašavanje{% endblock %}
-{% block description %}Osnova uspešnog digitalnog marketinga je u kreiranju kvalitetnih web rešenja. Veb dizajn je sličan dizajnu pakovanja robe široke potrošnje. U oba slučaja, ljudi plaćaju proizvod ili uslugu, ali na njih bitno utiče i "ambalaža"{% endblock %}
+{% set item = fetch("Title_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{item.Title}}{% endblock %}
+{% block description %}{{item.Descriprion}}{% endblock %}
 {% block content %}
 
 <div class="social w-100">

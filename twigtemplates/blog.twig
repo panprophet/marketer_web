@@ -1,6 +1,7 @@
 {% extends 'base.twig' %}
-{% block title %}Blog{% endblock %}
-{% block description %}Blog{% endblock %}
+{% set item = fetch("Title_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{item.Title}}{% endblock %}
+{% block description %}{{item.Descriprion}}{% endblock %}
 {% block content %}
 
 {% set Post = fetch("Post") %}
