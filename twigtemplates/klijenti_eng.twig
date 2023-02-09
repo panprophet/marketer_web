@@ -1,0 +1,16 @@
+{% set Klijenti = fetch("Klijenti") %}
+
+<div class="klijenti flex flex-column">
+    <div class="klijenti--part flex flex-2 flex-column justify-content-center margin-xxl--top-48 margin-xxl--bottom-48">
+        <div class="margin-xxl--left-90 margin-xl--left-60 margin-xxl--right-90 margin-xl--right-60 margin-xxl--bottom-24 margin-m--bottom-18 font-46 font-bold font-white">Klijenti</div>
+        <div class="klijenti--part-center margin-xxl--left-90 margin-xl--left-60 margin-xxl--right-90 margin-xl--right-60 margin-xxl--bottom-24 margin-m--bottom-18 font-24 font-grey">Kompanije sa kojima smo sarađivali:</div>
+        <div class="line-big margin-xxl--left-90 margin-xl--left-60 margin-xxl--right-90 margin-xl--right-60 background-blue"></div>
+    </div>
+    <div class="klijenti--part flex flex-2 flex-wrap justify-content-around align-items-center">
+        {% for item in Klijenti %}
+            <div class="klijenti--part-logo flex align-items-center justify-content-center margin-xxl--left-48 margin-xxl--right-48 margin-xxl--bottom-24">
+                <img style="max-height: 80%; max-width:80%;" src="img/{{item.Logo}}">
+            </div>
+        {% endfor %}
+    </div>
+</div>

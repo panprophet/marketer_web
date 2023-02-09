@@ -1,0 +1,44 @@
+{% set Testimonial = fetch("Testimonial") %}
+
+<div class="testimonials flex flex-column justify-content-center align-items-center w-100 background-black-lighter">
+  <div class="testimonials--title flex flex-column align-items-center margin-xxl--top-100 margin-m--top-46 w-100">
+    <div class="w-100">
+      <p class="font-46 font-white margin-xxl--bottom-24 w-100 text-center">They say about us</p>
+      <p class="font-32 font-grey margin-xxl--bottom-24 w-100 text-center">We have earned their trust</p>
+    </div>
+    <div class="line-big background-blue"></div>
+  </div>
+  <div class="testimonials--inner flex w-50 w--xl-75 w--l-100 margin-xxl--top-100 margin-xl--top-80 margin-m--top-46 margin-xxl--bottom-100 margin-xl--bottom-80 margin-m--bottom-46">
+    <div class="testimonials--inner-left flex align-items-center margin-l--left-60 display--s-none">
+      <div class="testimonials--inner-left--arrow arrow" onclick="nextTestemonial('prev');"><img src="./images/icons/arrow.svg">
+      </div>
+    </div>
+    <div class="testimonials--inner-mid flex align-items-center overflow-hidden margin-xxl--left-180 margin-xxl--right-180 margin-l--left-100 margin-l--right-100 margin-s--left-24 margin-s--right-24" id="testemonials">
+      {% for item in Testimonial %}
+      <div class="testimonials--inner-mid--single flex flex-column align-items-center w-100--min" id="test{{loop.index}}">
+        <div class="testimonials--inner-mid--single-logo margin-xxl--bottom-48 margin-m--bottom-24 text-center"><img src="img/{{ item.Logo }}"></div>
+        <div class="person margin-xxl--bottom-48 margin-m--bottom-24">
+          <p class="font-24 font-white margin-xxl--bottom-24 text-center">{{ item.ImePrezime }}</p>
+          <p class="font-16 font-grey text-center">{{ item.Pozicija_ENG }}</p>
+        </div>
+        <div class="testimony font-16 font-white text-center">{{ item.Text_ENG }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="testimonials--inner-right flex align-items-center margin-l--right-60 display--s-none">
+      <div class="testimonials--inner-left--arrow arrow" onclick="nextTestemonial('next');"><img src="./images/icons/arrow.svg" style="transform: rotate(180deg);">
+      </div>
+    </div>
+  </div>
+  <div class="testimonials--markers flex align-items-center justify-content-center w-50 w--xl-75 margin-xxl--bottom-100 margin-m--bottom-46">
+    {% for item in Testimonial %}
+      {% if loop.index == 1 %}
+        <div class="testimonials--markers-marker margin-xxl--right-60 margin-s--right-36 line-marker background-grey active-marker" id="active{{loop.index}}"></div>
+      {% elseif loop.last %}
+        <div class="testimonials--markers-marker line-marker background-grey" id="active{{loop.index}}"></div>
+      {% else %}
+        <div class="testimonials--markers-marker margin-xxl--right-60 margin-s--right-36 line-marker background-grey" id="active{{loop.index}}"></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

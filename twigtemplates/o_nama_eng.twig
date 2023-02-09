@@ -1,0 +1,197 @@
+{% extends 'base.twig' %}
+{% set item = fetch("Title_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{item.Title}}{% endblock %}
+{% block description %}{{item.Descriprion}}{% endblock %}
+{% block content %}
+
+<div class="position o-nama flex align-items-center align-items--l-end justify-content--l-center">
+    <div class="padding-xxl--left-90 padding-l--right-90 padding-m--left-24 padding-m--right-24 flex flex-column align-items--l-center">
+        <div class="naslov font-46 font-bold font-white margin-xxl--bottom-48 margin-l--bottom-24 text--l-center">Who is Marketer?</div>
+        <div class="text o-nama--text font-16 font-grey--mid margin-xxl--bottom-24 text--l-center">A team of people, who love their job, enjoy it and look forward to each new challenge…</div>
+        <div class="line-big background-blue margin-l--bottom-24"></div>
+    </div>
+</div>
+
+<div class="position o-nama--poruka background-grey-lighter flex flex-column justify-content-center align-items-center padding-xxl--top-100 padding-xxl--bottom-100 padding-l--top-70 padding-l--bottom-70">
+    <div class="o-nama--poruka-text font-24 font-grey margin-xxl--bottom-48 text-center">Marketer is a fast-growing agency for digital marketing specialized in Google and Facebook advertising.</div>
+    <div class="o-nama--poruka-text font-16 font-grey--mid text-center">We do not waste our energy and valuable resources – we do what we love and we are very good at it!</div>
+</div>
+
+<div class="position flex flex-column background-black-light">
+    <div class="flex flex-column align-items-center margin-xxl--top-100 margin-xxl--bottom-100 margin-l--top-70 margin-l--bottom-70">
+        <div class="font-32 font-white text-center margin-xxl--bottom-24 margin-s--left-24 margin-s--right-24">Step by step towards success</div>
+        <div class="font-16 font-grey--mid text-center margin-s--left-24 margin-s--right-24 text--l-center">We create and implement top-notch online campaigns which give results.</div>
+    </div>
+
+    {# display #}
+    <div class="korak-display recnik--blok2 background-black-light flex flex--l-column">
+        <div class="recnik--blok2-left margin-xxl--top-100 flex flex-column margin-l--top-none">
+            <div class="flex justify-content-end margin-xxl--top-200 margin-l--top-none flex--l-column align-items--l-center">
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--right-100 flex flex-column margin-l--right-24 margin-l--left-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Goals </div>
+                    <div class="font-16 font-white text--l-center">Defining goals is one of the most important elements of every online campaign. When we have clear goals ahead of us, we choose the best way to realize them.</div>
+                </div>
+                <div class="recnik--blok2-line background-blue margin-l--top-50 margin-l--bottom-50 margin-s--top-24 margin-s--bottom-24"></div>
+            </div>
+            <div class="flex justify-content-end flex--l-column align-items--l-center">
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--right-100 flex flex-column margin-l--right-24 margin-l--left-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Optimisation </div>
+                    <div class="font-16 font-white text--l-center">In order to be sure that we are on the right path, we track and measure the campaign effects daily and optimise them in accordance with their impact.</div>
+                </div>
+                <div class="recnik--blok2-line background-blue margin-l--top-50 margin-l--bottom-50 margin-s--top-24 margin-s--bottom-24"></div>
+            </div>
+            <div class="flex justify-content-end flex--l-column align-items--l-center">
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--right-100 flex flex-column margin-l--right-24 margin-l--left-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Communication</div>
+                    <div class="font-16 font-white text--l-center">Efficient and continual communication is the foundation for success and good cooperation. We nurture and insist on an open partnership, opinions and ideas exchange.</div>
+                </div>
+                <div class="recnik--blok2-line background-blue margin-l--top-50 margin-l--bottom-50 margin-s--top-24 margin-s--bottom-24"></div>
+            </div>
+        </div>
+        <div class="o-nama--koraci-line background-blue margin-xxl--top-100 display--l-none"></div>
+        <div class="recnik--blok2-right margin-xxl--top-100 flex flex-column margin-l--top-none">
+            <div class="flex justify-content--l-center">
+                <div class="recnik--blok2-line background-blue display--l-none"></div>
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--left-100 margin-l--left-24 margin-l--right-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Research</div>
+                    <div class="font-16 font-white text--l-center">We look for answers to the key questions – Who is your audience? What do they like and what are their interests? What does your competition do? In what way should you communicate with the market?</div>
+                </div>
+            </div>
+            <div class="flex flex--l-column align-items--l-center">
+                <div class="recnik--blok2-line background-blue margin-l--top-50 margin-l--bottom-50 margin-s--top-24 margin-s--bottom-24"></div>
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--left-100 margin-l--left-24 margin-l--right-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Campaigns</div>
+                    <div class="font-16 font-white text--l-center">Here we set the foundation for success. We create campaigns which will in the best way represent your brand, communicate with the market and attain a desired goal.</div>
+                </div>
+            </div>
+            <div class="flex flex--l-column align-items--l-center margin-l--bottom-70">
+                <div class="recnik--blok2-line background-blue margin-l--top-50 margin-l--bottom-50 margin-s--top-24 margin-s--bottom-24"></div>
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--left-100 margin-l--left-24 margin-l--right-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Analysis</div>
+                    <div class="font-16 font-white text--l-center">We analyse and create reports which will transparently and comprehensibly show the results of the campaign. After each campaign there is an analysis as we want our all next campaigns to be better.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {# mob #}
+    <div class="korak-mob recnik--blok2 background-black-light flex flex--l-column">
+        <div class="recnik--blok2-left margin-xxl--top-100 flex flex-column margin-l--top-none">
+            <div class="flex justify-content-end margin-xxl--top-200 margin-l--top-none flex--l-column align-items--l-center">
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--right-100 flex flex-column margin-l--right-24 margin-l--left-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Research</div>
+                    <div class="font-16 font-white text--l-center">We look for answers to the key questions – Who is your audience? What do they like and what are their interests? What does your competition do? In what way should you communicate with the market?</div>
+                </div>
+                <div class="recnik--blok2-line background-blue margin-l--top-50 margin-l--bottom-50 margin-s--top-24 margin-s--bottom-24"></div>
+            </div>
+            <div class="flex justify-content-end flex--l-column align-items--l-center">
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--right-100 flex flex-column margin-l--right-24 margin-l--left-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Goals </div>
+                    <div class="font-16 font-white text--l-center">Defining goals is one of the most important elements of every online campaign. When we have clear goals ahead of us, we choose the best way to realize them.</div>
+                </div>
+                <div class="recnik--blok2-line background-blue margin-l--top-50 margin-l--bottom-50 margin-s--top-24 margin-s--bottom-24"></div>
+            </div>
+            <div class="flex justify-content-end flex--l-column align-items--l-center">
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--right-100 flex flex-column margin-l--right-24 margin-l--left-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Campaigns</div>
+                    <div class="font-16 font-white text--l-center">Here we set the foundation for success. We create campaigns which will in the best way represent your brand, communicate with the market and attain a desired goal.</div>
+                </div>
+                <div class="recnik--blok2-line background-blue margin-l--top-50 margin-l--bottom-50 margin-s--top-24 margin-s--bottom-24"></div>
+            </div>
+        </div>
+        <div class="o-nama--koraci-line background-blue margin-xxl--top-100 display--l-none"></div>
+        <div class="recnik--blok2-right margin-xxl--top-100 flex flex-column margin-l--top-none">
+            <div class="flex justify-content--l-center">
+                <div class="recnik--blok2-line background-blue display--l-none"></div>
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--left-100 margin-l--left-24 margin-l--right-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Optimisation </div>
+                    <div class="font-16 font-white text--l-center">In order to be sure that we are on the right path, we track and measure the campaign effects daily and optimise them in accordance with their impact.</div>
+                </div>
+            </div>
+            <div class="flex flex--l-column align-items--l-center">
+                <div class="recnik--blok2-line background-blue margin-l--top-50 margin-l--bottom-50 margin-s--top-24 margin-s--bottom-24"></div>
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--left-100 margin-l--left-24 margin-l--right-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Analysis</div>
+                    <div class="font-16 font-white text--l-center">We analyse and create reports which will transparently and comprehensibly show the results of the campaign. After each campaign there is an analysis as we want our all next campaigns to be better.</div>
+                </div>
+            </div>
+            <div class="flex flex--l-column align-items--l-center margin-l--bottom-70">
+                <div class="recnik--blok2-line background-blue margin-l--top-50 margin-l--bottom-50 margin-s--top-24 margin-s--bottom-24"></div>
+                <div data-aos="zoom-in" class="o-nama--koraci margin-xxl--left-100 margin-l--left-24 margin-l--right-24">
+                    <div class="o-nama--koraci-text font-white margin-xxl--top-24 margin-xxl--bottom-48 text--l-center">Communication</div>
+                    <div class="font-16 font-white text--l-center">Efficient and continual communication is the foundation for success and good cooperation. We nurture and insist on an open partnership, opinions and ideas exchange.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="position o-nama--misija flex align-items-center justify-content--l-center align-items--l-end">
+    <div class="padding-xxl--left-90 flex flex-column w-33 padding-xxl--top-100 padding-xxl--bottom-100 w--l-75 padding-l--top-50 padding-l--bottom-50 padding-l--left-24 padding-l--right-24 w--s-100">
+        <div class="flex justify-content--l-center w-100 w--l-100 margin-xxl--bottom-48"  id="numberofitems">
+                <div class="font-24 font-grey--mid margin-xxl--right-100 margin-s--right-none margin-xxl--bottom-24 active-link text--s-center hover-tab" id="choice1" onclick="nextTabs(1);">Our vision</div>
+                <div class="font-24 font-grey--mid margin-xxl--bottom-24 text--s-center margin-s--left-24 hover-tab" id="choice2" onclick="nextTabs(2);">Our mission </div>
+        </div>
+        <div class="flex overflow-hidden w-100" id="onamatabs">
+            <div class="o-nama--misija-info w-100--min text--l-center" id="tab1">
+                <p class="font-14 font-white margin-xxl--bottom-24">We deeply believe that the key to success in each business lies in building the best business relationships. For us every contact with you is a path to establishing a sincere and professional communication, based on trust and commitment to achieving the set goals.</p>
+                <p class="font-14 font-white margin-xxl--bottom-24">We are living in the world of the Internet. More and more activities are daily performed online. Consumers are curious, demanding, impatient, expecting user experience which is adjusted, relevant and useful as never before.</p>
+                <p class="font-14 font-white margin-xxl--bottom-24">Digital transformation is an inevitable process in today’s business world. We are here to help you adapt your business to the online environment and in an appropriate way use all the benefits it has to offer.</p>
+            </div>
+            <div class="o-nama--misija-info w-100--min text--l-center" id="tab2">
+                <p class="font-14 font-white margin-xxl--bottom-24">We are professionals and enthusiasts to whom digital marketing is an everyday job and great love. We are absolutely dedicated to our clients and their success. We are constantly keeping up with the latest information technologies and digital tools in order to be able to create innovative and unique solutions for your business. </p>
+                <p class="font-14 font-white margin-xxl--bottom-24">To us, digital marketing represents an inherent and inseparable part of the all-comprising marketing strategy. We create online campaigns which will, through synergistic effect and top-notch user experience, develop and improve business as well as achieve the outcome everybody expects – profit made and a satisfied client. </p>
+                <p class="font-14 font-white margin-xxl--bottom-24">At the end of the day, the point of marketing is in achieving better results.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="position background-grey-lighter flex flex-column justify-content-center align-items-center padding-xxl--top-100 padding-xxl--bottom-100 padding-s--left-none padding-l--top-70 padding-l--bottom-70">
+    <div class="o-nama--poruka-text font-24 font-grey margin-xxl--bottom-48 text-center">„Vision without action is a daydream, action without vision is a nightmare“.</div>
+    <div class="o-nama--poruka-text font-16 font-grey--mid text-center">An old Japanese proverb</div>
+</div>
+
+<div class="position flex flex-column background-black-light padding-xxl--top-100 padding-xxl--bottom-100 padding-xxl--left-90 padding-s--left-none padding-l--top-70 padding-l--bottom-70 align-items--s-center">
+    <div class="font-46 font-bold font-white margin-xxl--bottom-24 text--s-center">Our values</div>
+    <div class="font-24 font-grey margin-xxl--bottom-24 text--s-center">We strive for what is important</div>
+    <div class="line-big background-blue"></div>
+</div>
+
+<div class="position flex flex-wrap background-blue padding-xxl--bottom-100 padding-xxl--left-180 padding-l--left-24 padding-l--right-24">
+    <div class="o-nama--vrednosti flex flex-column margin-xxl--top-100 margin-l--top-50 align-items--l-center">
+        <div data-aos="fade-up" class="o-nama--vrednosti-slika margin-xxl--bottom-48 margin-l--bottom-24"><img src="./images/icons/profesionalnost.png"></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="font-24 font-white margin-xxl--bottom-48 text--l-center margin-l--bottom-24">Professionalism</div>
+        <div data-aos="fade-up" data-aos-delay="400" class="o-nama--vrednosti-text font-16 font-white text--l-center">Our first thought of professionalism is a responsible attitude towards work and every client. We are ready to give our maximum effort in order to accomplish our mutual goals.</div>
+    </div>
+    <div class="o-nama--vrednosti flex flex-column margin-xxl--top-100 margin-l--top-50 align-items--l-center">
+        <div data-aos="fade-up" class="o-nama--vrednosti-slika margin-xxl--bottom-48 margin-l--bottom-24"><img src="./images/icons/posvecenost.png"></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="font-24 font-white margin-xxl--bottom-48 text--l-center margin-l--bottom-24">Commitment </div>
+        <div data-aos="fade-up" data-aos-delay="400" class="o-nama--vrednosti-text font-16 font-white text--l-center">Love for our job is what drives us every day. We are directed to you being satisfied with our service and achieved results.</div>
+    </div>
+    <div class="o-nama--vrednosti flex flex-column margin-xxl--top-100 margin-l--top-50 align-items--l-center">
+        <div data-aos="fade-up" class="o-nama--vrednosti-slika margin-xxl--bottom-48 margin-l--bottom-24"><img src="./images/icons/timski-rad.png"></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="font-24 font-white margin-xxl--bottom-48 text--l-center margin-l--bottom-24">Teamwork</div>
+        <div data-aos="fade-up" data-aos-delay="400" class="o-nama--vrednosti-text font-16 font-white text--l-center">When a group of people moves towards a common goal, they become a team. Driven by positive energy we are always ready to offer more. We have created a system of work that gives results. </div>
+    </div>
+    <div class="o-nama--vrednosti flex flex-column margin-xxl--top-100 margin-l--top-50 align-items--l-center">
+        <div data-aos="fade-up" class="o-nama--vrednosti-slika margin-xxl--bottom-48 margin-l--bottom-24"><img src="./images/icons/strucnost.png"></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="font-24 font-white margin-xxl--bottom-48 text--l-center margin-l--bottom-24">Expertise</div>
+        <div data-aos="fade-up" data-aos-delay="400" class="o-nama--vrednosti-text font-16 font-white text--l-center">Our development has led us through basic marketing terms to working for global companies. We still keep learning and improving our knowledge and skills daily.</div>
+    </div>
+    <div class="o-nama--vrednosti flex flex-column margin-xxl--top-100 margin-l--top-50 align-items--l-center">
+        <div data-aos="fade-up" class="o-nama--vrednosti-slika margin-xxl--bottom-48 margin-l--bottom-24"><img src="./images/icons/poverenje.png"></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="font-24 font-white margin-xxl--bottom-48 text--l-center margin-l--bottom-24">Trust </div>
+        <div data-aos="fade-up" data-aos-delay="400" class="o-nama--vrednosti-text font-16 font-white text--l-center">Our work is transparent and available. We build trust and gain experience along with you. </div>
+    </div>
+    <div class="o-nama--vrednosti flex flex-column margin-xxl--top-100 margin-l--top-50 align-items--l-center">
+        <div data-aos="fade-up" class="o-nama--vrednosti-slika margin-xxl--bottom-48 margin-l--bottom-24"><img src="./images/icons/open-mind.png"></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="font-24 font-white margin-xxl--bottom-48 text--l-center margin-l--bottom-24">Open Mind</div>
+        <div data-aos="fade-up" data-aos-delay="400" class="o-nama--vrednosti-text font-16 font-white text--l-center">Since an open mind is a prerequisite for progress. A synonym for ideas, creativity and everything that comes out of it… </div>
+    </div>
+</div>
+
+{% include 'klijenti.twig' %}
+{% include 'contact_shared_eng.twig' %}
+
+{% endblock %}

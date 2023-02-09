@@ -11,6 +11,11 @@ function toggle_menu(){
     svg_paint('closed');
   }
 }
+function toggle_language(lan) {
+	 var currentUrl = window.location.href;
+	 console.log(window.location.pathname);
+	//  var queryString = currentUrl ? currentUrl.split('/')[1] : window.location.search.slice(1);
+}
 function svg_paint(state) {
   var ham = document.getElementById('ham');
   var nodes = [];
