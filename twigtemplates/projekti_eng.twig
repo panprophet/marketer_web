@@ -15,7 +15,7 @@
          {% if loop.index < 5 %}
             <div data-aos="zoom-in" class="projekti-grid-projekat">
                 <div class="projekti-grid-projekat-picture">
-                    <a href="project/{{item.Slug}}">
+                    <a href="project_eng/{{item.Slug}}">
                         {# <img src="img/{{item.NaslovnaSlika}}"> #}
                         <div class="projekti-grid-projekat-picture-img" style="background-image: url('img/{{item.NaslovnaSlika}}');"></div>
                     </a>
@@ -24,7 +24,7 @@
                         <div class="font-16 font-white margin-xxl--bottom-60 margin-xl--bottom-48 margin-l--bottom-24 margin-xxl--left-24 margin-xxl--right-24">{{item.Opis_ENG}}</div>
                         
                             <button class="button-midd background-white font-blue font-14 margin-xxl--bottom-60 margin-xl--bottom-48 margin-l--bottom-24">
-                                <a href="project/{{item.Slug}}">MORE</a></button>
+                                <a href="project_eng/{{item.Slug}}">MORE</a></button>
                         
                         <div class="projekti-grid-projekat-picture-hover-icon flex justify-content-center align-items-start margin-xxl--bottom-48 margin-l--bottom-24">
                             {% if item.Google == 'true' %}

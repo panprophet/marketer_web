@@ -1,0 +1,99 @@
+{% extends 'base.twig' %}
+{% set item = fetch("Title_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{item.Title}}{% endblock %}
+{% block description %}{{item.Descriprion}}{% endblock %}
+{% block content %}
+{% set Projekti = fetch("Projekti") %}
+
+{% for item in Projekti %}
+{% if item.Istakni == 'true' %}
+{# {% set tip = item.Slug } #}
+    <div class="position portfolio flex flex-column justify-content-end align-items-center" style="background: linear-gradient(0deg, rgba(21, 21, 21, 0.5), rgba(21, 21, 21, 0.5)), url(img/{{item.NaslovnaSlika}});">
+        <div class="font-46 font-white margin-xxl--bottom-24">{{item.Naziv}}</div>
+        <div class="font-16 font-white text-center margin-xxl--bottom-48 margin-m--bottom-24 margin-xxl--left-24 margin-xxl--right-24">{{item.Opis_ENG}}</div>
+        <div class="line-small background-blue text-center margin-xxl--bottom-60 margin-m--bottom-24"></div>
+            <button class="button-midd font-white font-14 margin-xxl--bottom-100 margin-l--bottom-50 margin-s--bottom-24">
+                <a href="project_eng/{{item.Slug}}">MORE </a></button>
+        <div class="portfolio-icon flex justify-content-center align-items-start margin-xxl--bottom-100 margin-l--bottom-50 margin-s--bottom-24 flex-wrap">
+            {% if item.Google == 'true' %}
+                <span><img data-aos="zoom-in" data-aos-delay="400" style="max-height: 100%;" src="images/google-icon.svg"></span>
+            {% endif %}
+            {% if item.Facebook == 'true' %}
+                <span><img data-aos="zoom-in" data-aos-delay="525" class="margin-xxl--left-24" style="max-height: 75%;" src="images/facebook-icon.svg"></span>
+            {% endif %}
+            {% if item.Instagram == 'true' %}
+                <span><img data-aos="zoom-in" data-aos-delay="550" class="margin-xxl--left-24" style="height: 100%;margin-top: 1px;" src="images/instagram-icon.svg"></span>
+            {% endif %}
+            {% if item.Linkendin == 'true' %}
+                <span><img data-aos="zoom-in" data-aos-delay="575" class="margin-xxl--left-24" style="max-height: 100%;" src="images/Linkedin-icon.svg"></span>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}
+{% endfor %}
+
+    <div class="projekti flex flex-wrap">
+        <div class="projekti--naslov flex align-items-end">
+            <div class="font-grey font-46 letter-spacing--0_3 margin-xxl--bottom-24 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60">Projekti</div>
+        </div>
+        <div class="projekti-grid-1 flex flex-column align-items--l-center">
+            <div class="projekti-grid-1-txt font-grey--mid font-24 letter-spacing--0_3 margin-xxl--bottom-24 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60">Ponosni smo na</div>
+            <div class="line-big background-blue margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60"></div>
+        </div>
+
+        <div class="projekti-grid flex">
+        {% for item in Projekti %}
+
+            {% if not item.Istakni or item.Istakni == 'false' %}
+            <div data-aos="zoom-in" class="projekti-grid-projekat">
+                <div class="projekti-grid-projekat-picture">
+                    <a href="project/{{item.Slug}}">
+                        {# <img src="img/{{item.NaslovnaSlika}}"> #}
+                        <div class="projekti-grid-projekat-picture-img" style="background-image: url('img/{{item.NaslovnaSlika}}');"></div>
+                    </a>
+                    <div class="projekti-grid-projekat-picture-hover flex flex-column justify-content-end align-items-center">
+                            <img class="projekti-grid-projekat-picture-hover-logo margin-xxl--bottom-24" src="img/{{item.Logo}}">
+                        <div class="font-16 font-white margin-xxl--left-24 margin-xxl--right-24 margin-xxl--bottom-60 margin-xl--bottom-48 margin-l--bottom-24">{{item.Opis_ENG}}</div>
+
+                            <button class="button-midd background-white font-blue margin-xxl--bottom-60 margin-xl--bottom-48 margin-l--bottom-24 font-14">
+                                <a href="project_eng/{{item.Slug}}">MORE</a>
+                            </button>
+
+                        <div class="projekti-grid-projekat-picture-hover-icon flex justify-content-center align-items-start margin-xxl--bottom-48 margin-l--bottom-24">
+                            {% if item.Google == 'true' %}
+                                <img class="margin-xxl--right-24 margin-xxl--left-24" style="max-height: 100%;" src="images/google-icon.svg">
+                            {% endif %}
+                            {% if item.Facebook == 'true' %}
+                                <img class="margin-xxl--right-24 margin-xxl--left-24" style="max-height: 80%;" src="images/facebook-icon.svg">
+                            {% endif %}
+                            {% if item.Instagram == 'true' %}
+                                <img class="margin-xxl--right-24 margin-xxl--left-24" style="height: 100%;margin-top: 1px;" src="images/instagram-icon.svg">
+                            {% endif %}
+                            {% if item.Linkedin == 'true' %}
+                                <img style="max-height: 90%;" class="margin-xxl--right-24 margin-xxl--left-24" src="images/Linkedin-icon.svg">
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="projekti-grid-projekat-opis flex flex-column justify-content-center">
+                    <div class="projekti-grid-projekat-opis-txt font-grey font-32 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60 margin-s--left-24 margin-s--right-24 margin-xxl--bottom-24 margin-xl--bottom-18">{{item.Naziv}} </div>
+                    <div class="projekti-grid-projekat-opis-txt font-grey--mid font-16 margin-xxl--left-90 margin-xxl--right-90 margin-xl--left-60 margin-xl--right-60 margin-s--left-24 margin-s--right-24">{{item.Opis_ENG}}</div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+
+<div class="position background-black-lighter flex flex-column align-items-center">
+    <div class="font-46 font-white text-center margin-xxl--top-100 margin-l--top-70 margin-xxl--bottom-24">Radite sa nama</div>
+    <div class="font-24 font-grey text-center margin-xxl--bottom-24">Imaš projekat na umu</div>
+    <div class="background-blue line-big margin-xxl--bottom-48"></div>
+    <button class="button-big font-white font-14 margin-xxl--bottom-100 margin-l--bottom-70"><a href="kontakt">KONTAKTIRAJ NAS</a></button>
+</div>
+
+{% include 'klijenti_eng.twig' %}
+{% include 'contact_shared_eng.twig' %}
+
+
+{% endblock %}
