@@ -1,0 +1,50 @@
+{% extends "base.twig" %}
+{% set item = fetch("Title_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{item.Title}}{% endblock %}
+{% block description %}{{item.Descriprion}}{% endblock %}
+{% block content %}
+  <div class="home flex flex-column" style="background-image: url('./images/home-intro.jpg');">
+
+    <div class="home-hero margin-xxl--top-100 margin-xl--top-50">
+      <div class="home-hero-cont flex flex-column margin-xxl--top-100 margin-xl--top-50 padding-xxl--left-180 padding-xl--left-135 padding-m--left-60 padding-xxl--right-180 padding-xl--right-135 padding-m--right-60 padding-s--left-24 padding-s--right-24">
+      <div class="home-line line-big background-blue"></div>
+
+        <div class="home-hero--title margin-l--top-50 margin-s--top-60 ">
+          <div class="flex align-items-center">
+            <div class="font-64 font-bold font-white margin-xxl--right-24 letter-spacing--0_4">Improve</div><div class="line-big background-blue"></div>
+          </div>
+          <div class="font-64 font-bold font-white letter-spacing--0_4">your Internet marketing</div>
+        </div>
+
+        <div class="home-hero--text font-24 font-white margin-xxl--top-24 margin-l--top-46 margin-m--top-46 margin-s--top-46 margin-xxl--bottom-100 margin-l--bottom-50 margin-m--bottom-50">We create and implement top-notch online campaigns which give results.</div>
+        <button class="button-big flex align-items-center justify-content-center "><a href="usluge_eng"><div class="font-white font-14">How we do that</div></a></button>
+        <div class="home-hero--social margin-xxl--top-100 margin-xl--top-50 margin-s--top-50 margin-xxl--bottom-100 margin-l--bottom-50 margin-m--bottom-100 flex align-items-center flex-wrap justify-content--m-center">
+          <span data-aos="zoom-in" data-aos-delay="500" class="home-hero--social-link margin-xxl--right-100 margin-l--right-48 margin-s--right-24 margin-s--left-24 margin-xxl--bottom-24">
+            <img style="max-height: 100%;" src="images/google-icon.svg">
+          </span>
+          <span data-aos="zoom-in" data-aos-delay="550" class="home-hero--social-link margin-xxl--right-100 margin-l--right-48 margin-s--right-24 margin-s--left-24 margin-xxl--bottom-24">
+            <img style="max-height: 75%;" src="images/facebook-icon.svg" >
+          </span>
+          <span data-aos="zoom-in" data-aos-delay="600" class="home-hero--social-link margin-xxl--bottom-24">
+              <img style="height: 100%;" src="images/instagram-icon.svg" >
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="usluge_mini background-grey-lighter flex flex-column align-items-center justify-content-center w-100">
+    <div class="font-24 font-grey margin-xxl--top-100 w-50 w--l-100 w--s-auto margin-l--left-60 margin-l--right-60 margin-s--left-24 margin-s--right-24 text-center">The truth is that consumers have become more demanding than ever but marketers have never had more opportunities to cater for their needs.</div>
+    <button class="button-midd flex align-items-center justify-content-center margin-xxl--top-48 margin-xxl--bottom-100"><a href="usluge_eng"><div class="font-14 font-white">Our services</div></a></button>
+  </div>
+  {{ include('projekti_eng.twig') }}
+  <div class="project projekti-button flex justify-content-center">
+
+      <button style="margin: 0;" class="button-midd font-white font-14">
+        <a href="portfolio">MORE</a></button>
+
+  </div>
+  {{ include('testimonials_eng.twig') }}
+  {# {{ include('klijenti.twig') }} #}
+  {{ include('blog-gallery.twig') }}
+  {{ include('contact_shared_eng.twig') }}
+{% endblock %}

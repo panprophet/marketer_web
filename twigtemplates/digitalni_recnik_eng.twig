@@ -1,0 +1,267 @@
+{% extends 'base.twig' %}
+{% set item = fetch("Title_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{item.Title}}{% endblock %}
+{% block description %}{{item.Descriprion}}{% endblock %}
+{% block content %}
+
+<div class="position recnik--blok1 flex align-items-center align-items--l-end justify-content--l-center">
+    <div class="padding-xxl--left-90 padding-l--right-90 padding-m--left-24 padding-m--right-24 flex flex-column align-items--l-center">
+        <div class="naslov font-46 font-white margin-xxl--bottom-48 margin-m--bottom-24 text--l-center">Digital glossary</div>
+        <div class="text recnik--blok1-text font-16 font-grey--mid margin-xxl--bottom-24 text--l-center">If you want to play music well, you must know the notes</div>
+        <div class="line-big background-blue margin-l--bottom-24"></div>
+    </div>
+</div>
+
+<div class="position recnik--blok2 background-black-lighter flex padding-xxl--top-100 flex--l-column padding-l--top-70">
+    <div class="recnik--blok2-left margin-xxl--top-100 flex flex-column margin-l--top-none">
+        <div class="flex justify-content-end text-right margin-xxl--top-200 margin-l--top-none flex--l-column align-items--l-center">
+            <div data-aos="zoom-in" class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end align-items--l-center text--l-center margin-l--left-24 margin-l--right-24">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/relevance-score.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Relevance Score</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Relevance Score is the Facebook metrics which shows us how relevant our campaign is for the audience we speak to. With a better reaction to the campaign, Relevance score will be higher and vice versa. It is expressed in numbers from 1 to 10.</div>
+                <div class="font-16 font-white">Advice: Although, in a way, it shows people’s reaction to a certain campaign, it is not necessary to focus on achieving Relevance Score at its highest level as long as the campaigns achieve a satisfactory result. </div>
+            </div>
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+        </div>
+        <div class="flex justify-content-end text-right flex--l-column align-items--l-center">
+            <div data-aos="zoom-in" class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end align-items--l-center text--l-center margin-l--left-24 margin-l--right-24">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/PPC.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">PPC - Pay Per Click</div>
+                <div class="font-16 font-white">Pay Per Click or paying by click is an advertising model which is used for generating a higher number of visits per website where you will be charged a certain amount of money every time someone clicks on an ad. PPC is often a synonym for advertising on search engines, such as Google, but it includes advertising on other websites, portals, etc.</div>
+            </div>
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+        </div>
+        <div class="flex justify-content-end text-right flex--l-column align-items--l-center">
+            <div data-aos="zoom-in" class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end align-items--l-center text--l-center margin-l--left-24 margin-l--right-24">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/bid.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Bid</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Bid is a simply maximum amount we are ready to pay to Google for a click on our ad. It does not mean you will pay maximum amount (e.g. 0.5 euro per click) every time but the cost by click will be determined by Google every time anew, by bidding in real time. Bid has a direct influence on the Quality Score and campaign performances. </div>
+                <div class="font-16 font-white">Advice: When you determine the Bid for your campaign, make sure it is high enough for your ad to be shown on the first positions of the Google search. You can also try with different Bid strategies, such as: maximizing clicks, maximizing conversions, first position...</div>
+            </div>
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+        </div>
+    </div>
+    <div class="recnik--blok2-line-big background-blue margin-xxl--top-100 display--l-none"></div>
+    <div class="recnik--blok2-right margin-xxl--top-100 flex flex-column margin-l--top-none">
+        <div class="flex justify-content--l-center">
+            <div class="recnik--blok2-line background-blue display--l-none"></div>
+            <div data-aos="zoom-in" class="recnik--blok2-right-part margin-xxl--left-48 flex flex-column margin-l--left-24 margin-l--right-24 align-items--l-center text--l-center">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/frequency.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Frequency</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Frequency, by Facebook definition, is the number which shows how many times on average every person has seen your ad. As your company is spending more money and generating more impressions, your frequency will rise as well; it is simple mathematics.</div>
+                <div class="font-16 font-white">Advice: It is important to follow this metrics as with the frequency rise cost by click (CPC) rises, too, whereas CTR drops. Try to keep your Frequency less than 5 impressions on average.</div>
+            </div>
+        </div>
+        <div class="flex flex--l-column align-items--l-center">
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+            <div data-aos="zoom-in" class="recnik--blok2-right-part margin-xxl--left-48 flex flex-column margin-l--left-24 margin-l--right-24 align-items--l-center text--l-center">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/remarketing.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Remarketing</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Remarketing is actually a way to reconnect with the users who have already been in an interaction with your business. It is certainly one of the most important elements of a successful online marketing strategy.</div>
+                <div class="font-16 font-white">Advice: Use Google Analytics and Facebook Custom Audience in order to create a group of people you want to keep and attract as buyers of your products and services.</div>
+            </div>
+        </div>
+        <div class="flex flex--l-column align-items--l-center margin-l--bottom-70">
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+            <div data-aos="zoom-in" class="recnik--blok2-right-part margin-xxl--left-48 flex flex-column margin-l--left-24 margin-l--right-24 align-items--l-center text--l-center">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/quality-score.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Quality Score</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Quality Score is a very important Google metrics which shows us the quality of our ad on the search network. Quality Score includes more factors which summatively affect its formation, from the way the ad is written, the key words used in the campaign, the price you are ready to pay per click and the quality of the landing page.</div>
+                <div class="font-16 font-white">Advice: In order to increase Quality Score make sure that the content on the Landing page that is the page the user will come to upon clicking on your ad, is relevant in relation to the ad and the key words you use.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="position background-blue flex padding-xxl--top-48 padding-xxl--bottom-48 justify-content--s-center">
+    <div class="recnik--blok3-left flex justify-content-end display--s-none">
+        <div class="flex flex-column align-items-center justify-content-center">
+            <div class="recnik--blok3-left-line background-white "></div>
+            <div class="recnik--blok3-left-apostrofi margin-xxl--top-48 margin-xxl--bottom-48"><img src="./images/icons/apostrofi.svg"></div>
+            <div class="recnik--blok3-left-line background-white"></div>
+        </div>
+    </div>
+    <div class="recnik--blok3-right flex flex-column justify-content-center padding-xxl--left-180 padding-l--left-90 padding-s--left-none align-items--s-center text--s-center">
+            <div class="recnik--blok3-right-text font-24 font-white margin-xxl--bottom-24">“Great things in business are never done by one person, they’re done by a team of people.”</div>
+            <div class="font-32 font-white">Steve Jobs, co-founder of Apple Inc.</div>
+    </div>
+</div>
+
+<div class="position recnik--blok2 background-black-lighter flex padding-xxl--top-100 flex--l-column padding-l--top-70">
+    <div class="recnik--blok2-left margin-xxl--top-100 flex flex-column margin-l--top-none">
+        <div class="flex justify-content-end text-right margin-xxl--top-200 margin-l--top-none flex--l-column align-items--l-center">
+            <div data-aos="zoom-in" class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end align-items--l-center text--l-center margin-l--left-24 margin-l--right-24">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/reach.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Reach</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Reach is the metrics which shows us how many people have seen our ad. Reach is directly related to the budget – the larger the campaign budget, the more people will see our ads.</div>
+                <div class="font-16 font-white">Advice: Reach is a good indicator of the online campaign scope. If we know the size of our target group, Reach will show us whether the campaign includes the target group enough or it is needed to increase the budget in order to achieve the desired advertising effect.</div>
+            </div>
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+        </div>
+        <div class="flex justify-content-end text-right flex--l-column align-items--l-center">
+            <div data-aos="zoom-in" class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end align-items--l-center text--l-center margin-l--left-24 margin-l--right-24">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/impression.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Impression</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Impressions represent the number of ad appearances to a certain target group. Impressions are not the same as Reach and as a rule they surpass it as they calculate the total number of ad appearances regardless of whether someone has seen the ad several times.</div>
+                <div class="font-16 font-white">Advice: If you would like to start a brand awareness campaign Impression is certainly the metrics on which one should focus by limiting the number of ad appearances per person.</div>
+            </div>
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+        </div>
+        <div class="flex justify-content-end text-right flex--l-column align-items--l-center">
+            <div data-aos="zoom-in" class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end align-items--l-center text--l-center margin-l--left-24 margin-l--right-24">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/leads.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Leads</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Someone has shown interest for your business, product or service by applying for the newsletter, downloaded the brochure, left their details, and so on. Lead is actually introducing interested users to the sales funnel and the process of attracting new buyers.</div>
+                <div class="font-16 font-white">Advice: Create an attractive ad with a clear message about potential benefits of a product or a service you offer. You may also offer a free sample or trial period. Facebook Leads campaign may be an excellent solution for generating new Leads for your business.</div>
+            </div>
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+        </div>
+    </div>
+    <div class="recnik--blok2-line-big background-blue margin-xxl--top-100 display--l-none"></div>
+    <div class="recnik--blok2-right margin-xxl--top-100 flex flex-column margin-l--top-none">
+        <div class="flex justify-content--l-center">
+            <div class="recnik--blok2-line background-blue display--l-none"></div>
+            <div data-aos="zoom-in" class="recnik--blok2-right-part margin-xxl--left-48 flex flex-column margin-l--left-24 margin-l--right-24 align-items--l-center text--l-center">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/CPC.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">CPC</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Cost per Click or the cost we pay for every click on an ad. CPC is different from campaign to campaign and to a great extent depends on other factors which affect campaign performances.</div>
+                <div class="font-16 font-white">Advice: CPC is actually a result of the quality and relevance of an ad as well as the competition (more advertisers, higher cost per click). In order to have a lower CPC it is important to choose the right target group or the key words, create an attractive advertising solution and ensure a good user experience of the Landing page.</div>
+            </div>
+        </div>
+        <div class="flex flex--l-column align-items--l-center">
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+            <div data-aos="zoom-in" class="recnik--blok2-right-part margin-xxl--left-48 flex flex-column margin-l--left-24 margin-l--right-24 align-items--l-center text--l-center">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/conversion-acquisition-action.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Conversion/Acquisition/Action</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Conversion is one of the most important metrics in digital marketing and the final goal of every campaign. Conversion occurs when a user performs a desired activity which is the result of an online campaign (orders a product, catalogue, joins a mailing list, and watches a video...)</div>
+                <div class="font-16 font-white">Advice: Before every campaign define what you want your users to do and find a way to track those activities. Use Facebook pixel and Google Analytics for measuring the activities which have the value for your business.</div>
+            </div>
+        </div>
+        <div class="flex flex--l-column align-items--l-center margin-l--bottom-70">
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+            <div data-aos="zoom-in" class="recnik--blok2-right-part margin-xxl--left-48 flex flex-column margin-l--left-24 margin-l--right-24 align-items--l-center text--l-center">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/CPA.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">CPA</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Cost per Acquisition is the metrics which shows how much someone’s performing an activity on our site costs us. When we know the CPA we can easily calculate whether the campaign is profitable or not.</div>
+                <div class="font-16 font-white">Advice: In order to have a positive ROAS it is important to determine the maximum amount you are ready to pay for every particular activity on your site.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="position background-blue flex padding-xxl--top-48 padding-xxl--bottom-48 justify-content--s-center">
+    <div class="recnik--blok3-left flex justify-content-end display--s-none">
+        <div class="flex flex-column align-items-center justify-content-center">
+            <div class="recnik--blok3-left-line background-white"></div>
+            <div class="recnik--blok3-left-apostrofi margin-xxl--top-48 margin-xxl--bottom-48"><img src="./images/icons/apostrofi.svg"></div>
+            <div class="recnik--blok3-left-line background-white"></div>
+        </div>
+    </div>
+    <div class="recnik--blok3-right flex flex-column justify-content-center padding-xxl--left-180 padding-l--left-90 padding-s--left-none align-items--s-center text--s-center">
+            <div class="recnik--blok3-right-text font-24 font-white margin-xxl--bottom-24">„Always deliver more than expected“</div>
+            <div class="font-32 font-white">Larry Page, co-founder of Google</div>
+    </div>
+</div>
+
+<div class="position recnik--blok2 background-black-lighter flex padding-xxl--top-100 flex--l-column padding-l--top-70">
+    <div class="recnik--blok2-left margin-xxl--top-100 flex flex-column margin-l--top-none">
+        <div class="flex justify-content-end text-right margin-xxl--top-200 margin-l--top-none flex--l-column align-items--l-center">
+            <div data-aos="zoom-in" class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end align-items--l-center text--l-center margin-l--left-24 margin-l--right-24">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/custom-audience.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Custom Audience</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Custum Audience represents a group of users who have already shown interest in your business, which Facebook creates according to the given criteria. We can create Custom Audience for a group of people who have visited a certain page on the website or a group of existing users on the mailing list...</div>
+                <div class="font-16 font-white">Advice: Custom Audience is inevitable part of Facebook advertising and as a rule campaigns which use this type of targeting have a better Relevance score and CTR and lower CPC and CTA.</div>
+            </div>
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+        </div>
+        <div class="flex justify-content-end text-right flex--l-column align-items--l-center">
+            <div data-aos="zoom-in" class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end align-items--l-center text--l-center margin-l--left-24 margin-l--right-24">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/ROAS.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">ROAS - Return on Ad Spend</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Return On Ad Spend (ROAS) is the metrics of digital marketing which measures the efficiency of an online campaign. It represents the ratio between the revenue and money invested into online advertising. ROAS helps marketers to assess the methods which bring most money and how they can improve advertising. </div>
+                <div class="font-16 font-white">Advice: In order to be able to precisely track the effects of online campaigns and ROAS, it is necessary to install Facebook and Google scripts on our website which will help you track the activities of your users.</div>
+            </div>
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+        </div>
+        <div class="flex justify-content-end text-right flex--l-column align-items--l-center">
+            <div data-aos="zoom-in" class="recnik--blok2-left-part margin-xxl--right-48 flex flex-column align-items-end align-items--l-center text--l-center margin-l--left-24 margin-l--right-24">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/CTR.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">CTR</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Click Through Rate is an important metric which shows us how relevant our goal is for our target group. It is expressed in percentages and represents the ratio between the number of clicks and ad appearances. A higher CTR positively effects campaign performances and lowers the cost per click (CPC).</div>
+                <div class="font-16 font-white">Advice: CTR in a Google search campaign is of utmost importance. The most important thing is that your ad and the Landing page are as relevant as possible for the customers’ queries (if someone through Google searches for men’s Nike trainers they expect to see an ad for men’s Nike trainers which will lead to the webpage with men’s Nike trainers).</div>
+            </div>
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+        </div>
+    </div>
+    <div class="recnik--blok2-line-big background-blue margin-xxl--top-100 display--l-none"></div>
+    <div class="recnik--blok2-right margin-xxl--top-100 flex flex-column margin-l--top-none">
+        <div class="flex justify-content--l-center">
+            <div class="recnik--blok2-line background-blue display--l-none"></div>
+            <div data-aos="zoom-in" class="recnik--blok2-right-part margin-xxl--left-48 flex flex-column margin-l--left-24 margin-l--right-24 align-items--l-center text--l-center">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/CPM.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">CPM</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Cost Per Million is the metrics which shows us the cost we pay for a certain number of impressions (most frequently 1000). This metrics is important if we have a brand awareness campaign, where it is important to know how much we pay for every impression.</div>
+                <div class="font-16 font-white">Advice: CPM as an advertising model may be used with brand awareness campaigns. In any other case, CPM is one of the metrics which should be tracked but it is not of vital importance for the campaign.</div>
+            </div>
+        </div>
+        <div class="flex flex--l-column align-items--l-center">
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+            <div data-aos="zoom-in" class="recnik--blok2-right-part margin-xxl--left-48 flex flex-column margin-l--left-24 margin-l--right-24 align-items--l-center text--l-center">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/bid-strategy.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Bid Strategy</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">Bid strategy represents a way in which we control the costs of an online campaign. Bid Strategy is determined depending on the goal of the campaign, whether it is a higher number of clicks, conversions, a certain CPA or brand awareness.</div>
+                <div class="font-16 font-white">Advice: Google and Facebook have different options for Bid Strategy. It is important to create real balance between the full potential of a campaign and the price we are ready to pay for a certain action. </div>
+            </div>
+        </div>
+        <div class="flex flex--l-column align-items--l-center margin-l--bottom-70">
+            <div class="recnik--blok2-line background-blue margin-l--bottom-50 margin-l--top-50"></div>
+            <div data-aos="zoom-in" class="recnik--blok2-right-part margin-xxl--left-48 flex flex-column margin-l--left-24 margin-l--right-24 align-items--l-center text--l-center">
+                <div class="recnik--blok2-left-part-icon"><img src="./images/icons/landing-page.svg"></div>
+                <div class="font-24 font-blue margin-xxl--top-24 margin-xxl--bottom-24">Landing Page</div>
+                <div class="font-16 font-white margin-xxl--bottom-24">The webpage on which a user comes upon clicking on an ad is called Landing page or a destination page. Depending on the type of business, campaign and its goal, Landing page may be specially created or any of the existing website pages may be used.</div>
+                <div class="font-16 font-white">Advice: The most important is that Landing page is relevant to the ad, with a clear invitation to action (mainly through contact form). It is desirable to use A/B testing and see which type of Landing page brings better results.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="position background-blue flex padding-xxl--top-48 padding-xxl--bottom-48 justify-content--s-center">
+    <div class="recnik--blok3-left flex justify-content-end display--s-none">
+        <div class="flex flex-column align-items-center justify-content-center">
+            <div class="recnik--blok3-left-line background-white"></div>
+            <div class="recnik--blok3-left-apostrofi margin-xxl--top-48 margin-xxl--bottom-48"><img src="./images/icons/apostrofi.svg"></div>
+            <div class="recnik--blok3-left-line background-white"></div>
+        </div>
+    </div>
+    <div class="recnik--blok3-right flex flex-column justify-content-center padding-xxl--left-180 padding-l--left-90 padding-s--left-none align-items--s-center text--s-center">
+            <div class="recnik--blok3-right-text font-24 font-white margin-xxl--bottom-24">„Your most unhappy customers are your greatest source of learning.“</div>
+            <div class="font-32 font-white">Bill Gates, co-founder of Microsoft</div>
+    </div>
+</div>
+
+{% set Project = fetch ("Projekti") %}
+<div class="position flex background-black-lighter flex--s-direction flex-wrap justify-content-center">
+    {% for project in Project %}
+    {% if project.Podeli == 'true' %}
+    <div class="project-prev flex flex-column project-width">
+        <a class="project-prev-next" href="project/{{project.Slug}}">
+            <div class="project-prev-next" style="background-image: url('img/{{ project.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+        </a>
+        <div class="project-prev-next-child flex flex-column margin-xxl--left-90 margin-xl--left-60 margin-xxl--right-90 margin-xl--right-60 margin-xxl--bottom-60 margin-xxl--top-48">
+            <div class="font-32 font-white margin-xxl--bottom-24">{{project.Naziv}}</div>
+            <div class="project-prev-next-text font-16 font-white margin-xxl--bottom-24">{{project.Opis}}</div>
+            <div class="line-big background-blue"></div>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+    <div class="flex flex-column align-items-center margin-xxl--top-48">
+        <button class="button-midd font-14 font-white margin-xxl--bottom-48">
+            <a href="usluge">NAŠE USLUGE</a>
+        </button>
+    </div>
+</div>
+
+{% include 'contact_shared_eng.twig' %}
+
+{% endblock %}

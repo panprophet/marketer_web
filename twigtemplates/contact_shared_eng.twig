@@ -1,0 +1,51 @@
+{# {% extends "base.twig" %} #}
+{# {% block content %} #}
+
+<div class="kontakt">
+  <div class="kontakt-oglasavanje flex justify-content-between background-white">
+    <div class="flex flex-column justify-content-center kontakt-oglasavanje--left margin-xxl--left-180 margin-xl--left-135 margin-l--left-100 margin-s--left-36">
+      <p class="font-16 font-grey--mid margin-xxl--bottom-10 kontakt-oglasavanje--left-head">Our services</p>
+      <p class="flex align-items-center justify-content-between font-16 font-grey font--s-blue kontakt-oglasavanje--left-title">
+        <a href="google_oglasavanje">
+          <span>+</span><span> &nbsp; Google advertising</span>
+        </a>
+      </p>
+    </div>
+    <div class="flex flex-column justify-content-center kontakt-oglasavanje--right margin-xxl--right-180 margin-xl--right-135 margin-l--right-100 margin-s--right-36">
+      <p class="font-16 font-grey--mid margin-xxl--bottom-10 kontakt-oglasavanje--right-head">Our services</p>
+      <p class="flex align-items-center justify-content-between font-16 font-grey font--s-blue kontakt-oglasavanje--right-title">
+        <a href="drustvene_mreze"><span>Facebook advertising &nbsp;</span><span>+</span>
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class="kontakt-shared background-grey-lighter">
+    <div class="kontakt-shared--title margin-xxl--left-180 margin-xl--left-135 margin-xxl--right-180 margin-xl--right-135">
+      <p class="font-32 font-grey margin-xxl--bottom-24 margin-l--bottom-24 margin-m--bottom-24 margin-s--bottom-24 padding-xxl--top-100 padding-l--top-70 padding-m--top-100 padding-s--top-100">Contact</p>
+      <p class="font-18 font-grey" id="kontaktporuka">Your email address will not be published. Mandatory fields are marked with an asterisk *</p>
+    </div>
+    <form class="kontakt-shared--form margin-xxl--top-48 margin-l--top-100 margin-m--top-100 margin-s--top-100" id="contactform">
+      <div class="kontakt-shared--form-row flex align-items-center justify-content-between margin-xxl--left-180 margin-xl--left-135 margin-xxl--right-180 margin-xl--right-135">
+        <div class="kontakt-shared--form-row--column flex flex-column font-16 font-grey margin-xxl--bottom-48 margin-l--bottom-50 margin-m--bottom-46 margin-s--bottom-46"><label>Name and family name *</label><input class="input-form font-16 font-grey" type="text" id="imeprezime"></div>
+        <div class="kontakt-shared--form-row--column flex flex-column font-16 font-grey margin-xxl--bottom-48 margin-l--bottom-50 margin-m--bottom-46 margin-s--bottom-46"><label>E-mail *</label><input class="input-form font-16 font-grey" type="email" id="email"></div>
+        <div class="kontakt-shared--form-row--column flex flex-column font-16 font-grey margin-xxl--bottom-48 margin-l--bottom-50 margin-m--bottom-46 margin-s--bottom-46"><label>Web</label><input class="input-form font-16 font-grey" type="text" id="weburl"></div>
+      </div>
+      <div class="kontakt-shared--form-row margin-xxl--left-180 margin-xl--left-135 margin-xxl--right-180 margin-xl--right-135 margin-xxl--top-48 margin-l--top-50 margin-m--top-46 margin-s--top-46">
+        <div class="flex flex-column font-16 font-grey">
+          <label>Message *</label>
+          <input class="input-form input-form font-16 font-grey" type="text" id="poruka">
+        </div>
+        <div class="kontakt-shared--form-row--button padding-xxl--bottom-100 padding-l--bottom-100 padding-m--bottom-100 padding-s--bottom-100">
+          <button class="flex align-items-center justify-content-center button-midd margin-xxl--top-48 margin-l--top-50 margin-m--top-100 margin-s--top-46"  onclick="submitMe(); return false;">
+            <span class="flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="#FFFFFF"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg></span>
+            <span class="font-12 font-white">Send</span></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{# {% endblock %} #}
