@@ -66,12 +66,31 @@
 <body>
   <nav class="header header-down flex w-100 align-items-center justify-content-between" id="header">
     <div class="header-logo flex align-items-center margin-xxl--left-24 margin-m--left-24">
-      <a href="index" class="flex align-items-center">
+		{% if '_eng' in (_GET['0']) %}
+      <a href="index_eng" class="flex align-items-center">
         <img src="images/logo.svg"/>
         <span class="font-24 font-white margin-xxl--left-10">Marketer</span>
       </a>
+		{% else %}
+			<a href="index" class="flex align-items-center">
+        <img src="images/logo.svg"/>
+        <span class="font-24 font-white margin-xxl--left-10">Marketer</span>
+      </a>
+		{% endif %}
     </div>
+		<!-- eng -->
+		{% if '_eng' in (_GET['0']) %}
     <div class="header-meni flex flex-1 align-items-center justify-content-center">
+      <div class="{{'o_nama' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14"><a href="o_nama_eng">ABOUT US</a></div>
+      <div class="{{'usluge' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="usluge_eng">SERVICES</a></div>
+      <div class="{{'portfolio' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="portfolio_eng">PORTFOLIO</a></div>
+      <div class="{{'blog' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="blog_eng">BLOG</a></div>
+      {# <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40"><a href="tv">MARKETER TV</a></div> #}
+      <div class="{{'digitalni_recnik' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="digitalni_recnik_eng">DIGITAL GLOSSARY</a></div>
+    </div>
+		{% else %}
+		<!-- sr -->
+		<div class="header-meni flex flex-1 align-items-center justify-content-center">
       <div class="{{'o_nama' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14"><a href="o_nama">O NAMA</a></div>
       <div class="{{'usluge' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="usluge">USLUGE</a></div>
       <div class="{{'portfolio' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="portfolio">PORTFOLIO</a></div>
@@ -79,6 +98,8 @@
       {# <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40"><a href="tv">MARKETER TV</a></div> #}
       <div class="{{'digitalni_recnik' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="digitalni_recnik">DIGITALNI REČNIK</a></div>
     </div>
+		{% endif %}
+		
     <div class="header-kontakt flex align-items-center margin-xxl--right-24 margin-m--right-18 margin-s--right-none">
         <span class="font-14 font-white padding-xxl--right-24"><a href="tel:+381637050225">+381 63 7050 225</a></span>
         <span>
@@ -91,9 +112,9 @@
     </div>
 		{# jezik #}
 		<div class="header-kontakt flex align-items-center margin-xxl--left-24 margin-m--left-18 margin-xxl--right-24 margin-m--right-18 margin-s--right-none">
-        <span onclick="toggle_language('sr')" class="{{'eng' in (_GET['0']) ? 'font-grey' : 'font-white'}} font-14">SRP</span>
+        <span onclick="toggle_language()" class="{{'_eng' in (_GET['0']) ? 'font-grey' : 'font-white'}} font-14">SRP</span>
 				<span class="font-14 font-grey">/</span>
-				<span onclick="toggle_language('eng')" class="{{'eng' in (_GET['0']) ? 'font-white' : 'font-grey'}} font-14 padding-xxl--right-24">EN</span>
+				<span onclick="toggle_language()" class="{{'_eng' in (_GET['0']) ? 'font-white' : 'font-grey'}} font-14 padding-xxl--right-24">EN</span>
         <span>
         <a href="kontakt">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -134,7 +155,17 @@
     </div>
   </nav>
   <div class="mobile mobile-hidden background-black-light" id="mobilemenu">
+	{% if '_eng' in (_GET['0']) %}
     <div class="mobile-inner flex flex-column align-items-center justify-content-center">
+      <div class="{{'o_nama' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="o_nama_eng">ABOUT US</a></div>
+      <div class="{{'usluge' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="usluge_eng">SERVICES</a></div>
+      <div class="{{'portfolio' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="portfolio_eng">PORTFOLIO</a></div>
+      <div class="{{'blog' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="blog_eng">BLOG</a></div>
+      {# <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="tv">MARKETER TV</a></div> #}
+      <div class="{{'digitalni_recnik' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="digitalni_recnik_eng">DIGITAL GLOSSARY</a></div>
+    </div>
+		{% else %}
+		<div class="mobile-inner flex flex-column align-items-center justify-content-center">
       <div class="{{'o_nama' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="o_nama">O NAMA</a></div>
       <div class="{{'usluge' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="usluge">USLUGE</a></div>
       <div class="{{'portfolio' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="portfolio">PORTFOLIO</a></div>
@@ -142,6 +173,7 @@
       {# <div class="font-14 font-grey padding-xxl--bottom-10-per"><a href="tv">MARKETER TV</a></div> #}
       <div class="{{'digitalni_recnik' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 padding-xxl--bottom-10-per"><a href="digitalni_recnik">DIGITALNI REČNIK</a></div>
     </div>
+		{% endif %}
   </div>
 
   {% block content %}{% endblock %}
@@ -156,7 +188,23 @@
     </div>
     <div class="footer-bottom flex flex-direction flex--l-direction">
       <div class="footer-bottom--left flex justify-content-around justify-content--l-between flex--s-direction margin-xxl--left-180 margin-xl--left-135 margin-l--left-180 margin-m--left-90 margin-l--right-180 margin-m--right-90 margin-s--bottom-100 margin-s--left-none margin-s--right-none">
-        <div class="footer-bottom--left-col info_menu flex flex-column justify-content-start">
+        {% if '_eng' in (_GET['0']) %}
+				<div class="footer-bottom--left-col info_menu flex flex-column justify-content-start">
+          <div class="margin-xxl--bottom-48">
+            {# <p class="font-14 font-grey--mid">Damjan Tasic</p> #}
+            <p class="font-14 font-grey--mid"><a href="mailto:office@marketer.rs">office@marketer.rs</a></p>
+          </div>
+          <div>
+            <p class="font-14 font-grey--mid">Social media</p>
+            <a href="https://www.facebook.com/MarketerDigitalAdvertising" target="_blank" class="font-14 font-grey--mid margin-xxl--right-24">Facebook</a>
+            <a href="https://www.instagram.com/marketer_digital_advertising/" target="_blank" class="font-14 font-grey--mid margin-xxl--right-24">Instagram</a>
+            <a href="https://www.linkedin.com/company/marketer-digital-advertising/about/" target="_blank" class="font-14 font-grey--mid">LinkedIn</a>
+          </div>
+					
+          <div class="margin-xxl--top-24 margin-l--bottom-24"><p class="font-14 font-grey--mid"><a href="privacy_eng">Privacy policy </a></p></div>			
+				</div>
+				{% else %}
+				<div class="footer-bottom--left-col info_menu flex flex-column justify-content-start">
           <div class="margin-xxl--bottom-48">
             {# <p class="font-14 font-grey--mid">Damjan Tasic</p> #}
             <p class="font-14 font-grey--mid"><a href="mailto:office@marketer.rs">office@marketer.rs</a></p>
@@ -167,8 +215,10 @@
             <a href="https://www.instagram.com/marketer_digital_advertising/" target="_blank" class="font-14 font-grey--mid margin-xxl--right-24">Instagram</a>
             <a href="https://www.linkedin.com/company/marketer-digital-advertising/about/" target="_blank" class="font-14 font-grey--mid">LinkedIn</a>
           </div>
-          <div class="margin-xxl--top-24 margin-l--bottom-24"><p class="font-14 font-grey--mid"><a href="privacy">Politika privatnosti</a></p></div>
-        </div>
+					
+          <div class="margin-xxl--top-24 margin-l--bottom-24"><p class="font-14 font-grey--mid"><a href="privacy">Politika privatnosti </a></p></div>			
+				</div>
+				{% endif %}	
         <div class="footer-bottom--left-col address_menu flex flex-column justify-content-start">
           <div class="margin-xxl--bottom-48">
             <p class="font-14 font-grey--mid">Mosorska 7</p>
@@ -180,7 +230,25 @@
           </div>
         </div>
       </div>
+			{% if '_eng' in (_GET['0']) %}
       <div class="footer-bottom--right flex justify-content-around justify-content--l-between flex-direction flex--s-column  margin-xxl--left-180 margin-xxl--right-180 margin-xl--left-135 margin-l--left-180 margin-m--left-90 margin-xl--right-135 margin-l--right-180 margin-m--right-90 margin-s--left-none margin-s--right-none">
+        <div class="footer-bottom--right-col menu_menu flex flex-column justify-content-start">
+          <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="o_nama_eng">ABOUT US</a></div>
+          <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="portfolio_eng">PORTFOLIO</a></div>
+          <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="blog_eng">BLOG</a></div>
+          <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="digitalni_recnik_eng">DIGITAL GLOSSARY</a></div>
+        </div>
+        <div class="footer-bottom--right-col usluge_menu flex flex-column justify-content-start">
+          <div class="font-14 font-white margin-xxl--bottom-24"><a href="usluge_eng">SERVICES</a></div>
+          {# <div class="font-14 font-grey--mid margin-xxl--bottom-24 prazan"></div> #}
+          <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="google_oglasavanje_eng">GOOGLE ADVERTISING</a></div>
+
+          <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="drustvene_mreze_eng">FACEBOOK ADVERTISING</a></div>
+          <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="web_oglasavanje_eng">WEB ADVERTISING</a></div>
+        </div>
+      </div>
+			{% else %}
+			<div class="footer-bottom--right flex justify-content-around justify-content--l-between flex-direction flex--s-column  margin-xxl--left-180 margin-xxl--right-180 margin-xl--left-135 margin-l--left-180 margin-m--left-90 margin-xl--right-135 margin-l--right-180 margin-m--right-90 margin-s--left-none margin-s--right-none">
         <div class="footer-bottom--right-col menu_menu flex flex-column justify-content-start">
           <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="o_nama">O NAMA</a></div>
           <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="portfolio">PORTFOLIO</a></div>
@@ -189,13 +257,14 @@
         </div>
         <div class="footer-bottom--right-col usluge_menu flex flex-column justify-content-start">
           <div class="font-14 font-white margin-xxl--bottom-24"><a href="usluge">USLUGE</a></div>
-          <div class="font-14 font-grey--mid margin-xxl--bottom-24 prazan"></div>
+          {# <div class="font-14 font-grey--mid margin-xxl--bottom-24 prazan"></div> #}
           <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="google_oglasavanje">GOOGLE OGLAŠAVANJE</a></div>
 
           <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="drustvene_mreze">FACEBOOK OGLAŠAVANJE</a></div>
           <div class="font-14 font-grey--mid margin-xxl--bottom-24"><a href="web_oglasavanje">WEB OGLAŠAVANJE</a></div>
         </div>
       </div>
+			{% endif %}
     </div>
   </footer>
   {% endif %}
