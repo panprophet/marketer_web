@@ -1,0 +1,365 @@
+{% extends "base.twig" %}
+{% set item = fetch("Title_Description", {"id": _GET['0']})[0] %}
+{% block title %} | {{item.Title}}{% endblock %}
+{% block description %}{{item.Descriprion}}{% endblock %}
+{% block content %}
+
+<div class="social w-100">
+  <div class="social--top w-100 flex justify-content-between justify-content--l-center flex--l-column align-items--l-center padding-xxl--top-100 padding-l--top-70 padding-l--top-50 padding-s--top-50 padding-xxl--bottom-100 padding-l--bottom-70 padding-l--bottom-50 padding-s--bottom-50">
+    <div class="social--top-left w-50 w--m-75 w--s-100 margin-xxl--left-90  margin-l--left-70 margin-s--left-18 margin-xxl--right-90  margin-l--right-70 margin-s--right-18 text--l-center">
+      <div class="font-46 font-white font-bold margin-xxl--bottom-48 margin-l--bottom-24 margin-m--bottom-46 margin-s--bottom-24">Društvene mreže</div>
+      <div>
+        <div class="margin-xxl--bottom-24 font-grey--mid font-18">Povežite se sa ljudima i ispričajte im priču o vašem biznisu.</div>
+        <div class="line-big background-blue line--l-center"></div>
+      </div>
+    </div>
+    <div class="social--top-right flex flex-column align-items-start align-items--l-center w-33 w--xl-50 w--m-75 margin-xxl--left-90 margin-xl--left-70 margin-s--left-18 margin-xxl--right-90 margin-xl--right-70 margin-s--right-18 margin-l--top-50 font-16 font-white text--l-center">
+      {# <p class="margin-xxl--bottom-24 margin-m--bottom-18">Povežite se sa ljudima i ispričajte im priču o Vašem biznisu.</p> #}
+      <p>Facebook platforma za oglašavanje vam omogućava da dođete do ljudi koji su zainteresovani za Vaš biznis, dobijete njihovu pažnju i unapredite Vaše poslovne rezultate.</p>
+    </div>
+  </div>
+  <div class="social--mid flex justify-content-center align-items-center">
+    {# <div class="social--mid-cont" style="background-image: url('./images/connected.png');">
+
+    </div> #}
+    {# <img class="social--mid-cont" src="./images/connected.png"/> #}
+    <div class="social--mid-cont">
+
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 1156 732" style="enable-background:new 0 0 1156 732;" xml:space="preserve">
+      <style type="text/css">
+        .st0{fill:none;stroke:#00AEEF;stroke-opacity:0.5;}
+        .st1{fill:none;stroke:#00AEEF;}
+        .st2{fill:none;}
+        .st3{fill:none;stroke:#00AEEF;stroke-width:2;stroke-opacity:0.2;}
+        .st4{fill:none;stroke:#00AEEF;stroke-width:2;stroke-opacity:0.5;}
+        .st5{fill:#00AEEF;}
+        .st6{fill:none;stroke:#00AEEF;stroke-width:0.75;stroke-linejoin:round;stroke-opacity:0.4;stroke-dasharray:4,4;}
+      </style>
+      <circle class="st0 op5" style="animation-delay: 1.93s" cx="1123.8" cy="370.1" r="31.6"/>
+      <path class="st1 op1" style="animation-delay: 1.93s" d="M1098.9,370.1c0,13.4,11.2,24.3,25,24.3c13.8,0,25-10.9,25-24.3c0-13.4-11.2-24.3-25-24.3
+        C1110,345.8,1098.9,356.7,1098.9,370.1z"/>
+      <circle class="st1" cx="1123.8" cy="370.1" r="13.1"/>
+      <circle class="st2" cx="1123.6" cy="370.3" r="21.1"/>
+      <circle class="st0 op5" style="animation-delay: 1.93s" cx="46.2" cy="268.4" r="45.6"/>
+      <path class="st1 op1" style="animation-delay: 1.93s" d="M10.1,268.4c0,19.4,16.2,35.2,36.1,35.2c20,0,36.1-15.8,36.1-35.2s-16.2-35.2-36.1-35.2
+        C26.2,233.3,10.1,249,10.1,268.4z"/>
+      <circle class="st1" cx="46.2" cy="268.4" r="19"/>
+      <circle class="st2" cx="45.9" cy="268.8" r="19.9"/>
+      <path class="st3 op5" style="animation-delay: 1.33s" d="M151.2,132.8c0,53.1,42.8,96.2,95.6,96.2s95.6-43.1,95.6-96.2c0-53.1-42.8-96.2-95.6-96.2
+        S151.2,79.6,151.2,132.8z"/>
+      <path class="st4 op1" style="animation-delay: 1.33s" d="M173.5,132.8c0,38.8,32.8,70.3,73.2,70.3s73.2-31.5,73.2-70.3c0-38.8-32.8-70.3-73.2-70.3S173.5,94,173.5,132.8
+        z"/>
+      <path class="st1" d="M204.9,132.8c0,21.5,18,39,40.2,39c22.2,0,40.2-17.5,40.2-39s-18-39-40.2-39
+        C222.8,93.8,204.9,111.3,204.9,132.8z"/>
+      <circle class="st2" cx="246.7" cy="134.2" r="56.2"/>
+      <path class="st5" d="M38.1,286.7c-3.8,0-6.9,3.1-6.9,6.9c0,5.2,6.9,12.9,6.9,12.9s6.9-7.7,6.9-12.9C45,289.8,41.9,286.7,38.1,286.7z
+        M38.1,296.1c-1.4,0-2.5-1.1-2.5-2.5c0-1.4,1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5C40.6,295,39.5,296.1,38.1,296.1z"/>
+      <circle class="st0 op5" style="animation-delay: 1.67s" cx="619" cy="172.3" r="31.3"/>
+      <path class="st1 op1" style="animation-delay: 1.67s" d="M594.7,172.4c0,13.3,11,24.1,24.7,24.1c13.6,0,24.7-10.8,24.7-24.1s-11-24.1-24.7-24.1
+        C605.8,148.3,594.7,159.1,594.7,172.4z"/>
+      <circle class="st1" cx="619.2" cy="172.4" r="12.9"/>
+      <circle class="st2" cx="618.9" cy="172.1" r="19.5"/>
+      {# <path class="st5" d="M607.5,184.4c-2.6,0-4.7,2.1-4.7,4.7c0,3.5,4.7,8.7,4.7,8.7s4.7-5.2,4.7-8.7
+        C612.2,186.5,610.1,184.4,607.5,184.4z M607.5,190.8c-0.9,0-1.7-0.8-1.7-1.7s0.8-1.7,1.7-1.7s1.7,0.8,1.7,1.7
+        S608.4,190.8,607.5,190.8z"/> #}
+      <circle class="st0 op5" style="animation-delay: 1.93s" cx="610.2" cy="29.5" r="29"/>
+      <path class="st1 op1" style="animation-delay: 1.93s" d="M587.7,29.6C587.7,42,598,52,610.6,52c12.6,0,22.9-10,22.9-22.3c0-12.3-10.2-22.3-22.9-22.3
+        C598,7.3,587.7,17.3,587.7,29.6z"/>
+      <circle class="st1" cx="610.4" cy="29.6" r="11.9"/>
+      <circle class="st2" cx="610.1" cy="29.3" r="18.1"/>
+      <path class="st5" d="M599.5,40.7c-2.4,0-4.4,2-4.4,4.4c0,3.3,4.4,8.1,4.4,8.1s4.4-4.8,4.4-8.1C603.9,42.7,601.9,40.7,599.5,40.7z
+        M599.5,46.6c-0.9,0-1.6-0.7-1.6-1.6c0-0.9,0.7-1.6,1.6-1.6c0.9,0,1.6,0.7,1.6,1.6C601.1,45.9,600.4,46.6,599.5,46.6z"/>
+      <circle class="st0 op5" style="animation-delay: 0.73s" cx="996.3" cy="222.3" r="113.8"/>
+      <path class="st1 op1" style="animation-delay: 0.73s" style="animation-delay: 0.5s;" d="M906.1,222.3c0,49.2,40.4,89.1,90.2,89.1c49.8,0,90.2-39.9,90.2-89.1s-40.4-89.1-90.2-89.1
+        C946.5,133.2,906.1,173.1,906.1,222.3z"/>
+      {# <circle class="st1" cx="996.3" cy="222.3" r="47.8"/> #}
+      <circle class="st2" cx="995.1" cy="222.3" r="68.3"/>
+      <path class="st6" d="M955.6,311.9c-114.7-2-291.8,92.3-336.7,376.1"/>
+      <path class="st6" d="M901,589.2c-119.9,0-171.9,8.8-285.6,106.6"/>
+      <path class="st6" d="M613.2,194.8c-114.7-2-290.6,50.5-401.7,281.4"/>
+      <path class="st6" d="M955,311.8c-200.3-94.3-755.6-49.5-781.6,278.1"/>
+      <path class="st6" d="M955.6,311.3C745.9,94.4,544.7,59.7,212.4,177.5"/>
+      <circle class="st0 op1" style="animation-delay: 1.33s" cx="614.8" cy="666.1" r="65"/>
+      <path class="st1 op5" style="animation-delay: 1.33s" d="M562.5,665.7c0,28.2,23.2,51.1,51.9,51.1c28.7,0,51.9-22.9,51.9-51.1c0-28.2-23.2-51.1-51.9-51.1
+        C585.7,614.6,562.5,637.5,562.5,665.7z"/>
+      <circle class="st1" cx="614.8" cy="666.1" r="27"/>
+      <circle class="st2" cx="614.1" cy="666.1" r="40.8"/>
+      <circle class="st0 op5" style="animation-delay: 1.23s" cx="205.3" cy="497.4" r="101.4"/>
+      <path class="st1 op1" style="animation-delay: 1.23s" d="M123.9,497.4c0,43.6,36.2,79,80.8,79c44.6,0,80.8-35.4,80.8-79s-36.2-79-80.8-79
+        C160,418.4,123.9,453.8,123.9,497.4z"/>
+      {# <circle class="st1" cx="205.3" cy="497.4" r="42.5"/> #}
+      <circle class="st2" cx="206.3" cy="498.6" r="61.9"/>
+      <path class="st5" d="M170,553.7c-8.3,0-14.9,6.7-14.9,14.9c0,11.2,14.9,27.7,14.9,27.7s14.9-16.5,14.9-27.7
+        C184.9,560.3,178.3,553.7,170,553.7z M170,573.9c-2.9,0-5.3-2.4-5.3-5.3c0-2.9,2.4-5.3,5.3-5.3c2.9,0,5.3,2.4,5.3,5.3
+        C175.3,571.5,172.9,573.9,170,573.9z"/>
+      <circle class="st0 op5" style="animation-delay: 1.67s" cx="915.9" cy="560.5" r="31.6"/>
+      <path class="st1 op1" style="animation-delay: 1.67s" d="M891,560.5c0,13.4,11.2,24.3,25,24.3c13.8,0,25-10.9,25-24.3c0-13.4-11.2-24.3-25-24.3
+        C902.1,536.2,891,547.1,891,560.5z"/>
+      <circle class="st1" cx="915.9" cy="560.5" r="13.1"/>
+      <circle class="st2" cx="915.7" cy="560.7" r="21.1"/>
+      <path class="st5" d="M902,575.4c-2.8,0-5.1,2.3-5.1,5.1c0,3.8,5.1,9.5,5.1,9.5s5.1-5.6,5.1-9.5C907.1,577.7,904.8,575.4,902,575.4z
+        M902,582.3c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8S903,582.3,902,582.3z"/>
+      <image style="overflow:visible;" width="113" height="114" xlink:href="images/drustvene-mreze-11.png"  transform="matrix(1 0 0 1 192 75.3146)">
+      </image>
+      <path class="st5" d="M213.7,158.6c-7.5,0-13.6,6.1-13.6,13.6c0,10.2,13.6,25.2,13.6,25.2s13.6-15,13.6-25.2
+        C227.3,164.7,221.2,158.6,213.7,158.6z M213.7,177c-2.7,0-4.8-2.2-4.8-4.8s2.2-4.8,4.8-4.8s4.8,2.2,4.8,4.8S216.4,177,213.7,177z"/>
+      <image style="overflow:visible;" width="41" height="41" xlink:href="images/drustvene-mreze-12.png"  transform="matrix(1 0 0 1 25 247.5197)">
+      </image>
+      <image style="overflow:visible;" width="40" height="48" xlink:href="images/drustvene-mreze-13.png"  transform="matrix(1 0 0 1 599 151.5197)">
+      </image>
+      <image style="overflow:visible;" width="38" height="44" xlink:href="images/drustvene-mreze-10.png"  transform="matrix(1 0 0 1 591 11.5197)">
+      </image>
+      <image style="overflow:visible;" width="138" height="138" xlink:href="images/drustvene-mreze-9.png"  transform="matrix(1 0 0 1 928.9886 149.5197)">
+      </image>
+      <path class="st5 an2" style="animation-delay: 0.5s;" d="M955.1,265.9c-9.1,0-16.5,7.4-16.5,16.5c0,12.4,16.5,30.6,16.5,30.6s16.5-18.3,16.5-30.6
+        C971.6,273.3,964.2,265.9,955.1,265.9z M955.1,288.3c-3.3,0-5.9-2.6-5.9-5.9c0-3.3,2.6-5.9,5.9-5.9c3.3,0,5.9,2.6,5.9,5.9
+        C961,285.6,958.3,288.3,955.1,288.3z"/>
+      <image  style="overflow:visible;" width="43" height="43" xlink:href="images/drustvene-mreze-8.png"  transform="matrix(1 0 0 1 1102.3501 348.5197)">
+      </image>
+      <path class="st5" d="M1109.9,385c-2.8,0-5.1,2.3-5.1,5.1c0,3.8,5.1,9.5,5.1,9.5s5.1-5.6,5.1-9.5C1115,387.3,1112.8,385,1109.9,385z
+        M1109.9,392c-1,0-1.8-0.8-1.8-1.8c0-1,0.8-1.8,1.8-1.8c1,0,1.8,0.8,1.8,1.8C1111.8,391.1,1110.9,392,1109.9,392z"/>
+      <image style="overflow:visible;" width="82" height="82" xlink:href="images/drustvene-mreze-5.png"  transform="matrix(1 0 0 1 574 624.5197)">
+      </image>
+      <path class="st5" d="M589.1,684.6c-5.7,0-10.3,4.6-10.3,10.3c0,7.7,10.3,19.1,10.3,19.1s10.3-11.4,10.3-19.1
+        C599.4,689.2,594.8,684.6,589.1,684.6z M589.1,698.5c-2,0-3.7-1.6-3.7-3.7c0-2,1.6-3.7,3.7-3.7c2,0,3.7,1.6,3.7,3.7
+        C592.8,696.9,591.2,698.5,589.1,698.5z"/>
+      <image style="overflow:visible;" width="43" height="43" xlink:href="images/drustvene-mreze-7.png"  transform="matrix(1 0 0 1 894 538.5197)">
+      </image>
+      <image style="overflow:visible;animation-delay: 1s" width="125" height="125" xlink:href="images/drustvene-mreze-6.png"  transform="matrix(1 0 0 1 142.1885 434.903)">
+      </image>
+      </svg>
+
+    </div>
+  </div>
+  <div class="social--bottom">
+    <div class="social--bottom-inside flex flex--s-column justify-content-between align-items--m-center margin-xxl--left-180 margin-xl--left-90 margin-l--left-180 margin-m--left-60 margin-xxl--right-180 margin-xl--right-90 margin-l--right-180 margin-m--right-60 margin-xxl--bottom-100 margin-l--bottom-none">
+      <div class="">
+        <div class="flex margin-l--bottom-17">
+          <div class="font-46 font-white margin-xxl--bottom-10 margin-xxl--right-24 margin-l--right-none w--l-100 text--l-center">2.2 milijarde</div>
+          <div class="skiptar flex align-items-center display--l-none">
+            <svg width="181" height="8" viewBox="0 0 181 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M173 3.99999L4 4" stroke="#00BAFF"/>
+              <circle cx="4" cy="4" r="3.5" fill="#2A2A2A" stroke="#00AEEF"/>
+              <circle cx="176.375" cy="4" r="3.5" fill="#2A2A2A" stroke="#00AEEF"/>
+            </svg>
+          </div>
+        </div>
+        <div class="text--l-center">
+          <p class="font-16 font-white margin-l--bottom-10">ljudi svakog meseca koristi </p>
+          <p class="font-24 font-white">Facebook</p>
+        </div>
+      </div>
+      <div class="line-big background-blue display--xxl-none display--s-flex margin-s--top-46 margin-s--bottom-46"></div>
+      <div class="">
+        <div class="flex margin-l--bottom-17 text--l-center">
+          <div class="font-46 font-white margin-xxl--bottom-10 margin-xxl--right-24 margin-l--right-none text--l-center w--s-100">500 miliona</div>
+          <div class="skiptar flex align-items-center display--l-none">
+            <svg width="181" height="8" viewBox="0 0 181 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M173 3.99999L4 4" stroke="#00BAFF"/>
+              <circle cx="4" cy="4" r="3.5" fill="#2A2A2A" stroke="#00AEEF"/>
+              <circle cx="176.375" cy="4" r="3.5" fill="#2A2A2A" stroke="#00AEEF"/>
+            </svg>
+          </div>
+        </div>
+        <div class="text--l-center">
+          <p class="font-16 font-white margin-l--bottom-10">ljudi svakoga dana korsiti </p>
+          <p class="font-24 font-white">Instagram</p>
+        </div>
+      </div>
+    </div>
+    <div class="social--bottom-outside w-100 flex justify-content-center align-items-center padding-xxl--top-48">
+      <p class="margin-xxl--top-60 margin-xl--top-60 margin-l--top-24 margin-xxl--bottom-100 margin-l--bottom-70 font-16 font-white w-33 w--xl-50 w--l-75 text-center">Facebook i Instagram su najpopularnije društvene mreže danas. Preko 93% marketara aktivno koristi Facebook platforme za oglašavanje.</p>
+    </div>
+  </div>
+</div>
+<div class="whatdoit flex flex--l-column w-100">
+  <div class="whatdoit--left w-40 w--xl-50 w--l-100 margin-xxl--top-100 margin-l--top-none margin-xxl--bottom-100  padding-xxl--left-90 padding-xl--left-70 padding-l--left-none">
+    <div class="whatdoit--left-menu flex justify-content--l-center w-100 w-50 w--xl-75 w--l-100" id="numberofitems">
+      <div class="whatdoit--left-menu--item font-24 font-bold font-grey--mid margin-xxl--right-90 margin-xl--right-60 margin-s--right-24 margin-xs--right-18 active-link active-tab" id="choice1" onclick="nextTabs(1);">Vođenje naloga</div>
+      <div class="whatdoit--left-menu--item font-24 font-bold font-grey--mid" id="choice2" onclick="nextTabs(2);">Kampanje</div>
+    </div>
+    <div class="flex overflow-hidden" id="uslugetabs">
+      {% set Usluge = fetch("Usluge")%}
+      {% for item in Usluge %}
+      {% if item.Strana == 'Vodjenje_Naloga' %}
+      <div class="whatdoit--left-nalog" id="tab1">
+        <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 margin-l--bottom-70 margin-l--bottom-70 flex--l flex--l-column align-items--l-center"> <!-- napravi borders, ovde treba bottom -->
+          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">{{item.Naslov}}</div>
+          <div class="w--l-50 w--s-75">
+              <p class="font-16 font-grey text--l-center">{{item.Opis1}}</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis2}}</p>
+          </div>
+        </div>
+        <div class="line-mid background-blue line--l-center"></div>
+        <div  class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-48 margin-l--bottom-70 flex--l flex--l-column align-items--l-center">
+          <div class="font-24 font-bold font-grey margin-xxl--bottom-24 text--l-center">{{item.Prednosti}}</div>
+          <div class="font-16 font-grey text--l-center w--l-50 w--s-75">{{item.PrednostiOpis}}</div>
+        </div>
+        <div class="whatdoit--left-nalog-benefits flex--l flex--l-column align-items--l-center">
+          <div class="whatdoit--left-nalog-benefits--col margin-xxl--bottom-48 margin-l--bottom-70 flex justify-content-between w--l-75 w--s-75">
+            <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
+              <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10">
+                <img src="./images/icons/relevance-score.svg" alt="crelevance score"/>
+              </div>
+              <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Širenje svesti o brendu</div>
+            </div>
+            <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
+              <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
+                <img src="./images/icons/CTR.svg" alt="CTR"/>
+              </div>
+              <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center flex align-items-center">Lojalnost i angažovanost publike</div>
+            </div>
+          </div>
+          <div class="whatdoit--left-nalog-benefits--col flex justify-content-between w--l-75 w--s-75">
+            <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
+              <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
+                <img src="./images/icons/conversion-acquisition-action.svg" alt="conversion acquisition action"/>
+              </div>
+              <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Kredibilitet i pozitivan imidž </div>
+            </div>
+            <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
+              <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
+                <img src="./images/icons/reach.svg" alt="reach"/>
+              </div>
+              <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Direktna komunikacija sa potrošačima</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+      {% for item in Usluge %}
+      {% if item.Strana == 'Kampanje' %}
+      <div class="whatdoit--left-nalog" id="tab2">
+        <div class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-60 flex--l flex--l-column align-items--l-center"> <!-- napravi borders, ovde treba bottom -->
+          <div class="margin-xxl--bottom-24 margin-l--left-24 margin-l--right-24 font-24 font-bold font-grey text--l-center">{{item.Naslov}}</div>
+          <div class="w--l-50">
+              <p class="font-16 font-grey text--l-center">{{item.Opis1}}</p>
+              <p class="font-16 font-grey text--l-center">{{item.Opis2}}</p>
+          </div>
+        </div>
+        <div class="line-mid background-blue line--l-center"></div>
+        <div  class="whatdoit--left-nalog-block margin-xxl--top-60 margin-xxl--bottom-48 margin-l--bottom-70 flex--l flex--l-column align-items--l-center">
+          <div class="font-24 font-bold font-grey margin-xxl--bottom-24 text--l-center">{{item.Prednosti}}</div>
+          <div class="font-16 font-grey text--l-center w--l-50">{{item.PrednostiOpis}}</div>
+        </div>
+        <div class="whatdoit--left-nalog-benefits flex--l flex--l-column align-items--l-center">
+          <div class="whatdoit--left-nalog-benefits--col margin-xxl--bottom-48 flex justify-content-between w--l-75">
+            <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
+              <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10">
+                <img src="./images/icons/CPC.svg" alt="CPC"/>
+              </div>
+              <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Napredne opcije targetiranja</div>
+            </div>
+            <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
+              <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
+                <img src="./images/icons/bid-strategy.svg" alt="bid strategy"/>
+              </div>
+              <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center flex align-items-center">Precizno merenje rezultata i učinka</div>
+            </div>
+          </div>
+          <div class="whatdoit--left-nalog-benefits--col flex justify-content-between w--l-75">
+            <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
+              <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
+                <img src="./images/icons/ROAS.svg" alt="ROAS"/>
+              </div>
+              <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Niži troškovi oglašavanja</div>
+            </div>
+            <div class="whatdoit--left-nalog-benefits--col-elem flex flex--l-column align-items-center">
+              <div class="whatdoit--left-nalog-benefits--col-elem--icon margin-xxl--right-24 margin-l--right-none margin-l--bottom-10 flex align-items-center">
+                <img src="./images/icons/quality-score.svg" alt="quality-score"/>
+              </div>
+              <div class="whatdoit--left-nalog-benefits--col-elem--text text--l-center">Višestruki efekti na imidž i poslovanje </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+  
+  <div class="whatdoit--right flex align-items-center justify-content-center w-60 w--xl-50 w--l-100">
+    <div class="whatdoit--right-images flex align-items-center overflow-hidden">
+      <div class="whatdoit--right-images-image flex align-items-center justify-content-center w-100--min" id="rightpic1">
+        <picture class="flex align-items-center justify-content-center">
+          <source srcset="./images/drustvene_mreze-vodjenje-naloga.png" media="(min-width: 1025px)">
+          <img src="./images/drustvene_mreze-vodjenje-naloga.png">
+        </picture>
+      </div>
+      <div class="whatdoit--right-images-image flex align-items-center justify-content-center w-100--min" id="rightpic2">
+        <picture class="flex align-items-center justify-content-center">
+          <source srcset="./images/drustvene_mreze-kampanje.png" media="(min-width: 1025px)">
+          <img src="./images/drustvene_mreze-kampanje.png">
+        </picture>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="howwhy flex justify-content-center align-items-center align-items--l-end">
+  <div class="howwhy--left w--l-100 display--l-none" style="min-width: 50%; height: 100%;">
+  </div>
+  <div class="howwhy--right margin-xxl--top-100 margin-xxl--bottom-100 margin-xxl--left-48 margin-xl--left-24 margin-s--left-18 margin-xxl--right-48 margin-xl--right-24 margin-s--right-18 w-50 w--l-100  flex--l flex--l-column align-items--l-center justify-content--l-center">
+    <div class="howwhy--right-intro">
+      <div class="flex flex-wrap flex-column flex--l-column margin-xxl--bottom-60">
+        <div class="font-32 font-white font-bold text--l-center">Kako Marketer može da vam</div>
+        <div class="flex flex--l-column align-items-center flex--l-column justify-content--l-center">
+            <div class="font-32 font-white font-bold margin-xxl--right-60 margin-l--bottom-24 margin-l--right-none">pomogne?</div>
+            <div class="line-mid background-blue line--l-center"></div>
+        </div>
+      </div>
+      <div class="font-16 font-white margin-xxl--bottom-24 text--l-center margin-l--left-100  margin-l--right-100 margin-m--left-18  margin-m--right-18">
+        Reči su samo reči. Priče su samo priče. Ali u pravom kontekstu one postaju žive. Mi znamo da nije sve u samoj poruci, već u svemu onome što se dešava oko nje i što joj daje pravi smisao.
+      </div>
+      <div class="font-16 font-white margin-xxl--bottom-24 text--l-center margin-l--left-100  margin-l--right-100 margin-m--left-18  margin-m--right-18">
+        Kvalitetan sadržaj je samo sadržaj ako se ne promoviše na pravi način. Naš tim poseduje dugogodišnje iskustvo i dokazane rezultate u marketingu na društvenim mrežama.
+      </div>
+      <div class="font-16 font-white text--l-center">
+        Garantujemo:
+      </div>
+    </div>
+    <div class="howwhy--right-how margin-xxl--top-60 margin-xl--top-40  flex--l flex--l-column align-items--l-center justify-content--l-center">
+      <div class="howwhy--right-how--icons flex flex-wrap align-items-start justify-content--l-center w--l-75 w--s-100">
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/content.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Vizuelno i verbalno atraktivan sadržaj
+          </div></div>
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/conversion-acquisition-action.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Stvaranje jake baze korisnika
+          </div></div>
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/loyalty.svg'); background-position: center; background-repeat: no-repeat; background-size: contein;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Lojalnost i pozitivan imidž
+          </div></div>
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/quality-score.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Kreiranje inovativnih kampanja usmerenih na rezultat
+          </div></div>
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/landing-page.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Transparentnost i jasno izveštavanje
+          </div></div>
+        <div class="howwhy--right-how--icons-icon flex flex--l-column align-items-center margin-xxl--bottom-24"><div class="icon margin-xxl--right-18 margin-l--right-none margin-l--bottom-10" style="background-image: url('./images/icons/identification.svg'); background-position: center; background-repeat: no-repeat; background-size: contain;"></div><div class="font-14 font-white text--l-center w--l-50 w--s-75">Identifikovanje i povezivanje sa ključnim influenserima 
+          </div></div>
+      </div>
+      <div class="howwhy--right-how--text margin-xxl--top-48 text--l-center w--l-75">
+        <p class="font-14 font-white">Marketer pomaže kompanijama da maksimiziraju vrednost koju dobijaju od marketinga na društvenim mrežama. Mi osnažujemo naše klijente da ostvare svoje ciljeve.</p>
+        {# <p class="font-14 font-white">Od strategije i kreiranja sadržaja do implementacije i izveštavanja, mi osnažujemo naše klijente da ostvare svoje ciljeve.</p> #}
+      </div>
+    </div>
+    <div class="howwhy--right-cta margin-xxl--top-60 flex justify-content--s-between flex-column w--s-75">
+      <div class="howwhy--right-cta--links flex flex--s-column align-items--s-center">
+        <div class="flex align-items-center margin-xxl--bottom-60 margin-s--bottom-24 margin-xxl--right-24 margin-s--right-none justify-content--s-center" style="height: 27px;width: 12.063rem;"><img src="./images/facebook.svg"></div>
+        {# <button class="button-big flex align-items-center justify-content-center margin-xxl--right-24 margin-s--right-none"><a href="google_oglasavanje"><div class="font-14 font-white">GOOGLE OGLAŠAVANJE</div></a></button> #}
+        <div class="flex align-items-center margin-xxl--bottom-60 justify-content--s-center" style="height: 27px;width: 12.063rem;"><img src="./images/instagram.svg"></div>
+      </div>
+      <div class="howwhy--right-cta--buttons flex flex--s-column align-items--s-center margin-xs--top-60">
+        {# <div class="flex align-items-center margin-xxl--bottom-60 margin-xs--bottom-24" style="height: 27px;"><img src="./images/instagram.svg"></div> #}
+        <button class="button-big flex align-items-center justify-content-center margin-xxl--right-24 margin-s--right-none margin-s--bottom-24"><a href="google_oglasavanje"><div class="font-14 font-white">GOOGLE OGLAŠAVANJE</div></a></button>
+        <button class="button-big flex align-items-center justify-content-center"><a href="web_oglasavanje"><div class="font-14 font-white">WEB REŠENJA</div></a></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="usluge_mini flex flex-column align-items-center justify-content-center">
+  <div class="font-24 font-grey margin-xxl--top-100 w-75 w--s-auto text-center margin-s--left-24 margin-s--right-24">Budite sigurni izborom agencije Marketer.</div>
+  <div class="font-16 font-grey--mid margin-xxl--bottom-100 margin-xxl--top-48 margin-s--left-24 margin-s--right-24 w-75 w--s-auto text-center">Angažujete vrhunske stručnjake i dobijate najbolja znanja iz oblasti</br>digitalnog marketinga.</div>
+</div>
+{{ include('blog-gallery.twig') }}
+{{ include('contact_shared.twig') }}
+{% endblock %}
