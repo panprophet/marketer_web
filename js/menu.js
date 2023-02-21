@@ -11,10 +11,15 @@ function toggle_menu(){
     svg_paint('closed');
   }
 }
-function toggle_language(lan) {
+function toggle_language() {
 	 var currentUrl = window.location.href;
-	 console.log(window.location.pathname);
-	//  var queryString = currentUrl ? currentUrl.split('/')[1] : window.location.search.slice(1);
+	 if(window.location.href.indexOf("_eng") > -1) {
+		currentUrl = window.location.href.split("_eng").join("");
+		window.location.href = currentUrl;
+		} else {
+			currentUrl = currentUrl + '_eng';
+			window.location.href = currentUrl;
+		}
 }
 function svg_paint(state) {
   var ham = document.getElementById('ham');
