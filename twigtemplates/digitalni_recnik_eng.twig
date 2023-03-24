@@ -244,12 +244,12 @@
     {% for project in Project %}
     {% if project.Podeli == 'true' %}
     <div class="project-prev flex flex-column project-width">
-        <a class="project-prev-next" href="project/{{project.Slug}}">
+        <a class="project-prev-next" href="project_eng/{{project.Slug}}">
             <div class="project-prev-next" style="background-image: url('img/{{ project.NaslovnaSlika }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
         </a>
         <div class="project-prev-next-child flex flex-column margin-xxl--left-90 margin-xl--left-60 margin-xxl--right-90 margin-xl--right-60 margin-xxl--bottom-60 margin-xxl--top-48">
             <div class="font-32 font-white margin-xxl--bottom-24">{{project.Naziv}}</div>
-            <div class="project-prev-next-text font-16 font-white margin-xxl--bottom-24">{{project.Opis}}</div>
+            <div class="project-prev-next-text font-16 font-white margin-xxl--bottom-24">{{project.Opis_ENG}}</div>
             <div class="line-big background-blue"></div>
         </div>
     </div>
@@ -257,7 +257,7 @@
     {% endfor %}
     <div class="flex flex-column align-items-center margin-xxl--top-48">
         <button class="button-midd font-14 font-white margin-xxl--bottom-48">
-            <a href="usluge">NAŠE USLUGE</a>
+            <a href="usluge_eng">OUR SERVICES</a>
         </button>
     </div>
 </div>

@@ -81,12 +81,12 @@
 		<!-- eng -->
 		{% if '_eng' in (_GET['0']) %}
     <div class="header-meni flex flex-1 align-items-center justify-content-center">
-      <div class="{{'o_nama' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14"><a href="o_nama_eng">ABOUT US</a></div>
-      <div class="{{'usluge' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="usluge_eng">SERVICES</a></div>
-      <div class="{{'portfolio' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="portfolio_eng">PORTFOLIO</a></div>
-      <div class="{{'blog' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="blog_eng">BLOG</a></div>
+      <div class="{{'o_nama_eng' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14"><a href="o_nama_eng">ABOUT US</a></div>
+      <div class="{{'usluge_eng' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="usluge_eng">SERVICES</a></div>
+      <div class="{{'portfolio_eng' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="portfolio_eng">PORTFOLIO</a></div>
+      <div class="{{'blog_eng' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="blog_eng">BLOG</a></div>
       {# <div class="font-14 font-grey margin-xxl--left-90 margin-xl--left-40"><a href="tv">MARKETER TV</a></div> #}
-      <div class="{{'digitalni_recnik' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="digitalni_recnik_eng">DIGITAL GLOSSARY</a></div>
+      <div class="{{'digitalni_recnik_eng' == (_GET['0']) ? 'font-blue' : 'font-grey'}} font-14 margin-xxl--left-90 margin-xl--left-40"><a href="digitalni_recnik_eng">DIGITAL GLOSSARY</a></div>
     </div>
 		{% else %}
 		<!-- sr -->
@@ -112,9 +112,9 @@
     </div>
 		{# jezik #}
 		<div class="header-kontakt flex align-items-center margin-xxl--left-24 margin-m--left-18 margin-xxl--right-24 margin-m--right-18 margin-s--right-none">
-        <span onclick="toggle_language()" class="{{'_eng' in (_GET['0']) ? 'font-grey' : 'font-white'}} font-14">SRP</span>
+        <span onclick="toggle_language()" class="{{'_eng' in (_GET['0']) ? 'font-grey' : 'font-white'}} font-14 cursor-pointer">SRP</span>
 				<span class="font-14 font-grey">/</span>
-				<span onclick="toggle_language()" class="{{'_eng' in (_GET['0']) ? 'font-white' : 'font-grey'}} font-14 padding-xxl--right-24">EN</span>
+				<span onclick="toggle_language()" class="{{'_eng' in (_GET['0']) ? 'font-white' : 'font-grey'}} font-14 cursor-pointer padding-xxl--right-24">EN</span>
         <span>
         <a href="kontakt">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
