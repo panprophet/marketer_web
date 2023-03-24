@@ -17,8 +17,14 @@ function toggle_language() {
 		currentUrl = window.location.href.split("_eng").join("");
 		window.location.href = currentUrl;
 		} else {
-			currentUrl = currentUrl + '_eng';
-			window.location.href = currentUrl;
+			console.log(currentUrl);
+			if(window.location.href.indexOf("_web/") > -1) {
+				currentUrl  = "index_eng";
+				window.location.href = currentUrl;
+			} else {
+				currentUrl = currentUrl + '_eng';
+				window.location.href = currentUrl;
+			}
 		}
 }
 function svg_paint(state) {
