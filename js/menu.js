@@ -17,8 +17,7 @@ function toggle_language() {
 		currentUrl = window.location.href.split("_eng").join("");
 		window.location.href = currentUrl;
 		} else {
-			console.log(currentUrl);
-			if(window.location.href.indexOf("_web/") > -1) {
+			if(window.location.pathname === "/") {
 				currentUrl  = "index_eng";
 				window.location.href = currentUrl;
 			} else {
